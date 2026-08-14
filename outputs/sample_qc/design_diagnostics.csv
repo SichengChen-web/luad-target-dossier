@@ -1,0 +1,5 @@
+"design","formula","variables","n_samples_available","n_samples_used","n_samples_excluded_missing","n_coefficients","matrix_rank","residual_degrees_of_freedom","full_rank","tumor_vs_normal_effect_estimable","nonestimable_columns","nonestimable_variables"
+"A","~group","group",587,587,0,2,2,585,TRUE,TRUE,"",""
+"B","~group + batch_number","group + batch_number",587,587,0,21,21,566,TRUE,TRUE,"",""
+"C","~group + tissue_source_site","group + tissue_source_site",587,587,0,34,34,553,TRUE,TRUE,"",""
+"D","~group + batch_number + tissue_source_site","group + batch_number + tissue_source_site",587,587,0,53,53,534,TRUE,TRUE,"",""

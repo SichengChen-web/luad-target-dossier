@@ -1,0 +1,10 @@
+"check","n_records_checked","n_pass","n_reference_missing","mismatch_examples","expected_pass","all_passed","parser_critical"
+"all_aliquot_barcodes_match_documented_pattern",601,601,0,"",601,TRUE,TRUE
+"reconstructed_aliquot_matches_current_submitter_id",601,601,0,"",601,TRUE,TRUE
+"parsed_case_matches_current_case_submitter_id",601,601,0,"",601,TRUE,FALSE
+"parsed_vial_matches_current_sample_submitter_id",601,601,0,"",601,TRUE,FALSE
+"parsed_portion_matches_current_portion_submitter_id",601,599,0,"TCGA-44-6146-01B-04R-A277-07 [parsed=TCGA-44-6146-01B-04; metadata=TCGA-44-6146-01B-03] | TCGA-44-4112-01B-06R-A277-07 [parsed=TCGA-44-4112-01B-06; metadata=TCGA-44-4112-01B-05]",601,FALSE,FALSE
+"parsed_analyte_matches_current_analyte_submitter_id",601,601,0,"",601,TRUE,FALSE
+"parsed_sample_type_code_matches_current_metadata",601,601,0,"",601,TRUE,FALSE
+"parsed_portion_number_matches_current_metadata",601,599,0,"TCGA-44-6146-01B-04R-A277-07 [parsed=4; metadata=3] | TCGA-44-4112-01B-06R-A277-07 [parsed=6; metadata=5]",601,FALSE,FALSE
+"parsed_analyte_code_matches_current_metadata",601,601,0,"",601,TRUE,FALSE

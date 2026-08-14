@@ -1,0 +1,13 @@
+"metric","value"
+"expression_records",601
+"current_gdc_ffpe_records",12
+"historical_noncanonical_ffpe_validation_A278_records",12
+"historical_noncanonical_ffpe_A277_records",12
+"tcga_sample_barcodes_with_multiple_vials",12
+"portions_with_multiple_analytes",0
+"analytes_with_multiple_aliquots",11
+"aliquots_with_multiple_expression_records",1
+"barcode_to_gdc_portion_metadata_mismatches",2
+"repeated_tcga_sample_groups_in_decision_table",13
+"bottom_12_PC2_exactly_current_FFPE_B_or_C",1
+"current_FFPE_B_or_C_records_among_top_12_RLE_IQR",11

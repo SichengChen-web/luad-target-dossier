@@ -1,0 +1,131 @@
+"batch_number","tissue_source_site","n_tumor","n_normal","total","both_groups_represented"
+"119","Asterand",1,0,1,FALSE
+"119","Christiana Healthcare",6,5,11,TRUE
+"119","Indivumed",3,0,3,FALSE
+"119","International Genomics Consortium",1,0,1,FALSE
+"119","Johns Hopkins",1,0,1,FALSE
+"119","Ontario Institute for Cancer Research (OICR)",9,0,9,FALSE
+"119","Roswell Park",2,1,3,TRUE
+"119","St Joseph's Medical Center (MD)",4,0,4,FALSE
+"119","UNC",3,1,4,TRUE
+"119","University of Pittsburgh",13,5,18,TRUE
+"144","ABS - IUPUI",5,5,10,TRUE
+"144","Christiana Healthcare",7,3,10,TRUE
+"144","ILSBio",1,0,1,FALSE
+"144","Indivumed",8,0,8,FALSE
+"144","International Genomics Consortium",2,0,2,FALSE
+"144","Johns Hopkins",9,6,15,TRUE
+"144","University of Pittsburgh",6,1,7,TRUE
+"160","ABS - IUPUI",5,2,7,TRUE
+"160","Asterand",1,0,1,FALSE
+"160","International Genomics Consortium",16,15,31,TRUE
+"160","Johns Hopkins",1,1,2,TRUE
+"160","Ontario Institute for Cancer Research (OICR)",5,0,5,FALSE
+"160","Ontario Institute for Cancer Research (OICR)/Ottawa",2,0,2,FALSE
+"160","University of Pittsburgh",1,0,1,FALSE
+"160","Washington University - Emory",2,0,2,FALSE
+"166","Christiana Healthcare",1,0,1,FALSE
+"166","International Genomics Consortium",6,0,6,FALSE
+"166","Prince Charles Hospital",17,0,17,FALSE
+"166","UNC",1,0,1,FALSE
+"166","University of Pittsburgh",1,0,1,FALSE
+"166","Washington University - Alabama",1,0,1,FALSE
+"166","Washington University - NYU",5,0,5,FALSE
+"166","Washington University - St. Louis",1,0,1,FALSE
+"183","Asterand",2,0,2,FALSE
+"183","Christiana Healthcare",9,0,9,FALSE
+"183","Fox Chase",2,0,2,FALSE
+"183","International Genomics Consortium",1,0,1,FALSE
+"183","Prince Charles Hospital",11,0,11,FALSE
+"183","University of Miami",2,0,2,FALSE
+"183","Washington University - Emory",1,0,1,FALSE
+"196","ABS - IUPUI",1,0,1,FALSE
+"196","Asterand",2,0,2,FALSE
+"196","International Genomics Consortium",11,0,11,FALSE
+"196","University of Miami",1,0,1,FALSE
+"196","Washington University - Cleveland Clinic",5,0,5,FALSE
+"196","Washington University - NYU",2,0,2,FALSE
+"204","Asterand",3,0,3,FALSE
+"204","International Genomics Consortium",3,0,3,FALSE
+"204","Roswell Park",2,0,2,FALSE
+"204","Washington University - Cleveland Clinic",5,0,5,FALSE
+"204","Washington University - Emory",3,0,3,FALSE
+"204","Washington University - NYU",1,0,1,FALSE
+"204","Washington University - St. Louis",1,0,1,FALSE
+"213","ABS - Lahey Clinic",2,0,2,FALSE
+"213","Asterand",7,0,7,FALSE
+"213","Christiana Healthcare",3,0,3,FALSE
+"213","International Genomics Consortium",17,0,17,FALSE
+"213","Washington University - Alabama",4,0,4,FALSE
+"213","Washington University - Emory",2,0,2,FALSE
+"222","Asterand",4,0,4,FALSE
+"222","International Genomics Consortium",2,0,2,FALSE
+"222","Washington University - Cleveland Clinic",3,0,3,FALSE
+"222","Washington University - NYU",6,0,6,FALSE
+"222","Washington University - St. Louis",1,0,1,FALSE
+"232","Asterand",2,0,2,FALSE
+"232","International Genomics Consortium",1,0,1,FALSE
+"232","Thoraxklinik at University Hospital Heidelberg",6,0,6,FALSE
+"232","University of Pittsburgh",3,0,3,FALSE
+"232","Washington University - Cleveland Clinic",1,0,1,FALSE
+"232","Washington University - Emory",1,0,1,FALSE
+"238","ABS - IUPUI",3,0,3,FALSE
+"238","Asterand",7,0,7,FALSE
+"238","ILSBio",1,0,1,FALSE
+"238","International Genomics Consortium",15,0,15,FALSE
+"238","Prince Charles Hospital",5,0,5,FALSE
+"238","Washington University - NYU",3,0,3,FALSE
+"258","ABS - IUPUI",2,0,2,FALSE
+"258","ABS - Lahey Clinic",3,0,3,FALSE
+"258","Asterand",2,0,2,FALSE
+"258","Candler",2,0,2,FALSE
+"258","Christiana Healthcare",4,0,4,FALSE
+"258","Gundersen Lutheran Health System",1,0,1,FALSE
+"258","International Genomics Consortium",8,0,8,FALSE
+"258","Thoraxklinik at University Hospital Heidelberg",10,0,10,FALSE
+"258","UNC",1,0,1,FALSE
+"264","Asterand",3,0,3,FALSE
+"264","BLN - Baylor",3,0,3,FALSE
+"264","Christiana Healthcare",2,0,2,FALSE
+"264","Gundersen Lutheran Health System",1,0,1,FALSE
+"264","International Genomics Consortium",2,0,2,FALSE
+"264","University of Miami",1,0,1,FALSE
+"264","Washington University - Mayo Clinic",10,0,10,FALSE
+"264","Washington University - NYU",8,0,8,FALSE
+"264","Washington University - St. Louis",4,0,4,FALSE
+"278","Washington University - CALGB",1,0,1,FALSE
+"278","Washington University - Cleveland Clinic",1,0,1,FALSE
+"278","Washington University - Emory",3,0,3,FALSE
+"278","Washington University - Mayo Clinic",8,0,8,FALSE
+"278","Washington University - Rush University",8,0,8,FALSE
+"37","Christiana Healthcare",12,4,16,TRUE
+"37","Cureline",1,0,1,FALSE
+"37","Fox Chase",4,0,4,FALSE
+"37","International Genomics Consortium",4,0,4,FALSE
+"37","St Joseph's Medical Center (MD)",5,0,5,FALSE
+"406","Albert Einstein Medical Center",1,0,1,FALSE
+"406","Candler",5,0,5,FALSE
+"406","International Genomics Consortium",1,0,1,FALSE
+"406","Johns Hopkins",3,0,3,FALSE
+"406","Mary Bird Perkins Cancer Center - Our Lady of the Lake",1,0,1,FALSE
+"406","Washington University - Alabama",1,0,1,FALSE
+"406","Washington University - Rush University",1,0,1,FALSE
+"423","Johns Hopkins",8,0,8,FALSE
+"423","Roswell Park",1,0,1,FALSE
+"52","Christiana Healthcare",10,3,13,TRUE
+"52","Cureline",2,0,2,FALSE
+"52","Indivumed",3,0,3,FALSE
+"58","Christiana Healthcare",1,1,2,TRUE
+"58","Indivumed",14,0,14,FALSE
+"58","Johns Hopkins",7,0,7,FALSE
+"58","Roswell Park",7,0,7,FALSE
+"58","UNC",6,3,9,TRUE
+"84","CHI-Penrose Colorado",1,0,1,FALSE
+"84","Christiana Healthcare",3,1,4,TRUE
+"84","Cureline",1,0,1,FALSE
+"84","Fox Chase",6,0,6,FALSE
+"84","Indivumed",6,0,6,FALSE
+"84","International Genomics Consortium",1,0,1,FALSE
+"84","Ontario Institute for Cancer Research (OICR)",2,0,2,FALSE
+"84","Ontario Institute for Cancer Research (OICR)/Ottawa",1,0,1,FALSE
+"84","University of Pittsburgh",7,2,9,TRUE

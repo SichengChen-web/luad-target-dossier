@@ -1,0 +1,13 @@
+"variable","coordinate","n_samples_complete","n_levels","eta_squared"
+"group","MDS1",587,2,0.527967930570766
+"group","MDS2",587,2,0.0124680565052457
+"group","PC1",587,2,0.490699319651662
+"group","PC2",587,2,0.0521159407640205
+"batch_number","MDS1",587,20,0.0787556571903702
+"batch_number","MDS2",587,20,0.0442923380831412
+"batch_number","PC1",587,20,0.0912309251301475
+"batch_number","PC2",587,20,0.141510842149601
+"tissue_source_site","MDS1",587,33,0.0895915903718916
+"tissue_source_site","MDS2",587,33,0.0467968980683849
+"tissue_source_site","PC1",587,33,0.148928277105774
+"tissue_source_site","PC2",587,33,0.232122431610955

@@ -1,0 +1,6 @@
+"source","url","evidence_used"
+"GDC TCGA Barcode documentation","https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/","Barcode hierarchy and component semantics."
+"GDC Portion / Analyte Codes","https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/portion-analyte-codes","R means RNA; A278 is a plate code, not an analyte code."
+"Broad GDAC 2014-04-16 FFPE Cases","https://gdac.broadinstitute.org/runs/stddata__2014_04_16/samples_report/FFPE_Cases.html","Exact A278 RNA aliquots annotated Item is noncanonical / FFPE Validation."
+"Broad GDAC 2016-01-28 LUAD FFPE Cases","https://gdac.broadinstitute.org/runs/stddata__latest/samples_report/LUAD_FFPE_Cases.html","Exact B/C A277 RNA aliquots annotated Item is noncanonical / FFPE."
+"Broad GDAC 2017-10-29 Replicate Samples","https://gdac.broadinstitute.org/runs/gdc/report_2017_10_29/Replicate_Samples.html","Nine current older-vs-A278 RNA pairs and the later-plate replicate rule."
