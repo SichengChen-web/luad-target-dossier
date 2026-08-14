@@ -1,0 +1,8 @@
+"metric","value"
+"unique_cases",516
+"tumor_only_cases",457
+"normal_only_cases",1
+"matched_tumor_normal_cases",58
+"cases_with_multiple_tumor_observations",0
+"cases_with_multiple_normal_observations",0
+"cases_with_multiple_same_group_observations",0

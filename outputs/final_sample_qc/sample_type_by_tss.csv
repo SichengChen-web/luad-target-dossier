@@ -1,0 +1,34 @@
+"tissue_source_site","tissue_source_site_code","n_tumor","n_normal","total","both_groups_represented","tumor_only","normal_only"
+"ABS - IUPUI","91",16,7,23,TRUE,FALSE,FALSE
+"ABS - Lahey Clinic","J2",5,0,5,FALSE,TRUE,FALSE
+"Albert Einstein Medical Center","S2",1,0,1,FALSE,TRUE,FALSE
+"Asterand","86",34,0,34,FALSE,TRUE,FALSE
+"BLN - Baylor","MN",3,0,3,FALSE,TRUE,FALSE
+"Candler","L9",7,0,7,FALSE,TRUE,FALSE
+"CHI-Penrose Colorado","83",1,0,1,FALSE,TRUE,FALSE
+"Christiana Healthcare","44",45,17,62,TRUE,FALSE,FALSE
+"Cureline","35",4,0,4,FALSE,TRUE,FALSE
+"Fox Chase","64",12,0,12,FALSE,TRUE,FALSE
+"Gundersen Lutheran Health System","L4",2,0,2,FALSE,TRUE,FALSE
+"ILSBio","71",2,0,2,FALSE,TRUE,FALSE
+"Indivumed","05",34,0,34,FALSE,TRUE,FALSE
+"International Genomics Consortium","55",91,15,106,TRUE,FALSE,FALSE
+"Johns Hopkins","49",29,7,36,TRUE,FALSE,FALSE
+"Mary Bird Perkins Cancer Center - Our Lady of the Lake","4B",1,0,1,FALSE,TRUE,FALSE
+"Ontario Institute for Cancer Research (OICR)","75",16,0,16,FALSE,TRUE,FALSE
+"Ontario Institute for Cancer Research (OICR)/Ottawa","80",3,0,3,FALSE,TRUE,FALSE
+"Prince Charles Hospital","78",33,0,33,FALSE,TRUE,FALSE
+"Roswell Park","73",12,1,13,TRUE,FALSE,FALSE
+"St Joseph's Medical Center (MD)","67",9,0,9,FALSE,TRUE,FALSE
+"Thoraxklinik at University Hospital Heidelberg","62",16,0,16,FALSE,TRUE,FALSE
+"UNC","38",11,4,15,TRUE,FALSE,FALSE
+"University of Miami","53",4,0,4,FALSE,TRUE,FALSE
+"University of Pittsburgh","50",31,8,39,TRUE,FALSE,FALSE
+"Washington University - Alabama","99",6,0,6,FALSE,TRUE,FALSE
+"Washington University - CALGB","O1",1,0,1,FALSE,TRUE,FALSE
+"Washington University - Cleveland Clinic","69",15,0,15,FALSE,TRUE,FALSE
+"Washington University - Emory","95",12,0,12,FALSE,TRUE,FALSE
+"Washington University - Mayo Clinic","MP",18,0,18,FALSE,TRUE,FALSE
+"Washington University - NYU","97",25,0,25,FALSE,TRUE,FALSE
+"Washington University - Rush University","NJ",9,0,9,FALSE,TRUE,FALSE
+"Washington University - St. Louis","93",7,0,7,FALSE,TRUE,FALSE
