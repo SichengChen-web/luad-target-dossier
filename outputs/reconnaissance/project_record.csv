@@ -1,0 +1,2 @@
+"project","organism","file_source","project_home","project_type","n_samples","recount3_version","SummarizedExperiment_version","R_version","object_class","feature_type","annotation","n_features_loaded","n_samples_loaded","assay_names","recount3_url"
+"LUAD","human","tcga","data_sources/tcga","data_sources",601,"1.20.0","1.40.0","4.5.1","RangedSummarizedExperiment","gene","gencode_v26",63856,601,"raw_counts","https://recount-opendata.s3.amazonaws.com/recount3/release"

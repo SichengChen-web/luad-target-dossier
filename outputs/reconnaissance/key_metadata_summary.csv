@@ -1,0 +1,20 @@
+"role","colData_field","description","R_class","n_missing","percent_missing","n_unique_nonmissing"
+"sample_type","tcga.gdc_cases.samples.sample_type","Official GDC sample type","character",0,0,3
+"case_id","tcga.gdc_cases.case_id","GDC case UUID (patient/case identifier)","character",0,0,517
+"case_submitter_id","tcga.gdc_cases.submitter_id","GDC case submitter ID","character",0,0,517
+"sample_id","tcga.gdc_cases.samples.sample_id","GDC sample UUID","character",0,0,589
+"sample_submitter_id","tcga.gdc_cases.samples.submitter_id","GDC sample submitter ID","character",0,0,589
+"aliquot_id","tcga.gdc_cases.samples.portions.analytes.aliquots.aliquot_id","GDC aliquot UUID","character",0,0,600
+"aliquot_submitter_id","tcga.gdc_cases.samples.portions.analytes.aliquots.submitter_id","GDC aliquot submitter ID","character",0,0,600
+"portion_id","tcga.gdc_cases.samples.portions.portion_id","GDC portion UUID","character",0,0,589
+"sex","tcga.gdc_cases.demographic.gender","GDC demographic gender field","character",0,0,2
+"age_at_diagnosis","tcga.gdc_cases.diagnoses.age_at_diagnosis","GDC age-at-diagnosis field; retained as supplied, with no conversion in reconnaissance","integer",38,6.32,475
+"stage","tcga.gdc_cases.diagnoses.tumor_stage","GDC diagnosis tumour-stage field","character",0,0,10
+"sequencing_platform","tcga.gdc_platform","GDC sequencing platform","character",0,0,1
+"sequencing_center","tcga.gdc_center.name","GDC sequencing center name","character",0,0,1
+"sequencing_center_id","tcga.gdc_center.center_id","GDC sequencing center UUID","character",0,0,1
+"tissue_source_site","tcga.gdc_cases.tissue_source_site.name","GDC tissue-source-site name","character",0,0,33
+"tissue_source_site_code","tcga.gdc_cases.tissue_source_site.code","GDC tissue-source-site code","character",0,0,33
+"batch_number","tcga.cgc_case_batch_number","CGC case batch number supplied in recount3 metadata","integer",0,0,20
+"recount_external_id","external_id","recount3 external expression-column identifier","character",0,0,601
+"recount_rail_id","rail_id","recount3 internal rail identifier","integer",0,0,601
