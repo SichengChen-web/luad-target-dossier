@@ -1,0 +1,16 @@
+"section","metric","group","n_total","n_complete","n_missing","n_nan","n_infinite","n_zero","n_negative","min","q1","median","mean","q3","max","value_numeric","value_text"
+"input_qc_before_compute_read_counts","average_mapped_length","all",601,601,0,0,0,0,0,81.24,94.59,94.87,94.8238768718802,94.99,98.76,,
+"input_qc_after_compute_read_counts","average_mapped_length","all",601,601,0,0,0,0,0,81.24,94.59,94.87,94.8238768718802,94.99,98.76,,
+"input_qc","all_mapped_reads","all",601,601,0,0,0,0,0,22466480,41721769,55101697,61234810.8402662,79135298,128553882,,
+"input_qc","auc_all_reads_all_bases","all",601,601,0,0,0,0,0,2131786641,3958826863,5226133562,5798602451.04492,7511864678,12203283594,,
+"read_count_matrix","dimensions","all",,,,,,,,,,,,,,,"63856 x 601"
+"read_count_matrix","round_argument","all",,,,,,,,,,,,,,1,"TRUE"
+"read_count_matrix","na_values","all",,,,,,,,,,,,,,0,
+"read_count_matrix","nan_values","all",,,,,,,,,,,,,,0,
+"read_count_matrix","infinite_values","all",,,,,,,,,,,,,,0,
+"read_count_matrix","negative_values","all",,,,,,,,,,,,,,0,
+"gene_read_count_library_size","colSums","all",601,601,0,0,0,0,0,10362782,39721583,52072250,57776826.6905158,74422793,124642938,,
+"gene_read_count_library_size","colSums","tumor",540,540,0,0,0,0,0,10362782,40759337,53449959,58859774.0796296,75622582.25,124642938,,
+"gene_read_count_library_size","colSums","normal",59,59,0,0,0,0,0,23418571,33978050,40509332,46677170.5762712,53035602,91045027,,
+"library_size_vs_all_mapped_reads","pearson_correlation","all",,601,,,,,,,,,,,,0.909181278749038,
+"library_size_vs_all_mapped_reads","spearman_correlation","all",,601,,,,,,,,,,,,0.907134344199313,
