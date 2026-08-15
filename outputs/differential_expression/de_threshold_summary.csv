@@ -1,0 +1,6 @@
+"criterion","Up","Down","Total","direction_definition"
+"BH FDR < 0.05",10841,10391,21232,"Up: logFC > 0 (higher in Tumor); Down: logFC < 0 (lower in Tumor)"
+"BH FDR < 0.01",9539,9391,18930,"Up: logFC > 0 (higher in Tumor); Down: logFC < 0 (lower in Tumor)"
+"BH FDR < 0.05 and |logFC| >= 0.5",6831,7233,14064,"Up: logFC > 0 (higher in Tumor); Down: logFC < 0 (lower in Tumor)"
+"BH FDR < 0.05 and |logFC| >= 1",3223,4117,7340,"Up: logFC > 0 (higher in Tumor); Down: logFC < 0 (lower in Tumor)"
+"BH FDR < 0.05 and |logFC| >= 2",1056,1486,2542,"Up: logFC > 0 (higher in Tumor); Down: logFC < 0 (lower in Tumor)"
