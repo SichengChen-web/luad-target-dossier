@@ -1,0 +1,54 @@
+"variable","level","Normal","Tumor","contains_both_groups"
+"batch_number","119",12,41,TRUE
+"batch_number","144",15,37,TRUE
+"batch_number","160",18,33,TRUE
+"batch_number","166",0,33,FALSE
+"batch_number","183",0,28,FALSE
+"batch_number","196",0,22,FALSE
+"batch_number","204",0,18,FALSE
+"batch_number","213",0,35,FALSE
+"batch_number","222",0,16,FALSE
+"batch_number","232",0,14,FALSE
+"batch_number","238",0,34,FALSE
+"batch_number","258",0,33,FALSE
+"batch_number","264",0,34,FALSE
+"batch_number","278",0,21,FALSE
+"batch_number","37",4,21,TRUE
+"batch_number","406",0,13,FALSE
+"batch_number","423",0,9,FALSE
+"batch_number","52",3,11,TRUE
+"batch_number","58",4,35,TRUE
+"batch_number","84",3,27,TRUE
+"tissue_source_site","ABS - IUPUI",7,16,TRUE
+"tissue_source_site","ABS - Lahey Clinic",0,5,FALSE
+"tissue_source_site","Albert Einstein Medical Center",0,1,FALSE
+"tissue_source_site","Asterand",0,34,FALSE
+"tissue_source_site","BLN - Baylor",0,3,FALSE
+"tissue_source_site","Candler",0,7,FALSE
+"tissue_source_site","CHI-Penrose Colorado",0,1,FALSE
+"tissue_source_site","Christiana Healthcare",17,45,TRUE
+"tissue_source_site","Cureline",0,4,FALSE
+"tissue_source_site","Fox Chase",0,12,FALSE
+"tissue_source_site","Gundersen Lutheran Health System",0,2,FALSE
+"tissue_source_site","ILSBio",0,2,FALSE
+"tissue_source_site","Indivumed",0,34,FALSE
+"tissue_source_site","International Genomics Consortium",15,91,TRUE
+"tissue_source_site","Johns Hopkins",7,29,TRUE
+"tissue_source_site","Mary Bird Perkins Cancer Center - Our Lady of the Lake",0,1,FALSE
+"tissue_source_site","Ontario Institute for Cancer Research (OICR)",0,16,FALSE
+"tissue_source_site","Ontario Institute for Cancer Research (OICR)/Ottawa",0,3,FALSE
+"tissue_source_site","Prince Charles Hospital",0,33,FALSE
+"tissue_source_site","Roswell Park",1,12,TRUE
+"tissue_source_site","St Joseph's Medical Center (MD)",0,9,FALSE
+"tissue_source_site","Thoraxklinik at University Hospital Heidelberg",0,16,FALSE
+"tissue_source_site","UNC",4,11,TRUE
+"tissue_source_site","University of Miami",0,4,FALSE
+"tissue_source_site","University of Pittsburgh",8,31,TRUE
+"tissue_source_site","Washington University - Alabama",0,6,FALSE
+"tissue_source_site","Washington University - CALGB",0,1,FALSE
+"tissue_source_site","Washington University - Cleveland Clinic",0,15,FALSE
+"tissue_source_site","Washington University - Emory",0,12,FALSE
+"tissue_source_site","Washington University - Mayo Clinic",0,18,FALSE
+"tissue_source_site","Washington University - NYU",0,25,FALSE
+"tissue_source_site","Washington University - Rush University",0,9,FALSE
+"tissue_source_site","Washington University - St. Louis",0,7,FALSE
