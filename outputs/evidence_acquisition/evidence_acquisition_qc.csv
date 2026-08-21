@@ -1,0 +1,9 @@
+check_name,status,observed,expected,detail
+framework_row_count,PASS,16,16,Eleven missing-evidence and five uncertainty categories.
+gap_category_coverage,PASS,16,16,Every Task #016 gap/uncertainty category is represented once.
+unique_gap_category_rows,PASS,16,16,No duplicated framework category.
+future_evidence_type_coverage,PASS,12,12,Every Task #016 future-evidence type is represented.
+nonblank_framework_cells,PASS,all nonblank,all nonblank,Explicit acquisition and provenance fields.
+affected_counts_bounded,PASS,all bounded,0..29606,Counts are copied from Task #016.
+forbidden_columns_absent,PASS,[],[],No numerical assessment or target-decision fields.
+network_access_not_required,PASS,NOT_USED,NOT_USED,Framework generation is local and descriptive.
