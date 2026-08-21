@@ -1,0 +1,78 @@
+Task #010 evidence-layer retrieval session
+started_at_utc=2026-08-21T01:33:32.773520+00:00
+finished_at_utc=2026-08-21T01:39:51.774684+00:00
+python_version=3.14.0
+python_implementation=CPython
+platform=macOS-26.6.1-arm64-arm-64bit-Mach-O
+tls_ca_file=/etc/ssl/cert.pem
+git_branch=main
+git_head=436436715af43a0dc69a6a51acf82b435f65cf6c
+frozen_task009_commit=436436715af43a0dc69a6a51acf82b435f65cf6c
+git_origin=git@github.com:SichengChen-web/luad-target-dossier.git
+input_path=outputs/identifier_normalization/identifier_mapping.csv
+input_sha256=ff50b9cc50006710e681bd0d0f21fa3790becc3cd20a476dbbb6ac5459c1594e
+u2_reference_path=outputs/candidate_registry/candidate_registry.csv
+u2_reference_sha256=8055a9d99d058d219399957e62f6a3cccc3dd2217bc028d1d11dd4dc667f90e2
+script_sha256=50136816005038bed3377923b1e31036ad3d2146daedc994548ccdbfbaec2a7a
+plan_sha256=6e72e4932f02d939498269387ff2e3904ff3ad409440a29f7f3bf7f87d99359c
+network_access=USED
+network_hosts=api.platform.opentargets.org|www.ebi.ac.uk
+packages_installed_or_updated=FALSE
+gene_symbols_used_as_query_keys=FALSE
+raw_api_responses_committed=FALSE
+project_score_generated=FALSE
+ranking_generated=FALSE
+therapeutic_recommendation_generated=FALSE
+
+GraphQL query SHA256:
+meta_query=a4504a418dec9d277c704734f7b5c811bb50323c92dc12015db2ff2ef71fb929
+target_query=f1a823dfeefcf4062ae48e6f3cfdba4f36bfc7f56459ee18151abcec6eb7b220
+association_query=0e915b76567dfee607bc05fe2d5cd624f83eed17608207d8dcf8b819919d487d
+
+Source provenance:
+source.chembl.database_version=ChEMBL_37
+source.chembl.page_count=38
+source.chembl.release_date=2026-05-01
+source.chembl.required_target_ids=7207
+source.chembl.required_target_ids_found=7207
+source.chembl.response_tracking.request_count=39
+source.chembl.response_tracking.response_bytes=3590038
+source.chembl.response_tracking.sha256_concatenated_responses=993d876de716a5a5dd63406a504090602d142812e6024ac9139be644c2a7848f
+source.chembl.response_tracking.source=ChEMBL data web service
+source.chembl.status_url=https://www.ebi.ac.uk/chembl/api/data/status.json
+source.chembl.target_count=18552
+source.chembl.target_url=https://www.ebi.ac.uk/chembl/api/data/target.json
+source.open_targets.direct_associations.association_count_all_platform_targets=8745
+source.open_targets.direct_associations.duplicate_rows_observed=0
+source.open_targets.direct_associations.enable_indirect=False
+source.open_targets.direct_associations.page_sizes_attempted=3000
+source.open_targets.direct_associations.total_page_count=3
+source.open_targets.direct_associations.traversal_audit_json=[{"duplicate_row_count":0,"page_count":3,"page_size":3000,"raw_row_count":8745,"union_unique_count":8745,"unique_row_count":8745}]
+source.open_targets.direct_associations.traversal_count=1
+source.open_targets.indirect_associations.association_count_all_platform_targets=8760
+source.open_targets.indirect_associations.duplicate_rows_observed=18
+source.open_targets.indirect_associations.enable_indirect=True
+source.open_targets.indirect_associations.page_sizes_attempted=3000|2999|2500
+source.open_targets.indirect_associations.total_page_count=10
+source.open_targets.indirect_associations.traversal_audit_json=[{"duplicate_row_count":2,"page_count":3,"page_size":3000,"raw_row_count":8760,"union_unique_count":8758,"unique_row_count":8758},{"duplicate_row_count":2,"page_count":3,"page_size":2999,"raw_row_count":8760,"union_unique_count":8759,"unique_row_count":8758},{"duplicate_row_count":14,"page_count":4,"page_size":2500,"raw_row_count":8760,"union_unique_count":8760,"unique_row_count":8746}]
+source.open_targets.indirect_associations.traversal_count=3
+source.open_targets.metadata.api_version=26.6.3
+source.open_targets.metadata.data_version=26.06
+source.open_targets.metadata.luad_id=MONDO_0005061
+source.open_targets.metadata.luad_name=lung adenocarcinoma
+source.open_targets.metadata.name=Open Targets GraphQL & REST API Beta
+source.open_targets.metadata.product=platform
+source.open_targets.metadata.url=https://api.platform.opentargets.org/api/v4/graphql
+source.open_targets.response_tracking.request_count=72
+source.open_targets.response_tracking.response_bytes=14585784
+source.open_targets.response_tracking.sha256_concatenated_responses=6c4973944d50a9867548fadf0899f5fe6bb28273c1113365c0d927496186c65c
+source.open_targets.response_tracking.source=Open Targets Platform GraphQL API
+source.open_targets.target_retrieval.returned_target_ids=28893
+source.open_targets.target_retrieval.submitted_target_ids=28893
+source.open_targets.target_retrieval.target_batch_count=58
+source.open_targets.target_retrieval.target_batch_size=500
+
+Output SHA256:
+13b6db140c920a60ae3f827ac9df4c4e08916472aa8daafb349acd3a60192405  outputs/evidence_layer/evidence_registry.csv
+65991a542518d1d432cb53797fe759e61fe5d0b5e4dda5afc81044221dc6d9f1  outputs/evidence_layer/evidence_qc.csv
+5dbf8bd8c5c5aeea516f88bfc693dd1e30642288686e33ba468b03bb940c2226  outputs/evidence_layer/evidence_summary.md
