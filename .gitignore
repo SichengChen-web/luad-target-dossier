@@ -35,3 +35,6 @@ dist/
 .DS_Store
 outputs/evidence_claim_architecture/evidence_record_registry.csv
 outputs/evidence_claim_architecture/evidence_record_registry.csv
+
+outputs/feature_extraction/feature_provenance_registry.csv
+

@@ -1,0 +1,97 @@
+{
+  "artifact_integrity": {
+    "additional_rows_from_many_to_one_lineage": 384878,
+    "deterministic_identity_basis": "CORE_OUTPUT_HASHES_MATCH_FROZEN_EXTRACTION_MANIFEST;NO_REGENERATION_PERFORMED",
+    "duplicate_feature_id_extra_rows": 384878,
+    "duplicate_feature_ids": 384878,
+    "duplicate_feature_ids_interpretation": "EXPECTED_REUSE_OF_FEATURE_VALUE_ID_ACROSS_DISTINCT_RECORD_LINKS;GOVERNANCE_KEY_CLARIFICATION_REQUIRED",
+    "duplicate_feature_record_extra_rows": 0,
+    "duplicate_feature_record_links": 0,
+    "feature_id_link_count_distribution": {
+      "1": 266454,
+      "2": 384878
+    },
+    "file_exists": true,
+    "manifest_hash_identity_failures": 0,
+    "schema_valid": true,
+    "total_rows": 1036210,
+    "unique_feature_ids": 651332
+  },
+  "audit_version": "TASK026B_PROVENANCE_AUDIT_V0.1",
+  "coverage": {
+    "dictionary_features": 22,
+    "entities": 29606,
+    "expected_feature_values": 651332,
+    "features_without_provenance": 0,
+    "missing_provenance_links": 0,
+    "unique_entities": 29606
+  },
+  "dependency_audit": {
+    "dependency_conflicts": 0,
+    "expected_dependency_level": "DEPENDENT",
+    "expected_relationship": "SHARED_DATASET",
+    "transcript_dependency_edges": 29606
+  },
+  "evidence_inflation_audit": {
+    "forbidden_aggregation_fields": [],
+    "independence_violations": 0,
+    "provenance_links_interpreted_as_independent_evidence": false
+  },
+  "foreign_key_audit": {
+    "broken_claim_links": 0,
+    "broken_feature_links": 0,
+    "broken_record_links": 0,
+    "broken_source_links": 0
+  },
+  "governance_conclusion": {
+    "acceptable_for_governance_review": true,
+    "release_without_clarification": false,
+    "status": "PASS_WITH_PROVENANCE_LINK_KEY_CLARIFICATION",
+    "unresolved_issues": [
+      "Freeze whether the provenance-link key is the composite (feature_id,evidence_record_id) or add a unique provenance_link_id; feature_id alone identifies a feature value and is intentionally reused for many-to-one lineage.",
+      "Validate non-observed missingness propagation with reviewed fixtures before a future extractor accepts NOT_FOUND, NOT_QUERIED, NOT_APPLICABLE, or UNKNOWN transcript records."
+    ]
+  },
+  "input_artifact_hashes": {
+    "outputs/evidence_claim_architecture/evidence_claim_registry.csv": "0d963a4c5c8f9586f81369e33df0a2b7e57bb37ac8ceab4ce54498baf2351a66",
+    "outputs/evidence_claim_architecture/evidence_dependency_graph.csv": "011839f10c48e197f9f1c0e2262565e562d3a2cf53dd0936f21ddcb4ed5c2256",
+    "outputs/evidence_claim_architecture/evidence_record_registry.csv": "76ec5056fb4e468176073073532204d231765d4f0cd70dbb6cfe4ad8bf752343",
+    "outputs/evidence_claim_architecture/source_entity_registry.csv": "1b1379066226b5f69b626fe4a97628f7b6da6e585515aa8609218eef65bf8056",
+    "outputs/feature_extraction/extraction_manifest.json": "7d62eaf07d38f64e35e395a3f33367b66f7803ab6710e1fccd507eb11840e944",
+    "outputs/feature_extraction/extraction_summary.md": "8b99394ff7bb959987332a96ddccb33b32a2c4259f1fdf11662d3af6242e2949",
+    "outputs/feature_extraction/feature_dictionary.csv": "d3ffd865251674eef14c5f79c8651363a0c1497ef2d5e652a2744fb31f326abd",
+    "outputs/feature_extraction/feature_provenance_registry.csv": "68ba8096563358b539360963da7d2856fcb0f888673da9989741b95549f3b246",
+    "outputs/feature_extraction/transcriptomic_features.csv": "4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844",
+    "outputs/integrated_registry/integrated_target_registry.csv": "0587fc6901267b18c8144644571f89ac2cc46053b57ea5def4093795fdbc4c26"
+  },
+  "missingness_audit": {
+    "allowed_states": [
+      "OBSERVED",
+      "NOT_FOUND",
+      "NOT_QUERIED",
+      "NOT_APPLICABLE",
+      "UNKNOWN"
+    ],
+    "feature_provenance_status_counts": {
+      "OBSERVED": 1036210
+    },
+    "missingness_violations": 0,
+    "non_observed_runtime_paths_empirically_tested": false,
+    "source_record_status_counts": {
+      "OBSERVED": 59212
+    }
+  },
+  "prohibited_actions": {
+    "biological_interpretation_generated": false,
+    "existing_task026_artifacts_modified": false,
+    "feature_regeneration_performed": false,
+    "profiles_generated": false,
+    "ranking_generated": false,
+    "scoring_generated": false,
+    "target_selection_generated": false,
+    "task025_rules_executed": false
+  },
+  "rule_audit": {
+    "invalid_rule_links": 0
+  }
+}
