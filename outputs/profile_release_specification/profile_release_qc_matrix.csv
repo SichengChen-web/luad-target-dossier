@@ -1,0 +1,30 @@
+qc_id,qc_stage,applies_to,validation_check,release_expectation,required_evidence_artifact,severity,failure_action,automatable
+QC_PRE_001,PREFLIGHT,RELEASE,"All declared input artifacts exist and match ID, size, SHA256, and version.",ZERO_MISMATCHES,input_manifest|artifact_manifest,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_PRE_002,PREFLIGHT,RELEASE,"Target manifest is released, unique by EnsemblID, explicitly ordered, and contains one universe version.",ALL_PASS,target_manifest|target_manifest_qc,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_PRE_003,PREFLIGHT,RELEASE,Executed generator and executable rule artifacts match their frozen hashes.,EXACT_HASH_MATCH,generator|rule_artifact,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_ID_001,IDENTITY,PROFILE,Every profile EnsemblID matches one INCLUDED target-manifest entity; no Symbol join occurred.,N_OF_N_MATCH,profile_data|target_manifest,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_ID_002,IDENTITY,PROFILE,profile_id recomputes exactly and is unique.,N_UNIQUE_VALID_IDS,profile_data|input_manifest|rules,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_ID_003,IDENTITY,PROFILE,Exactly 11 unique component rows exist per profile and no extra target is present.,N_TIMES_11_ROWS,profile_data|component_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_STR_001,STRUCTURE,COMPONENT,Required fields are present/nonblank; optional fields conform; prohibited fields and aliases are absent.,ZERO_SCHEMA_VIOLATIONS,profile_data|release_schema,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_STR_002,STRUCTURE,COMPONENT,"Canonical types, booleans, integers, timestamps, sentinels, and list ordering validate.",ZERO_SERIALIZATION_VIOLATIONS,profile_data|serialization_config,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_LIN_001,LINEAGE,COMPONENT,Every claim ID resolves to the component EnsemblID and allowed domain.,ALL_CLAIMS_RESOLVE,profile_data|claim_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_LIN_002,LINEAGE,COMPONENT,Every record resolves to a linked claim/source and retained source-native identifier.,ALL_RECORDS_RESOLVE,profile_data|record_registry|source_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_LIN_003,LINEAGE,COMPONENT,Record IDs are unique within components and reused rather than duplicated across components.,ZERO_UNSUPPORTED_DUPLICATES,profile_data|record_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_ART_001,PROVENANCE,COMPONENT,Every artifact ID has an explicit verified ID=SHA256 mapping and reconstructs linked evidence.,ALL_ARTIFACTS_RESOLVE,profile_data|artifact_manifest,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_SRC_001,PROVENANCE,COMPONENT,Every source ID has an explicit source version and all profile source sets reconcile to records.,ALL_SOURCES_VERSIONED,profile_data|source_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_DEP_001,DEPENDENCY,COMPONENT,Induced dependency edge IDs exactly match the frozen graph for component record sets.,EXACT_EDGE_SET_MATCH,profile_data|dependency_graph,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_DEP_002,DEPENDENCY,COMPONENT,"Each edge retains endpoints, relationship, level, and review status; UNKNOWN remains UNKNOWN.",ALL_EDGE_MAPPINGS_MATCH,profile_data|dependency_graph,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_DEP_003,DEPENDENCY,RELEASE,No code or output infers INDEPENDENT from an absent edge or counts dependent records as votes.,ZERO_INDEPENDENCE_INFERENCE,generator|rules|profile_data,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_MIS_001,MISSINGNESS,COMPONENT,Every record_id=missingness and record_id=uncertainty pair matches the frozen record registry.,ALL_RECORD_STATES_MATCH,profile_data|record_registry,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_MIS_002,MISSINGNESS,COMPONENT,All five component states are controlled and exactly one rule resolves per component.,ONE_VALID_STATE_PER_COMPONENT,profile_data|executable_rules,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_MIS_003,MISSINGNESS,COMPONENT,MISSING and NOT_QUERIED predicates reconcile to frozen query coverage and failure states.,ZERO_STATE_COLLAPSE,profile_data|query_manifest|executable_rules,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_CON_001,CONFLICT,COMPONENT,Conflict states retain every conflict record and exact rule; no record is chosen or averaged away.,ALL_CONFLICTS_RECONCILE,profile_data|record_registry|rules,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_RULE_001,RULES,RELEASE,All 55 Task #021 semantic predicates map one-to-one to executable reviewed rules and fixture tests.,55_OF_55_PASS,state_registry|executable_rules|rule_tests,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_RULE_002,RULES,RELEASE,Rule precedence and mutually exclusive final resolution pass for every component/state fixture.,ALL_RULE_TESTS_PASS,executable_rules|rule_tests,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_CNT_001,COUNTS,COMPONENT,Evidence and observed record counts reconcile exactly to IDs and record-level mappings.,ZERO_COUNT_MISMATCHES,profile_data,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_INT_001,INTERPRETATION_SAFETY,RELEASE,"No score, rank, priority, recommendation, selection, direction, overall state, confidence aggregate, or completeness percentage exists.",ZERO_PROHIBITED_FIELDS_OR_DERIVATIONS,schema|generator|profile_data|sidecars,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_INT_002,INTERPRETATION_SAFETY,COMPONENT,"State rationales and maturity text are deterministic, source-bounded, and contain no prohibited conclusions.",ZERO_UNSUPPORTED_CLAIMS,profile_data|templates|evidence_records,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_DET_001,DETERMINISM,RELEASE,Independent clean regeneration yields byte-identical profile data and sidecars.,ALL_OUTPUT_SHA256_MATCH,recovery_run|release_bundle,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_DET_002,DETERMINISM,RELEASE,Input hashes remain unchanged before/after and output hashes match the release manifest.,ZERO_HASH_DRIFT,preflight|postflight|release_manifest,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_BND_001,BUNDLE,RELEASE,Every required release artifact is present/resolvable and the bundle inventory contains no undeclared file.,EXACT_INVENTORY_MATCH,release_manifest|artifact_manifest,BLOCKING,WITHHOLD_RELEASE,TRUE
+QC_REL_001,RELEASE_DECISION,RELEASE,All blocking QC results pass and are frozen before release_status becomes RELEASED.,ZERO_BLOCKING_FAILURES,release_qc_artifact,BLOCKING,WITHHOLD_RELEASE,TRUE
