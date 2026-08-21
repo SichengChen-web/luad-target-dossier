@@ -1,0 +1,288 @@
+{
+  "determinism_contract": {
+    "llm_runtime_decisions": "PROHIBITED",
+    "network_access": "NOT_USED",
+    "package_installation": "NOT_USED",
+    "randomness": "NOT_USED",
+    "two_pass_byte_identity": "PASS",
+    "wall_clock_values_in_outputs": "NOT_USED"
+  },
+  "extraction_rules": [
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_RECORD_AVAILABLE_V0_1",
+      "feature_name": "transcriptomic_record_available",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_PRIMARY_RESULT_AVAILABLE_V0_1",
+      "feature_name": "primary_DE_result_available",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_SENSITIVITY_RESULTS_AVAILABLE_V0_1",
+      "feature_name": "sensitivity_results_available",
+      "source_record_roles": [
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_PRIMARY_EFFECT_DIRECTION_V0_1",
+      "feature_name": "effect_direction_observed",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_FDR_THRESHOLD_VERSION_V0_1",
+      "feature_name": "fdr_threshold_version",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_FDR_PASS_STATUS_V0_1",
+      "feature_name": "fdr_pass_status",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_EFFECT_THRESHOLD_VERSION_V0_1",
+      "feature_name": "effect_threshold_version",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_EFFECT_THRESHOLD_STATUS_V0_1",
+      "feature_name": "effect_threshold_status",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_SENSITIVITY_MODEL_COUNT_V0_1",
+      "feature_name": "sensitivity_model_count_available",
+      "source_record_roles": [
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_SENSITIVITY_DIRECTION_PATTERN_V0_1",
+      "feature_name": "sensitivity_direction_pattern",
+      "source_record_roles": [
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_SENSITIVITY_CONSISTENCY_V0_1",
+      "feature_name": "sensitivity_consistency_category",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_IDENTITY_CONFLICT_COUNT_V0_1",
+      "feature_name": "identity_conflict_count",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_PROVENANCE_COMPLETE_V0_1",
+      "feature_name": "provenance_complete",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_CONFLICT_COUNT_V0_1",
+      "feature_name": "transcript_conflict_count",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_QUALIFYING_RECORD_COUNT_V0_1",
+      "feature_name": "transcript_qualifying_record_count",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_CONTEXT_COMPLETE_V0_1",
+      "feature_name": "transcript_observed_context_complete",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_ASSESSMENT_ATTEMPTED_V0_1",
+      "feature_name": "transcript_assessment_attempted",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_SCOPE_COMPLETE_V0_1",
+      "feature_name": "transcript_query_scope_complete",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_RECORD_COUNT_V0_1",
+      "feature_name": "transcript_record_count",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_PARTIAL_CONDITION_COUNT_V0_1",
+      "feature_name": "transcript_partial_condition_count",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_UNKNOWN_COVERAGE_V0_1",
+      "feature_name": "transcript_unknown_coverage",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    },
+    {
+      "extraction_rule_id": "TXR_TRANSCRIPT_RETRIEVAL_FAILURE_V0_1",
+      "feature_name": "transcript_retrieval_failure",
+      "source_record_roles": [
+        "TRANSCRIPT_PRIMARY",
+        "TRANSCRIPT_ROBUSTNESS"
+      ]
+    }
+  ],
+  "extractor_version": "TRANSCRIPTOMIC_FEATURE_EXTRACTOR_V0.1",
+  "frozen_task025_base_commit": "ae47a17348d6ade75f4cca9794480c9bc5cf6eaa",
+  "immutable_key": "EnsemblID",
+  "input_artifacts": [
+    {
+      "artifact_id": "ART_TASK012_INTEGRATED_TARGET_REGISTRY",
+      "file_size_bytes": 60222492,
+      "relative_path": "outputs/integrated_registry/integrated_target_registry.csv",
+      "sha256": "0587fc6901267b18c8144644571f89ac2cc46053b57ea5def4093795fdbc4c26"
+    },
+    {
+      "artifact_id": "ART_TASK013_DOMAIN_REGISTRY",
+      "file_size_bytes": 4995,
+      "relative_path": "outputs/evidence_ontology/evidence_domain_registry.csv",
+      "sha256": "ee62ce66f2ca4726c9365da347198251b9bd77d2dead87b8409221505f2d03b8"
+    },
+    {
+      "artifact_id": "ART_TASK013_INDEPENDENCE_MAP",
+      "file_size_bytes": 8820,
+      "relative_path": "outputs/evidence_ontology/evidence_independence_map.csv",
+      "sha256": "d99bbaa8fe5e6229774ac2bf73d84de8fbd367e585d692eb1273ecc7b5c53945"
+    },
+    {
+      "artifact_id": "ART_TASK013_SOURCE_LINEAGE",
+      "file_size_bytes": 2691,
+      "relative_path": "outputs/evidence_ontology/evidence_source_lineage.csv",
+      "sha256": "e9496e8bbf953fdffdbaed7e09936a8493230fc74939597537f8960fabf19f2c"
+    },
+    {
+      "artifact_id": "ART_TASK014_CLAIM_REGISTRY",
+      "file_size_bytes": 37095973,
+      "relative_path": "outputs/evidence_claim_architecture/evidence_claim_registry.csv",
+      "sha256": "0d963a4c5c8f9586f81369e33df0a2b7e57bb37ac8ceab4ce54498baf2351a66"
+    },
+    {
+      "artifact_id": "ART_TASK014_DEPENDENCY_GRAPH",
+      "file_size_bytes": 19130773,
+      "relative_path": "outputs/evidence_claim_architecture/evidence_dependency_graph.csv",
+      "sha256": "011839f10c48e197f9f1c0e2262565e562d3a2cf53dd0936f21ddcb4ed5c2256"
+    },
+    {
+      "artifact_id": "ART_TASK014_RECORD_REGISTRY",
+      "file_size_bytes": 139836748,
+      "relative_path": "outputs/evidence_claim_architecture/evidence_record_registry.csv",
+      "sha256": "76ec5056fb4e468176073073532204d231765d4f0cd70dbb6cfe4ad8bf752343"
+    },
+    {
+      "artifact_id": "ART_TASK014_SOURCE_REGISTRY",
+      "file_size_bytes": 2897,
+      "relative_path": "outputs/evidence_claim_architecture/source_entity_registry.csv",
+      "sha256": "1b1379066226b5f69b626fe4a97628f7b6da6e585515aa8609218eef65bf8056"
+    },
+    {
+      "artifact_id": "ART_TASK021_BUILDER_CONTRACT",
+      "file_size_bytes": 7937,
+      "relative_path": "outputs/profile_materialization/profile_builder_contract.md",
+      "sha256": "3b9ae40e670349be387e351426bf5418e7ede8de2ff780e19e63050d2e7bf29b"
+    },
+    {
+      "artifact_id": "ART_TASK021_MATERIALIZATION_SCHEMA",
+      "file_size_bytes": 9685,
+      "relative_path": "outputs/profile_materialization/materialization_schema.csv",
+      "sha256": "9324374e39fb844c224961db319e4ddf9979512026062ededb5e59e505318701"
+    },
+    {
+      "artifact_id": "ART_TASK021_STATE_RESOLUTION_REGISTRY",
+      "file_size_bytes": 53750,
+      "relative_path": "outputs/profile_materialization/component_state_resolution_registry.csv",
+      "sha256": "302fe6fef0eaf76daedbd51cbd9c430cb38bdbe231991f6e2551de0da59a94be"
+    },
+    {
+      "artifact_id": "ART_TASK025_STATE_RULE_REGISTRY",
+      "file_size_bytes": 188697,
+      "relative_path": "outputs/state_rule_registry/state_rule_registry.csv",
+      "sha256": "858974ae9d13e9505393dfce50e746b7fd1c15adec56d66771cff238da59d13d"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file_size_bytes": 7991162,
+      "relative_path": "outputs/feature_extraction/transcriptomic_features.csv",
+      "row_count": 29606,
+      "sha256": "4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+    },
+    {
+      "file_size_bytes": 13363,
+      "relative_path": "outputs/feature_extraction/feature_dictionary.csv",
+      "row_count": 22,
+      "sha256": "d3ffd865251674eef14c5f79c8651363a0c1497ef2d5e652a2744fb31f326abd"
+    },
+    {
+      "file_size_bytes": 318603824,
+      "relative_path": "outputs/feature_extraction/feature_provenance_registry.csv",
+      "row_count": 1036210,
+      "sha256": "68ba8096563358b539360963da7d2856fcb0f888673da9989741b95549f3b246"
+    }
+  ],
+  "prohibited_outputs": {
+    "biological_conclusions": false,
+    "candidate_selection": false,
+    "profiles": false,
+    "rankings": false,
+    "recommendations": false,
+    "scores": false,
+    "therapeutic_direction": false
+  },
+  "schema_version": "FEATURE_EXTRACTION_MANIFEST_V0.1",
+  "scope": "TRANSCRIPTOMIC_FEATURE_EXTRACTION_ONLY",
+  "task": "026"
+}
