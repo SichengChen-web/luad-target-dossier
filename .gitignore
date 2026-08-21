@@ -33,3 +33,5 @@ dist/
 
 # Operating-system files
 .DS_Store
+outputs/evidence_claim_architecture/evidence_record_registry.csv
+outputs/evidence_claim_architecture/evidence_record_registry.csv
