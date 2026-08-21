@@ -1,0 +1,54 @@
+Task #009 identifier-normalization session
+started_at_utc=2026-08-21T00:43:59.909460+00:00
+finished_at_utc=2026-08-21T00:45:40.836364+00:00
+python_version=3.14.0
+python_implementation=CPython
+platform=macOS-26.6.1-arm64-arm-64bit-Mach-O
+tls_ca_file=/etc/ssl/cert.pem
+git_branch=main
+git_head=c420cbe07715a15000dbf2d4c7d9f2dc3fb7c662
+frozen_task008_commit=c420cbe07715a15000dbf2d4c7d9f2dc3fb7c662
+git_origin=git@github.com:SichengChen-web/luad-target-dossier.git
+input_path=outputs/candidate_registry/candidate_registry.csv
+input_sha256=8055a9d99d058d219399957e62f6a3cccc3dd2217bc028d1d11dd4dc667f90e2
+network_access=USED
+network_purpose=official identifier mapping only
+packages_installed_or_updated=FALSE
+gene_symbols_used_as_mapping_keys=FALSE
+raw_responses_committed=FALSE
+
+Source provenance:
+source.chembl.accessions_with_targets=6309
+source.chembl.bytes=788315
+source.chembl.component_url=https://www.ebi.ac.uk/chembl/api/data/target_component.json
+source.chembl.database_version=ChEMBL_37
+source.chembl.human_component_count=6487
+source.chembl.page_count=7
+source.chembl.release_date=2026-05-01
+source.chembl.request_count=8
+source.chembl.sha256_concatenated_responses=2ae2d6f5cf1d06d8341801f2b0fb0864f59f75d57a35f0cc9a9763814da7073c
+source.chembl.status_url=https://www.ebi.ac.uk/chembl/api/data/status.json
+source.hgnc.bytes=16944473
+source.hgnc.ensembl_keys=42353
+source.hgnc.etag="586803c9d7ede49c9975f3663d09b4c5"
+source.hgnc.last_modified=Tue, 18 Aug 2026 12:31:23 GMT
+source.hgnc.request_count=1
+source.hgnc.sha256=4ad72ffc6bca0d0858bb7234cfb3c7b1fb10e8e693e2f8d5c0842b4cfb03e748
+source.hgnc.source_rows=45040
+source.hgnc.url=https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt
+source.open_targets.api_version=26.6.3
+source.open_targets.batch_size=500
+source.open_targets.bytes=723843
+source.open_targets.data_version=26.06
+source.open_targets.name=Open Targets GraphQL & REST API Beta
+source.open_targets.product=platform
+source.open_targets.request_count=61
+source.open_targets.returned_ids=28893
+source.open_targets.sha256_concatenated_responses=9169171221e2b74f7368f6d5c50b5f0744f11a80a7a3c58c152fa85c68ffc30b
+source.open_targets.submitted_ids=29606
+source.open_targets.url=https://api.platform.opentargets.org/api/v4/graphql
+
+Output SHA256:
+ff50b9cc50006710e681bd0d0f21fa3790becc3cd20a476dbbb6ac5459c1594e  outputs/identifier_normalization/identifier_mapping.csv
+b64917f9bbe0cf3d752b3056594c2d5f8dc4940ea1c0b4e938498d800ce2fcd0  outputs/identifier_normalization/mapping_qc.csv
+b8948a8064c2433c9169b08acd779418cb4bf668aa57a2a5661695d150dc2298  outputs/identifier_normalization/mapping_summary.md
