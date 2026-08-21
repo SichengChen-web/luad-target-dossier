@@ -1,0 +1,25 @@
+evidence_domain,decision_context,support_level,interpretation_note
+DOM_TRANSCRIPTOMIC_DISCOVERY,Biological Discovery,REQUIRED,Required project-entry evidence for a reproducible LUAD tumour-associated expression alteration; it remains associative.
+DOM_DISEASE_ASSOCIATION,Biological Discovery,REQUIRED,Required external disease-context evidence; source-native association does not establish causality.
+DOM_GENETIC_EVIDENCE,Biological Discovery,RELEVANT,"Relevant to causal plausibility and mechanism, but absence does not preclude initial biological follow-up."
+DOM_FUNCTIONAL_DEPENDENCY,Biological Discovery,RELEVANT,Relevant because controlled perturbation can test disease-model function; model context limits generalization.
+DOM_PHARMACOLOGY,Biological Discovery,OPTIONAL,Optional experimental-tool context; target annotation or compound evidence does not determine biological importance.
+DOM_TRACTABILITY,Biological Discovery,OPTIONAL,Optional modality context; feasibility does not establish that the biology warrants investigation.
+DOM_CLINICAL_DEVELOPMENT,Biological Discovery,NOT_APPLICABLE,Not applicable to the direct biological-discovery question; maturity is retained for other contexts.
+DOM_SAFETY,Biological Discovery,NOT_APPLICABLE,Not applicable as support for biological discovery; risk evidence remains essential in development contexts.
+DOM_TRANSCRIPTOMIC_DISCOVERY,Therapeutic Development,RELEVANT,"Relevant disease-context evidence, but differential expression does not demonstrate a modlatable dependency."
+DOM_DISEASE_ASSOCIATION,Therapeutic Development,RELEVANT,Relevant to disease rationale; association alone does not establish feasibility or efficacy.
+DOM_GENETIC_EVIDENCE,Therapeutic Development,RELEVANT,Relevant to causal plausibility and target validity; it does not establish modality feasibility.
+DOM_FUNCTIONAL_DEPENDENCY,Therapeutic Development,RELEVANT,Relevant to whether perturbation changes disease-model function; it does not establish safe human modulation.
+DOM_PHARMACOLOGY,Therapeutic Development,REQUIRED,"Required to characterize actual target annotations, compound interaction, potency, selectivity, and mechanism at appropriate resolution."
+DOM_TRACTABILITY,Therapeutic Development,REQUIRED,Required to establish source-grounded feasibility for at least one explicitly defined therapeutic modality.
+DOM_CLINICAL_DEVELOPMENT,Therapeutic Development,OPTIONAL,Optional precedent for feasibility; absence of trials does not prove that development is infeasible.
+DOM_SAFETY,Therapeutic Development,REQUIRED,Required to characterize known liabilities and missing risk evidence; no returned record is not evidence of safety.
+DOM_TRANSCRIPTOMIC_DISCOVERY,Translational Context,RELEVANT,"Relevant to patient-tumour molecular context, but bulk tumour association does not establish clinical utility."
+DOM_DISEASE_ASSOCIATION,Translational Context,REQUIRED,Required to establish traceable LUAD relevance for the translational hypothesis.
+DOM_GENETIC_EVIDENCE,Translational Context,RELEVANT,"Relevant to patient subgroup, causal, or biomarker hypotheses; it does not establish treatment benefit."
+DOM_FUNCTIONAL_DEPENDENCY,Translational Context,RELEVANT,Relevant to mechanism and context of response; preclinical models do not establish patient efficacy.
+DOM_PHARMACOLOGY,Translational Context,REQUIRED,Required to link an intervention or modality to the target with interpretable mechanism and exposure context.
+DOM_TRACTABILITY,Translational Context,RELEVANT,Relevant to whether a clinically usable modality is plausible; source assessments are not clinical validation.
+DOM_CLINICAL_DEVELOPMENT,Translational Context,REQUIRED,Required at trial/intervention/disease resolution to support a claim of human investigation or development maturity.
+DOM_SAFETY,Translational Context,REQUIRED,Required for translational risk context; liability records do not alone determine a benefit-risk balance.
