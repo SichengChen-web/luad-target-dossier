@@ -1,0 +1,15 @@
+dimension,category,count
+candidate_layer,U0_tested,29606
+candidate_layer,U1_DE,21232
+candidate_layer,U2_effect_supported_DE,14064
+effect_band,A,2542
+effect_band,B,4814
+effect_band,C,7005
+effect_band,D,15245
+biotype_track,canonical_protein_target,17656
+biotype_track,noncanonical_target_modality,11950
+retrieval_queue,QUEUE_A_CANONICAL,8188
+retrieval_queue,QUEUE_B_MODEL_SENSITIVE,133
+retrieval_queue,QUEUE_C_NONCANONICAL,5743
+retrieval_queue,DE_SMALL_EFFECT,7168
+retrieval_queue,NOT_PRIMARY_DE,8374
