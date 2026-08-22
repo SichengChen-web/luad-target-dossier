@@ -45,3 +45,13 @@ outputs/**/feature_provenance_registry.csv
 outputs/**/component_records.jsonl
 
 outputs/**/provenance*.csv
+
+# Large immutable profile payload artifacts
+outputs/**/profile_records.jsonl
+
+# Large immutable profile payload artifacts
+outputs/**/profile_records.jsonl
+outputs/**/component_records.jsonl
+outputs/**/feature_provenance_registry.csv
+outputs/**/provenance*.csv
+
