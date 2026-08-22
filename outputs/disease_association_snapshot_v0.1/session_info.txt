@@ -1,0 +1,26 @@
+Task: #032B-2C Disease Association Snapshot Retrieval
+Script version: TASK032B2C_RETRIEVER_V0.1
+Script SHA256: 436c1135c5ecb133e461ca14dc07ebe6414ed87c220d7992f6e09cc8117e78bc
+Run completed (provenance only; excluded from snapshot identity): 2026-08-22T06:10:25.902100+00:00
+Command: analysis/32B2C_retrieve_disease_association_snapshot.py --file-workers=2 --range-workers=8
+Python: 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]
+Python executable: /opt/anaconda3/bin/python
+pyarrow: 16.1.0
+Platform: macOS-26.6.2-arm64-arm-64bit
+Source: SRC_OPEN_TARGETS_PLATFORM
+Source version: 26.06
+Access mode: OFFICIAL_RELEASE_PINNED_PARQUET_DATA_DOWNLOADS
+Network hosts contacted: ftp.ebi.ac.uk, open-targets-public-data-releases.s3.amazonaws.com, platform-docs.opentargets.org
+Live API used: FALSE
+Package installation: NONE
+Source snapshot version: DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea
+Snapshot manifest SHA256: 1bd2df46ad11528f3bbf4da8eb7c68a581277b92461586b942f660f9be00ae75
+Release manifest SHA256: b38a53665b7e17d65ce2f830063812094cd18a6c1a3861b3892b056ce259cf47
+File inventory SHA256: e425a6d9223686e27b4dbd69a83eb50d2e7352eb9b6eba14a11b8b471b5ed8e9
+Raw record manifest SHA256: ef94b3602f1b404df6c0090e45c533e22c4554fab0080a2ae5d7bfaca18ab0f4
+Coverage ledger SHA256: b0b7903c33a65f991150804722b832c0168f1156a703411e9d7a3c23c5e8202e
+QC report SHA256: 078234cc85b02563737fdbdbc1f4078bff9bba7057db88a54e662b10c1d5e4b3
+Normalized features generated: FALSE
+Evidence component generated: FALSE
+Profiles generated: FALSE
+Scoring/ranking/interpretation performed: FALSE

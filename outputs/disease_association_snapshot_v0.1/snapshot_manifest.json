@@ -1,0 +1,100 @@
+{
+  "authorization_status_at_retrieval": "APPROVED_FOR_SNAPSHOT_RETRIEVAL",
+  "completeness_status": "COMPLETE",
+  "determinism": {
+    "manifest_identity_sha256": "84949b70be605fea2e6442b4ebd167523b42e490d008e6304f0b428664dd066f",
+    "randomness": "PROHIBITED_NOT_USED",
+    "runtime_ai": "PROHIBITED_NOT_USED",
+    "wall_clock_in_identity": "PROHIBITED_NOT_USED"
+  },
+  "identity_payload": {
+    "access_mode": "OFFICIAL_RELEASE_PINNED_PARQUET_DATA_DOWNLOADS",
+    "authorization_id": "AUTH_DA_OT_26_06_SNAPSHOT_V0_1",
+    "component_id": "COMP_DISEASE_ASSOCIATION",
+    "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+    "coverage_ledger_sha256": "b0b7903c33a65f991150804722b832c0168f1156a703411e9d7a3c23c5e8202e",
+    "disease_context_id": "MONDO_0005061",
+    "disease_mapping_rule_version": "DA_LUAD_CONTEXT_MAPPING_V0.1",
+    "file_inventory_sha256": "e425a6d9223686e27b4dbd69a83eb50d2e7352eb9b6eba14a11b8b471b5ed8e9",
+    "frozen_input_sha256": {
+      "docs/governance/component_dependency_model_v0.1.md": "5b77654a7ea543b2b2a184bba4a280cc4395c575065be6a3674d93a0955cdb06",
+      "docs/governance/component_registration_policy_v0.1.md": "c1736e11695e6bb194665a0cf96115bb526075ca5aa9f9870e8e572f64302668",
+      "docs/governance/component_validation_requirements_v0.1.md": "cc71c239972bc8f0b20fff63e4478624e0bcb56bc0febfc52855818ee5171c95",
+      "docs/governance/disease_association_component_feature_contract_v0.1.md": "c4ead626b6e6f1616a0dc8e396d7a52495bb21523acd96567a98c50f3c6d9139",
+      "docs/governance/disease_association_component_registration_v0.1.md": "3f625be0234d234be9df555002cb48a1bf9afffc9b8b2e1ce9b51220df01c50a",
+      "docs/governance/disease_association_component_scope_v0.1.md": "f153a296ba14fee53d142e836a0b07efddaf1793965cea04ce9ab46024a9faee",
+      "docs/governance/disease_association_component_validation_plan_v0.1.md": "d96ad308cf2e795be2fcd8b3950491371709cc0a075386bcd8cdc1b9b1da4508",
+      "docs/governance/disease_association_materialization_authorization_v0.1.md": "f9c99bb420705e70fb1295ea6a3e400f285e5229a30cd4ea19ce1e93816ed8a5",
+      "docs/governance/disease_association_query_scope_policy_v0.1.md": "b285d986a58e16a30790285bf3a8621df2382c6d27e58f19613e0b58143dd1c6",
+      "docs/governance/disease_association_snapshot_policy_v0.1.md": "f4d2643c34efea119702414bad27098dc59772a41b1a1e65b9caa816130e9f96",
+      "docs/governance/disease_association_source_contract_v0.1.md": "48abb3e333acf764f1a4235442697fe8f401951451dfebdd33ca2c1f3d3a7914",
+      "docs/governance/disease_association_source_selection_record_v0.1.md": "45cb84646742945552d5741b85bdbec5e709584d1aaea68555720764146f8de8",
+      "docs/governance/disease_context_definition_policy_v0.1.md": "20338c37a8c38f5bfe69402a5c507deba065d8d690bbd8b3364fa623c2e25e5a",
+      "docs/governance/disease_context_registration_v0.1.md": "6df7b8c9cd0452d377a58b7d7819aa35a23ec620728000cc97b7fc3aad3f2460",
+      "docs/governance/evidence_component_interface_specification_v0.1.md": "b31254b347cbf440e3aade02857fb8149c54ea9a9a2b987197c4b724fefa20e8",
+      "outputs/profile_release_candidate_v0.1/universe_manifest.csv": "e4b304eb5fde7690a1525b404f5d1a011837fd88f774b4dbb2838f2c81b9c1ab"
+    },
+    "license_artifact_sha256": "fe91806b60bc27fdc4e5cdf71e07cd71192133cb0aadcb7793cc2cb07c5ab300",
+    "mapping_rule_version": "DA_OT_ENSEMBL_BASE_MAPPING_V0.1",
+    "query_scope_version": "DA_QUERY_SCOPE_V0.1",
+    "raw_record_manifest_sha256": "ef94b3602f1b404df6c0090e45c533e22c4554fab0080a2ae5d7bfaca18ab0f4",
+    "release_manifest_sha256": "b38a53665b7e17d65ce2f830063812094cd18a6c1a3861b3892b056ce259cf47",
+    "retrieval_implementation_sha256": "436c1135c5ecb133e461ca14dc07ebe6414ed87c220d7992f6e09cc8117e78bc",
+    "retrieval_implementation_version": "TASK032B2C_RETRIEVER_V0.1",
+    "snapshot_schema_version": "DISEASE_ASSOCIATION_RAW_SNAPSHOT_SCHEMA_V0.1",
+    "source_id": "SRC_OPEN_TARGETS_PLATFORM",
+    "source_version": "26.06",
+    "universe_id": "UNIV_TASK030_ENSEMBL_29606_V0_1",
+    "universe_sha256": "e4b304eb5fde7690a1525b404f5d1a011837fd88f774b4dbb2838f2c81b9c1ab"
+  },
+  "output_artifacts": {
+    "entity_coverage_ledger": {
+      "path": "entity_coverage_ledger.csv",
+      "sha256": "b0b7903c33a65f991150804722b832c0168f1156a703411e9d7a3c23c5e8202e"
+    },
+    "file_inventory": {
+      "path": "file_inventory.csv",
+      "sha256": "e425a6d9223686e27b4dbd69a83eb50d2e7352eb9b6eba14a11b8b471b5ed8e9"
+    },
+    "raw_record_manifest": {
+      "path": "raw_record_manifest.csv",
+      "sha256": "ef94b3602f1b404df6c0090e45c533e22c4554fab0080a2ae5d7bfaca18ab0f4"
+    },
+    "release_manifest": {
+      "path": "release_manifest.json",
+      "sha256": "b38a53665b7e17d65ce2f830063812094cd18a6c1a3861b3892b056ce259cf47"
+    }
+  },
+  "retrieval_provenance": {
+    "batching_rule": "ONE_OFFICIAL_PARQUET_PART_PER_RETRIEVAL_UNIT",
+    "bulk_artifact_identity": "SRC_OPEN_TARGETS_PLATFORM_26.06_OFFICIAL_RELEASE",
+    "canonical_selection_rule": "retain source-native rows where diseaseId == MONDO_0005061 and targetId is in the version-stripped Task030 EnsemblID universe; retain the exact disease entity row and exact target entity rows",
+    "failed_source_parts": 0,
+    "filters": {
+      "disease": "id == MONDO_0005061",
+      "evidence": "diseaseId == MONDO_0005061 AND targetId IN UNIV_TASK030_ENSEMBL_29606_V0_1",
+      "target": "id IN UNIV_TASK030_ENSEMBL_29606_V0_1"
+    },
+    "http_status_summary": {
+      "control_and_inventory_requests": "200_OK",
+      "source_byte_range_requests": "206_PARTIAL_CONTENT"
+    },
+    "network_hosts_contacted": [
+      "open-targets-public-data-releases.s3.amazonaws.com",
+      "platform-docs.opentargets.org"
+    ],
+    "omitted_authorized_source_parts": 0,
+    "ordering_rule": "source dataset, source file path, source row group, source row index",
+    "pagination": "NOT_APPLICABLE_BULK_RELEASE_ARTIFACTS",
+    "raw_packaging": "LOSSLESS_LOGICAL_PARQUET_REPACKAGING_PER_SOURCE_PART_WITH_ALL_SOURCE_NATIVE_FIELDS_AND_SOURCE_ORDER_PRESERVED",
+    "requested_fields": "ALL_SOURCE_NATIVE_FIELDS",
+    "retrieval_completed_at_utc": "2026-08-22T06:09:05.165197+00:00",
+    "retrieval_implementation_sha256": "436c1135c5ecb133e461ca14dc07ebe6414ed87c220d7992f6e09cc8117e78bc",
+    "retrieval_implementation_version": "TASK032B2C_RETRIEVER_V0.1",
+    "retrieval_started_at_utc": "2026-08-22T06:01:02.166826+00:00",
+    "retry_rule": "maximum four attempts per disjoint HTTPS byte range; every attempt and retry recorded in file_inventory.csv",
+    "unresolved_source_parts": 0
+  },
+  "snapshot_id": "SNAP_DA_OT_26_06_LUAD_EXACT_UNIV_TASK030_V0_1",
+  "source_snapshot_version": "DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea"
+}
