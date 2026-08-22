@@ -1,0 +1,17 @@
+check_id,category,status,observed,expected,notes
+VAL_UNIVERSE_COUNT,UNIVERSE,PASS,29606,29606,Complete Task #026 universe retained.
+VAL_UNIQUE_IDENTITY,IDENTITY,PASS,29606,29606,Unique immutable EnsemblID profiles.
+VAL_PROFILE_FEATURE_COUNT,FEATURE_FIDELITY,PASS,651332,651332,Every exact Task #026 feature represented.
+VAL_PROVENANCE_COUNT,PROVENANCE,PASS,1036210,1036210,Complete uncompressed lineage.
+VAL_IDENTITY_MISMATCH,IDENTITY,PASS,0,0,No profile/source identity mismatch.
+VAL_FEATURE_MISMATCH,FEATURE_FIDELITY,PASS,0,0,No source/profile value mismatch.
+VAL_PROVENANCE_MISMATCH,PROVENANCE,PASS,0,0,No embedded/tabular/source lineage mismatch.
+VAL_DEPENDENCY_CONFLICT,DEPENDENCY,PASS,0,0,Governed multi-record dependency identifiers preserved.
+VAL_STATE_MISMATCH,STATE_REPRODUCTION,PASS,0,0,Frozen Task #025 state outputs reproduced.
+VAL_PARTITION_COUNT,PARTITION,PASS,256,256,All deterministic prefix partitions populated.
+VAL_PARTITION_DETERMINISM,DETERMINISM,PASS,256,256,Every partition generated twice byte-identically.
+VAL_STATE_FIXTURES,BOUNDARY_FIXTURES,PASS,5,5,All five structural state boundaries pass.
+VAL_PARTITION_FIXTURES,BOUNDARY_FIXTURES,PASS,4,4,Frozen partition fixtures pass.
+VAL_AUDIT_SAMPLE,SAMPLING,PASS,297,297,Deterministic 1% audit sample manifest.
+VAL_FORBIDDEN_FIELDS,INTERPRETATION_BOUNDARY,PASS,0,0,No evaluative fields in profiles.
+VAL_STATE_COUNTS,STATE_REPRODUCTION,PASS,"{""CONFLICTING"":3435,""OBSERVED"":26171}",COUNTS_DERIVED_FROM_FROZEN_RULES,"Structural state counts are audit metadata, not evaluation."

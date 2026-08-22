@@ -1,0 +1,170 @@
+{
+  "canonical_order": "TASK026_TRANSCRIPTOMIC_FEATURE_ROW_ORDER",
+  "component_definition_versions": {
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+  },
+  "counts": {
+    "deterministic_audit_sample": 297,
+    "profile_features": 651332,
+    "profile_partitions": 256,
+    "profiles": 29606,
+    "provenance_partitions": 256,
+    "provenance_relationships": 1036210
+  },
+  "evidence_snapshot_version": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844",
+  "extractor_version": "TRANSCRIPTOMIC_FEATURE_EXTRACTOR_V0.1",
+  "generator_version": "FULL_PROFILE_MATERIALIZER_V0.1",
+  "governance_limitations": [
+    "No lifecycle promotion is assigned by materialization.",
+    "External immutable storage references remain pending.",
+    "Task #025 state rules retain awaiting independent scientific review status.",
+    "The deterministic audit sample awaits human traceability review."
+  ],
+  "human_governance_promotion_recorded": false,
+  "immutable_key": "EnsemblID",
+  "input_artifacts": [
+    {
+      "file_size_bytes": 188697,
+      "relative_path": "outputs/state_rule_registry/state_rule_registry.csv",
+      "sha256": "858974ae9d13e9505393dfce50e746b7fd1c15adec56d66771cff238da59d13d"
+    },
+    {
+      "file_size_bytes": 13363,
+      "relative_path": "outputs/feature_extraction/feature_dictionary.csv",
+      "sha256": "d3ffd865251674eef14c5f79c8651363a0c1497ef2d5e652a2744fb31f326abd"
+    },
+    {
+      "file_size_bytes": 7991162,
+      "relative_path": "outputs/feature_extraction/transcriptomic_features.csv",
+      "sha256": "4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+    },
+    {
+      "file_size_bytes": 318603824,
+      "relative_path": "outputs/feature_extraction/feature_provenance_registry.csv",
+      "sha256": "68ba8096563358b539360963da7d2856fcb0f888673da9989741b95549f3b246"
+    },
+    {
+      "file_size_bytes": 11175,
+      "relative_path": "docs/governance/task026_provenance_artifact_governance_v0.1.md",
+      "sha256": "8e5e2a4e5018751ae9c4482734bfe48ffb432418ecebc764a1c341e11684c6da"
+    },
+    {
+      "file_size_bytes": 5981,
+      "relative_path": "outputs/profile_generation/pilot_profile_manifest.json",
+      "sha256": "df3c40deeb497ca6a75c0f0b0195a828fb28103df1d6d4edb1c9747d93846941"
+    },
+    {
+      "file_size_bytes": 5666,
+      "relative_path": "outputs/profile_generation/profile_schema_v0.1.json",
+      "sha256": "c19eff421654bdc002dc3901adec694f8a3ccf76cb4901970d858f3c699ae750"
+    },
+    {
+      "file_size_bytes": 8440,
+      "relative_path": "docs/governance/profile_component_model_v0.1.md",
+      "sha256": "86ae5b8ce089f97770976b7b9f9b547a918e88c165cb7f983dd450178f8a7355"
+    },
+    {
+      "file_size_bytes": 8378,
+      "relative_path": "docs/governance/profile_lifecycle_specification_v0.1.md",
+      "sha256": "346d46ce22b46513038ed7a62d951f1d3197432246e758bee84e56425137ccca"
+    },
+    {
+      "file_size_bytes": 10114,
+      "relative_path": "docs/governance/target_evidence_profile_governance_v0.1.md",
+      "sha256": "1b8ab03bb758fd70d8a4bffb27ba1c7f97f83a52c20e75a0c18d9b0bd0941bbd"
+    },
+    {
+      "file_size_bytes": 9335,
+      "relative_path": "docs/governance/profile_release_policy_v0.1.md",
+      "sha256": "f164be0352cd012583560b6ff5ef9850e43c59b49f4b9c4e28e3fe9138c77912"
+    },
+    {
+      "file_size_bytes": 10876,
+      "relative_path": "docs/governance/profile_incremental_update_policy_v0.1.md",
+      "sha256": "cca517995604eb14c277e777995073d2d140b23b75555f057791d102058642d2"
+    },
+    {
+      "file_size_bytes": 12935,
+      "relative_path": "docs/governance/full_universe_profile_materialization_specification_v0.1.md",
+      "sha256": "0b46557c3a82e1129e9c0edf11ab65a3573d9af1b3dee7a177399e17c4ca524f"
+    },
+    {
+      "file_size_bytes": 8501,
+      "relative_path": "docs/governance/profile_artifact_partition_strategy_v0.1.md",
+      "sha256": "d563d6dab9173eb08722607667a2c7a925b04eee598910cef8b87a40deabe73a"
+    },
+    {
+      "file_size_bytes": 11007,
+      "relative_path": "docs/governance/profile_validation_strategy_v0.1.md",
+      "sha256": "a1052c97e9fbde696e6110a6fce3c3e392ca6d5bf55e103824c1c65cea395b86"
+    }
+  ],
+  "lifecycle_status": "UNASSIGNED_RELEASE_CANDIDATE_AWAITING_HUMAN_GOVERNANCE_ACTION",
+  "manifest_version": "FULL_PROFILE_RELEASE_CANDIDATE_MANIFEST_V0.1",
+  "metadata_artifacts": [
+    {
+      "file_size_bytes": 4436,
+      "relative_path": "outputs/profile_release_candidate_v0.1/profile_schema_v0.1.json",
+      "sha256": "cc67e72658ba827b90b3b9d8f61cc866f004d36915369138b816b6f1bedaa34c"
+    },
+    {
+      "file_size_bytes": 9179140,
+      "relative_path": "outputs/profile_release_candidate_v0.1/universe_manifest.csv",
+      "sha256": "e4b304eb5fde7690a1525b404f5d1a011837fd88f774b4dbb2838f2c81b9c1ab"
+    },
+    {
+      "file_size_bytes": 10541035,
+      "relative_path": "outputs/profile_release_candidate_v0.1/profile_index.csv",
+      "sha256": "5f6307c603f8d4d9416877512c28b0329c369d03aea7d24bf6cc64176193ee15"
+    },
+    {
+      "file_size_bytes": 239078,
+      "relative_path": "outputs/profile_release_candidate_v0.1/partition_manifest.csv",
+      "sha256": "7dac57596356f1fd38fdfeed4cd4c18b32ff755fc414e575afe8841bdf5219f8"
+    },
+    {
+      "file_size_bytes": 23271873,
+      "relative_path": "outputs/profile_release_candidate_v0.1/dependency_manifest.csv",
+      "sha256": "2990cb9d3162c8459fbe48e1c8be3fc14821f9ecd8fa9023b1b4da114f669ea9"
+    },
+    {
+      "file_size_bytes": 50006,
+      "relative_path": "outputs/profile_release_candidate_v0.1/deterministic_audit_sample.csv",
+      "sha256": "9ba7ecc01a2bbb4a8f81a237d92e8a3a48d3c3d6065ac675f9b0df41b65eef71"
+    },
+    {
+      "file_size_bytes": 1550,
+      "relative_path": "outputs/profile_release_candidate_v0.1/validation_results.csv",
+      "sha256": "4f4cc169130c79f89e694a774dbe2f2c6d580e0b77887d6e2ac5311bdb8bebd1"
+    },
+    {
+      "file_size_bytes": 2774,
+      "relative_path": "outputs/profile_release_candidate_v0.1/validation_report.md",
+      "sha256": "58c2611d414c9b1420fd8b584ed8c211401b82dd55137055bb0da6cdbf00193c"
+    }
+  ],
+  "partition_sets": {
+    "external_storage_status": "PENDING_EXTERNALIZATION",
+    "profile_partition_set_sha256": "235015ec2a2be41e9f1865932b2f93f5d162e9f9a44c1bde5d4a2335024f87c7",
+    "profile_partition_total_bytes": 563260546,
+    "provenance_partition_set_sha256": "79c030fe6fab5866a7262050cea87d4d790240e18ae2ab5268edc8c1bf2467e3",
+    "provenance_partition_total_bytes": 635738319
+  },
+  "partition_strategy_version": "ENSEMBL_SHA256_PREFIX_2_V0.1",
+  "profile_version": "FULL_UNIVERSE_TARGET_EVIDENCE_PROFILE_V0.1",
+  "prohibitions": [
+    "NO_SCORING",
+    "NO_RANKING",
+    "NO_PRIORITY",
+    "NO_TARGET_SELECTION",
+    "NO_RECOMMENDATIONS",
+    "NO_BIOLOGICAL_INTERPRETATION",
+    "NO_THERAPEUTIC_CONCLUSIONS",
+    "NO_LLM_RUNTIME_DECISIONS"
+  ],
+  "release_candidate_id": "PRC_5A13C5055A54AF794EDD0898",
+  "release_candidate_status": "VALIDATED_LOCAL_CANDIDATE",
+  "schema_version": "TARGET_EVIDENCE_PROFILE_FULL_SCHEMA_V0.1",
+  "state_rule_version": "STATE_RULE_REGISTRY_V0.1",
+  "validation_status": "PASS"
+}
