@@ -1,0 +1,234 @@
+{
+  "$defs": {
+    "component": {
+      "additionalProperties": false,
+      "properties": {
+        "component_id": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE"
+        },
+        "features": {
+          "items": {
+            "$ref": "#/$defs/feature"
+          },
+          "maxItems": 22,
+          "minItems": 22,
+          "type": "array"
+        },
+        "state": {
+          "enum": [
+            "CONFLICTING",
+            "OBSERVED",
+            "MISSING",
+            "PARTIAL",
+            "NOT_QUERIED"
+          ]
+        },
+        "state_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "state_rule_review_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "state_rule_version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "state",
+        "state_rule_id",
+        "state_rule_version",
+        "state_rule_review_status",
+        "features"
+      ],
+      "type": "object"
+    },
+    "feature": {
+      "additionalProperties": false,
+      "properties": {
+        "data_type": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "feature_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "provenance_links": {
+          "items": {
+            "$ref": "#/$defs/provenance_link"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "feature_name",
+        "value",
+        "data_type",
+        "missingness_status",
+        "provenance_links"
+      ],
+      "type": "object"
+    },
+    "profile": {
+      "additionalProperties": false,
+      "properties": {
+        "EnsemblID": {
+          "pattern": "^ENSG[0-9]+\\.[0-9]+$",
+          "type": "string"
+        },
+        "components": {
+          "items": {
+            "$ref": "#/$defs/component"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "evidence_snapshot_version": {
+          "const": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+        },
+        "profile_id": {
+          "pattern": "^PRF_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "profile_version": {
+          "const": "PILOT_TARGET_EVIDENCE_PROFILE_V0.1"
+        }
+      },
+      "required": [
+        "profile_id",
+        "EnsemblID",
+        "profile_version",
+        "evidence_snapshot_version",
+        "components"
+      ],
+      "type": "object"
+    },
+    "provenance_link": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "claim_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dependency_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "evidence_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extraction_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extractor_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "evidence_record_id",
+        "claim_id",
+        "source_id",
+        "artifact_id",
+        "dependency_id",
+        "extraction_rule_id",
+        "extractor_version"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:pilot-profile-schema:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Structural evidence observations and uncompressed lineage only.",
+  "properties": {
+    "profiles": {
+      "items": {
+        "$ref": "#/$defs/profile"
+      },
+      "maxItems": 10,
+      "minItems": 10,
+      "type": "array"
+    },
+    "release_metadata": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_snapshot_version": {
+          "const": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+        },
+        "generator_version": {
+          "const": "PILOT_PROFILE_MATERIALIZER_V0.1"
+        },
+        "immutable_key": {
+          "const": "EnsemblID"
+        },
+        "profile_count": {
+          "const": 10
+        },
+        "profile_version": {
+          "const": "PILOT_TARGET_EVIDENCE_PROFILE_V0.1"
+        },
+        "release_status": {
+          "const": "PILOT_VALIDATION_ONLY"
+        },
+        "schema_version": {
+          "const": "TARGET_EVIDENCE_PROFILE_PILOT_SCHEMA_V0.1"
+        }
+      },
+      "required": [
+        "schema_version",
+        "profile_version",
+        "evidence_snapshot_version",
+        "generator_version",
+        "immutable_key",
+        "profile_count",
+        "release_status"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "release_metadata",
+    "profiles"
+  ],
+  "title": "Pilot target evidence profile schema v0.1",
+  "type": "object"
+}

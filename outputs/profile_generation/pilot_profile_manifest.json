@@ -1,0 +1,153 @@
+{
+  "evidence_snapshot_version": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844",
+  "frozen_task026a_base_commit": "ec815fda81a4f447bd998ad12497d4e2e0f9f9bd",
+  "generator_version": "PILOT_PROFILE_MATERIALIZER_V0.1",
+  "immutable_key": "EnsemblID",
+  "input_artifacts": [
+    {
+      "file_size_bytes": 188697,
+      "relative_path": "outputs/state_rule_registry/state_rule_registry.csv",
+      "sha256": "858974ae9d13e9505393dfce50e746b7fd1c15adec56d66771cff238da59d13d"
+    },
+    {
+      "file_size_bytes": 13363,
+      "relative_path": "outputs/feature_extraction/feature_dictionary.csv",
+      "sha256": "d3ffd865251674eef14c5f79c8651363a0c1497ef2d5e652a2744fb31f326abd"
+    },
+    {
+      "file_size_bytes": 7991162,
+      "relative_path": "outputs/feature_extraction/transcriptomic_features.csv",
+      "sha256": "4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+    },
+    {
+      "file_size_bytes": 11175,
+      "relative_path": "docs/governance/task026_provenance_artifact_governance_v0.1.md",
+      "sha256": "8e5e2a4e5018751ae9c4482734bfe48ffb432418ecebc764a1c341e11684c6da"
+    },
+    {
+      "file_size_bytes": 318603824,
+      "relative_path": "outputs/feature_extraction/feature_provenance_registry.csv",
+      "sha256": "68ba8096563358b539360963da7d2856fcb0f888673da9989741b95549f3b246"
+    }
+  ],
+  "manifest_version": "PILOT_PROFILE_MANIFEST_V0.1",
+  "outputs": [
+    {
+      "file_size_bytes": 287652,
+      "relative_path": "outputs/profile_generation/pilot_profiles.json",
+      "sha256": "c7a08a6c165c6e2fd6ada63333a7be4cb2c34333ee92051cc8c60de1da50774d"
+    },
+    {
+      "file_size_bytes": 128271,
+      "relative_path": "outputs/profile_generation/pilot_profile_provenance_links.csv",
+      "sha256": "b3bb00437f6d6c085d7dcdecbaf95cc1bf686e75dc968e8781c02c878ae7bde0"
+    },
+    {
+      "file_size_bytes": 5666,
+      "relative_path": "outputs/profile_generation/profile_schema_v0.1.json",
+      "sha256": "c19eff421654bdc002dc3901adec694f8a3ccf76cb4901970d858f3c699ae750"
+    },
+    {
+      "file_size_bytes": 4447,
+      "relative_path": "outputs/profile_generation/pilot_profile_validation_report.md",
+      "sha256": "5d23f8f66b749e399a1486c768e0160cd50fa4ad18c028994ec4814aa86a056b"
+    }
+  ],
+  "profile_version": "PILOT_TARGET_EVIDENCE_PROFILE_V0.1",
+  "prohibited_outputs": {
+    "biological_interpretations": false,
+    "rankings": false,
+    "recommendations": false,
+    "scores": false,
+    "target_selection": false
+  },
+  "release_status": "PILOT_VALIDATION_ONLY",
+  "schema_version": "TARGET_EVIDENCE_PROFILE_PILOT_SCHEMA_V0.1",
+  "selection": {
+    "manual_biological_selection": false,
+    "profiles": [
+      {
+        "EnsemblID": "ENSG00000000003.14",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "CELL_1",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000229097.1",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "CELL_2",
+        "sensitivity_consistency_category": "MIXED_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000001631.15",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_NOT_MET",
+        "selection_basis": "CELL_3",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000003987.13",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_NOT_MET",
+        "selection_basis": "CELL_4",
+        "sensitivity_consistency_category": "MIXED_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000000938.12",
+        "effect_direction_observed": "TUMOR_LOWER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "CELL_5",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000073169.13",
+        "effect_direction_observed": "TUMOR_LOWER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "CELL_6",
+        "sensitivity_consistency_category": "MIXED_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000002330.13",
+        "effect_direction_observed": "TUMOR_LOWER",
+        "fdr_pass_status": "THRESHOLD_NOT_MET",
+        "selection_basis": "CELL_7",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000000971.15",
+        "effect_direction_observed": "TUMOR_LOWER",
+        "fdr_pass_status": "THRESHOLD_NOT_MET",
+        "selection_basis": "CELL_8",
+        "sensitivity_consistency_category": "MIXED_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000000419.12",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "LEXICAL_FILL_1",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      },
+      {
+        "EnsemblID": "ENSG00000000457.13",
+        "effect_direction_observed": "TUMOR_HIGHER",
+        "fdr_pass_status": "THRESHOLD_MET",
+        "selection_basis": "LEXICAL_FILL_2",
+        "sensitivity_consistency_category": "CONSISTENT_DIRECTION"
+      }
+    ],
+    "selection_rule": "Select the lexicographically smallest EnsemblID in each of the eight effect_direction_observed x fdr_pass_status x sensitivity_consistency_category cells, in frozen cell order; then add the two lexicographically smallest remaining EnsemblIDs.",
+    "selection_rule_id": "PILOT_SELECTION_2X2X2_PLUS_LEXICAL_FILL_V0.1"
+  },
+  "task": "027",
+  "validation": {
+    "missingness_preservation": "PASS",
+    "previous_artifact_hashes": "PASS",
+    "schema": "PASS",
+    "source_value_identity": "PASS",
+    "task025_rule_contract": "PASS",
+    "two_pass_byte_identity": "PASS",
+    "uncompressed_lineage": "PASS"
+  }
+}
