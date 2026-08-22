@@ -1,0 +1,24 @@
+Task: #032B-2D Disease Association Feature Extractor
+Extractor version: DISEASE_ASSOCIATION_FEATURE_EXTRACTOR_V0.1
+Extractor SHA256: ac7326e54aa02739f3ddbe4490dd8890e587b7ceab2782e128bd4cae0afdda7b
+Generator version: DISEASE_ASSOCIATION_FEATURE_GENERATOR_V0.1
+Feature schema version: DISEASE_ASSOCIATION_FEATURE_SCHEMA_V0.1
+State rule version: DA_COMPONENT_STATE_RULES_V0.1
+Python: 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]
+Python executable: /opt/anaconda3/bin/python
+pyarrow: 16.1.0
+Platform: macOS-26.6.2-arm64-arm-64bit
+Network access: NONE
+Package installation: NONE
+Randomness: NONE
+Runtime AI/LLM decisions: NONE
+Wall-clock values in outputs: NONE
+Source snapshot version: DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea
+Feature table SHA256: 3eee6bb0a3f55e051427fdd7f67fd974604abe9bc11477b2e3be73c561201418
+Feature dictionary SHA256: 690f5d23fd6de3a949d77b60e19fad6655fec83441afcb31d1c2dfd46532be32
+Provenance registry SHA256: d3f16e0a621e0b129c3d42e7bc01cb2042d1cef05374c19b1e23643043545480
+Component manifest SHA256: 5034bd52cf8fdefd6f8232f291298b882e0b27cb9ec5f3844f9707772dc1f526
+Validation report SHA256: 91ecadb7c09febc271cd7e7c75b6b53ce7b212776f9c32e4a745f65da1df2f6e
+Normalized source-native association metrics: NONE
+Profiles generated: FALSE
+Target evaluation performed: FALSE

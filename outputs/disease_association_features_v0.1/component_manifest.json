@@ -1,0 +1,89 @@
+{
+  "component_id": "COMP_DISEASE_ASSOCIATION",
+  "component_release_id": "DA_FEATURE_RELEASE_7D8C41E92A52F5EDE662A852FFAEDBAD",
+  "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+  "entity_count": 29606,
+  "extractor": {
+    "sha256": "ac7326e54aa02739f3ddbe4490dd8890e587b7ceab2782e128bd4cae0afdda7b",
+    "version": "DISEASE_ASSOCIATION_FEATURE_EXTRACTOR_V0.1"
+  },
+  "feature_definition_count": 19,
+  "feature_instance_count": 562514,
+  "feature_schema_version": "DISEASE_ASSOCIATION_FEATURE_SCHEMA_V0.1",
+  "frozen_inputs": {
+    "analysis/32B2C_retrieve_disease_association_snapshot.py": "436c1135c5ecb133e461ca14dc07ebe6414ed87c220d7992f6e09cc8117e78bc",
+    "docs/governance/component_dependency_model_v0.1.md": "5b77654a7ea543b2b2a184bba4a280cc4395c575065be6a3674d93a0955cdb06",
+    "docs/governance/component_registration_policy_v0.1.md": "c1736e11695e6bb194665a0cf96115bb526075ca5aa9f9870e8e572f64302668",
+    "docs/governance/component_validation_requirements_v0.1.md": "cc71c239972bc8f0b20fff63e4478624e0bcb56bc0febfc52855818ee5171c95",
+    "docs/governance/disease_association_component_feature_contract_v0.1.md": "c4ead626b6e6f1616a0dc8e396d7a52495bb21523acd96567a98c50f3c6d9139",
+    "docs/governance/disease_association_component_registration_v0.1.md": "3f625be0234d234be9df555002cb48a1bf9afffc9b8b2e1ce9b51220df01c50a",
+    "docs/governance/disease_association_component_scope_v0.1.md": "f153a296ba14fee53d142e836a0b07efddaf1793965cea04ce9ab46024a9faee",
+    "docs/governance/disease_association_component_validation_plan_v0.1.md": "d96ad308cf2e795be2fcd8b3950491371709cc0a075386bcd8cdc1b9b1da4508",
+    "docs/governance/disease_association_materialization_authorization_v0.1.md": "f9c99bb420705e70fb1295ea6a3e400f285e5229a30cd4ea19ce1e93816ed8a5",
+    "docs/governance/disease_association_source_selection_record_v0.1.md": "45cb84646742945552d5741b85bdbec5e709584d1aaea68555720764146f8de8",
+    "docs/governance/disease_context_registration_v0.1.md": "6df7b8c9cd0452d377a58b7d7819aa35a23ec620728000cc97b7fc3aad3f2460",
+    "docs/governance/evidence_component_interface_specification_v0.1.md": "b31254b347cbf440e3aade02857fb8149c54ea9a9a2b987197c4b724fefa20e8",
+    "outputs/disease_association_snapshot_v0.1/entity_coverage_ledger.csv": "b0b7903c33a65f991150804722b832c0168f1156a703411e9d7a3c23c5e8202e",
+    "outputs/disease_association_snapshot_v0.1/file_inventory.csv": "e425a6d9223686e27b4dbd69a83eb50d2e7352eb9b6eba14a11b8b471b5ed8e9",
+    "outputs/disease_association_snapshot_v0.1/raw_record_manifest.csv": "ef94b3602f1b404df6c0090e45c533e22c4554fab0080a2ae5d7bfaca18ab0f4",
+    "outputs/disease_association_snapshot_v0.1/release_manifest.json": "b38a53665b7e17d65ce2f830063812094cd18a6c1a3861b3892b056ce259cf47",
+    "outputs/disease_association_snapshot_v0.1/session_info.txt": "92738f23f34ca42718d3eb9ba0b869d5cd86323c1505f19ee5339da4d9682e03",
+    "outputs/disease_association_snapshot_v0.1/snapshot_manifest.json": "1bd2df46ad11528f3bbf4da8eb7c68a581277b92461586b942f660f9be00ae75",
+    "outputs/disease_association_snapshot_v0.1/snapshot_qc_report.md": "078234cc85b02563737fdbdbc1f4078bff9bba7057db88a54e662b10c1d5e4b3"
+  },
+  "generator_version": "DISEASE_ASSOCIATION_FEATURE_GENERATOR_V0.1",
+  "interpretation_boundary": "STRUCTURAL_EVIDENCE_REPRESENTATION_ONLY",
+  "missingness_vocabulary": [
+    "OBSERVED",
+    "NOT_FOUND",
+    "NOT_QUERIED",
+    "NOT_APPLICABLE",
+    "UNKNOWN"
+  ],
+  "network_access": "PROHIBITED_NOT_USED",
+  "output_artifacts": {
+    "disease_association_features.csv": {
+      "row_count": 29606,
+      "sha256": "3eee6bb0a3f55e051427fdd7f67fd974604abe9bc11477b2e3be73c561201418"
+    },
+    "feature_dictionary.csv": {
+      "row_count": 19,
+      "sha256": "690f5d23fd6de3a949d77b60e19fad6655fec83441afcb31d1c2dfd46532be32"
+    },
+    "feature_provenance_registry.csv": {
+      "row_count": 1480908,
+      "sha256": "d3f16e0a621e0b129c3d42e7bc01cb2042d1cef05374c19b1e23643043545480"
+    }
+  },
+  "prohibited_outputs": [
+    "SOURCE_NATIVE_ASSOCIATION_METRICS_AS_NORMALIZED_VALUES",
+    "TARGET_EVALUATION",
+    "TARGET_PROFILE",
+    "THERAPEUTIC_INTERPRETATION"
+  ],
+  "source_id": "SRC_OPEN_TARGETS_PLATFORM",
+  "source_snapshot_id": "SNAP_DA_OT_26_06_LUAD_EXACT_UNIV_TASK030_V0_1",
+  "source_snapshot_manifest_sha256": "1bd2df46ad11528f3bbf4da8eb7c68a581277b92461586b942f660f9be00ae75",
+  "source_snapshot_version": "DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea",
+  "state_counts": {
+    "MISSING": 20500,
+    "OBSERVED": 8393,
+    "PARTIAL": 713
+  },
+  "state_precedence": [
+    "CONFLICTING",
+    "OBSERVED",
+    "MISSING",
+    "PARTIAL",
+    "NOT_QUERIED"
+  ],
+  "state_rule_version": "DA_COMPONENT_STATE_RULES_V0.1",
+  "state_vocabulary": [
+    "CONFLICTING",
+    "OBSERVED",
+    "MISSING",
+    "PARTIAL",
+    "NOT_QUERIED"
+  ],
+  "validation_status": "PASS"
+}
