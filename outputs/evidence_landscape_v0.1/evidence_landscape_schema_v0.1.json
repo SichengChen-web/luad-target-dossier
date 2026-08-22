@@ -1,0 +1,249 @@
+{
+  "$defs": {
+    "component_landscape": {
+      "additionalProperties": false,
+      "properties": {
+        "availability_status": {
+          "const": "PRESENT_IN_SOURCE_PROFILE"
+        },
+        "component_definition_version": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+        },
+        "component_id": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE"
+        },
+        "feature_landscapes": {
+          "items": {
+            "$ref": "#/$defs/feature_landscape"
+          },
+          "maxItems": 22,
+          "minItems": 22,
+          "type": "array"
+        },
+        "limitation_ids": {
+          "items": {
+            "pattern": "^LIM_[A-Z0-9_]+$",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "state": {
+          "enum": [
+            "CONFLICTING",
+            "OBSERVED",
+            "MISSING",
+            "PARTIAL",
+            "NOT_QUERIED"
+          ]
+        },
+        "state_rule_id": {
+          "type": "string"
+        },
+        "state_rule_review_status": {
+          "type": "string"
+        },
+        "state_rule_version": {
+          "const": "STATE_RULE_REGISTRY_V0.1"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_definition_version",
+        "availability_status",
+        "state",
+        "state_rule_id",
+        "state_rule_version",
+        "state_rule_review_status",
+        "feature_landscapes",
+        "limitation_ids"
+      ],
+      "type": "object"
+    },
+    "dependency_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "dependency_id": {
+          "type": "string"
+        },
+        "dependency_level": {
+          "enum": [
+            "DEPENDENT",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "dependency_reference_status": {
+          "enum": [
+            "LINKED_GOVERNED_DEPENDENCY",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "evidence_record_id": {
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "relationship_type": {
+          "enum": [
+            "SHARED_DATASET",
+            "NOT_APPLICABLE"
+          ]
+        }
+      },
+      "required": [
+        "feature_id",
+        "evidence_record_id",
+        "dependency_id",
+        "dependency_reference_status",
+        "relationship_type",
+        "dependency_level"
+      ],
+      "type": "object"
+    },
+    "feature_landscape": {
+      "additionalProperties": false,
+      "properties": {
+        "dependency_references": {
+          "items": {
+            "$ref": "#/$defs/dependency_reference"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "feature_name": {
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "required": [
+        "feature_id",
+        "feature_name",
+        "missingness_status",
+        "dependency_references"
+      ],
+      "type": "object"
+    },
+    "source_profile_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_snapshot_version": {
+          "const": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+        },
+        "partition_id": {
+          "pattern": "^p[0-9a-f]{2}$",
+          "type": "string"
+        },
+        "partition_strategy_version": {
+          "const": "ENSEMBL_SHA256_PREFIX_2_V0.1"
+        },
+        "profile_artifact_id": {
+          "pattern": "^ART_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "profile_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^PRF_[0-9A-F]{24}$",
+          "type": "string"
+        },
+        "profile_schema_version": {
+          "const": "TARGET_EVIDENCE_PROFILE_FULL_SCHEMA_V0.1"
+        },
+        "profile_version": {
+          "const": "FULL_UNIVERSE_TARGET_EVIDENCE_PROFILE_V0.1"
+        },
+        "release_candidate_id": {
+          "const": "PRC_5A13C5055A54AF794EDD0898"
+        }
+      },
+      "required": [
+        "release_candidate_id",
+        "profile_id",
+        "profile_content_sha256",
+        "profile_artifact_id",
+        "profile_version",
+        "profile_schema_version",
+        "evidence_snapshot_version",
+        "partition_strategy_version",
+        "partition_id"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:evidence-landscape:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "A deterministic non-evaluative projection of one governed Target Evidence Profile.",
+  "properties": {
+    "EnsemblID": {
+      "pattern": "^ENSG[0-9]+\\.[0-9]+$",
+      "type": "string"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/component_landscape"
+      },
+      "maxItems": 1,
+      "minItems": 1,
+      "type": "array"
+    },
+    "generator_version": {
+      "const": "EVIDENCE_LANDSCAPE_REPRESENTATION_GENERATOR_V0.1"
+    },
+    "landscape_id": {
+      "pattern": "^LND_[0-9A-F]{24}$",
+      "type": "string"
+    },
+    "landscape_schema_version": {
+      "const": "EVIDENCE_LANDSCAPE_SCHEMA_V0.1"
+    },
+    "landscape_version": {
+      "const": "EVIDENCE_LANDSCAPE_REPRESENTATION_V0.1"
+    },
+    "profile_limitation_ids": {
+      "items": {
+        "pattern": "^LIM_[A-Z0-9_]+$",
+        "type": "string"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "source_profile_reference": {
+      "$ref": "#/$defs/source_profile_reference"
+    },
+    "universe_ordinal": {
+      "maximum": 29606,
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "landscape_id",
+    "EnsemblID",
+    "universe_ordinal",
+    "landscape_schema_version",
+    "landscape_version",
+    "generator_version",
+    "source_profile_reference",
+    "components",
+    "profile_limitation_ids"
+  ],
+  "title": "Evidence Landscape representation schema v0.1",
+  "type": "object"
+}
