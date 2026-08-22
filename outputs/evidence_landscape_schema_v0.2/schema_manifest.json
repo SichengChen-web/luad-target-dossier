@@ -1,0 +1,51 @@
+{
+  "contract_id": "SCHEMA_CONTRACT_A52109FB90FDA2493D99F20F",
+  "determinism_contract": "FROZEN_GOVERNANCE_HASHES_PLUS_GENERATOR_VERSION_PRODUCE_IDENTICAL_BYTES",
+  "frozen_inputs": {
+    "analysis/32C_integrate_evidence_profiles.py": "5fbfb5f390b94f94494e7f161e435e788d664e6d8388342fc0ad1acff6c0dad3",
+    "docs/governance/component_dependency_model_v0.1.md": "5b77654a7ea543b2b2a184bba4a280cc4395c575065be6a3674d93a0955cdb06",
+    "docs/governance/component_registration_policy_v0.1.md": "c1736e11695e6bb194665a0cf96115bb526075ca5aa9f9870e8e572f64302668",
+    "docs/governance/component_validation_requirements_v0.1.md": "cc71c239972bc8f0b20fff63e4478624e0bcb56bc0febfc52855818ee5171c95",
+    "docs/governance/evidence_component_interface_specification_v0.1.md": "b31254b347cbf440e3aade02857fb8149c54ea9a9a2b987197c4b724fefa20e8",
+    "docs/governance/evidence_landscape_component_composition_policy_v0.1.md": "1ba8b4bf678906d5f15a50284742d2b81045d7530eb59d2fe28a81ad45eab2b7",
+    "docs/governance/evidence_landscape_validation_requirements_v0.1.md": "fccbcef5a1b61f8d45184c1f6177ce892a828887ad754c268eab9f1674c1c7ca",
+    "docs/governance/evidence_landscape_versioning_policy_v0.1.md": "fd71350c8c00f5abc935a772244232fbcb614dc898c0e44e2763f38121c62677",
+    "docs/governance/multi_component_evidence_landscape_specification_v0.2.md": "6d878dc12eaf7b9172f0880345cfc12bd67a209d45af68dbe543e05f192c8e73",
+    "docs/governance/profile_component_model_v0.1.md": "86ae5b8ce089f97770976b7b9f9b547a918e88c165cb7f983dd450178f8a7355",
+    "docs/governance/profile_lifecycle_specification_v0.1.md": "346d46ce22b46513038ed7a62d951f1d3197432246e758bee84e56425137ccca",
+    "docs/governance/profile_release_policy_v0.1.md": "f164be0352cd012583560b6ff5ef9850e43c59b49f4b9c4e28e3fe9138c77912",
+    "docs/governance/target_evidence_profile_governance_v0.1.md": "1b8ab03bb758fd70d8a4bffb27ba1c7f97f83a52c20e75a0c18d9b0bd0941bbd",
+    "outputs/evidence_profile_integration_v0.1/profile_index.csv": "376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28",
+    "outputs/evidence_profile_integration_v0.1/profile_manifest.json": "63492499977f7adb086e4ace9a491a72fa617a1fe054d544701826fb9657455d",
+    "outputs/evidence_profile_integration_v0.1/validation_report.md": "191ba0d01799d4e3e96bff3ebabc6c75997cbbdeee36217b45f0c45181302699"
+  },
+  "generator": {
+    "relative_path": "analysis/33B1_define_landscape_schema_contract.py",
+    "sha256": "089723f2a4d1c9e85d151cedbcda1f2e68953d04f1c98325680c9d75db3c3a42",
+    "version": "LANDSCAPE_SCHEMA_CONTRACT_GENERATOR_V0.1"
+  },
+  "landscape_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+  "manifest_artifact_classification": "CLASS_B_REPRODUCIBLE_DERIVED_ARTIFACT",
+  "network_access": "PROHIBITED_NOT_USED",
+  "output_artifact": {
+    "relative_path": "schemas/evidence_landscape_schema_v0.2.json",
+    "schema_version": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2",
+    "sha256": "a52109fb90fda2493d99f20f51dacbf987a394678c90ee9e5d6c58a7afbc62ba",
+    "size_bytes": 24022
+  },
+  "package_installation": "PROHIBITED_NOT_PERFORMED",
+  "payload_generation": "PROHIBITED_NONE_GENERATED",
+  "runtime_ai_decisions": "PROHIBITED_NONE_USED",
+  "schema_artifact_classification": "CLASS_A_SOURCE_CONTROLLED_SCHEMA_CONTRACT",
+  "source_profile_binding": {
+    "component_order": [
+      "COMP_TRANSCRIPTOMIC_EVIDENCE",
+      "COMP_DISEASE_ASSOCIATION"
+    ],
+    "evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+    "profile_schema_version": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_SCHEMA_V0.1",
+    "profile_version": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_V0.1"
+  },
+  "task_id": "TASK_033B_1",
+  "validation_status": "PASS"
+}

@@ -1,0 +1,915 @@
+{
+  "$comment": "Schema contract only. It does not authorize or generate landscape payloads.",
+  "$defs": {
+    "artifact_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "pattern": "^ART_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "artifact_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "storage_reference": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "artifact_sha256"
+      ],
+      "type": "object"
+    },
+    "dependency_reference": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "SAME_SOURCE"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "SHARED_DATASET"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "PARTIAL"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "PARTIALLY_DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "UNKNOWN"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "INDEPENDENT"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "INDEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "NOT_APPLICABLE"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "NOT_APPLICABLE"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "dependency_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dependency_level": {
+          "enum": [
+            "DEPENDENT",
+            "PARTIALLY_DEPENDENT",
+            "UNKNOWN",
+            "INDEPENDENT",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "dependency_model_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dependency_reference_status": {
+          "enum": [
+            "LINKED_GOVERNED_DEPENDENCY",
+            "CONTROLLED_SENTINEL"
+          ],
+          "type": "string"
+        },
+        "governing_artifact_reference": {
+          "$ref": "#/$defs/artifact_reference"
+        },
+        "relationship_type": {
+          "enum": [
+            "SAME_SOURCE",
+            "SHARED_DATASET",
+            "PARTIAL",
+            "UNKNOWN",
+            "INDEPENDENT",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "review_status": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "dependency_id",
+        "dependency_reference_status",
+        "relationship_type",
+        "dependency_level",
+        "dependency_model_version",
+        "governing_artifact_reference",
+        "review_status"
+      ],
+      "type": "object"
+    },
+    "disease_association_component_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "availability_status": {
+          "const": "PRESENT_IN_SOURCE_PROFILE"
+        },
+        "component_definition_version": {
+          "const": "COMP_DISEASE_ASSOCIATION_V0.1"
+        },
+        "component_id": {
+          "const": "COMP_DISEASE_ASSOCIATION"
+        },
+        "component_version": {
+          "const": "COMP_DISEASE_ASSOCIATION_V0.1"
+        },
+        "feature_references": {
+          "items": {
+            "$ref": "#/$defs/disease_association_feature_reference"
+          },
+          "maxItems": 19,
+          "minItems": 19,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "limitation_references": {
+          "items": {
+            "$ref": "#/$defs/limitation_reference"
+          },
+          "minItems": 0,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source_component_reference": {
+          "$ref": "#/$defs/source_component_reference"
+        },
+        "source_state_rule_reference": {
+          "$ref": "#/$defs/state_rule_reference"
+        },
+        "state": {
+          "enum": [
+            "OBSERVED",
+            "PARTIAL",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_QUERIED"
+          ],
+          "type": "string"
+        },
+        "version_axes": {
+          "$ref": "#/$defs/disease_association_version_axes"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_version",
+        "component_definition_version",
+        "availability_status",
+        "state",
+        "source_component_content_sha256",
+        "source_component_reference",
+        "source_state_rule_reference",
+        "version_axes",
+        "feature_references",
+        "limitation_references"
+      ],
+      "type": "object"
+    },
+    "disease_association_feature_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "feature_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "provenance_references": {
+          "items": {
+            "$ref": "#/$defs/disease_association_provenance_reference"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_feature_value_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "feature_name",
+        "missingness_status",
+        "source_component_record_id",
+        "provenance_references"
+      ],
+      "type": "object"
+    },
+    "disease_association_provenance_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_reference": {
+          "$ref": "#/$defs/artifact_reference"
+        },
+        "claim_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "component_id": {
+          "const": "COMP_DISEASE_ASSOCIATION"
+        },
+        "dependency_reference": {
+          "$ref": "#/$defs/dependency_reference"
+        },
+        "evidence_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extraction_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extractor_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "feature_id",
+        "claim_id",
+        "evidence_record_id",
+        "source_id",
+        "artifact_reference",
+        "extraction_rule_id",
+        "extractor_version",
+        "dependency_reference"
+      ],
+      "type": "object"
+    },
+    "disease_association_version_axes": {
+      "additionalProperties": false,
+      "properties": {
+        "component_schema_version": {
+          "const": "DISEASE_ASSOCIATION_COMPONENT_SCHEMA_V0.1"
+        },
+        "extractor_version": {
+          "const": "DISEASE_ASSOCIATION_FEATURE_EXTRACTOR_V0.1"
+        },
+        "feature_generator_version": {
+          "const": "DISEASE_ASSOCIATION_FEATURE_GENERATOR_V0.1"
+        },
+        "feature_schema_version": {
+          "const": "DISEASE_ASSOCIATION_FEATURE_SCHEMA_V0.1"
+        },
+        "source_component_generator_version": {
+          "const": "DISEASE_ASSOCIATION_COMPONENT_GENERATOR_V0.1"
+        },
+        "source_snapshot_version": {
+          "const": "DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea"
+        }
+      },
+      "required": [
+        "component_schema_version",
+        "extractor_version",
+        "feature_generator_version",
+        "feature_schema_version",
+        "source_component_generator_version",
+        "source_snapshot_version"
+      ],
+      "type": "object"
+    },
+    "feature_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "feature_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "provenance_references": {
+          "items": {
+            "$ref": "#/$defs/provenance_reference"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_feature_value_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "feature_name",
+        "missingness_status",
+        "source_component_record_id",
+        "provenance_references"
+      ],
+      "type": "object"
+    },
+    "limitation_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "limitation_id": {
+          "pattern": "^LIM_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "registry_artifact_reference": {
+          "$ref": "#/$defs/artifact_reference"
+        },
+        "review_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "scope": {
+          "enum": [
+            "LANDSCAPE",
+            "PROFILE",
+            "COMPONENT",
+            "FEATURE",
+            "SOURCE",
+            "ARTIFACT"
+          ],
+          "type": "string"
+        },
+        "source_version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "limitation_id",
+        "scope",
+        "source_version",
+        "registry_artifact_reference",
+        "review_status"
+      ],
+      "type": "object"
+    },
+    "provenance_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_reference": {
+          "$ref": "#/$defs/artifact_reference"
+        },
+        "claim_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "component_id": {
+          "enum": [
+            "COMP_TRANSCRIPTOMIC_EVIDENCE",
+            "COMP_DISEASE_ASSOCIATION"
+          ],
+          "type": "string"
+        },
+        "dependency_reference": {
+          "$ref": "#/$defs/dependency_reference"
+        },
+        "evidence_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extraction_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extractor_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "feature_id",
+        "claim_id",
+        "evidence_record_id",
+        "source_id",
+        "artifact_reference",
+        "extraction_rule_id",
+        "extractor_version",
+        "dependency_reference"
+      ],
+      "type": "object"
+    },
+    "source_component_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "container_artifact_id": {
+          "pattern": "^ART_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "container_artifact_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "partition_id": {
+          "pattern": "^p[0-9a-f]{2}$",
+          "type": "string"
+        },
+        "source_record_artifact_id": {
+          "pattern": "^ART_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "source_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_record_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_record_id",
+        "source_record_sha256",
+        "source_record_artifact_id",
+        "container_artifact_id",
+        "container_artifact_sha256"
+      ],
+      "type": "object"
+    },
+    "source_profile_identity": {
+      "additionalProperties": false,
+      "properties": {
+        "source_evidence_snapshot_version": {
+          "const": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605"
+        },
+        "source_integration_release_id": {
+          "const": "PROFILE_INTEGRATION_RELEASE_8007AAA939B733EE6619F1FCFB87CAE8"
+        },
+        "source_profile_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source_profile_generator_version": {
+          "const": "MULTICOMPONENT_PROFILE_INTEGRATOR_V0.1"
+        },
+        "source_profile_id": {
+          "pattern": "^PRF_32C_[A-Z0-9]+$",
+          "type": "string"
+        },
+        "source_profile_schema_version": {
+          "const": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_SCHEMA_V0.1"
+        },
+        "source_profile_version": {
+          "const": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_V0.1"
+        }
+      },
+      "required": [
+        "source_profile_id",
+        "source_profile_content_sha256",
+        "source_profile_schema_version",
+        "source_profile_version",
+        "source_evidence_snapshot_version",
+        "source_profile_generator_version",
+        "source_integration_release_id"
+      ],
+      "type": "object"
+    },
+    "state_rule_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "state_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "state_rule_review_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "state_rule_version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "state_rule_version"
+      ],
+      "type": "object"
+    },
+    "transcriptomic_component_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "availability_status": {
+          "const": "PRESENT_IN_SOURCE_PROFILE"
+        },
+        "component_definition_version": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+        },
+        "component_id": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE"
+        },
+        "component_version": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+        },
+        "feature_references": {
+          "items": {
+            "$ref": "#/$defs/transcriptomic_feature_reference"
+          },
+          "maxItems": 22,
+          "minItems": 22,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "limitation_references": {
+          "items": {
+            "$ref": "#/$defs/limitation_reference"
+          },
+          "minItems": 0,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source_component_reference": {
+          "$ref": "#/$defs/source_component_reference"
+        },
+        "source_state_rule_reference": {
+          "$ref": "#/$defs/state_rule_reference"
+        },
+        "state": {
+          "enum": [
+            "OBSERVED",
+            "PARTIAL",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_QUERIED"
+          ],
+          "type": "string"
+        },
+        "version_axes": {
+          "$ref": "#/$defs/transcriptomic_version_axes"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_version",
+        "component_definition_version",
+        "availability_status",
+        "state",
+        "source_component_content_sha256",
+        "source_component_reference",
+        "source_state_rule_reference",
+        "version_axes",
+        "feature_references",
+        "limitation_references"
+      ],
+      "type": "object"
+    },
+    "transcriptomic_feature_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "feature_name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "provenance_references": {
+          "items": {
+            "$ref": "#/$defs/transcriptomic_provenance_reference"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_feature_value_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "feature_name",
+        "missingness_status",
+        "source_component_record_id",
+        "provenance_references"
+      ],
+      "type": "object"
+    },
+    "transcriptomic_provenance_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_reference": {
+          "$ref": "#/$defs/artifact_reference"
+        },
+        "claim_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "component_id": {
+          "const": "COMP_TRANSCRIPTOMIC_EVIDENCE"
+        },
+        "dependency_reference": {
+          "$ref": "#/$defs/dependency_reference"
+        },
+        "evidence_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extraction_rule_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "extractor_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "pattern": "^FTR_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "feature_id",
+        "claim_id",
+        "evidence_record_id",
+        "source_id",
+        "artifact_reference",
+        "extraction_rule_id",
+        "extractor_version",
+        "dependency_reference"
+      ],
+      "type": "object"
+    },
+    "transcriptomic_version_axes": {
+      "additionalProperties": false,
+      "properties": {
+        "source_evidence_snapshot_version": {
+          "const": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+        },
+        "source_generator_version": {
+          "const": "FULL_PROFILE_MATERIALIZER_V0.1"
+        },
+        "source_profile_schema_version": {
+          "const": "TARGET_EVIDENCE_PROFILE_FULL_SCHEMA_V0.1"
+        },
+        "source_profile_version": {
+          "const": "FULL_UNIVERSE_TARGET_EVIDENCE_PROFILE_V0.1"
+        }
+      },
+      "required": [
+        "source_evidence_snapshot_version",
+        "source_generator_version",
+        "source_profile_schema_version",
+        "source_profile_version"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:evidence-landscape-schema:v0.2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Strict structural contract for a deterministic projection of one frozen Task #032C multi-component Target Evidence Profile.",
+  "properties": {
+    "EnsemblID": {
+      "description": "Immutable, versioned Ensembl gene identifier.",
+      "pattern": "^ENSG[0-9]+\\.[0-9]+$",
+      "type": "string"
+    },
+    "components": {
+      "items": false,
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "$ref": "#/$defs/transcriptomic_component_reference"
+        },
+        {
+          "$ref": "#/$defs/disease_association_component_reference"
+        }
+      ],
+      "type": "array"
+    },
+    "generator_version": {
+      "pattern": "^MULTI_COMPONENT_EVIDENCE_LANDSCAPE_GENERATOR_V[0-9]+\\.[0-9]+$",
+      "type": "string"
+    },
+    "landscape_id": {
+      "pattern": "^LND_[A-Z0-9]+$",
+      "type": "string"
+    },
+    "landscape_schema_version": {
+      "const": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2"
+    },
+    "landscape_version": {
+      "const": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2"
+    },
+    "limitation_references": {
+      "items": {
+        "$ref": "#/$defs/limitation_reference"
+      },
+      "minItems": 0,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "source_profile_identity": {
+      "$ref": "#/$defs/source_profile_identity"
+    },
+    "universe_ordinal": {
+      "maximum": 29606,
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "landscape_id",
+    "EnsemblID",
+    "universe_ordinal",
+    "landscape_schema_version",
+    "landscape_version",
+    "generator_version",
+    "source_profile_identity",
+    "components",
+    "limitation_references"
+  ],
+  "title": "Multi-component Evidence Landscape schema v0.2",
+  "type": "object",
+  "x-landscape-identity-tuple": [
+    "EnsemblID",
+    "landscape_schema_version",
+    "landscape_version",
+    "source_profile_identity.source_profile_id",
+    "source_profile_identity.source_evidence_snapshot_version"
+  ],
+  "x-provenance-relationship-key": [
+    "component_id",
+    "feature_id",
+    "evidence_record_id"
+  ],
+  "x-source-profile-identity-tuple": [
+    "EnsemblID",
+    "source_profile_identity.source_profile_schema_version",
+    "source_profile_identity.source_profile_version",
+    "source_profile_identity.source_evidence_snapshot_version"
+  ]
+}
