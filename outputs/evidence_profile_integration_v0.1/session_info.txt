@@ -1,0 +1,21 @@
+Task: #032C Evidence Profile Multi-component Integration
+Integration release ID: PROFILE_INTEGRATION_RELEASE_8007AAA939B733EE6619F1FCFB87CAE8
+Profile schema version: TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_SCHEMA_V0.1
+Profile version: TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_V0.1
+Evidence snapshot version: EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605
+Generator version: MULTICOMPONENT_PROFILE_INTEGRATOR_V0.1
+Generator SHA256: 5fbfb5f390b94f94494e7f161e435e788d664e6d8388342fc0ad1acff6c0dad3
+Python: 3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]
+Python executable: /usr/local/bin/python3
+Platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+Network access: NONE
+Package installation: NONE
+Randomness: NONE
+Runtime AI/LLM decisions: NONE
+Wall-clock values in governed outputs: NONE
+Profile records SHA256: 8fab364cbe1318f49dd8b29501dd1439d1ae2a38161e090942801399bec7e156
+Profile index SHA256: 376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28
+Profile manifest SHA256: 63492499977f7adb086e4ace9a491a72fa617a1fe054d544701826fb9657455d
+Validation report SHA256: 191ba0d01799d4e3e96bff3ebabc6c75997cbbdeee36217b45f0c45181302699
+Target evaluation performed: FALSE
+Profile lifecycle promotion performed: FALSE

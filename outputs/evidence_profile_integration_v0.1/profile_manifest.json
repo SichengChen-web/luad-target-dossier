@@ -1,0 +1,136 @@
+{
+  "canonical_order": "TASK030_UNIVERSE_ORDINAL",
+  "component_count": 2,
+  "components": [
+    {
+      "component_id": "COMP_TRANSCRIPTOMIC_EVIDENCE",
+      "component_version": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1",
+      "feature_count_per_profile": 22,
+      "provenance_relationship_count": 1036210,
+      "source_evidence_snapshot_version": "TASK026_TRANSCRIPTOMIC_FEATURES_SHA256_4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844",
+      "source_release_candidate_id": "PRC_5A13C5055A54AF794EDD0898",
+      "state_counts": {
+        "CONFLICTING": 3435,
+        "OBSERVED": 26171
+      }
+    },
+    {
+      "component_id": "COMP_DISEASE_ASSOCIATION",
+      "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+      "feature_count_per_profile": 19,
+      "provenance_relationship_count": 1480908,
+      "source_component_release_id": "DA_COMPONENT_RELEASE_13B8AA7455AC7CDB2C3F79B87D20DB55",
+      "source_snapshot_version": "DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea",
+      "state_counts": {
+        "MISSING": 20500,
+        "OBSERVED": 8393,
+        "PARTIAL": 713
+      }
+    }
+  ],
+  "evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+  "frozen_inputs": {
+    "analysis/30_materialize_full_target_profiles.py": "273c3d70f9b9e38a69ff328795362c6447e38b8c713d9c245672e6e91c8b419c",
+    "analysis/31_build_evidence_landscape_representation.py": "bf0b9223268b7a0a2677af96c5e6db013d42c602b6e904ea896690a3e3966362",
+    "analysis/32B2E_materialize_disease_association_component.py": "fc98a1406c5ca91d8fb7296cf96b2b6c02b4855b6ad117af33f9bdd96bd83e5e",
+    "docs/governance/profile_component_model_v0.1.md": "86ae5b8ce089f97770976b7b9f9b547a918e88c165cb7f983dd450178f8a7355",
+    "docs/governance/profile_lifecycle_specification_v0.1.md": "346d46ce22b46513038ed7a62d951f1d3197432246e758bee84e56425137ccca",
+    "docs/governance/profile_release_policy_v0.1.md": "f164be0352cd012583560b6ff5ef9850e43c59b49f4b9c4e28e3fe9138c77912",
+    "docs/governance/target_evidence_profile_governance_v0.1.md": "1b8ab03bb758fd70d8a4bffb27ba1c7f97f83a52c20e75a0c18d9b0bd0941bbd",
+    "outputs/disease_association_component_v0.1/component_index.csv": "7637c4da5f2286acb082b5382ae9f9bf50b08b2342d861e60ba388d729295c9e",
+    "outputs/disease_association_component_v0.1/component_manifest.json": "b2264956a13d5096b61cdb2b6981bcc80d7b7b3f1fe422b30f77c7cdc70e39f7",
+    "outputs/disease_association_component_v0.1/component_records.jsonl": "ecde83c5f3d28441c0e439b2ede6621f484b5b592a96370052911984868ad264",
+    "outputs/disease_association_component_v0.1/component_validation_report.md": "99a8ae819143aa603018f8e967fbf7b07b5d08e96b7150011d3e8a7d869050bf",
+    "outputs/disease_association_component_v0.1/session_info.txt": "5368d24e3297fb0e9d4ede608255a84ea86d28fbcde93684c0fe62e3f7bc6b05",
+    "outputs/evidence_landscape_v0.1/evidence_landscape_index.csv": "47c653035f15879758df9811863a2d1e4eab5d62950a866e6dfefe8f93d5cf2e",
+    "outputs/evidence_landscape_v0.1/evidence_landscape_manifest.json": "8eb4cc48ad4e6bb206b297a95bf26d608cf52fdbe629f780e703c1561b61898c",
+    "outputs/evidence_landscape_v0.1/evidence_landscape_schema_v0.1.json": "02632a07ee411cad7f924a9368ceb0ce2664bf39d83508cd07905b0864b1f6bb",
+    "outputs/evidence_landscape_v0.1/evidence_landscape_validation_report.md": "397c29b98fcd2a3fc26d481ec1fddbb0aa294bffe02044b3d8de6df77045cf9f",
+    "outputs/evidence_landscape_v0.1/landscape_partition_manifest.csv": "a5ab035790d5a1a235b2a9ac1b740224546cd90ade6f9155ec07a3d54ba2691c",
+    "outputs/profile_release_candidate_v0.1/dependency_manifest.csv": "2990cb9d3162c8459fbe48e1c8be3fc14821f9ecd8fa9023b1b4da114f669ea9",
+    "outputs/profile_release_candidate_v0.1/partition_manifest.csv": "7dac57596356f1fd38fdfeed4cd4c18b32ff755fc414e575afe8841bdf5219f8",
+    "outputs/profile_release_candidate_v0.1/profile_index.csv": "5f6307c603f8d4d9416877512c28b0329c369d03aea7d24bf6cc64176193ee15",
+    "outputs/profile_release_candidate_v0.1/profile_schema_v0.1.json": "cc67e72658ba827b90b3b9d8f61cc866f004d36915369138b816b6f1bedaa34c",
+    "outputs/profile_release_candidate_v0.1/release_manifest.json": "d7c3203f4920f5e799dea8e3515cd15a01efba83693a4be7c554a4e5094625fe",
+    "outputs/profile_release_candidate_v0.1/universe_manifest.csv": "e4b304eb5fde7690a1525b404f5d1a011837fd88f774b4dbb2838f2c81b9c1ab",
+    "outputs/profile_release_candidate_v0.1/validation_report.md": "58c2611d414c9b1420fd8b584ed8c211401b82dd55137055bb0da6cdbf00193c",
+    "outputs/profile_release_candidate_v0.1/validation_results.csv": "4f4cc169130c79f89e694a774dbe2f2c6d580e0b77887d6e2ac5311bdb8bebd1"
+  },
+  "generator": {
+    "sha256": "5fbfb5f390b94f94494e7f161e435e788d664e6d8388342fc0ad1acff6c0dad3",
+    "version": "MULTICOMPONENT_PROFILE_INTEGRATOR_V0.1"
+  },
+  "integration_release_id": "PROFILE_INTEGRATION_RELEASE_8007AAA939B733EE6619F1FCFB87CAE8",
+  "interpretation_boundary": "STRUCTURAL_MULTI_COMPONENT_EVIDENCE_REPRESENTATION_ONLY",
+  "joint_component_state_counts": {
+    "CONFLICTING|MISSING": 2649,
+    "CONFLICTING|OBSERVED": 703,
+    "CONFLICTING|PARTIAL": 83,
+    "OBSERVED|MISSING": 17851,
+    "OBSERVED|OBSERVED": 7690,
+    "OBSERVED|PARTIAL": 630
+  },
+  "lifecycle_status": "UNASSIGNED_INTEGRATION_CANDIDATE_AWAITING_HUMAN_GOVERNANCE_ACTION",
+  "network_access": "PROHIBITED_NOT_USED",
+  "output_artifacts": {
+    "profile_index.csv": {
+      "row_count": 29606,
+      "sha256": "376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28",
+      "size_bytes": 14369911
+    },
+    "profile_records.jsonl": {
+      "row_count": 29606,
+      "sha256": "8fab364cbe1318f49dd8b29501dd1439d1ae2a38161e090942801399bec7e156",
+      "size_bytes": 2151412821
+    }
+  },
+  "partition_input_sets": {
+    "task030_partition_file_count": 512,
+    "task030_partition_set_sha256": "5545428d88ad757bb1beecfd5eb4391b87864958af9278b1df0319c1165ea334",
+    "task030_partition_total_bytes": 1198998865,
+    "task031_partition_file_count": 256,
+    "task031_partition_set_sha256": "b7544ed3e9fe8d1f62a005590b29fdec2026ef43b56f5731186a00a5c18dfea3",
+    "task031_partition_total_bytes": 425667194
+  },
+  "profile_count": 29606,
+  "profile_identity_tuple": [
+    "EnsemblID",
+    "profile_schema_version",
+    "profile_version",
+    "evidence_snapshot_version"
+  ],
+  "profile_record_contract": {
+    "component_order": [
+      "COMP_TRANSCRIPTOMIC_EVIDENCE",
+      "COMP_DISEASE_ASSOCIATION"
+    ],
+    "component_state_aggregation": "PROHIBITED_NONE_GENERATED",
+    "feature_representation": "EXACT_COMPONENT_SPECIFIC_SOURCE_OBJECT",
+    "profile_content_hash_scope": "CANONICAL_JSON_WITHOUT_JSONL_NEWLINE",
+    "provenance_representation": "ONE_OBJECT_PER_SOURCE_FEATURE_EVIDENCE_RECORD_RELATIONSHIP"
+  },
+  "profile_schema_version": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_SCHEMA_V0.1",
+  "profile_version": "TARGET_EVIDENCE_PROFILE_MULTICOMPONENT_V0.1",
+  "prohibitions": [
+    "NO_SCORING",
+    "NO_RANKING",
+    "NO_PRIORITY",
+    "NO_TARGET_SELECTION",
+    "NO_RECOMMENDATIONS",
+    "NO_BIOLOGICAL_INTERPRETATION",
+    "NO_THERAPEUTIC_INFERENCE",
+    "NO_LLM_RUNTIME_DECISIONS"
+  ],
+  "structural_counts": {
+    "component_representations": 59212,
+    "feature_references": 1213846,
+    "provenance_relationships": 2517118
+  },
+  "unresolved_governance": [
+    "NO_PROFILE_LIFECYCLE_PROMOTION_RECORDED",
+    "EXTERNAL_IMMUTABLE_STORAGE_REFERENCE_PENDING",
+    "TRANSCRIPTOMIC_STATE_RULE_INDEPENDENT_REVIEW_PENDING",
+    "DISEASE_ASSOCIATION_RECORD_GRANULARITY_UNKNOWN_PRESERVED"
+  ],
+  "validation_status": "PASS"
+}
