@@ -38,3 +38,10 @@ outputs/evidence_claim_architecture/evidence_record_registry.csv
 
 outputs/feature_extraction/feature_provenance_registry.csv
 
+# Large immutable provenance and component payload artifacts
+
+outputs/**/feature_provenance_registry.csv
+
+outputs/**/component_records.jsonl
+
+outputs/**/provenance*.csv

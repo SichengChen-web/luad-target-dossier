@@ -1,0 +1,27 @@
+Task: #032B-2E Disease Association Component Materialization
+Component release ID: DA_COMPONENT_RELEASE_13B8AA7455AC7CDB2C3F79B87D20DB55
+Component ID: COMP_DISEASE_ASSOCIATION
+Component version: COMP_DISEASE_ASSOCIATION_V0.1
+Component schema version: DISEASE_ASSOCIATION_COMPONENT_SCHEMA_V0.1
+Component generator version: DISEASE_ASSOCIATION_COMPONENT_GENERATOR_V0.1
+Component generator SHA256: fc98a1406c5ca91d8fb7296cf96b2b6c02b4855b6ad117af33f9bdd96bd83e5e
+Source snapshot version: DA_OT_26_06_MONDO_0005061_SHA256_84949b70be605fea
+Feature schema version: DISEASE_ASSOCIATION_FEATURE_SCHEMA_V0.1
+Feature generator version: DISEASE_ASSOCIATION_FEATURE_GENERATOR_V0.1
+State rule version: DA_COMPONENT_STATE_RULES_V0.1
+Extractor version: DISEASE_ASSOCIATION_FEATURE_EXTRACTOR_V0.1
+Python: 3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]
+Python executable: /usr/local/bin/python3
+Platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+Network access: NONE
+Package installation: NONE
+Randomness: NONE
+Runtime AI/LLM decisions: NONE
+Live source access: NONE
+Wall-clock values in governed outputs: NONE
+Component records SHA256: ecde83c5f3d28441c0e439b2ede6621f484b5b592a96370052911984868ad264
+Component index SHA256: 7637c4da5f2286acb082b5382ae9f9bf50b08b2342d861e60ba388d729295c9e
+Component manifest SHA256: b2264956a13d5096b61cdb2b6981bcc80d7b7b3f1fe422b30f77c7cdc70e39f7
+Validation report SHA256: 99a8ae819143aa603018f8e967fbf7b07b5d08e96b7150011d3e8a7d869050bf
+Profiles generated: FALSE
+Target evaluation performed: FALSE
