@@ -1,0 +1,71 @@
+{
+  "base_schema": {
+    "modification_status": "UNCHANGED",
+    "relative_path": "schemas/evidence_landscape_schema_v0.2.json",
+    "sha256": "a52109fb90fda2493d99f20f51dacbf987a394678c90ee9e5d6c58a7afbc62ba",
+    "version": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2"
+  },
+  "frozen_inputs": {
+    "analysis/33B1_define_landscape_schema_contract.py": "089723f2a4d1c9e85d151cedbcda1f2e68953d04f1c98325680c9d75db3c3a42",
+    "analysis/33B2_generate_evidence_landscape.py": "31c49ef0170d13734569e9601562712c83fd998c9ccd08c3e5a92e96fca42fd7",
+    "docs/governance/evidence_landscape_component_composition_policy_v0.1.md": "1ba8b4bf678906d5f15a50284742d2b81045d7530eb59d2fe28a81ad45eab2b7",
+    "docs/governance/evidence_landscape_validation_requirements_v0.1.md": "fccbcef5a1b61f8d45184c1f6177ce892a828887ad754c268eab9f1674c1c7ca",
+    "docs/governance/evidence_landscape_versioning_policy_v0.1.md": "fd71350c8c00f5abc935a772244232fbcb614dc898c0e44e2763f38121c62677",
+    "docs/governance/multi_component_evidence_landscape_specification_v0.2.md": "6d878dc12eaf7b9172f0880345cfc12bd67a209d45af68dbe543e05f192c8e73",
+    "outputs/evidence_landscape_schema_v0.2/schema_manifest.json": "7cd1c5b15aaa745ff4602ed54171ca39c4d72f54407476661103367373f6b6a8",
+    "outputs/evidence_landscape_schema_v0.2/schema_validation_report.md": "057c231591615bfc22a9134c6c41afb1d66294079e6fd908f369406cdaff05cf",
+    "outputs/evidence_landscape_schema_v0.2/session_info.txt": "67bab5de22e759687cc4eaa9af55bfc2ab0a450b5da403ddd4e9f9ff284a0f63",
+    "outputs/evidence_profile_integration_v0.1/profile_index.csv": "376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28",
+    "outputs/evidence_profile_integration_v0.1/profile_manifest.json": "63492499977f7adb086e4ace9a491a72fa617a1fe054d544701826fb9657455d",
+    "outputs/evidence_profile_integration_v0.1/validation_report.md": "191ba0d01799d4e3e96bff3ebabc6c75997cbbdeee36217b45f0c45181302699",
+    "schemas/evidence_landscape_schema_v0.2.json": "a52109fb90fda2493d99f20f51dacbf987a394678c90ee9e5d6c58a7afbc62ba"
+  },
+  "generator": {
+    "relative_path": "analysis/33B1_1_patch_landscape_schema_contract.py",
+    "sha256": "bbe05e9de94fea125bdef6342dc959740029cfe10df16fa95c480fb147ac1e16",
+    "version": "LANDSCAPE_SCHEMA_COMPATIBILITY_PATCH_GENERATOR_V0.2.1"
+  },
+  "landscape_payload_generation": "PROHIBITED_NONE_GENERATED",
+  "landscape_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+  "network_access": "PROHIBITED_NOT_USED",
+  "new_schema": {
+    "relative_path": "schemas/evidence_landscape_schema_v0.2.1.json",
+    "sha256": "fc3d512c56ec44f03a351108bde640cd5d153d0df62ada66638482cfbd04b32a",
+    "size_bytes": 25727,
+    "version": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2.1"
+  },
+  "package_installation": "PROHIBITED_NOT_PERFORMED",
+  "patch_id": "SCHEMA_PATCH_FC3D512C56EC44F03A351108",
+  "patch_scope": {
+    "artifact_identifier": "SOURCE_NATIVE_ID_PLUS_EXPLICIT_NAMESPACE",
+    "component_semantics_changed": false,
+    "dependency_relationship_cardinality": "LOSSLESS_ORDERED_ARRAY_ONE_OR_MORE_RELATIONSHIP_OBJECTS",
+    "identifier_rewriting": "PROHIBITED_NONE_PERFORMED",
+    "landscape_semantics_changed": false,
+    "provenance_compression": "PROHIBITED_NONE_PERFORMED"
+  },
+  "patch_type": "FORWARD_ONLY_COMPATIBILITY_REVISION",
+  "profile_generation": "PROHIBITED_NONE_GENERATED",
+  "runtime_ai_decisions": "PROHIBITED_NONE_USED",
+  "source_profile_payload": {
+    "access_scope": "TWO_STRUCTURAL_COMPATIBILITY_RECORDS_READ_ONLY",
+    "relative_path": "outputs/evidence_profile_integration_v0.1/profile_records.jsonl",
+    "sha256": "8fab364cbe1318f49dd8b29501dd1439d1ae2a38161e090942801399bec7e156",
+    "size_bytes": 2151412821
+  },
+  "task032c_compatibility_fixtures": {
+    "fixture_ensembl_id": "ENSG00000108576.9",
+    "identifier_rewriting": "NONE",
+    "multi_relationship_count": 2,
+    "multi_relationship_order": [
+      "SAME_SOURCE",
+      "SHARED_DATASET"
+    ],
+    "provenance_compression": "NONE",
+    "single_relationship_count": 1,
+    "source_native_artifact_id": "INV_f41ffa2df1b253e716ca65074890b809126c34193db380fa0ae538e1d86744a9",
+    "source_native_artifact_namespace": "INV"
+  },
+  "task_id": "TASK_033B_1_1",
+  "validation_status": "PASS"
+}
