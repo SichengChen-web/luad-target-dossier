@@ -1,0 +1,722 @@
+{
+  "$comment": "The contract prohibits target optimization, ordering, scoring, recommendation, target-quality or evidence-strength claims.",
+  "$defs": {
+    "caseInputObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "json_pointer": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "observed_values": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "json_pointer",
+        "observed_values"
+      ],
+      "type": "object"
+    },
+    "caseSelection": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_001_COMPLETE_PATTERN"
+              }
+            },
+            "required": [
+              "case_rule_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_category": {
+                "const": "CASE_COMPLETE_PATTERN"
+              },
+              "structural_reason": {
+                "properties": {
+                  "reason_code": {
+                    "const": "STRUCTURAL_ALL_COMPONENTS_OBSERVED"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_002_PARTIAL_PATTERN"
+              }
+            },
+            "required": [
+              "case_rule_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_category": {
+                "const": "CASE_PARTIAL_PATTERN"
+              },
+              "structural_reason": {
+                "properties": {
+                  "reason_code": {
+                    "const": "STRUCTURAL_PARTIAL_OR_MIXED_AVAILABILITY"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_003_CONFLICT_PATTERN"
+              }
+            },
+            "required": [
+              "case_rule_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_category": {
+                "const": "CASE_CONFLICT_PATTERN"
+              },
+              "structural_reason": {
+                "properties": {
+                  "reason_code": {
+                    "const": "STRUCTURAL_COMPONENT_CONFLICT_PRESENT"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_004_LIMITATION_PATTERN"
+              }
+            },
+            "required": [
+              "case_rule_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_category": {
+                "const": "CASE_LIMITATION_PATTERN"
+              },
+              "structural_reason": {
+                "properties": {
+                  "reason_code": {
+                    "const": "STRUCTURAL_LIMITATION_IDENTIFIER_PRESENT"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "case_category": {
+          "enum": [
+            "CASE_COMPLETE_PATTERN",
+            "CASE_PARTIAL_PATTERN",
+            "CASE_CONFLICT_PATTERN",
+            "CASE_LIMITATION_PATTERN"
+          ],
+          "type": "string"
+        },
+        "case_rule_id": {
+          "enum": [
+            "CSRULE_036A_001_COMPLETE_PATTERN",
+            "CSRULE_036A_002_PARTIAL_PATTERN",
+            "CSRULE_036A_003_CONFLICT_PATTERN",
+            "CSRULE_036A_004_LIMITATION_PATTERN"
+          ],
+          "type": "string"
+        },
+        "predicate_trace": {
+          "items": {
+            "$ref": "#/$defs/caseTraceStep"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "type": "array"
+        },
+        "selection_method_id": {
+          "const": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+          "type": "string"
+        },
+        "selection_token_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "structural_reason": {
+          "$ref": "#/$defs/structuralReason"
+        }
+      },
+      "required": [
+        "case_category",
+        "case_rule_id",
+        "predicate_trace",
+        "structural_reason",
+        "selection_method_id",
+        "selection_token_sha256"
+      ],
+      "type": "object"
+    },
+    "caseTraceStep": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 1
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_001_COMPLETE_PATTERN"
+              },
+              "predicate_id": {
+                "const": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 2
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_002_PARTIAL_PATTERN"
+              },
+              "predicate_id": {
+                "const": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 3
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_003_CONFLICT_PATTERN"
+              },
+              "predicate_id": {
+                "const": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 4
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "case_rule_id": {
+                "const": "CSRULE_036A_004_LIMITATION_PATTERN"
+              },
+              "predicate_id": {
+                "const": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "case_rule_id": {
+          "enum": [
+            "CSRULE_036A_001_COMPLETE_PATTERN",
+            "CSRULE_036A_002_PARTIAL_PATTERN",
+            "CSRULE_036A_003_CONFLICT_PATTERN",
+            "CSRULE_036A_004_LIMITATION_PATTERN"
+          ],
+          "type": "string"
+        },
+        "input_observations": {
+          "items": {
+            "$ref": "#/$defs/caseInputObservation"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "predicate_id": {
+          "enum": [
+            "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+            "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+            "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1"
+          ],
+          "type": "string"
+        },
+        "predicate_result": {
+          "type": "boolean"
+        },
+        "trace_step_ordinal": {
+          "maximum": 4,
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "trace_step_ordinal",
+        "case_rule_id",
+        "predicate_id",
+        "predicate_result",
+        "input_observations"
+      ],
+      "type": "object"
+    },
+    "componentStateSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "component_id": {
+          "pattern": "^COMP_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "component_state": {
+          "enum": [
+            "OBSERVED",
+            "PARTIAL",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_QUERIED"
+          ],
+          "type": "string"
+        },
+        "component_version": {
+          "pattern": "^COMP_[A-Z0-9_]+_V[0-9]+\\.[0-9]+$",
+          "type": "string"
+        },
+        "limitation_identifiers": {
+          "items": {
+            "pattern": "^LIM_[A-Z0-9_]+$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_version",
+        "component_state",
+        "source_component_record_id",
+        "limitation_identifiers"
+      ],
+      "type": "object"
+    },
+    "sourceInputObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "json_pointer": {
+          "pattern": "^/component_state_snapshot/[0-9]+/component_state$",
+          "type": "string"
+        },
+        "observed_value": {
+          "enum": [
+            "OBSERVED",
+            "PARTIAL",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_QUERIED"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "json_pointer",
+        "observed_value"
+      ],
+      "type": "object"
+    },
+    "sourcePrioritizationIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "prioritization_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "prioritization_output_schema_version": {
+          "const": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+          "type": "string"
+        },
+        "prioritization_representation_id": {
+          "pattern": "^PRZ_[A-F0-9]{32}$",
+          "type": "string"
+        },
+        "prioritization_representation_version": {
+          "const": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+          "type": "string"
+        },
+        "prioritization_rule_catalog_version": {
+          "const": "PRIORITIZATION_RULE_CATALOG_V0.1",
+          "type": "string"
+        },
+        "source_assigned_rule_id": {
+          "enum": [
+            "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "PRULE_035A_002_ALL_OBSERVED",
+            "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "PRULE_035A_004_ALL_UNAVAILABLE"
+          ],
+          "type": "string"
+        },
+        "source_category": {
+          "enum": [
+            "CATEGORY_A",
+            "CATEGORY_B",
+            "CATEGORY_C",
+            "CATEGORY_UNASSIGNED"
+          ],
+          "type": "string"
+        },
+        "source_summary_identity": {
+          "$ref": "#/$defs/sourceSummaryIdentity"
+        }
+      },
+      "required": [
+        "prioritization_representation_id",
+        "prioritization_output_schema_version",
+        "prioritization_representation_version",
+        "prioritization_rule_catalog_version",
+        "prioritization_content_sha256",
+        "source_category",
+        "source_assigned_rule_id",
+        "source_summary_identity"
+      ],
+      "type": "object"
+    },
+    "sourceSummaryIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_summary_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "evidence_summary_id": {
+          "pattern": "^SUM_[A-F0-9]{32}$",
+          "type": "string"
+        },
+        "evidence_summary_schema_version": {
+          "const": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+          "type": "string"
+        },
+        "evidence_summary_version": {
+          "const": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+          "type": "string"
+        },
+        "source_evidence_snapshot_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_landscape_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_summary_id",
+        "evidence_summary_schema_version",
+        "evidence_summary_version",
+        "evidence_summary_content_sha256",
+        "source_landscape_id",
+        "source_evidence_snapshot_version"
+      ],
+      "type": "object"
+    },
+    "sourceTraceStep": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 1
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "predicate_id": {
+                "const": "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1"
+              },
+              "rule_id": {
+                "const": "PRULE_035A_001_PARTIAL_OR_CONFLICTING"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 2
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "predicate_id": {
+                "const": "PPRED_ALL_COMPONENTS_OBSERVED_V0.1"
+              },
+              "rule_id": {
+                "const": "PRULE_035A_002_ALL_OBSERVED"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 3
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "predicate_id": {
+                "const": "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1"
+              },
+              "rule_id": {
+                "const": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "trace_step_ordinal": {
+                "const": 4
+              }
+            },
+            "required": [
+              "trace_step_ordinal"
+            ]
+          },
+          "then": {
+            "properties": {
+              "predicate_id": {
+                "const": "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1"
+              },
+              "rule_id": {
+                "const": "PRULE_035A_004_ALL_UNAVAILABLE"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "input_observations": {
+          "items": {
+            "$ref": "#/$defs/sourceInputObservation"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "predicate_id": {
+          "enum": [
+            "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1",
+            "PPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1",
+            "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1"
+          ],
+          "type": "string"
+        },
+        "predicate_result": {
+          "type": "boolean"
+        },
+        "rule_id": {
+          "enum": [
+            "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "PRULE_035A_002_ALL_OBSERVED",
+            "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "PRULE_035A_004_ALL_UNAVAILABLE"
+          ],
+          "type": "string"
+        },
+        "trace_step_ordinal": {
+          "maximum": 4,
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "trace_step_ordinal",
+        "rule_id",
+        "predicate_id",
+        "predicate_result",
+        "input_observations"
+      ],
+      "type": "object"
+    },
+    "structuralReason": {
+      "additionalProperties": false,
+      "properties": {
+        "matched_input_references": {
+          "items": {
+            "$ref": "#/$defs/caseInputObservation"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "reason_code": {
+          "enum": [
+            "STRUCTURAL_ALL_COMPONENTS_OBSERVED",
+            "STRUCTURAL_PARTIAL_OR_MIXED_AVAILABILITY",
+            "STRUCTURAL_COMPONENT_CONFLICT_PRESENT",
+            "STRUCTURAL_LIMITATION_IDENTIFIER_PRESENT"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason_code",
+        "matched_input_references"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:case-study-selection-schema:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Closed non-ordinal structural contract for deterministic selection of representative presentation case patterns.",
+  "properties": {
+    "EnsemblID": {
+      "pattern": "^ENSG[0-9]+\\.[0-9]+$",
+      "type": "string"
+    },
+    "case_rule_catalog_version": {
+      "const": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+      "type": "string"
+    },
+    "case_selection": {
+      "$ref": "#/$defs/caseSelection"
+    },
+    "case_selection_framework_version": {
+      "const": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+      "type": "string"
+    },
+    "case_selection_id": {
+      "pattern": "^CASESEL_[A-F0-9]{32}$",
+      "type": "string"
+    },
+    "case_selection_schema_version": {
+      "const": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+      "type": "string"
+    },
+    "case_selector_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "component_state_snapshot": {
+      "items": {
+        "$ref": "#/$defs/componentStateSnapshot"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "limitation_identifiers": {
+      "items": {
+        "pattern": "^LIM_[A-Z0-9_]+$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "source_prioritization_identity": {
+      "$ref": "#/$defs/sourcePrioritizationIdentity"
+    },
+    "source_prioritization_rule_trace": {
+      "items": {
+        "$ref": "#/$defs/sourceTraceStep"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "universe_ordinal": {
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "EnsemblID",
+    "universe_ordinal",
+    "case_selection_id",
+    "case_selection_schema_version",
+    "case_selection_framework_version",
+    "case_rule_catalog_version",
+    "case_selector_version",
+    "source_prioritization_identity",
+    "source_prioritization_rule_trace",
+    "component_state_snapshot",
+    "limitation_identifiers",
+    "case_selection"
+  ],
+  "title": "Case Study Selection schema v0.1",
+  "type": "object"
+}
