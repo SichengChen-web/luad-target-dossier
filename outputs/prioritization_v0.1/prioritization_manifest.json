@@ -1,0 +1,129 @@
+{
+  "assigned_rule_counts_reconciliation_only": {
+    "PRULE_035A_001_PARTIAL_OR_CONFLICTING": 4065,
+    "PRULE_035A_002_ALL_OBSERVED": 7690,
+    "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE": 17851,
+    "PRULE_035A_004_ALL_UNAVAILABLE": 0
+  },
+  "category_counts_non_ordinal_reconciliation_only": {
+    "CATEGORY_A": 7690,
+    "CATEGORY_B": 17851,
+    "CATEGORY_C": 4065,
+    "CATEGORY_UNASSIGNED": 0
+  },
+  "component_order": [
+    "COMP_TRANSCRIPTOMIC_EVIDENCE",
+    "COMP_DISEASE_ASSOCIATION"
+  ],
+  "component_state_counts_reconciliation_only": {
+    "COMP_DISEASE_ASSOCIATION": {
+      "MISSING": 20500,
+      "OBSERVED": 8393,
+      "PARTIAL": 713
+    },
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": {
+      "CONFLICTING": 3435,
+      "OBSERVED": 26171
+    }
+  },
+  "component_versions": {
+    "COMP_DISEASE_ASSOCIATION": "COMP_DISEASE_ASSOCIATION_V0.1",
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+  },
+  "counts": {
+    "component_state_snapshots": 59212,
+    "partitions": 256,
+    "representations": 29606,
+    "rule_trace_steps": 118424
+  },
+  "determinism": {
+    "api_access": "PROHIBITED_NOT_USED",
+    "external_knowledge": "NOT_USED",
+    "gene_symbols": "NOT_USED",
+    "independent_complete_regenerations": 2,
+    "index_rows": "IDENTICAL",
+    "network_access": "PROHIBITED_NOT_USED",
+    "partition_bytes": "BYTE_IDENTICAL_BY_SIZE_AND_SHA256",
+    "randomness": "NOT_USED",
+    "runtime_ai_decisions": "PROHIBITED_NONE_USED"
+  },
+  "frozen_inputs": {
+    "analysis/34B_materialize_evidence_summary.py": "2b24b79c46100b919243e8978d7c29a96ec2f20428f2153c29c0573f6af47685",
+    "analysis/35A_define_prioritization_schema.py": "de23378886ebfc2cdb264bd96d680ce4d24d043588ccdb13d71f5530acdb6d07",
+    "docs/governance/prioritization_framework_specification_v0.1.md": "104afeda3b4ecb824369d7f1f655213dbdc36679c1fd97c3b95e00ad63163f5a",
+    "docs/governance/prioritization_rule_catalog_v0.1.md": "7794d79debd01c0a2e00f6d6109f78048089b8a1a747f77372e1e589e0dfadb1",
+    "docs/governance/prioritization_validation_requirements_v0.1.md": "bf26ca1882685caf1da4cb45ccda0726049087c4782deab925524a8f0d321c47",
+    "outputs/evidence_summary_v0.1/partition_manifest.csv": "fd9bd76ea5f940a0165a6a082538a810fc64cbcd8b0fe4ecda9f0aae14795202",
+    "outputs/evidence_summary_v0.1/session_info.txt": "bd04e5a858f2c70e746954d2e99bdfd44e3d64f818261d31c393f20bed9bda44",
+    "outputs/evidence_summary_v0.1/summary_index.csv": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5",
+    "outputs/evidence_summary_v0.1/summary_manifest.json": "02b9a893569bd01257cb0108121f61a78041e90ffd769ac7a1d163d24051e19f",
+    "outputs/evidence_summary_v0.1/validation_report.md": "257662af9adf87ce7f913e2024b6e43db2685cc84a117f9424830b6308c034e8",
+    "schemas/prioritization_output_schema_v0.1.json": "c79dcb1478e71239d158855ebf6b0f3b58cad84286fe1da3806bb22e77e74d72"
+  },
+  "generator": {
+    "generator_version": "TRANSPARENT_PRIORITIZATION_MATERIALIZER_V0.1",
+    "relative_path": "analysis/35B_materialize_prioritization.py",
+    "sha256": "7a651a3919b0a7c1e1a31bbea12e546039dc9117c053114807883f05491e66f5"
+  },
+  "git_managed_artifacts": {
+    "partition_manifest.csv": {
+      "artifact_size": 162064,
+      "row_count": 256,
+      "sha256": "e59a54e4a4857927eab529aab28c82ba8874e7b2cebfa2064527b89c642a5f14"
+    },
+    "prioritization_index.csv": {
+      "artifact_size": 25495736,
+      "row_count": 29606,
+      "sha256": "8131fa2644dab0efb17c5ae42cb5d297ec3993aa69ba00dda4ec6bdb47c7a69a"
+    }
+  },
+  "immutable_key": "EnsemblID",
+  "large_payload": {
+    "artifact_class": "CLASS_D_LARGE_DATA_OBJECT",
+    "artifact_id": "ART_PRZV01_SET_011A39B150DEF9E56A43CBF9",
+    "artifact_size": 94591468,
+    "generator_version": "TRANSPARENT_PRIORITIZATION_MATERIALIZER_V0.1",
+    "ordinary_git_tracking": "EXTERNALIZED_BY_ARTIFACT_DESIGN",
+    "partition_count": 256,
+    "partition_set_sha256": "011a39b150def9e56a43cbf97ff3985111dab0c5fe6d4fea3b3312f27961f65b",
+    "storage_reference_placeholder": "external+sha256://PENDING/luad-target-dossier/prioritization-v0.1/ART_PRZV01_SET_011A39B150DEF9E56A43CBF9/",
+    "storage_status": "LOCAL_CONTENT_ADDRESSED_STAGING_PENDING_DURABLE_REGISTRATION"
+  },
+  "non_ordinality": {
+    "category_order": "NONE",
+    "numeric_encoding": "PROHIBITED_NONE_PRESENT",
+    "target_selection": "PROHIBITED_NOT_PERFORMED",
+    "target_sorting": "PROHIBITED_NOT_PERFORMED"
+  },
+  "prioritization_output_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+  "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+  "release_id": "PRZREL_940BC24427791A7E054B54F533E77B48",
+  "release_status": "VALIDATED_LOCAL_STRUCTURAL_ROUTING_CANDIDATE",
+  "representation_identity_tuple": [
+    "EnsemblID",
+    "prioritization_output_schema_version",
+    "prioritization_representation_version",
+    "source_evidence_summary_id",
+    "rule_catalog_version"
+  ],
+  "rule_catalog": {
+    "fixed_trace_order": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "relative_path": "docs/governance/prioritization_rule_catalog_v0.1.md",
+    "sha256": "7794d79debd01c0a2e00f6d6109f78048089b8a1a747f77372e1e589e0dfadb1",
+    "version": "PRIORITIZATION_RULE_CATALOG_V0.1"
+  },
+  "rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+  "source_evidence_summary": {
+    "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+    "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+    "index_sha256": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5",
+    "manifest_sha256": "02b9a893569bd01257cb0108121f61a78041e90ffd769ac7a1d163d24051e19f",
+    "partition_manifest_sha256": "fd9bd76ea5f940a0165a6a082538a810fc64cbcd8b0fe4ecda9f0aae14795202"
+  },
+  "validation_status": "PASS"
+}
