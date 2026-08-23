@@ -1,0 +1,129 @@
+{
+  "component_order": [
+    "COMP_TRANSCRIPTOMIC_EVIDENCE",
+    "COMP_DISEASE_ASSOCIATION"
+  ],
+  "component_state_counts": {
+    "COMP_DISEASE_ASSOCIATION": {
+      "MISSING": 20500,
+      "OBSERVED": 8393,
+      "PARTIAL": 713
+    },
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": {
+      "CONFLICTING": 3435,
+      "OBSERVED": 26171
+    }
+  },
+  "component_versions": {
+    "COMP_DISEASE_ASSOCIATION": "COMP_DISEASE_ASSOCIATION_V0.1",
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1"
+  },
+  "counts": {
+    "components": 59212,
+    "dependency_relationships": 3430043,
+    "dependency_summaries": 2517118,
+    "feature_missingness_references": 1213846,
+    "multi_dependency_summaries": 912925,
+    "partitions": 256,
+    "summaries": 29606
+  },
+  "determinism": {
+    "api_access": "PROHIBITED_NOT_USED",
+    "independent_complete_regenerations": 2,
+    "network_access": "PROHIBITED_NOT_USED",
+    "randomness": "NOT_USED",
+    "runtime_ai_decisions": "PROHIBITED_NONE_USED",
+    "summary_index_rows": "IDENTICAL",
+    "summary_partition_bytes": "BYTE_IDENTICAL_BY_SIZE_AND_SHA256",
+    "wall_clock_governed_values": "NOT_USED"
+  },
+  "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+  "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+  "feature_missingness_counts": {
+    "COMP_DISEASE_ASSOCIATION": {
+      "NOT_FOUND": 106065,
+      "OBSERVED": 448056,
+      "UNKNOWN": 8393
+    },
+    "COMP_TRANSCRIPTOMIC_EVIDENCE": {
+      "OBSERVED": 651332
+    }
+  },
+  "frozen_inputs": {
+    "analysis/33B2_generate_evidence_landscape.py": "46d53c1fa4883de87a41b63556209ec5dc104ea3fdb32eabc6be38f359084800",
+    "analysis/34A_define_evidence_summary_schema.py": "0f401e377f40d1355b4bdba2ad197b5c405d906e02a2822c948addfefca5dec0",
+    "docs/governance/evidence_aggregation_representation_specification_v0.1.md": "47bb0621b23090db5bb5f90f8a9c87ec56785e31957089c02573f1e1def40274",
+    "docs/governance/evidence_summary_component_policy_v0.1.md": "c6e81a704060021baa951e25b78d1a2b355a656f824b27d6656e8af568049ee1",
+    "docs/governance/evidence_summary_dependency_policy_v0.1.md": "efb423fc6ef1c918accdf70b6f38e10fd6c79e5c2455aca5ed0fb539d682d974",
+    "docs/governance/evidence_summary_validation_requirements_v0.1.md": "e51e34743943cfc168572856fa5b1bf991261f899ced6b56057a9245f7f09c02",
+    "outputs/evidence_landscape_v0.2/landscape_index.csv": "fbd7a3b50e70c41aa2ddbf0361390fde23d12bc320a881a4da168ad1d145d6c8",
+    "outputs/evidence_landscape_v0.2/landscape_manifest.json": "2c3853becd3895b0aaffb12be95205d910d1507dc1f2f8f36f7f150f651dba29",
+    "outputs/evidence_landscape_v0.2/partition_manifest.csv": "2ccc38a384fe816d50b2c5d8f4c528a49727189434fe4be41e70355ff146cf8d",
+    "outputs/evidence_landscape_v0.2/session_info.txt": "bb928646c3c7c3aba85f9faa127b4eb93b50455fa24165aa6b1a048bf1c658de",
+    "outputs/evidence_landscape_v0.2/validation_report.md": "d5933862fe468ef4561188716abaee2de1cda16e06bcb1d39c1793f66cc29a8a",
+    "schemas/evidence_summary_schema_v0.1.json": "0942733644e1333247293ca83f2eb14c13640939edf3727ea74d19d33990b366"
+  },
+  "generator": {
+    "generator_version": "EVIDENCE_SUMMARY_MATERIALIZER_V0.1",
+    "relative_path": "analysis/34B_materialize_evidence_summary.py",
+    "sha256": "2b24b79c46100b919243e8978d7c29a96ec2f20428f2153c29c0573f6af47685"
+  },
+  "git_managed_artifacts": {
+    "partition_manifest.csv": {
+      "artifact_size": 145906,
+      "row_count": 256,
+      "sha256": "fd9bd76ea5f940a0165a6a082538a810fc64cbcd8b0fe4ecda9f0aae14795202"
+    },
+    "summary_index.csv": {
+      "artifact_size": 23035120,
+      "row_count": 29606,
+      "sha256": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5"
+    }
+  },
+  "immutable_key": "EnsemblID",
+  "large_payload": {
+    "artifact_class": "CLASS_D_LARGE_DATA_OBJECT",
+    "artifact_id": "ART_SUMV01_SET_9C7750D42301093888A120CE",
+    "artifact_size": 1876140432,
+    "generator_version": "EVIDENCE_SUMMARY_MATERIALIZER_V0.1",
+    "ordinary_git_tracking": "PROHIBITED",
+    "partition_count": 256,
+    "partition_set_sha256": "9c7750d42301093888a120ce9b4231d7b33724e17c1dc40a57c60ffa92c81291",
+    "storage_reference_placeholder": "external+sha256://PENDING/luad-target-dossier/evidence-summary-v0.1/ART_SUMV01_SET_9C7750D42301093888A120CE/",
+    "storage_status": "LOCAL_CONTENT_ADDRESSED_STAGING_PENDING_DURABLE_REGISTRATION"
+  },
+  "prohibitions": [
+    "NO_EVIDENCE_RETRIEVAL",
+    "NO_COMPONENT_REBUILD",
+    "NO_TARGET_EVALUATION",
+    "NO_SCORING",
+    "NO_RANKING",
+    "NO_PRIORITIZATION",
+    "NO_RECOMMENDATION",
+    "NO_BIOLOGICAL_INTERPRETATION",
+    "NO_RUNTIME_AI_DECISIONS"
+  ],
+  "release_id": "SUMREL_43EA4FD9EE02963DA2E94BD1A9FFFC53",
+  "release_status": "VALIDATED_LOCAL_STRUCTURAL_CANDIDATE",
+  "schema": {
+    "relative_path": "schemas/evidence_summary_schema_v0.1.json",
+    "sha256": "0942733644e1333247293ca83f2eb14c13640939edf3727ea74d19d33990b366"
+  },
+  "source_landscape": {
+    "generator_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_GENERATOR_V0.1",
+    "index_sha256": "fbd7a3b50e70c41aa2ddbf0361390fde23d12bc320a881a4da168ad1d145d6c8",
+    "landscape_schema_version": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2.1",
+    "landscape_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+    "manifest_sha256": "2c3853becd3895b0aaffb12be95205d910d1507dc1f2f8f36f7f150f651dba29",
+    "partition_manifest_sha256": "2ccc38a384fe816d50b2c5d8f4c528a49727189434fe4be41e70355ff146cf8d"
+  },
+  "summary_identity_tuple": [
+    "EnsemblID",
+    "evidence_summary_schema_version",
+    "evidence_summary_version",
+    "source_landscape_id",
+    "source_landscape_schema_version",
+    "source_landscape_version"
+  ],
+  "validation_status": "PASS"
+}
