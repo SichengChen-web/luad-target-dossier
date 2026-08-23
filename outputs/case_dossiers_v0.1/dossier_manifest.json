@@ -1,0 +1,126 @@
+{
+  "case_contract": {
+    "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+    "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+    "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+    "categories_non_ordinal": [
+      "CASE_COMPLETE_PATTERN",
+      "CASE_PARTIAL_PATTERN",
+      "CASE_CONFLICT_PATTERN",
+      "CASE_LIMITATION_PATTERN"
+    ],
+    "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1"
+  },
+  "counts": {
+    "case_slots": 4,
+    "complete_regenerations": 2,
+    "eligible_pool_counts": {
+      "CASE_COMPLETE_PATTERN": 7690,
+      "CASE_CONFLICT_PATTERN": 3435,
+      "CASE_LIMITATION_PATTERN": 29606,
+      "CASE_PARTIAL_PATTERN": 18481
+    },
+    "filled_case_slots": 4,
+    "source_representations_evaluated_per_regeneration": 29606,
+    "unfilled_case_slots": 0
+  },
+  "dossier_release_version": "REPRESENTATIVE_CASE_DOSSIER_RELEASE_V0.1",
+  "frozen_inputs": {
+    "analysis/35B_materialize_prioritization.py": "7a651a3919b0a7c1e1a31bbea12e546039dc9117c053114807883f05491e66f5",
+    "analysis/36A_define_case_selection_schema.py": "eae4d7c5af3509462f8c3317a831db417c586a4c495e24c65f7815bf76eaba0e",
+    "docs/governance/case_study_selection_framework_v0.1.md": "c269af2bfe9afd8f33fb1e2f107dc9e563f58ab6648ac66fca2816af2a8fd109",
+    "docs/governance/case_study_selection_rule_catalog_v0.1.md": "a81289a329675206db25c5f3b79d8d2c870e95b32e147dc03e7dfc36cb3bf31a",
+    "docs/governance/case_study_selection_validation_requirements_v0.1.md": "5ed8a2086135e712218e76d4ce556ae07e37c7ed049f8bf88feefab3a94290f9",
+    "outputs/prioritization_v0.1/partition_manifest.csv": "e59a54e4a4857927eab529aab28c82ba8874e7b2cebfa2064527b89c642a5f14",
+    "outputs/prioritization_v0.1/prioritization_index.csv": "8131fa2644dab0efb17c5ae42cb5d297ec3993aa69ba00dda4ec6bdb47c7a69a",
+    "outputs/prioritization_v0.1/prioritization_manifest.json": "773eeec6bfa769c932f354bcc5eb552fe4a540a2fe65dd1811720b2e80c4ff80",
+    "outputs/prioritization_v0.1/session_info.txt": "9107a208ad059f62b18f915d80879ea9fce9f877f839440fbf7dc145c0724e57",
+    "outputs/prioritization_v0.1/validation_report.md": "8fd3664d6ce8ffe9b5c7bfc87793ca0492d23b97be8f4b8ac6abd2f37eead1d0",
+    "schemas/case_study_selection_schema_v0.1.json": "d76da88675e63fb13f9cb59ad1b1e2df5895c22d5862987c4dc6d7818acaeffa"
+  },
+  "generator": {
+    "generator_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+    "relative_path": "analysis/36B_generate_case_dossiers.py",
+    "sha256": "5b8d0c30f2f660faa069db4eb48716f03ca1e1681fe33e02f5f81ca95450e6f6"
+  },
+  "git_managed_artifacts": {
+    "case_dossiers.json": {
+      "artifact_size": 55377,
+      "sha256": "d861e2500797ae9351f70e474c8a8acafa51d30481357aa450d1d77314bd27b8"
+    },
+    "case_selection_index.csv": {
+      "artifact_size": 3398,
+      "sha256": "f11892cc59d1fc3b042e79b4859e293677d9befbe975dd9d6635e0033011bc52"
+    },
+    "session_info.txt": {
+      "artifact_size": 878,
+      "sha256": "0cae68b33106ff97512e39ade11059701dfa8dfc847eb5db47bd7b04c3e0572f"
+    },
+    "validation_report.md": {
+      "artifact_size": 1833,
+      "sha256": "8ca6bc43b72fd653924b75eb9c5429e90cc82477908a1d17877bd7f5776fbbc3"
+    }
+  },
+  "interpretation_boundary": "STRUCTURAL_REPRESENTATIVE_CASE_PATTERNS_ONLY",
+  "release_id": "CASEREL_678B829DF020D9D6D041B1437855B322",
+  "selection_results": [
+    {
+      "EnsemblID": "ENSG00000168952.15",
+      "case_category": "CASE_COMPLETE_PATTERN",
+      "case_selection_id": "CASESEL_19FF843920216CC33F6EBCDF1B52196B",
+      "eligible_pool_count": 7690,
+      "selection_status": "FILLED",
+      "selection_token_sha256": "00040fa4d3500482978d8f6421bed4c7b7f58f3978ca9bb9bc5bbf785e392e9c",
+      "universe_ordinal": 86
+    },
+    {
+      "EnsemblID": "ENSG00000278376.1",
+      "case_category": "CASE_PARTIAL_PATTERN",
+      "case_selection_id": "CASESEL_10759224068765AA4054B3B2C0FBA78F",
+      "eligible_pool_count": 18481,
+      "selection_status": "FILLED",
+      "selection_token_sha256": "0005932f2dcdbec62fd7a76026046b1b788ad263c8fdfae5cdfbd85eec97665e",
+      "universe_ordinal": 3091
+    },
+    {
+      "EnsemblID": "ENSG00000270890.1",
+      "case_category": "CASE_CONFLICT_PATTERN",
+      "case_selection_id": "CASESEL_9E53BEE52C2F2496BF17A100F9882D74",
+      "eligible_pool_count": 3435,
+      "selection_status": "FILLED",
+      "selection_token_sha256": "00092838109b4d21749accf90750eb911512049695b7f8b657687ac78c500799",
+      "universe_ordinal": 27549
+    },
+    {
+      "EnsemblID": "ENSG00000260630.6",
+      "case_category": "CASE_LIMITATION_PATTERN",
+      "case_selection_id": "CASESEL_04FCE8F0AD511FB18468AA6F698EC776",
+      "eligible_pool_count": 29606,
+      "selection_status": "FILLED",
+      "selection_token_sha256": "0001657da877deef477059b551bbe71c5925dea5954a5645ce864bcd20e4b903",
+      "universe_ordinal": 13588
+    }
+  ],
+  "source": {
+    "prioritization_release_id": "PRZREL_940BC24427791A7E054B54F533E77B48",
+    "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+    "prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+    "prioritization_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+    "source_payload_artifact_id": "ART_PRZV01_SET_011A39B150DEF9E56A43CBF9",
+    "source_payload_partition_set_sha256": "011a39b150def9e56a43cbf97ff3985111dab0c5fe6d4fea3b3312f27961f65b",
+    "source_universe_count": 29606
+  },
+  "task_id": "TASK_036B",
+  "validation": {
+    "category_reconciliation": "PASS",
+    "deterministic_token_reproduction": "PASS",
+    "frozen_input_hashes_before_after": "UNCHANGED",
+    "recursive_prohibited_field_scan": "PASS",
+    "rule_trace_reconciliation": "PASS",
+    "schema_validation": "PASS",
+    "source_identity_reconciliation": "PASS",
+    "status": "PASS",
+    "two_complete_regenerations": "BYTE_IDENTICAL"
+  },
+  "validation_status": "PASS"
+}

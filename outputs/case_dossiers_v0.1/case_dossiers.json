@@ -1,0 +1,1337 @@
+{
+  "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+  "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+  "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+  "case_selector_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+  "case_slots": [
+    {
+      "case_category": "CASE_COMPLETE_PATTERN",
+      "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+      "dossier": {
+        "EnsemblID": "ENSG00000168952.15",
+        "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+        "case_selection": {
+          "case_category": "CASE_COMPLETE_PATTERN",
+          "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+          "predicate_trace": [
+            {
+              "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 1
+            },
+            {
+              "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 2
+            },
+            {
+              "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 3
+            },
+            {
+              "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 4
+            }
+          ],
+          "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+          "selection_token_sha256": "00040fa4d3500482978d8f6421bed4c7b7f58f3978ca9bb9bc5bbf785e392e9c",
+          "structural_reason": {
+            "matched_input_references": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_values": [
+                  "OBSERVED"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_values": [
+                  "OBSERVED"
+                ]
+              },
+              {
+                "json_pointer": "/limitation_identifiers",
+                "observed_values": [
+                  "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                  "LIM_EXTERNAL_STORAGE_PENDING",
+                  "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                "observed_values": [
+                  "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                  "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                  "LIM_STATE_RULE_REVIEW_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                "observed_values": []
+              }
+            ],
+            "reason_code": "STRUCTURAL_ALL_COMPONENTS_OBSERVED"
+          }
+        },
+        "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+        "case_selection_id": "CASESEL_19FF843920216CC33F6EBCDF1B52196B",
+        "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+        "case_selector_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+        "component_state_snapshot": [
+          {
+            "component_id": "COMP_TRANSCRIPTOMIC_EVIDENCE",
+            "component_state": "OBSERVED",
+            "component_version": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1",
+            "limitation_identifiers": [
+              "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+              "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+              "LIM_STATE_RULE_REVIEW_PENDING"
+            ],
+            "source_component_record_id": "PRF_B76D7D0ACA0BDEC0FD9CF55F"
+          },
+          {
+            "component_id": "COMP_DISEASE_ASSOCIATION",
+            "component_state": "OBSERVED",
+            "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+            "limitation_identifiers": [],
+            "source_component_record_id": "CMPREC_DA_5C2B504028354FA48739C4B4860FA036"
+          }
+        ],
+        "limitation_identifiers": [
+          "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+          "LIM_EXTERNAL_STORAGE_PENDING",
+          "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+        ],
+        "source_prioritization_identity": {
+          "prioritization_content_sha256": "237894f5d4a12aa56e9024b56cd91cfcdc36b4d2605470a3ac57a83eeb590ff2",
+          "prioritization_output_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+          "prioritization_representation_id": "PRZ_58C96D79B4831A268B826E3B8FC2A42B",
+          "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+          "prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+          "source_assigned_rule_id": "PRULE_035A_002_ALL_OBSERVED",
+          "source_category": "CATEGORY_A",
+          "source_summary_identity": {
+            "evidence_summary_content_sha256": "a230d922c5a2895a75766b339c291a36d4303f785a4e6cbf248163405fbd29fa",
+            "evidence_summary_id": "SUM_0BD45FA19D53E82395A6ECCFBDD5413A",
+            "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+            "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+            "source_evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+            "source_landscape_id": "LND_28BFDCA38C5633FCE19CB91A828C0D66"
+          }
+        },
+        "source_prioritization_rule_trace": [
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "OBSERVED"
+              }
+            ],
+            "predicate_id": "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "trace_step_ordinal": 1
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "OBSERVED"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "predicate_result": true,
+            "rule_id": "PRULE_035A_002_ALL_OBSERVED",
+            "trace_step_ordinal": 2
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "OBSERVED"
+              }
+            ],
+            "predicate_id": "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "trace_step_ordinal": 3
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "OBSERVED"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_004_ALL_UNAVAILABLE",
+            "trace_step_ordinal": 4
+          }
+        ],
+        "universe_ordinal": 86
+      },
+      "eligible_pool_count": 7690,
+      "predicate_id": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+      "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+      "selection_status": "FILLED",
+      "structural_reason_code": "STRUCTURAL_ALL_COMPONENTS_OBSERVED"
+    },
+    {
+      "case_category": "CASE_PARTIAL_PATTERN",
+      "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+      "dossier": {
+        "EnsemblID": "ENSG00000278376.1",
+        "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+        "case_selection": {
+          "case_category": "CASE_PARTIAL_PATTERN",
+          "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+          "predicate_trace": [
+            {
+              "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 1
+            },
+            {
+              "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 2
+            },
+            {
+              "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 3
+            },
+            {
+              "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 4
+            }
+          ],
+          "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+          "selection_token_sha256": "0005932f2dcdbec62fd7a76026046b1b788ad263c8fdfae5cdfbd85eec97665e",
+          "structural_reason": {
+            "matched_input_references": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_values": [
+                  "OBSERVED"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_values": [
+                  "MISSING"
+                ]
+              },
+              {
+                "json_pointer": "/limitation_identifiers",
+                "observed_values": [
+                  "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                  "LIM_EXTERNAL_STORAGE_PENDING",
+                  "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                "observed_values": [
+                  "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                  "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                  "LIM_STATE_RULE_REVIEW_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                "observed_values": []
+              }
+            ],
+            "reason_code": "STRUCTURAL_PARTIAL_OR_MIXED_AVAILABILITY"
+          }
+        },
+        "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+        "case_selection_id": "CASESEL_10759224068765AA4054B3B2C0FBA78F",
+        "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+        "case_selector_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+        "component_state_snapshot": [
+          {
+            "component_id": "COMP_TRANSCRIPTOMIC_EVIDENCE",
+            "component_state": "OBSERVED",
+            "component_version": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1",
+            "limitation_identifiers": [
+              "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+              "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+              "LIM_STATE_RULE_REVIEW_PENDING"
+            ],
+            "source_component_record_id": "PRF_C87B7B83C6CE9C0D04462C1A"
+          },
+          {
+            "component_id": "COMP_DISEASE_ASSOCIATION",
+            "component_state": "MISSING",
+            "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+            "limitation_identifiers": [],
+            "source_component_record_id": "CMPREC_DA_4D8CC816430760DA8F5D26D54284DCA5"
+          }
+        ],
+        "limitation_identifiers": [
+          "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+          "LIM_EXTERNAL_STORAGE_PENDING",
+          "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+        ],
+        "source_prioritization_identity": {
+          "prioritization_content_sha256": "4f38c5e9829b6dd3898ea68432a46323dce2af66958fee9fb50f8944814b1e6c",
+          "prioritization_output_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+          "prioritization_representation_id": "PRZ_74C42B93EFBB1C3935B1E1A39A3DBBA3",
+          "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+          "prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+          "source_assigned_rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+          "source_category": "CATEGORY_B",
+          "source_summary_identity": {
+            "evidence_summary_content_sha256": "fe56e4a9f812d00d3025a7e6b6bc34774e20943d4080b3086fa6b7a584c89316",
+            "evidence_summary_id": "SUM_6F8763E2A31125BAE3FCFC3E595D1730",
+            "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+            "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+            "source_evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+            "source_landscape_id": "LND_9F3A758E2D044FB8C59FD87EB1C37177"
+          }
+        },
+        "source_prioritization_rule_trace": [
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "trace_step_ordinal": 1
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_002_ALL_OBSERVED",
+            "trace_step_ordinal": 2
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1",
+            "predicate_result": true,
+            "rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "trace_step_ordinal": 3
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_004_ALL_UNAVAILABLE",
+            "trace_step_ordinal": 4
+          }
+        ],
+        "universe_ordinal": 3091
+      },
+      "eligible_pool_count": 18481,
+      "predicate_id": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+      "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+      "selection_status": "FILLED",
+      "structural_reason_code": "STRUCTURAL_PARTIAL_OR_MIXED_AVAILABILITY"
+    },
+    {
+      "case_category": "CASE_CONFLICT_PATTERN",
+      "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+      "dossier": {
+        "EnsemblID": "ENSG00000270890.1",
+        "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+        "case_selection": {
+          "case_category": "CASE_CONFLICT_PATTERN",
+          "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+          "predicate_trace": [
+            {
+              "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "CONFLICTING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 1
+            },
+            {
+              "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "CONFLICTING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 2
+            },
+            {
+              "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "CONFLICTING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 3
+            },
+            {
+              "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "CONFLICTING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 4
+            }
+          ],
+          "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+          "selection_token_sha256": "00092838109b4d21749accf90750eb911512049695b7f8b657687ac78c500799",
+          "structural_reason": {
+            "matched_input_references": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_values": [
+                  "CONFLICTING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_values": [
+                  "MISSING"
+                ]
+              },
+              {
+                "json_pointer": "/limitation_identifiers",
+                "observed_values": [
+                  "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                  "LIM_EXTERNAL_STORAGE_PENDING",
+                  "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                "observed_values": [
+                  "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                  "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                  "LIM_STATE_RULE_REVIEW_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                "observed_values": []
+              }
+            ],
+            "reason_code": "STRUCTURAL_COMPONENT_CONFLICT_PRESENT"
+          }
+        },
+        "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+        "case_selection_id": "CASESEL_9E53BEE52C2F2496BF17A100F9882D74",
+        "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+        "case_selector_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+        "component_state_snapshot": [
+          {
+            "component_id": "COMP_TRANSCRIPTOMIC_EVIDENCE",
+            "component_state": "CONFLICTING",
+            "component_version": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1",
+            "limitation_identifiers": [
+              "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+              "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+              "LIM_STATE_RULE_REVIEW_PENDING"
+            ],
+            "source_component_record_id": "PRF_A3B25D77DFFB8337483449BD"
+          },
+          {
+            "component_id": "COMP_DISEASE_ASSOCIATION",
+            "component_state": "MISSING",
+            "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+            "limitation_identifiers": [],
+            "source_component_record_id": "CMPREC_DA_055B4F02D327AA9FE8E68E4A6C6C8A7E"
+          }
+        ],
+        "limitation_identifiers": [
+          "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+          "LIM_EXTERNAL_STORAGE_PENDING",
+          "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+        ],
+        "source_prioritization_identity": {
+          "prioritization_content_sha256": "c7104fb394c60441a30ac35a3f780049e3868f2ef4de81738d027e5b366522f5",
+          "prioritization_output_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+          "prioritization_representation_id": "PRZ_A076BB5E5A7A610F36DC8E6F5175EE34",
+          "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+          "prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+          "source_assigned_rule_id": "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+          "source_category": "CATEGORY_C",
+          "source_summary_identity": {
+            "evidence_summary_content_sha256": "47fdd3c54ae3a0cf9e7cd620ef0afad48bd716f38365c2448138b3090f615ec8",
+            "evidence_summary_id": "SUM_426D6F1694EFDAF836D2F70C75182E38",
+            "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+            "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+            "source_evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+            "source_landscape_id": "LND_FC46C69535D136C49FDF3677C5FF7046"
+          }
+        },
+        "source_prioritization_rule_trace": [
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "CONFLICTING"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1",
+            "predicate_result": true,
+            "rule_id": "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "trace_step_ordinal": 1
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "CONFLICTING"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_002_ALL_OBSERVED",
+            "trace_step_ordinal": 2
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "CONFLICTING"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "trace_step_ordinal": 3
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "CONFLICTING"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_004_ALL_UNAVAILABLE",
+            "trace_step_ordinal": 4
+          }
+        ],
+        "universe_ordinal": 27549
+      },
+      "eligible_pool_count": 3435,
+      "predicate_id": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+      "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+      "selection_status": "FILLED",
+      "structural_reason_code": "STRUCTURAL_COMPONENT_CONFLICT_PRESENT"
+    },
+    {
+      "case_category": "CASE_LIMITATION_PATTERN",
+      "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+      "dossier": {
+        "EnsemblID": "ENSG00000260630.6",
+        "case_rule_catalog_version": "CASE_STUDY_SELECTION_RULE_CATALOG_V0.1",
+        "case_selection": {
+          "case_category": "CASE_LIMITATION_PATTERN",
+          "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+          "predicate_trace": [
+            {
+              "case_rule_id": "CSRULE_036A_001_COMPLETE_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 1
+            },
+            {
+              "case_rule_id": "CSRULE_036A_002_PARTIAL_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_PARTIAL_OR_MIXED_AVAILABILITY_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 2
+            },
+            {
+              "case_rule_id": "CSRULE_036A_003_CONFLICT_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_COMPONENT_CONFLICTING_V0.1",
+              "predicate_result": false,
+              "trace_step_ordinal": 3
+            },
+            {
+              "case_rule_id": "CSRULE_036A_004_LIMITATION_PATTERN",
+              "input_observations": [
+                {
+                  "json_pointer": "/component_state_snapshot/0/component_state",
+                  "observed_values": [
+                    "OBSERVED"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/component_state",
+                  "observed_values": [
+                    "MISSING"
+                  ]
+                },
+                {
+                  "json_pointer": "/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                    "LIM_EXTERNAL_STORAGE_PENDING",
+                    "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                  "observed_values": [
+                    "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                    "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                    "LIM_STATE_RULE_REVIEW_PENDING"
+                  ]
+                },
+                {
+                  "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                  "observed_values": []
+                }
+              ],
+              "predicate_id": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1",
+              "predicate_result": true,
+              "trace_step_ordinal": 4
+            }
+          ],
+          "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+          "selection_token_sha256": "0001657da877deef477059b551bbe71c5925dea5954a5645ce864bcd20e4b903",
+          "structural_reason": {
+            "matched_input_references": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_values": [
+                  "OBSERVED"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_values": [
+                  "MISSING"
+                ]
+              },
+              {
+                "json_pointer": "/limitation_identifiers",
+                "observed_values": [
+                  "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+                  "LIM_EXTERNAL_STORAGE_PENDING",
+                  "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/0/limitation_identifiers",
+                "observed_values": [
+                  "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+                  "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+                  "LIM_STATE_RULE_REVIEW_PENDING"
+                ]
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/limitation_identifiers",
+                "observed_values": []
+              }
+            ],
+            "reason_code": "STRUCTURAL_LIMITATION_IDENTIFIER_PRESENT"
+          }
+        },
+        "case_selection_framework_version": "CASE_STUDY_SELECTION_FRAMEWORK_V0.1",
+        "case_selection_id": "CASESEL_04FCE8F0AD511FB18468AA6F698EC776",
+        "case_selection_schema_version": "CASE_STUDY_SELECTION_SCHEMA_V0.1",
+        "case_selector_version": "REPRESENTATIVE_CASE_DOSSIER_GENERATOR_V0.1",
+        "component_state_snapshot": [
+          {
+            "component_id": "COMP_TRANSCRIPTOMIC_EVIDENCE",
+            "component_state": "OBSERVED",
+            "component_version": "COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1",
+            "limitation_identifiers": [
+              "LIM_TRANSCRIPTOMIC_ASSOCIATION_BOUNDARY",
+              "LIM_NONOBSERVED_MISSINGNESS_PATHS_INCOMPLETELY_TESTED",
+              "LIM_STATE_RULE_REVIEW_PENDING"
+            ],
+            "source_component_record_id": "PRF_6AFB3165DEE261612F78731B"
+          },
+          {
+            "component_id": "COMP_DISEASE_ASSOCIATION",
+            "component_state": "MISSING",
+            "component_version": "COMP_DISEASE_ASSOCIATION_V0.1",
+            "limitation_identifiers": [],
+            "source_component_record_id": "CMPREC_DA_CD1F3CD2E9AEB7FE840A90396FB965A0"
+          }
+        ],
+        "limitation_identifiers": [
+          "LIM_PROFILE_LIFECYCLE_UNASSIGNED",
+          "LIM_EXTERNAL_STORAGE_PENDING",
+          "LIM_HUMAN_TRACEABILITY_AUDIT_PENDING"
+        ],
+        "source_prioritization_identity": {
+          "prioritization_content_sha256": "8a22b711f0be99a536f4b3e2eb33965960818f4daf9db9706e9d29a453866de6",
+          "prioritization_output_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+          "prioritization_representation_id": "PRZ_0EA9D30265F4E9C9DF246BA50E012818",
+          "prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+          "prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+          "source_assigned_rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+          "source_category": "CATEGORY_B",
+          "source_summary_identity": {
+            "evidence_summary_content_sha256": "7717dd4a96525a5d7d20e29b22f1baafd4e5eb130d5c6152e54a6fb6aa58dc83",
+            "evidence_summary_id": "SUM_EEB689610045AA20A4FAF7BBB9503F83",
+            "evidence_summary_schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+            "evidence_summary_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+            "source_evidence_snapshot_version": "EVIDENCE_SNAPSHOT_32C_CBFD2625F8B0CBB855DB90CBC8E2D605",
+            "source_landscape_id": "LND_F5E844673BF3B364416E53870FC5FBEA"
+          }
+        },
+        "source_prioritization_rule_trace": [
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ANY_PARTIAL_OR_CONFLICTING_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_001_PARTIAL_OR_CONFLICTING",
+            "trace_step_ordinal": 1
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_OBSERVED_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_002_ALL_OBSERVED",
+            "trace_step_ordinal": 2
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_MIXED_OBSERVED_AND_UNAVAILABLE_V0.1",
+            "predicate_result": true,
+            "rule_id": "PRULE_035A_003_MIXED_OBSERVED_UNAVAILABLE",
+            "trace_step_ordinal": 3
+          },
+          {
+            "input_observations": [
+              {
+                "json_pointer": "/component_state_snapshot/0/component_state",
+                "observed_value": "OBSERVED"
+              },
+              {
+                "json_pointer": "/component_state_snapshot/1/component_state",
+                "observed_value": "MISSING"
+              }
+            ],
+            "predicate_id": "PPRED_ALL_COMPONENTS_UNAVAILABLE_V0.1",
+            "predicate_result": false,
+            "rule_id": "PRULE_035A_004_ALL_UNAVAILABLE",
+            "trace_step_ordinal": 4
+          }
+        ],
+        "universe_ordinal": 13588
+      },
+      "eligible_pool_count": 29606,
+      "predicate_id": "CSPRED_ANY_LIMITATION_IDENTIFIER_V0.1",
+      "selection_method_id": "CASE_SELECTION_SHA256_MINIMUM_V0.1",
+      "selection_status": "FILLED",
+      "structural_reason_code": "STRUCTURAL_LIMITATION_IDENTIFIER_PRESENT"
+    }
+  ],
+  "dossier_release_version": "REPRESENTATIVE_CASE_DOSSIER_RELEASE_V0.1",
+  "source_prioritization_representation_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+  "source_prioritization_rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+  "source_prioritization_schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1",
+  "source_universe_count": 29606
+}
