@@ -1,0 +1,431 @@
+{
+  "$comment": "The contract prohibits evaluation, scoring, ranking, prioritization, confidence, overall state, recommendation, target quality, and evidence strength.",
+  "$defs": {
+    "artifactReference": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "description": "Source-native artifact identifier preserved without rewriting.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "artifact_namespace": {
+          "description": "Source-native namespace stored separately from artifact_id.",
+          "pattern": "^[A-Z][A-Z0-9]*$",
+          "type": "string"
+        },
+        "artifact_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "immutable_storage_reference": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "artifact_namespace",
+        "artifact_sha256"
+      ],
+      "type": "object"
+    },
+    "componentSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "component_id": {
+          "pattern": "^COMP_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "component_state": {
+          "enum": [
+            "OBSERVED",
+            "PARTIAL",
+            "CONFLICTING",
+            "MISSING",
+            "NOT_QUERIED"
+          ],
+          "type": "string"
+        },
+        "component_version": {
+          "pattern": "^COMP_[A-Z0-9_]+_V[0-9]+\\.[0-9]+$",
+          "type": "string"
+        },
+        "dependency_summaries": {
+          "items": {
+            "$ref": "#/$defs/dependencySummary"
+          },
+          "type": "array"
+        },
+        "feature_missingness": {
+          "items": {
+            "$ref": "#/$defs/featureMissingness"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "limitation_identifiers": {
+          "items": {
+            "pattern": "^LIM_[A-Z0-9_]+$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "source_component_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_version",
+        "component_state",
+        "source_component_record_id",
+        "source_component_content_sha256",
+        "feature_missingness",
+        "dependency_summaries",
+        "limitation_identifiers"
+      ],
+      "type": "object"
+    },
+    "dependencyRelationship": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "SAME_SOURCE"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "SHARED_DATASET"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "PARTIAL"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "PARTIALLY_DEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "UNKNOWN"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "INDEPENDENT"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "INDEPENDENT"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship_type": {
+                "const": "NOT_APPLICABLE"
+              }
+            },
+            "required": [
+              "relationship_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dependency_level": {
+                "const": "NOT_APPLICABLE"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "dependency_level": {
+          "enum": [
+            "DEPENDENT",
+            "INDEPENDENT",
+            "NOT_APPLICABLE",
+            "PARTIALLY_DEPENDENT",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "relationship_type": {
+          "enum": [
+            "SAME_SOURCE",
+            "SHARED_DATASET",
+            "PARTIAL",
+            "UNKNOWN",
+            "INDEPENDENT",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "relationship_type",
+        "dependency_level"
+      ],
+      "type": "object"
+    },
+    "dependencySummary": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_reference": {
+          "$ref": "#/$defs/artifactReference"
+        },
+        "component_id": {
+          "pattern": "^COMP_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "component_version": {
+          "pattern": "^COMP_[A-Z0-9_]+_V[0-9]+\\.[0-9]+$",
+          "type": "string"
+        },
+        "dependency_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dependency_relationships": {
+          "items": {
+            "$ref": "#/$defs/dependencyRelationship"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "evidence_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "feature_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "component_id",
+        "component_version",
+        "feature_id",
+        "evidence_record_id",
+        "source_id",
+        "dependency_id",
+        "dependency_relationships",
+        "artifact_reference"
+      ],
+      "type": "object"
+    },
+    "featureMissingness": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "missingness_status": {
+          "enum": [
+            "OBSERVED",
+            "NOT_FOUND",
+            "NOT_QUERIED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ],
+          "type": "string"
+        },
+        "source_component_record_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_feature_value_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature_id",
+        "missingness_status",
+        "source_component_record_id"
+      ],
+      "type": "object"
+    },
+    "sourceLandscapeIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "landscape_content_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "landscape_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "landscape_schema_version": {
+          "const": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2.1",
+          "type": "string"
+        },
+        "landscape_version": {
+          "const": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+          "type": "string"
+        },
+        "source_evidence_snapshot_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_landscape_generator_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_profile_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "landscape_id",
+        "landscape_schema_version",
+        "landscape_version",
+        "source_profile_id",
+        "source_evidence_snapshot_version",
+        "source_landscape_generator_version",
+        "landscape_content_sha256"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:evidence-summary-schema:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Closed structural contract for a non-evaluative Evidence Summary projected from one governed Multi-component Evidence Landscape.",
+  "properties": {
+    "EnsemblID": {
+      "pattern": "^ENSG[0-9]+\\.[0-9]+$",
+      "type": "string"
+    },
+    "component_summaries": {
+      "items": {
+        "$ref": "#/$defs/componentSummary"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "evidence_summary_id": {
+      "pattern": "^SUM_[A-F0-9]{32}$",
+      "type": "string"
+    },
+    "evidence_summary_schema_version": {
+      "const": "EVIDENCE_SUMMARY_SCHEMA_V0.1",
+      "type": "string"
+    },
+    "evidence_summary_version": {
+      "const": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+      "type": "string"
+    },
+    "limitation_identifiers": {
+      "items": {
+        "pattern": "^LIM_[A-Z0-9_]+$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "source_landscape_identity": {
+      "$ref": "#/$defs/sourceLandscapeIdentity"
+    },
+    "summary_generator_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "universe_ordinal": {
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "EnsemblID",
+    "universe_ordinal",
+    "evidence_summary_id",
+    "evidence_summary_schema_version",
+    "evidence_summary_version",
+    "summary_generator_version",
+    "source_landscape_identity",
+    "component_summaries",
+    "limitation_identifiers"
+  ],
+  "title": "Evidence Aggregation Representation schema v0.1",
+  "type": "object"
+}
