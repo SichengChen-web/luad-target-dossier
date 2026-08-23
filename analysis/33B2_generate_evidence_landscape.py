@@ -34,7 +34,7 @@ SOURCE_DIR = ROOT / "outputs/evidence_profile_integration_v0.1"
 SOURCE_RECORDS = SOURCE_DIR / "profile_records.jsonl"
 SOURCE_INDEX = SOURCE_DIR / "profile_index.csv"
 SOURCE_MANIFEST = SOURCE_DIR / "profile_manifest.json"
-SCHEMA_PATH = ROOT / "schemas/evidence_landscape_schema_v0.2.json"
+SCHEMA_PATH = ROOT / "schemas/evidence_landscape_schema_v0.2.1.json"
 OUTPUT_DIR = ROOT / "outputs/evidence_landscape_v0.2"
 EXTERNAL_ROOT = Path(
     "/private/tmp/luad-target-dossier-external-artifacts/evidence_landscape_v0.2"
@@ -48,7 +48,7 @@ SESSION_PATH = OUTPUT_DIR / "session_info.txt"
 
 TASK_ID = "TASK_033B_2"
 GENERATOR_VERSION = "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_GENERATOR_V0.1"
-SCHEMA_VERSION = "EVIDENCE_LANDSCAPE_SCHEMA_V0.2"
+SCHEMA_VERSION = "EVIDENCE_LANDSCAPE_SCHEMA_V0.2.1"
 LANDSCAPE_VERSION = "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2"
 PARTITION_STRATEGY_VERSION = "ENSEMBL_SHA256_PREFIX_2_V0.1"
 EXPECTED_LANDSCAPES = 29606
@@ -93,6 +93,11 @@ FROZEN_INPUT_SHA256 = {
     "analysis/33B1_define_landscape_schema_contract.py": "089723f2a4d1c9e85d151cedbcda1f2e68953d04f1c98325680c9d75db3c3a42",
     "schemas/evidence_landscape_schema_v0.2.json": "a52109fb90fda2493d99f20f51dacbf987a394678c90ee9e5d6c58a7afbc62ba",
     "outputs/evidence_landscape_schema_v0.2/schema_manifest.json": "7cd1c5b15aaa745ff4602ed54171ca39c4d72f54407476661103367373f6b6a8",
+    "analysis/33B1_1_patch_landscape_schema_contract.py": "bbe05e9de94fea125bdef6342dc959740029cfe10df16fa95c480fb147ac1e16",
+    "schemas/evidence_landscape_schema_v0.2.1.json": "fc3d512c56ec44f03a351108bde640cd5d153d0df62ada66638482cfbd04b32a",
+    "outputs/evidence_landscape_schema_v0.2.1/schema_manifest.json": "50a7403c75a8a9a78c6eb7f9699e484b17e51f4a724ee2c45c896e35e18ca552",
+    "outputs/evidence_landscape_schema_v0.2.1/validation_report.md": "b39cd9c85ea619e74a48ba06be9e3d15e157d8715f39585ac7671640a446cfac",
+    "outputs/evidence_landscape_schema_v0.2.1/session_info.txt": "77b648a466f0261198c10762e52d8f2620405fbd644e7ec24913b6c6d1ef11e8",
     "outputs/evidence_profile_integration_v0.1/profile_manifest.json": "63492499977f7adb086e4ace9a491a72fa617a1fe054d544701826fb9657455d",
     "outputs/evidence_profile_integration_v0.1/profile_index.csv": "376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28",
     "outputs/evidence_profile_integration_v0.1/validation_report.md": "191ba0d01799d4e3e96bff3ebabc6c75997cbbdeee36217b45f0c45181302699",
@@ -146,6 +151,8 @@ INDEX_COLUMNS = [
     "component_count",
     "feature_reference_count",
     "provenance_reference_count",
+    "dependency_relationship_count",
+    "multi_dependency_reference_count",
     "limitation_ids",
     "partition_id",
     "payload_artifact_id",
@@ -241,6 +248,16 @@ def stable_id(prefix: str, value: Any, length: int = 32) -> str:
 
 def partition_id(ensembl_id: str) -> str:
     return "p" + hashlib.sha256(ensembl_id.encode("utf-8")).hexdigest()[:2]
+
+
+def artifact_namespace(artifact_id: str) -> str:
+    """Preserve the source-native namespace without rewriting its identifier."""
+    if not artifact_id or "_" not in artifact_id:
+        fail(f"Cannot derive source-native artifact namespace: {artifact_id!r}")
+    namespace = artifact_id.split("_", 1)[0]
+    if not re.fullmatch(r"[A-Z][A-Z0-9]*", namespace):
+        fail(f"Invalid source-native artifact namespace: {artifact_id!r}")
+    return namespace
 
 
 def read_csv_bytes(rows: list[dict[str, Any]], fields: list[str]) -> bytes:
@@ -341,18 +358,19 @@ def validate_frozen_inputs(*, include_source_payload: bool) -> dict[str, str]:
 
 def validate_governance_and_manifests() -> tuple[dict[str, str], dict[str, dict[str, str]]]:
     schema_manifest = json.loads(
-        (ROOT / "outputs/evidence_landscape_schema_v0.2/schema_manifest.json").read_text(
+        (ROOT / "outputs/evidence_landscape_schema_v0.2.1/schema_manifest.json").read_text(
             encoding="utf-8"
         )
     )
     if schema_manifest.get("validation_status") != "PASS":
         fail("Task #033B-1 schema contract is not validated")
-    schema_artifact = schema_manifest.get("output_artifact", {})
+    schema_artifact = schema_manifest.get("new_schema", {})
     if (
-        schema_artifact.get("schema_version") != SCHEMA_VERSION
-        or schema_artifact.get("sha256") != FROZEN_INPUT_SHA256["schemas/evidence_landscape_schema_v0.2.json"]
+        schema_artifact.get("version") != SCHEMA_VERSION
+        or schema_artifact.get("sha256")
+        != FROZEN_INPUT_SHA256["schemas/evidence_landscape_schema_v0.2.1.json"]
     ):
-        fail("Task #033B-1 schema identity mismatch")
+        fail("Task #033B-1.1 schema identity mismatch")
 
     source_manifest = json.loads(SOURCE_MANIFEST.read_text(encoding="utf-8"))
     expected_source = {
@@ -541,6 +559,7 @@ def limitation_reference(limitation_id: str, scope: str) -> dict[str, Any]:
         "source_version": "EVIDENCE_LANDSCAPE_REPRESENTATION_V0.1",
         "registry_artifact_reference": {
             "artifact_id": "ART_TASK031_EVIDENCE_LANDSCAPE_MANIFEST",
+            "artifact_namespace": "ART",
             "artifact_sha256": FROZEN_INPUT_SHA256[
                 "outputs/evidence_landscape_v0.1/evidence_landscape_manifest.json"
             ],
@@ -556,17 +575,26 @@ def dependency_reference(component_id: str, link: dict[str, Any]) -> dict[str, A
 
     if component_id == "COMP_TRANSCRIPTOMIC_EVIDENCE":
         if dependency_id == "NOT_APPLICABLE":
-            relationship_type = "NOT_APPLICABLE"
-            dependency_level = "NOT_APPLICABLE"
+            relationships = [
+                {
+                    "relationship_type": "NOT_APPLICABLE",
+                    "dependency_level": "NOT_APPLICABLE",
+                }
+            ]
             reference_status = "CONTROLLED_SENTINEL"
         elif dependency_id.startswith("DEP_"):
-            relationship_type = "SHARED_DATASET"
-            dependency_level = "DEPENDENT"
+            relationships = [
+                {
+                    "relationship_type": "SHARED_DATASET",
+                    "dependency_level": "DEPENDENT",
+                }
+            ]
             reference_status = "LINKED_GOVERNED_DEPENDENCY"
         else:
             fail(f"Unsupported transcriptomic dependency identifier: {dependency_id}")
         governing_artifact = {
             "artifact_id": "ART_TASK031_EVIDENCE_LANDSCAPE_MANIFEST",
+            "artifact_namespace": "ART",
             "artifact_sha256": FROZEN_INPUT_SHA256[
                 "outputs/evidence_landscape_v0.1/evidence_landscape_manifest.json"
             ],
@@ -574,19 +602,24 @@ def dependency_reference(component_id: str, link: dict[str, Any]) -> dict[str, A
         review_status = "PRESERVED_FROM_TASK031_GOVERNED_REFERENCE"
     elif component_id == "COMP_DISEASE_ASSOCIATION":
         relationship_types = link.get("dependency_relationship_types")
-        if not isinstance(relationship_types, list) or len(relationship_types) != 1:
-            fail(
-                "Disease-association dependency relationship must have exactly one frozen type"
-            )
-        relationship_type = str(relationship_types[0])
+        if not isinstance(relationship_types, list) or not relationship_types:
+            fail("Disease-association dependency relationship types are missing")
         dependency_level = str(link.get("dependency_level", ""))
+        relationships = [
+            {
+                "relationship_type": str(relationship_type),
+                "dependency_level": dependency_level,
+            }
+            for relationship_type in relationship_types
+        ]
         reference_status = (
             "CONTROLLED_SENTINEL"
-            if relationship_type == "NOT_APPLICABLE"
+            if relationship_types == ["NOT_APPLICABLE"]
             else "LINKED_GOVERNED_DEPENDENCY"
         )
         governing_artifact = {
             "artifact_id": "ART_DISEASE_ASSOCIATION_COMPONENT_MANIFEST",
+            "artifact_namespace": "ART",
             "artifact_sha256": FROZEN_INPUT_SHA256[
                 "outputs/disease_association_component_v0.1/component_manifest.json"
             ],
@@ -598,8 +631,7 @@ def dependency_reference(component_id: str, link: dict[str, Any]) -> dict[str, A
     return {
         "dependency_id": dependency_id,
         "dependency_reference_status": reference_status,
-        "relationship_type": relationship_type,
-        "dependency_level": dependency_level,
+        "dependency_relationships": relationships,
         "dependency_model_version": "COMPONENT_DEPENDENCY_MODEL_V0.1",
         "governing_artifact_reference": governing_artifact,
         "review_status": review_status,
@@ -647,6 +679,7 @@ def provenance_reference(
         "source_id": required_text["source_id"],
         "artifact_reference": {
             "artifact_id": artifact_id,
+            "artifact_namespace": artifact_namespace(artifact_id),
             "artifact_sha256": artifact_hash,
         },
         "extraction_rule_id": required_text["extraction_rule_id"],
@@ -716,13 +749,21 @@ def project_component(
         source_reference["source_record_artifact_id"] = source_reference.get(
             "container_artifact_id"
         )
+    source_reference["source_record_artifact_namespace"] = artifact_namespace(
+        str(source_reference.get("source_record_artifact_id", ""))
+    )
+    source_reference["container_artifact_namespace"] = artifact_namespace(
+        str(source_reference.get("container_artifact_id", ""))
+    )
     allowed_source_reference = {
         key: source_reference[key]
         for key in (
             "source_record_id",
             "source_record_sha256",
             "source_record_artifact_id",
+            "source_record_artifact_namespace",
             "container_artifact_id",
+            "container_artifact_namespace",
             "container_artifact_sha256",
             "partition_id",
         )
@@ -855,6 +896,8 @@ def generate_pass(
     source_digest = hashlib.sha256()
     total_features = 0
     total_provenance = 0
+    total_dependency_relationships = 0
+    total_multi_dependency_references = 0
     total_components = 0
     source_offset = 0
 
@@ -899,6 +942,8 @@ def generate_pass(
 
             feature_count = 0
             provenance_count = 0
+            dependency_relationship_count = 0
+            multi_dependency_reference_count = 0
             for component in landscape["components"]:
                 total_components += 1
                 state_counts[(component["component_id"], component["state"])] += 1
@@ -911,6 +956,16 @@ def generate_pass(
                     relationships = len(feature["provenance_references"])
                     provenance_count += relationships
                     total_provenance += relationships
+                    for provenance in feature["provenance_references"]:
+                        dependency_relationships = provenance["dependency_reference"][
+                            "dependency_relationships"
+                        ]
+                        relationship_count = len(dependency_relationships)
+                        dependency_relationship_count += relationship_count
+                        total_dependency_relationships += relationship_count
+                        if relationship_count > 1:
+                            multi_dependency_reference_count += 1
+                            total_multi_dependency_references += 1
 
             limitation_ids = [
                 item["limitation_id"] for item in landscape["limitation_references"]
@@ -938,6 +993,8 @@ def generate_pass(
                     "component_count": 2,
                     "feature_reference_count": feature_count,
                     "provenance_reference_count": provenance_count,
+                    "dependency_relationship_count": dependency_relationship_count,
+                    "multi_dependency_reference_count": multi_dependency_reference_count,
                     "limitation_ids": "|".join(limitation_ids),
                     "partition_id": part,
                     "record_offset_bytes": record_offset,
@@ -990,6 +1047,8 @@ def generate_pass(
             "components": total_components,
             "features": total_features,
             "provenance": total_provenance,
+            "dependency_relationships": total_dependency_relationships,
+            "multi_dependency_references": total_multi_dependency_references,
         },
     }
 
@@ -1138,7 +1197,7 @@ def build_manifest(
             FROZEN_INPUT_SHA256[
                 "outputs/evidence_profile_integration_v0.1/profile_records.jsonl"
             ],
-            FROZEN_INPUT_SHA256["schemas/evidence_landscape_schema_v0.2.json"],
+            FROZEN_INPUT_SHA256["schemas/evidence_landscape_schema_v0.2.1.json"],
             set_hash,
             GENERATOR_VERSION,
         ],
@@ -1176,6 +1235,10 @@ def build_manifest(
             "components": result["totals"]["components"],
             "feature_references": result["totals"]["features"],
             "provenance_references": result["totals"]["provenance"],
+            "dependency_relationships": result["totals"]["dependency_relationships"],
+            "multi_dependency_references": result["totals"][
+                "multi_dependency_references"
+            ],
             "partitions": len(partition_rows),
         },
         "component_state_counts": counter_to_nested(result["state_counts"]),
@@ -1259,6 +1322,8 @@ def build_report(
         f"- Component references: **{counts['components']:,}**",
         f"- Feature references: **{counts['feature_references']:,}**",
         f"- Record-level provenance/dependency references: **{counts['provenance_references']:,}**",
+        f"- Ordered dependency relationships: **{counts['dependency_relationships']:,}**",
+        f"- Provenance references with multiple dependency relationships: **{counts['multi_dependency_references']:,}**",
         f"- External JSONL partitions: **{counts['partitions']:,}**",
         "",
         "Each landscape is a structural projection of exactly one frozen Task #032C profile. No component was rebuilt from raw evidence.",
@@ -1273,10 +1338,11 @@ def build_report(
         "| Component versions and states preserved | PASS |",
         "| Feature identity and missingness preserved | PASS |",
         "| All 2,517,118 provenance relationships preserved separately | PASS |",
-        "| Dependency identifiers and governed classifications preserved | PASS |",
+        "| Ordered dependency arrays reconciled without collapsing `SAME_SOURCE` and `SHARED_DATASET` | PASS |",
+        "| Source-native artifact IDs and namespaces reconciled without rewriting | PASS |",
         "| Applicable registered limitation IDs preserved | PASS |",
         f"| Historical `{HISTORICAL_EXCLUDED_LIMITATION_ID}` excluded | PASS |",
-        "| Task #033B-1 schema validation for every landscape | PASS |",
+        "| Task #033B-1.1 schema v0.2.1 validation for every landscape | PASS |",
         "| Prohibited-field recursive scan for every landscape | PASS |",
         "| Two independent complete regenerations | PASS — identical partition sizes and SHA256 hashes |",
         "| Frozen input hashes unchanged | PASS |",
@@ -1375,8 +1441,8 @@ def main() -> None:
     del limitation_registry  # Presence and identity were validated; no statements enter payloads.
     source_index = read_source_index()
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-    if schema.get("$id") != "urn:luad-target-dossier:evidence-landscape-schema:v0.2":
-        fail("Unexpected Task #033B-1 schema identifier")
+    if schema.get("$id") != "urn:luad-target-dossier:evidence-landscape-schema:v0.2.1":
+        fail("Unexpected Task #033B-1.1 schema identifier")
 
     script_hash = sha256_file(Path(__file__).resolve())
     frozen_before = validate_frozen_inputs(include_source_payload=False)
