@@ -1,0 +1,58 @@
+{
+  "frozen_inputs": {
+    "docs/governance/artifact_registry_policy_v0.1.md": "a7051623e88b219af476c4c775fca540163198a85cb5cfbaf40e7948333d7ae7",
+    "docs/governance/release_package_specification_v0.1.md": "39125ef1d550597ae9bb7af97b1fc81e7eee7d37cc8e54149276db8c2f3fe0ad",
+    "docs/governance/release_scope_policy_v0.1.md": "ce47a9c5b3b111d8230c38e92e3012e6e4e8f81adcd47318e49ebcb3326959a3",
+    "docs/governance/release_validation_requirements_v0.1.md": "104013b5ff9eeedd55b78a2f015b0f220a3ac1f5cc1bb2d464f8b16df158a1f1",
+    "outputs/artifact_registry_v0.1/artifact_registry.csv": "06b0e6ff4ddbc751136edeeb0e60799d81328692968b2f43a25d2dc021750e57",
+    "outputs/artifact_registry_v0.1/artifact_registry_manifest.json": "d7bbca889f78bbef55ecae59881a6b9ec34147762e6cd26b17810304dcedde2c",
+    "outputs/artifact_registry_v0.1/session_info.txt": "c070e113c66ba827990bc5eb03308fe29d83b60ad2d5da9615fe13265ad4a641",
+    "outputs/artifact_registry_v0.1/validation_report.md": "afa4d470045e6349285cea63f44abe37b10e4b1bfe9c8c951c12e7cedf78930a",
+    "schemas/artifact_registry_schema_v0.1.json": "62108eb4b3d27f881370898f019511145b55d85e8b6e4b36a99e2b3178c9f0ae"
+  },
+  "generator": {
+    "generator_version": "REPRODUCIBILITY_REPORT_GENERATOR_V0.1",
+    "relative_path": "analysis/37C_generate_reproducibility_report.py",
+    "sha256": "1b3513c21ca3934d42997428ff544a3e0dd49624b2aade5afbfcc8f2238944b6"
+  },
+  "project_id": "LUAD_EXPRESSION_DRUGGABLE_TARGET_EVIDENCE_DOSSIER",
+  "report_artifact": {
+    "relative_path": "docs/reproducibility_report_v0.1.md",
+    "sha256": "ae7d92d02188548cb8de4d1c337de711e1f5a33d7291168d10f20c436a7af223",
+    "size_bytes": 12158
+  },
+  "report_id": "REPROREPORT_74749D374714B211F18005E812BBBBBA",
+  "report_status": "VALIDATED_GOVERNANCE_DOCUMENTATION_CANDIDATE",
+  "report_version": "REPRODUCIBILITY_REPORT_V0.1",
+  "source_registry": {
+    "external_payload_metadata_rows": 3,
+    "git_managed_rows_rehashed": 38,
+    "registered_records": 41,
+    "registry_id": "ARTREGISTRY_19B7D25723B0715B860E8DA3BAF02396",
+    "registry_sha256": "06b0e6ff4ddbc751136edeeb0e60799d81328692968b2f43a25d2dc021750e57",
+    "registry_version": "ARTIFACT_REGISTRY_V0.1"
+  },
+  "source_releases": {
+    "case_dossier_release_id": "CASEREL_678B829DF020D9D6D041B1437855B322",
+    "evidence_summary_release_id": "SUMREL_43EA4FD9EE02963DA2E94BD1A9FFFC53",
+    "landscape_release_id": "LNDREL_3D3A189C362A4D29E5CA04A47656DA6C",
+    "presentation_release_id": "PRESREL_33D749BD474B0A185D098F7A82822138",
+    "release_schema_governance_id": "RELSCHEMA_9F2BC28FC5DF73A7AE4B5DEE05CBDC8C",
+    "structural_routing_release_id": "PRZREL_940BC24427791A7E054B54F533E77B48"
+  },
+  "task_id": "TASK_037C",
+  "validation": {
+    "deterministic_report_generation": "BYTE_IDENTICAL",
+    "existing_artifacts_modified": false,
+    "external_payload_bytes_read": false,
+    "frozen_upstream_hashes_unchanged": "PASS",
+    "markdown_consistency": "PASS",
+    "registered_git_artifact_hashes": "PASS",
+    "release_package_generated": false,
+    "resolved_local_markdown_links": 5,
+    "runtime_ai_decisions_used": false,
+    "scientific_artifacts_generated": false,
+    "scientific_workflows_rerun": false
+  },
+  "validation_status": "PASS"
+}
