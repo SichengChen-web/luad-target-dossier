@@ -1,0 +1,90 @@
+{
+  "frozen_inputs": {
+    "outputs/case_dossiers_v0.1/case_dossiers.json": "d861e2500797ae9351f70e474c8a8acafa51d30481357aa450d1d77314bd27b8",
+    "outputs/case_dossiers_v0.1/case_selection_index.csv": "f11892cc59d1fc3b042e79b4859e293677d9befbe975dd9d6635e0033011bc52",
+    "outputs/case_dossiers_v0.1/dossier_manifest.json": "9039d3523bf52841239dce9ab880a98a3e2dcd5dfff3a87cece10c986067678b",
+    "outputs/case_dossiers_v0.1/session_info.txt": "0cae68b33106ff97512e39ade11059701dfa8dfc847eb5db47bd7b04c3e0572f",
+    "outputs/case_dossiers_v0.1/validation_report.md": "8ca6bc43b72fd653924b75eb9c5429e90cc82477908a1d17877bd7f5776fbbc3",
+    "outputs/evidence_landscape_v0.2/landscape_index.csv": "fbd7a3b50e70c41aa2ddbf0361390fde23d12bc320a881a4da168ad1d145d6c8",
+    "outputs/evidence_landscape_v0.2/landscape_manifest.json": "2c3853becd3895b0aaffb12be95205d910d1507dc1f2f8f36f7f150f651dba29",
+    "outputs/evidence_landscape_v0.2/partition_manifest.csv": "2ccc38a384fe816d50b2c5d8f4c528a49727189434fe4be41e70355ff146cf8d",
+    "outputs/evidence_landscape_v0.2/session_info.txt": "bb928646c3c7c3aba85f9faa127b4eb93b50455fa24165aa6b1a048bf1c658de",
+    "outputs/evidence_landscape_v0.2/validation_report.md": "d5933862fe468ef4561188716abaee2de1cda16e06bcb1d39c1793f66cc29a8a",
+    "outputs/evidence_summary_v0.1/partition_manifest.csv": "fd9bd76ea5f940a0165a6a082538a810fc64cbcd8b0fe4ecda9f0aae14795202",
+    "outputs/evidence_summary_v0.1/session_info.txt": "bd04e5a858f2c70e746954d2e99bdfd44e3d64f818261d31c393f20bed9bda44",
+    "outputs/evidence_summary_v0.1/summary_index.csv": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5",
+    "outputs/evidence_summary_v0.1/summary_manifest.json": "02b9a893569bd01257cb0108121f61a78041e90ffd769ac7a1d163d24051e19f",
+    "outputs/evidence_summary_v0.1/validation_report.md": "257662af9adf87ce7f913e2024b6e43db2685cc84a117f9424830b6308c034e8",
+    "outputs/presentation_artifacts_v0.1/architecture_summary.md": "e1f99162ccd69701d8f446ff56210142e56e11d3ada164a8b785aaff9ac535fc",
+    "outputs/presentation_artifacts_v0.1/case_pattern_summary.csv": "e03c9fb080e62e435a0d4fcf328715fa3f2a503829c79272f84a3b8a68da6d7d",
+    "outputs/presentation_artifacts_v0.1/evidence_layer_summary.csv": "0b30b5454c3d963b22b17c2ea35e776d2fa38ef805f5fe8c54bbf7599677abda",
+    "outputs/presentation_artifacts_v0.1/presentation_manifest.json": "2bf7acce12685399476e50cfa26df049d8b54cc371e6dde6794b656b12f1d2e4",
+    "outputs/presentation_artifacts_v0.1/provenance_flow_summary.md": "57885dccc7f07922a9cfec9f6d48c385dfb49e0bc745003d9fc9efabd9365f56",
+    "outputs/presentation_artifacts_v0.1/session_info.txt": "d6b6a2270a466d487db96572ca274be350042849e360d0870916ebd90bef6738",
+    "outputs/presentation_artifacts_v0.1/validation_report.md": "2237c292ab827f4396b3db4220321d1d5c626120104ce1f03cccfdbc2eb21f22",
+    "outputs/prioritization_v0.1/partition_manifest.csv": "e59a54e4a4857927eab529aab28c82ba8874e7b2cebfa2064527b89c642a5f14",
+    "outputs/prioritization_v0.1/prioritization_index.csv": "8131fa2644dab0efb17c5ae42cb5d297ec3993aa69ba00dda4ec6bdb47c7a69a",
+    "outputs/prioritization_v0.1/prioritization_manifest.json": "773eeec6bfa769c932f354bcc5eb552fe4a540a2fe65dd1811720b2e80c4ff80",
+    "outputs/prioritization_v0.1/session_info.txt": "9107a208ad059f62b18f915d80879ea9fce9f877f839440fbf7dc145c0724e57",
+    "outputs/prioritization_v0.1/validation_report.md": "8fd3664d6ce8ffe9b5c7bfc87793ca0492d23b97be8f4b8ac6abd2f37eead1d0"
+  },
+  "frozen_source_releases": {
+    "evidence_summary": {
+      "artifact_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+      "release_id": "SUMREL_43EA4FD9EE02963DA2E94BD1A9FFFC53",
+      "schema_version": "EVIDENCE_SUMMARY_SCHEMA_V0.1"
+    },
+    "landscape": {
+      "artifact_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+      "release_id": "LNDREL_3D3A189C362A4D29E5CA04A47656DA6C",
+      "schema_version": "EVIDENCE_LANDSCAPE_SCHEMA_V0.2.1"
+    },
+    "presentation_artifacts": {
+      "artifact_version": "SCIENTIFIC_PRESENTATION_ARTIFACTS_V0.1",
+      "release_id": "PRESREL_33D749BD474B0A185D098F7A82822138"
+    },
+    "representative_case_dossiers": {
+      "artifact_version": "REPRESENTATIVE_CASE_DOSSIER_RELEASE_V0.1",
+      "release_id": "CASEREL_678B829DF020D9D6D041B1437855B322"
+    },
+    "transparent_prioritization": {
+      "artifact_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+      "release_id": "PRZREL_940BC24427791A7E054B54F533E77B48",
+      "rule_catalog_version": "PRIORITIZATION_RULE_CATALOG_V0.1",
+      "schema_version": "PRIORITIZATION_OUTPUT_SCHEMA_V0.1"
+    }
+  },
+  "generator": {
+    "generator_version": "RELEASE_MANIFEST_SCHEMA_GENERATOR_V0.1",
+    "relative_path": "analysis/37A_define_release_manifest_schema.py",
+    "sha256": "7796c454ef30185fb886cea52f02e1e0fce669868d91515d116619431b4cbf20"
+  },
+  "governance_documents": {
+    "docs/governance/release_package_specification_v0.1.md": "39125ef1d550597ae9bb7af97b1fc81e7eee7d37cc8e54149276db8c2f3fe0ad",
+    "docs/governance/release_scope_policy_v0.1.md": "ce47a9c5b3b111d8230c38e92e3012e6e4e8f81adcd47318e49ebcb3326959a3",
+    "docs/governance/release_validation_requirements_v0.1.md": "104013b5ff9eeedd55b78a2f015b0f220a3ac1f5cc1bb2d464f8b16df158a1f1"
+  },
+  "schema": {
+    "relative_path": "schemas/release_manifest_schema_v0.1.json",
+    "sha256": "3b2bcb87e37d9cb83b2d1f5dceb0e2d503683a0be9c517dd899f3686d9b8b93b"
+  },
+  "schema_governance_id": "RELSCHEMA_9F2BC28FC5DF73A7AE4B5DEE05CBDC8C",
+  "schema_version": "RELEASE_MANIFEST_SCHEMA_V0.1",
+  "scope_policy_version": "RELEASE_SCOPE_POLICY_V0.1",
+  "specification_version": "RELEASE_PACKAGE_SPECIFICATION_V0.1",
+  "task_id": "TASK_037A",
+  "validation": {
+    "frozen_artifact_hashes_unchanged": "PASS",
+    "invalid_fixture_tests": 26,
+    "markdown_link_resolution": "PASS",
+    "prohibited_field_rejection": "PASS",
+    "release_package_generated": false,
+    "schema_deterministic_generation": "PASS",
+    "schema_objects_closed": "PASS",
+    "scientific_artifacts_modified": false,
+    "terminology_compatibility": "PASS",
+    "valid_fixture": "PASS"
+  },
+  "validation_requirements_version": "RELEASE_VALIDATION_REQUIREMENTS_V0.1",
+  "validation_status": "PASS"
+}

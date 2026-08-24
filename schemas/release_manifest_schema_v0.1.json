@@ -1,0 +1,690 @@
+{
+  "$comment": "This schema governs packaging only. Closed objects prohibit hidden target-level evaluation, scoring, ordering, recommendation, and biological claims.",
+  "$defs": {
+    "artifactRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+          "type": "string"
+        },
+        "artifact_scope": {
+          "enum": [
+            "SCIENTIFIC",
+            "GOVERNANCE",
+            "COMMUNICATION"
+          ],
+          "type": "string"
+        },
+        "artifact_type": {
+          "enum": [
+            "EVIDENCE_COMPONENT",
+            "EVIDENCE_LANDSCAPE",
+            "EVIDENCE_SUMMARY",
+            "TRANSPARENT_PRIORITIZATION_REPRESENTATION",
+            "REPRESENTATIVE_CASE_DOSSIER",
+            "SCHEMA",
+            "VALIDATION_REPORT",
+            "POLICY",
+            "MANIFEST",
+            "INDEX",
+            "GENERATOR_SOURCE",
+            "SESSION_METADATA",
+            "PRESENTATION_ARTIFACT",
+            "FIGURE",
+            "POSTER_MATERIAL",
+            "EXTERNAL_PAYLOAD"
+          ],
+          "type": "string"
+        },
+        "artifact_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "generating_task": {
+          "pattern": "^TASK_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "lifecycle_state": {
+          "enum": [
+            "PROPOSED",
+            "VALIDATED",
+            "FROZEN",
+            "RELEASED"
+          ],
+          "type": "string"
+        },
+        "provenance_reference": {
+          "additionalProperties": false,
+          "properties": {
+            "relationship_type": {
+              "enum": [
+                "DERIVED_FROM",
+                "VALIDATES",
+                "GOVERNS",
+                "COMMUNICATES"
+              ],
+              "type": "string"
+            },
+            "upstream_artifact_id": {
+              "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+              "type": "string"
+            },
+            "upstream_artifact_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "upstream_artifact_id",
+            "upstream_artifact_sha256",
+            "relationship_type"
+          ],
+          "type": "object"
+        },
+        "relative_path": {
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\r\\n]+$",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "storage_reference": {
+          "additionalProperties": false,
+          "properties": {
+            "availability_status": {
+              "enum": [
+                "AVAILABLE",
+                "PENDING_DURABLE_REGISTRATION",
+                "UNAVAILABLE"
+              ],
+              "type": "string"
+            },
+            "retrieval_required_for_release": {
+              "type": "boolean"
+            },
+            "storage_class": {
+              "enum": [
+                "GIT_MANAGED",
+                "EXTERNAL_IMMUTABLE"
+              ],
+              "type": "string"
+            },
+            "storage_uri": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "storage_class",
+            "storage_uri",
+            "availability_status",
+            "retrieval_required_for_release"
+          ],
+          "type": "object"
+        },
+        "validation_status": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "relative_path",
+        "artifact_version",
+        "artifact_type",
+        "artifact_scope",
+        "generating_task",
+        "lifecycle_state",
+        "validation_status",
+        "sha256",
+        "size_bytes",
+        "provenance_reference",
+        "storage_reference"
+      ],
+      "type": "object"
+    },
+    "provenanceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "relationship_type": {
+          "enum": [
+            "DERIVED_FROM",
+            "VALIDATES",
+            "GOVERNS",
+            "COMMUNICATES"
+          ],
+          "type": "string"
+        },
+        "upstream_artifact_id": {
+          "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+          "type": "string"
+        },
+        "upstream_artifact_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "upstream_artifact_id",
+        "upstream_artifact_sha256",
+        "relationship_type"
+      ],
+      "type": "object"
+    },
+    "storageReference": {
+      "additionalProperties": false,
+      "properties": {
+        "availability_status": {
+          "enum": [
+            "AVAILABLE",
+            "PENDING_DURABLE_REGISTRATION",
+            "UNAVAILABLE"
+          ],
+          "type": "string"
+        },
+        "retrieval_required_for_release": {
+          "type": "boolean"
+        },
+        "storage_class": {
+          "enum": [
+            "GIT_MANAGED",
+            "EXTERNAL_IMMUTABLE"
+          ],
+          "type": "string"
+        },
+        "storage_uri": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "storage_class",
+        "storage_uri",
+        "availability_status",
+        "retrieval_required_for_release"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:release-manifest-schema:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Closed artifact-governance contract for a future reproducible research release.",
+  "properties": {
+    "artifact_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "artifact_versions": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_landscape_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "evidence_landscape_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "evidence_summary_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "evidence_summary_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "presentation_artifact_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "release_manifest_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "representative_case_dossier_release_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "representative_case_rule_catalog_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "representative_case_selection_framework_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "representative_case_selection_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "transparent_prioritization_representation_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "transparent_prioritization_rule_catalog_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "transparent_prioritization_schema_version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_landscape_schema_version",
+        "evidence_landscape_version",
+        "evidence_summary_schema_version",
+        "evidence_summary_version",
+        "transparent_prioritization_schema_version",
+        "transparent_prioritization_representation_version",
+        "transparent_prioritization_rule_catalog_version",
+        "representative_case_dossier_release_version",
+        "representative_case_selection_schema_version",
+        "representative_case_selection_framework_version",
+        "representative_case_rule_catalog_version",
+        "presentation_artifact_version",
+        "release_manifest_schema_version"
+      ],
+      "type": "object"
+    },
+    "artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "artifact_id": {
+            "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+            "type": "string"
+          },
+          "artifact_scope": {
+            "enum": [
+              "SCIENTIFIC",
+              "GOVERNANCE",
+              "COMMUNICATION"
+            ],
+            "type": "string"
+          },
+          "artifact_type": {
+            "enum": [
+              "EVIDENCE_COMPONENT",
+              "EVIDENCE_LANDSCAPE",
+              "EVIDENCE_SUMMARY",
+              "TRANSPARENT_PRIORITIZATION_REPRESENTATION",
+              "REPRESENTATIVE_CASE_DOSSIER",
+              "SCHEMA",
+              "VALIDATION_REPORT",
+              "POLICY",
+              "MANIFEST",
+              "INDEX",
+              "GENERATOR_SOURCE",
+              "SESSION_METADATA",
+              "PRESENTATION_ARTIFACT",
+              "FIGURE",
+              "POSTER_MATERIAL",
+              "EXTERNAL_PAYLOAD"
+            ],
+            "type": "string"
+          },
+          "artifact_version": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "generating_task": {
+            "pattern": "^TASK_[A-Z0-9_]+$",
+            "type": "string"
+          },
+          "lifecycle_state": {
+            "enum": [
+              "PROPOSED",
+              "VALIDATED",
+              "FROZEN",
+              "RELEASED"
+            ],
+            "type": "string"
+          },
+          "provenance_reference": {
+            "additionalProperties": false,
+            "properties": {
+              "relationship_type": {
+                "enum": [
+                  "DERIVED_FROM",
+                  "VALIDATES",
+                  "GOVERNS",
+                  "COMMUNICATES"
+                ],
+                "type": "string"
+              },
+              "upstream_artifact_id": {
+                "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+                "type": "string"
+              },
+              "upstream_artifact_sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "upstream_artifact_id",
+              "upstream_artifact_sha256",
+              "relationship_type"
+            ],
+            "type": "object"
+          },
+          "relative_path": {
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\r\\n]+$",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size_bytes": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "storage_reference": {
+            "additionalProperties": false,
+            "properties": {
+              "availability_status": {
+                "enum": [
+                  "AVAILABLE",
+                  "PENDING_DURABLE_REGISTRATION",
+                  "UNAVAILABLE"
+                ],
+                "type": "string"
+              },
+              "retrieval_required_for_release": {
+                "type": "boolean"
+              },
+              "storage_class": {
+                "enum": [
+                  "GIT_MANAGED",
+                  "EXTERNAL_IMMUTABLE"
+                ],
+                "type": "string"
+              },
+              "storage_uri": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "storage_class",
+              "storage_uri",
+              "availability_status",
+              "retrieval_required_for_release"
+            ],
+            "type": "object"
+          },
+          "validation_status": {
+            "enum": [
+              "NOT_RUN",
+              "PASS",
+              "FAIL"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "relative_path",
+          "artifact_version",
+          "artifact_type",
+          "artifact_scope",
+          "generating_task",
+          "lifecycle_state",
+          "validation_status",
+          "sha256",
+          "size_bytes",
+          "provenance_reference",
+          "storage_reference"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "component_versions": {
+      "additionalProperties": false,
+      "properties": {
+        "COMP_DISEASE_ASSOCIATION": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "COMP_TRANSCRIPTOMIC_EVIDENCE": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "COMP_TRANSCRIPTOMIC_EVIDENCE",
+        "COMP_DISEASE_ASSOCIATION"
+      ],
+      "type": "object"
+    },
+    "lifecycle_state": {
+      "enum": [
+        "PROPOSED",
+        "VALIDATED",
+        "FROZEN",
+        "RELEASED"
+      ],
+      "type": "string"
+    },
+    "project_id": {
+      "const": "LUAD_EXPRESSION_DRUGGABLE_TARGET_EVIDENCE_DOSSIER",
+      "type": "string"
+    },
+    "release_boundaries": {
+      "additionalProperties": false,
+      "properties": {
+        "biological_validation_claimed": {
+          "const": false,
+          "type": "boolean"
+        },
+        "new_scientific_evidence_generated": {
+          "const": false,
+          "type": "boolean"
+        },
+        "runtime_ai_decisions_used": {
+          "const": false,
+          "type": "boolean"
+        },
+        "target_recommendation_claimed": {
+          "const": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "new_scientific_evidence_generated",
+        "biological_validation_claimed",
+        "target_recommendation_claimed",
+        "runtime_ai_decisions_used"
+      ],
+      "type": "object"
+    },
+    "release_id": {
+      "pattern": "^REL_[A-F0-9]{32}$",
+      "type": "string"
+    },
+    "release_manifest_schema_version": {
+      "const": "RELEASE_MANIFEST_SCHEMA_V0.1",
+      "type": "string"
+    },
+    "release_scope": {
+      "additionalProperties": false,
+      "properties": {
+        "communication_artifact_ids": {
+          "items": {
+            "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "explicit_exclusions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "artifact_or_class": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "exclusion_reason_code": {
+                "pattern": "^[A-Z][A-Z0-9_]+$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "artifact_or_class",
+              "exclusion_reason_code"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "governance_artifact_ids": {
+          "items": {
+            "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "scientific_artifact_ids": {
+          "items": {
+            "pattern": "^[A-Z][A-Z0-9_]{2,127}$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "scientific_artifact_ids",
+        "governance_artifact_ids",
+        "communication_artifact_ids",
+        "explicit_exclusions"
+      ],
+      "type": "object"
+    },
+    "release_type": {
+      "enum": [
+        "INTERNAL_RESEARCH_ARTIFACT",
+        "REPRODUCIBLE_RESEARCH_ARTIFACT"
+      ],
+      "type": "string"
+    },
+    "release_version": {
+      "pattern": "^v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?$",
+      "type": "string"
+    },
+    "validation_summary": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_integrity": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "deterministic_regeneration": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "frozen_input_hashes": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "overall_validation_status": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "prohibited_field_scan": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "provenance_reconciliation": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "schema_validation": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        },
+        "storage_reconciliation": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_validation",
+        "artifact_integrity",
+        "provenance_reconciliation",
+        "storage_reconciliation",
+        "deterministic_regeneration",
+        "prohibited_field_scan",
+        "frozen_input_hashes",
+        "overall_validation_status"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "release_id",
+    "release_version",
+    "release_type",
+    "lifecycle_state",
+    "project_id",
+    "release_manifest_schema_version",
+    "component_versions",
+    "artifact_versions",
+    "release_scope",
+    "artifacts",
+    "artifact_count",
+    "validation_summary",
+    "release_boundaries"
+  ],
+  "title": "LUAD Target Evidence Dossier Release Manifest Schema v0.1",
+  "type": "object"
+}

@@ -1,0 +1,134 @@
+# Release Package Specification v0.1
+
+**Project:** LUAD Expression → Druggable-Target Evidence Dossier  
+**Specification:** `RELEASE_PACKAGE_SPECIFICATION_V0.1`  
+**Status:** Governance contract; no release package materialized
+
+## 1. Purpose
+
+This specification defines how the completed computational framework may be packaged, versioned, validated, frozen, and released as a reproducible research artifact. It governs artifact identity and traceability. It does not add scientific evidence, validate biology, evaluate targets, or authorize a target recommendation.
+
+The machine-readable contract is [Release Manifest Schema v0.1](../../schemas/release_manifest_schema_v0.1.json). Scope boundaries are defined in the [Release Scope Policy v0.1](release_scope_policy_v0.1.md), and release gates are defined in the [Release Validation Requirements v0.1](release_validation_requirements_v0.1.md).
+
+## 2. Release identity
+
+A release is uniquely identified by the tuple:
+
+```text
+(release_id, release_version, release_type)
+```
+
+- `release_id` is an immutable content-governance identifier and must never be reassigned.
+- `release_version` versions the package contract and included artifact inventory. It is separate from every component, schema, profile, evidence-snapshot, and artifact version.
+- `release_type` states whether the package is an internal research artifact or a reproducible research artifact. It does not state scientific quality or biological validity.
+
+Changing the inventory, an artifact hash, a governed version axis, or a validation disposition requires a new release identity or version according to the frozen release procedure. A release manifest must not silently mutate after `FROZEN`.
+
+## 3. Version axes
+
+The release manifest must preserve, without rewriting:
+
+### Component versions
+
+- `COMP_TRANSCRIPTOMIC_EVIDENCE_V0.1`
+- `COMP_DISEASE_ASSOCIATION_V0.1`
+
+### Artifact versions
+
+- landscape schema and representation versions;
+- Evidence Summary schema and representation versions;
+- transparent routing representation schema, representation, and rule-catalog versions;
+- representative case-dossier release, schema, framework, and rule-catalog versions;
+- presentation-artifact version;
+- release-manifest schema version.
+
+These axes remain independent. Advancing one does not automatically advance or validate another.
+
+## 4. Manifest artifact record
+
+Every included artifact requires one closed manifest record containing:
+
+- immutable `artifact_id`;
+- repository-relative path or governed external-storage reference;
+- `artifact_version`;
+- `artifact_type` and release-scope class;
+- `generating_task`;
+- lifecycle state and validation status;
+- SHA256 and byte size;
+- upstream provenance reference;
+- storage reference and availability status.
+
+One artifact record describes one immutable byte object. Collections and partition sets require a collection identity plus member or partition manifests; a count cannot replace the member-level lineage already governed upstream.
+
+## 5. Artifact lifecycle
+
+The only lifecycle states are:
+
+```text
+PROPOSED -> VALIDATED -> FROZEN -> RELEASED
+```
+
+### `PROPOSED`
+
+The artifact identity and intended scope are registered. Validation may be incomplete. It cannot be represented as frozen or released.
+
+### `VALIDATED`
+
+All artifact-specific validation checks pass against identified inputs. The bytes may still be superseded before freeze.
+
+### `FROZEN`
+
+Identity, version, size, SHA256, provenance, and storage references are fixed. Any byte change creates a new artifact version or identity.
+
+### `RELEASED`
+
+The frozen artifact is included in a release whose manifest, storage references, and release-level checks pass. `RELEASED` is a packaging disposition, not a scientific endorsement.
+
+Transitions cannot be skipped. A failed validation moves no artifact forward and must be recorded rather than hidden.
+
+## 6. Package composition
+
+A future package manifest will enumerate scientific, governance, and communication artifacts according to the [Release Scope Policy v0.1](release_scope_policy_v0.1.md). This Task #037A output is only the contract for such a manifest. It does not create the inventory or copy payloads into a release bundle.
+
+Git-managed metadata and externally managed immutable payloads remain separate:
+
+- Git stores source code, schemas, policies, manifests, checksums, indexes, and validation reports when size and governance permit.
+- Large immutable payloads remain in governed external storage and are represented by immutable identifiers, sizes, SHA256 values, partition manifests, and storage references.
+- A storage placeholder is not a durable release location. `RELEASED` requires the availability status required by the release policy.
+
+## 7. Release boundaries
+
+The manifest must explicitly record all of the following as false:
+
+- new scientific evidence generated by packaging;
+- biological validation claimed by packaging;
+- target recommendation claimed by packaging.
+
+Therefore:
+
+```text
+release artifact != biological validation
+release artifact != target recommendation
+```
+
+A valid release can demonstrate computational reproducibility, artifact integrity, identity continuity, and provenance completeness. It cannot by itself establish causality, efficacy, safety, clinical benefit, target importance, or therapeutic suitability.
+
+## 8. Prohibited content
+
+Release-manifest records must not introduce target-level scores, ranks, rankings, priority scores, confidence metrics, recommendations, target-quality fields, evidence-strength fields, or biological claims. The schema uses closed objects, and the validator performs recursive prohibited-field tests.
+
+## 9. Release procedure
+
+```text
+frozen input manifests
+  -> release inventory proposal
+  -> artifact-level validation
+  -> release-level reconciliation
+  -> deterministic manifest generation
+  -> hash freeze
+  -> storage verification
+  -> authorized release disposition
+```
+
+No release disposition is authorized by Task #037A. A later task must materialize and validate a concrete package against this contract.
+
