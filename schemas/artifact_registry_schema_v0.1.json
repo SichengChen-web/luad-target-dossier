@@ -1,0 +1,178 @@
+{
+  "$comment": "Registry inclusion records computational identity only and is not scientific evaluation.",
+  "$defs": {
+    "artifactRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "pattern": "^ART(?:REG)?_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "artifact_scope": {
+          "enum": [
+            "SCIENTIFIC",
+            "GOVERNANCE",
+            "COMMUNICATION"
+          ],
+          "type": "string"
+        },
+        "artifact_type": {
+          "enum": [
+            "MANIFEST",
+            "INDEX",
+            "PARTITION_MANIFEST",
+            "REPRESENTATION_PAYLOAD",
+            "EXTERNAL_PAYLOAD",
+            "VALIDATION_REPORT",
+            "SESSION_METADATA",
+            "PRESENTATION_ARTIFACT",
+            "POLICY",
+            "SCHEMA",
+            "GENERATOR_SOURCE"
+          ],
+          "type": "string"
+        },
+        "artifact_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dependency_reference": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "generating_task": {
+          "pattern": "^TASK_[A-Z0-9_]+$",
+          "type": "string"
+        },
+        "lifecycle_state": {
+          "enum": [
+            "PROPOSED",
+            "VALIDATED",
+            "FROZEN",
+            "RELEASED"
+          ],
+          "type": "string"
+        },
+        "provenance_reference": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "relative_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "storage_class": {
+          "enum": [
+            "GIT_MANAGED",
+            "EXTERNAL_IMMUTABLE"
+          ],
+          "type": "string"
+        },
+        "storage_reference": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "validation_status": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "relative_path",
+        "artifact_type",
+        "artifact_scope",
+        "artifact_version",
+        "generating_task",
+        "lifecycle_state",
+        "validation_status",
+        "sha256",
+        "size_bytes",
+        "storage_class",
+        "storage_reference",
+        "provenance_reference",
+        "dependency_reference"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:luad-target-dossier:artifact-registry-schema:v0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Closed metadata-only schema for a governed computational artifact inventory.",
+  "properties": {
+    "record_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/artifactRecord"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "registry_boundaries": {
+      "additionalProperties": false,
+      "properties": {
+        "external_payloads_copied": {
+          "const": false,
+          "type": "boolean"
+        },
+        "release_package_generated": {
+          "const": false,
+          "type": "boolean"
+        },
+        "runtime_ai_decisions_used": {
+          "const": false,
+          "type": "boolean"
+        },
+        "scientific_interpretation_added": {
+          "const": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "release_package_generated",
+        "external_payloads_copied",
+        "scientific_interpretation_added",
+        "runtime_ai_decisions_used"
+      ],
+      "type": "object"
+    },
+    "registry_id": {
+      "pattern": "^ARTREGISTRY_[A-F0-9]{32}$",
+      "type": "string"
+    },
+    "registry_schema_version": {
+      "const": "ARTIFACT_REGISTRY_SCHEMA_V0.1",
+      "type": "string"
+    },
+    "registry_version": {
+      "const": "ARTIFACT_REGISTRY_V0.1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "registry_id",
+    "registry_version",
+    "registry_schema_version",
+    "record_count",
+    "records",
+    "registry_boundaries"
+  ],
+  "title": "LUAD Target Evidence Dossier Artifact Registry Schema v0.1",
+  "type": "object"
+}

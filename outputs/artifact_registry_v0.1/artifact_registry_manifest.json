@@ -1,0 +1,133 @@
+{
+  "counts": {
+    "by_artifact_scope": {
+      "COMMUNICATION": 4,
+      "GOVERNANCE": 22,
+      "SCIENTIFIC": 15
+    },
+    "by_artifact_type": {
+      "EXTERNAL_PAYLOAD": 3,
+      "GENERATOR_SOURCE": 2,
+      "INDEX": 4,
+      "MANIFEST": 6,
+      "PARTITION_MANIFEST": 3,
+      "POLICY": 4,
+      "PRESENTATION_ARTIFACT": 4,
+      "REPRESENTATION_PAYLOAD": 1,
+      "SCHEMA": 2,
+      "SESSION_METADATA": 6,
+      "VALIDATION_REPORT": 6
+    },
+    "by_lifecycle_state": {
+      "VALIDATED": 41
+    },
+    "by_storage_class": {
+      "EXTERNAL_IMMUTABLE": 3,
+      "GIT_MANAGED": 38
+    },
+    "by_validation_status": {
+      "PASS": 41
+    },
+    "records": 41
+  },
+  "external_payload_references": [
+    {
+      "artifact_id": "ART_LNDV02_SET_756809652ACB00343DA20824",
+      "artifact_version": "MULTI_COMPONENT_EVIDENCE_LANDSCAPE_V0.2",
+      "dependency_reference": "ARTREG_C078EA608BEB68631F6CDCC00CEF21DC|ARTREG_1C9D1C6BC1CA6B715793C65E5F172B61",
+      "sha256": "756809652acb00343da20824dfec74550c01f649fe78159a6e6bc762e546ea21",
+      "size_bytes": 3386989421,
+      "storage_reference": "external+sha256://luad-target-dossier/evidence-landscape-v0.2/ART_LNDV02_SET_756809652ACB00343DA20824/"
+    },
+    {
+      "artifact_id": "ART_PRZV01_SET_011A39B150DEF9E56A43CBF9",
+      "artifact_version": "TRANSPARENT_PRIORITIZATION_PROTOTYPE_V0.1",
+      "dependency_reference": "ARTREG_95F1AF544719E4364C1D9EAB88C41010|ARTREG_FF3A4AB787FE63E4C2A784FA857BA510",
+      "sha256": "011a39b150def9e56a43cbf97ff3985111dab0c5fe6d4fea3b3312f27961f65b",
+      "size_bytes": 94591468,
+      "storage_reference": "external+sha256://PENDING/luad-target-dossier/prioritization-v0.1/ART_PRZV01_SET_011A39B150DEF9E56A43CBF9/"
+    },
+    {
+      "artifact_id": "ART_SUMV01_SET_9C7750D42301093888A120CE",
+      "artifact_version": "EVIDENCE_AGGREGATION_REPRESENTATION_V0.1",
+      "dependency_reference": "ARTREG_04B81347BA9E9C1DD520BF3861EFBC59|ARTREG_5008BBD3D12F80C6FDBC4DB7B5EDA0F1",
+      "sha256": "9c7750d42301093888a120ce9b4231d7b33724e17c1dc40a57c60ffa92c81291",
+      "size_bytes": 1876140432,
+      "storage_reference": "external+sha256://PENDING/luad-target-dossier/evidence-summary-v0.1/ART_SUMV01_SET_9C7750D42301093888A120CE/"
+    }
+  ],
+  "frozen_inputs": {
+    "analysis/37A_define_release_manifest_schema.py": "7796c454ef30185fb886cea52f02e1e0fce669868d91515d116619431b4cbf20",
+    "docs/governance/release_package_specification_v0.1.md": "39125ef1d550597ae9bb7af97b1fc81e7eee7d37cc8e54149276db8c2f3fe0ad",
+    "docs/governance/release_scope_policy_v0.1.md": "ce47a9c5b3b111d8230c38e92e3012e6e4e8f81adcd47318e49ebcb3326959a3",
+    "docs/governance/release_validation_requirements_v0.1.md": "104013b5ff9eeedd55b78a2f015b0f220a3ac1f5cc1bb2d464f8b16df158a1f1",
+    "outputs/case_dossiers_v0.1/case_dossiers.json": "d861e2500797ae9351f70e474c8a8acafa51d30481357aa450d1d77314bd27b8",
+    "outputs/case_dossiers_v0.1/case_selection_index.csv": "f11892cc59d1fc3b042e79b4859e293677d9befbe975dd9d6635e0033011bc52",
+    "outputs/case_dossiers_v0.1/dossier_manifest.json": "9039d3523bf52841239dce9ab880a98a3e2dcd5dfff3a87cece10c986067678b",
+    "outputs/case_dossiers_v0.1/session_info.txt": "0cae68b33106ff97512e39ade11059701dfa8dfc847eb5db47bd7b04c3e0572f",
+    "outputs/case_dossiers_v0.1/validation_report.md": "8ca6bc43b72fd653924b75eb9c5429e90cc82477908a1d17877bd7f5776fbbc3",
+    "outputs/evidence_landscape_v0.2/landscape_index.csv": "fbd7a3b50e70c41aa2ddbf0361390fde23d12bc320a881a4da168ad1d145d6c8",
+    "outputs/evidence_landscape_v0.2/landscape_manifest.json": "2c3853becd3895b0aaffb12be95205d910d1507dc1f2f8f36f7f150f651dba29",
+    "outputs/evidence_landscape_v0.2/partition_manifest.csv": "2ccc38a384fe816d50b2c5d8f4c528a49727189434fe4be41e70355ff146cf8d",
+    "outputs/evidence_landscape_v0.2/session_info.txt": "bb928646c3c7c3aba85f9faa127b4eb93b50455fa24165aa6b1a048bf1c658de",
+    "outputs/evidence_landscape_v0.2/validation_report.md": "d5933862fe468ef4561188716abaee2de1cda16e06bcb1d39c1793f66cc29a8a",
+    "outputs/evidence_summary_v0.1/partition_manifest.csv": "fd9bd76ea5f940a0165a6a082538a810fc64cbcd8b0fe4ecda9f0aae14795202",
+    "outputs/evidence_summary_v0.1/session_info.txt": "bd04e5a858f2c70e746954d2e99bdfd44e3d64f818261d31c393f20bed9bda44",
+    "outputs/evidence_summary_v0.1/summary_index.csv": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5",
+    "outputs/evidence_summary_v0.1/summary_manifest.json": "02b9a893569bd01257cb0108121f61a78041e90ffd769ac7a1d163d24051e19f",
+    "outputs/evidence_summary_v0.1/validation_report.md": "257662af9adf87ce7f913e2024b6e43db2685cc84a117f9424830b6308c034e8",
+    "outputs/presentation_artifacts_v0.1/architecture_summary.md": "e1f99162ccd69701d8f446ff56210142e56e11d3ada164a8b785aaff9ac535fc",
+    "outputs/presentation_artifacts_v0.1/case_pattern_summary.csv": "e03c9fb080e62e435a0d4fcf328715fa3f2a503829c79272f84a3b8a68da6d7d",
+    "outputs/presentation_artifacts_v0.1/evidence_layer_summary.csv": "0b30b5454c3d963b22b17c2ea35e776d2fa38ef805f5fe8c54bbf7599677abda",
+    "outputs/presentation_artifacts_v0.1/presentation_manifest.json": "2bf7acce12685399476e50cfa26df049d8b54cc371e6dde6794b656b12f1d2e4",
+    "outputs/presentation_artifacts_v0.1/provenance_flow_summary.md": "57885dccc7f07922a9cfec9f6d48c385dfb49e0bc745003d9fc9efabd9365f56",
+    "outputs/presentation_artifacts_v0.1/session_info.txt": "d6b6a2270a466d487db96572ca274be350042849e360d0870916ebd90bef6738",
+    "outputs/presentation_artifacts_v0.1/validation_report.md": "2237c292ab827f4396b3db4220321d1d5c626120104ce1f03cccfdbc2eb21f22",
+    "outputs/prioritization_v0.1/partition_manifest.csv": "e59a54e4a4857927eab529aab28c82ba8874e7b2cebfa2064527b89c642a5f14",
+    "outputs/prioritization_v0.1/prioritization_index.csv": "8131fa2644dab0efb17c5ae42cb5d297ec3993aa69ba00dda4ec6bdb47c7a69a",
+    "outputs/prioritization_v0.1/prioritization_manifest.json": "773eeec6bfa769c932f354bcc5eb552fe4a540a2fe65dd1811720b2e80c4ff80",
+    "outputs/prioritization_v0.1/session_info.txt": "9107a208ad059f62b18f915d80879ea9fce9f877f839440fbf7dc145c0724e57",
+    "outputs/prioritization_v0.1/validation_report.md": "8fd3664d6ce8ffe9b5c7bfc87793ca0492d23b97be8f4b8ac6abd2f37eead1d0",
+    "outputs/release_governance_v0.1/release_schema_manifest.json": "6176fb134bd452f14b29ef7a0b6fe0a52366f3492d17bc9f97b32b6d0323c960",
+    "outputs/release_governance_v0.1/session_info.txt": "e460abc9d993493277c71db200cb2e1fd82242c404843663aa018d261b264e20",
+    "outputs/release_governance_v0.1/validation_report.md": "26d8f481fabe05f62d816ecdee15f5dba29edb0b12b52fc7b993e26cc3c67427",
+    "schemas/release_manifest_schema_v0.1.json": "3b2bcb87e37d9cb83b2d1f5dceb0e2d503683a0be9c517dd899f3686d9b8b93b"
+  },
+  "generator": {
+    "generator_version": "ARTIFACT_REGISTRY_GENERATOR_V0.1",
+    "relative_path": "analysis/37B_build_artifact_registry.py",
+    "sha256": "592845e38a9f89e5d8188993095fc0089f4c99a01df2ae04038525188b596f0b"
+  },
+  "policy": {
+    "relative_path": "docs/governance/artifact_registry_policy_v0.1.md",
+    "sha256": "a7051623e88b219af476c4c775fca540163198a85cb5cfbaf40e7948333d7ae7"
+  },
+  "policy_version": "ARTIFACT_REGISTRY_POLICY_V0.1",
+  "registry_artifact": {
+    "relative_path": "outputs/artifact_registry_v0.1/artifact_registry.csv",
+    "sha256": "06b0e6ff4ddbc751136edeeb0e60799d81328692968b2f43a25d2dc021750e57",
+    "size_bytes": 18317
+  },
+  "registry_id": "ARTREGISTRY_19B7D25723B0715B860E8DA3BAF02396",
+  "registry_schema_version": "ARTIFACT_REGISTRY_SCHEMA_V0.1",
+  "registry_version": "ARTIFACT_REGISTRY_V0.1",
+  "schema": {
+    "relative_path": "schemas/artifact_registry_schema_v0.1.json",
+    "sha256": "62108eb4b3d27f881370898f019511145b55d85e8b6e4b36a99e2b3178c9f0ae"
+  },
+  "task_id": "TASK_037B",
+  "validation": {
+    "dependency_graph_acyclic": "PASS",
+    "dependency_references_resolved": "PASS",
+    "deterministic_regeneration": "BYTE_IDENTICAL",
+    "existing_artifacts_modified": false,
+    "external_payloads_metadata_only": "PASS",
+    "frozen_upstream_hashes_unchanged": "PASS",
+    "prohibited_field_tests": 22,
+    "release_package_generated": false,
+    "scientific_interpretation_fields": "NONE",
+    "unique_artifact_identifiers": "PASS",
+    "unique_paths": "PASS"
+  },
+  "validation_status": "PASS"
+}
