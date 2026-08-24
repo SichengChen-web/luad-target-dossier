@@ -1,0 +1,66 @@
+{
+  "communication_materials": {
+    "poster_material_registered": false,
+    "validated_presentation_artifacts": 4
+  },
+  "documentation_artifacts": {
+    "README.md": {
+      "sha256": "5bd5bdaf54ee7f12e6c169db8049bb3b9c77b0b02bb186d5ff418e5d7a60af77",
+      "size_bytes": 5627
+    },
+    "docs/project_overview_v1.0.md": {
+      "sha256": "a35819c02c6f02a253973eb38bc30a12e5da0915ce234d7ece4ce1b15ba3946c",
+      "size_bytes": 6758
+    },
+    "docs/release_notes_v1.0.md": {
+      "sha256": "66ec903597964f5f5fde325b9d20cc074d7489e7279ee9494687bc53552eca41",
+      "size_bytes": 3886
+    }
+  },
+  "documentation_release_id": "DOCRLS_396C3A6A05F091657AA7394F757550C4",
+  "documentation_status": "VALIDATED_DOCUMENTATION_CANDIDATE",
+  "documentation_version": "PROJECT_DOCUMENTATION_V1.0",
+  "frozen_inputs": {
+    "docs/governance/artifact_registry_policy_v0.1.md": "a7051623e88b219af476c4c775fca540163198a85cb5cfbaf40e7948333d7ae7",
+    "docs/governance/release_package_specification_v0.1.md": "39125ef1d550597ae9bb7af97b1fc81e7eee7d37cc8e54149276db8c2f3fe0ad",
+    "docs/governance/release_scope_policy_v0.1.md": "ce47a9c5b3b111d8230c38e92e3012e6e4e8f81adcd47318e49ebcb3326959a3",
+    "docs/governance/release_validation_requirements_v0.1.md": "104013b5ff9eeedd55b78a2f015b0f220a3ac1f5cc1bb2d464f8b16df158a1f1",
+    "docs/reproducibility_report_v0.1.md": "ae7d92d02188548cb8de4d1c337de711e1f5a33d7291168d10f20c436a7af223",
+    "outputs/artifact_registry_v0.1/artifact_registry.csv": "06b0e6ff4ddbc751136edeeb0e60799d81328692968b2f43a25d2dc021750e57",
+    "outputs/artifact_registry_v0.1/artifact_registry_manifest.json": "d7bbca889f78bbef55ecae59881a6b9ec34147762e6cd26b17810304dcedde2c",
+    "outputs/artifact_registry_v0.1/session_info.txt": "c070e113c66ba827990bc5eb03308fe29d83b60ad2d5da9615fe13265ad4a641",
+    "outputs/artifact_registry_v0.1/validation_report.md": "afa4d470045e6349285cea63f44abe37b10e4b1bfe9c8c951c12e7cedf78930a",
+    "outputs/reproducibility_report_v0.1/reproducibility_report_manifest.json": "05850c56575f21e2a46717a6b95357c02f99691d38a87c99edeaa2f2e3c48073",
+    "outputs/reproducibility_report_v0.1/session_info.txt": "dcd6474a72e33a834aa3670a0017b78264acc6cedbf061e8ae3bbedd3253da60",
+    "outputs/reproducibility_report_v0.1/validation_report.md": "ebfa6d5f917c6914fef09f0218458ca171d90421673056591ddb4cbcd6fd5c94",
+    "schemas/artifact_registry_schema_v0.1.json": "62108eb4b3d27f881370898f019511145b55d85e8b6e4b36a99e2b3178c9f0ae"
+  },
+  "generator": {
+    "generator_version": "PROJECT_DOCUMENTATION_GENERATOR_V1.0",
+    "relative_path": "analysis/37D_generate_project_documentation.py",
+    "sha256": "530b9c0508159ac2899eefd02c0e597037a94298dafabf3bb891e7f4a3a5bcc3"
+  },
+  "manifest_type": "FINAL_PROJECT_DOCUMENTATION_MANIFEST",
+  "project_id": "LUAD_EXPRESSION_DRUGGABLE_TARGET_EVIDENCE_DOSSIER",
+  "source_governance": {
+    "artifact_registry_id": "ARTREGISTRY_19B7D25723B0715B860E8DA3BAF02396",
+    "case_dossier_release_id": "CASEREL_678B829DF020D9D6D041B1437855B322",
+    "presentation_release_id": "PRESREL_33D749BD474B0A185D098F7A82822138",
+    "release_schema_governance_id": "RELSCHEMA_9F2BC28FC5DF73A7AE4B5DEE05CBDC8C",
+    "reproducibility_report_id": "REPROREPORT_74749D374714B211F18005E812BBBBBA"
+  },
+  "task_id": "TASK_037D",
+  "validation": {
+    "artifact_registry_integrity": "PASS",
+    "deterministic_documentation_generation": "BYTE_IDENTICAL",
+    "existing_artifacts_modified_except_authorized_readme": false,
+    "frozen_upstream_hashes_unchanged": "PASS",
+    "markdown_consistency": "PASS",
+    "network_access_used": false,
+    "release_package_generated": false,
+    "resolved_local_links": 31,
+    "runtime_ai_decisions_used": false,
+    "scientific_artifacts_generated": false
+  },
+  "validation_status": "PASS"
+}
