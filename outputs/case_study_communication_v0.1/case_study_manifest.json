@@ -1,0 +1,130 @@
+{
+  "artifacts": {
+    "docs/case_study_communication_specification_v0.1.md": {
+      "sha256": "d9ccd5714eace86107f1c8659dc1ce144e208aa87eaf3658eace34bdba5047fd",
+      "size_bytes": 5919
+    },
+    "figures/complete_evidence_pattern.svg": {
+      "sha256": "c5386e2f3e9f73c05466ba82847edb85f54fa8c20d274ad5d4a97f40f77ad596",
+      "size_bytes": 5515
+    },
+    "figures/conflict_evidence_pattern.svg": {
+      "sha256": "eb50c62bc4b83a06eef30c0b9b7947599a1f24fe5dcc585ad4ac6cc14d54420f",
+      "size_bytes": 5518
+    },
+    "figures/limitation_evidence_pattern.svg": {
+      "sha256": "cad980b53b038e28986175fd90bb21262f40d6c1f3664f4e070fa94c39abea29",
+      "size_bytes": 5520
+    },
+    "figures/partial_evidence_pattern.svg": {
+      "sha256": "3affb1153bc8eaa6f1c9880868bf0fb11e1ce3cf76f43b1b4adac2ae86a7f4ea",
+      "size_bytes": 5518
+    },
+    "outputs/case_study_communication_v0.1/case_study_summary.csv": {
+      "sha256": "8c11d0ef3131e41c496ea39ef7fc56acd77d7a8fb96593f1c0830c618c424403",
+      "size_bytes": 5295
+    },
+    "outputs/case_study_communication_v0.1/session_info.txt": {
+      "sha256": "8d7713d4b1f46c1ce5b4d0c82d032a5bbdcaeaf0a92eff28abea2bbdb706aa6c",
+      "size_bytes": 629
+    },
+    "outputs/case_study_communication_v0.1/validation_report.md": {
+      "sha256": "2c8e0690bdccc0b84e324c923ce06359775ce20d8388b5c1d66a2bc73e707551",
+      "size_bytes": 1654
+    }
+  },
+  "case_identities": [
+    {
+      "EnsemblID": "ENSG00000168952.15",
+      "case_category": "CASE_COMPLETE_PATTERN",
+      "case_selection_id": "CASESEL_19FF843920216CC33F6EBCDF1B52196B",
+      "figure_path": "figures/complete_evidence_pattern.svg"
+    },
+    {
+      "EnsemblID": "ENSG00000278376.1",
+      "case_category": "CASE_PARTIAL_PATTERN",
+      "case_selection_id": "CASESEL_10759224068765AA4054B3B2C0FBA78F",
+      "figure_path": "figures/partial_evidence_pattern.svg"
+    },
+    {
+      "EnsemblID": "ENSG00000270890.1",
+      "case_category": "CASE_CONFLICT_PATTERN",
+      "case_selection_id": "CASESEL_9E53BEE52C2F2496BF17A100F9882D74",
+      "figure_path": "figures/conflict_evidence_pattern.svg"
+    },
+    {
+      "EnsemblID": "ENSG00000260630.6",
+      "case_category": "CASE_LIMITATION_PATTERN",
+      "case_selection_id": "CASESEL_04FCE8F0AD511FB18468AA6F698EC776",
+      "figure_path": "figures/limitation_evidence_pattern.svg"
+    }
+  ],
+  "communication_release_id": "CASECOM_FBF6C77042DEA94E250D1D03F796F5D9",
+  "communication_version": "CASE_STUDY_COMMUNICATION_V0.1",
+  "counts": {
+    "case_patterns": 4,
+    "case_summary_rows": 4,
+    "preserved_entities": 4,
+    "structural_figures": 4
+  },
+  "frozen_inputs": {
+    "README.md": "5bd5bdaf54ee7f12e6c169db8049bb3b9c77b0b02bb186d5ff418e5d7a60af77",
+    "analysis/36A_define_case_selection_schema.py": "eae4d7c5af3509462f8c3317a831db417c586a4c495e24c65f7815bf76eaba0e",
+    "analysis/36B_generate_case_dossiers.py": "5b8d0c30f2f660faa069db4eb48716f03ca1e1681fe33e02f5f81ca95450e6f6",
+    "analysis/36C_generate_presentation_artifacts.py": "5eaa4df64a10515c99dbb97fcdb08da265ce0d60e90fb73846d5f881f9f8171e",
+    "analysis/37D_generate_project_documentation.py": "530b9c0508159ac2899eefd02c0e597037a94298dafabf3bb891e7f4a3a5bcc3",
+    "docs/governance/case_study_selection_framework_v0.1.md": "c269af2bfe9afd8f33fb1e2f107dc9e563f58ab6648ac66fca2816af2a8fd109",
+    "docs/governance/case_study_selection_rule_catalog_v0.1.md": "a81289a329675206db25c5f3b79d8d2c870e95b32e147dc03e7dfc36cb3bf31a",
+    "docs/governance/case_study_selection_validation_requirements_v0.1.md": "5ed8a2086135e712218e76d4ce556ae07e37c7ed049f8bf88feefab3a94290f9",
+    "docs/project_overview_v1.0.md": "a35819c02c6f02a253973eb38bc30a12e5da0915ce234d7ece4ce1b15ba3946c",
+    "docs/release_notes_v1.0.md": "66ec903597964f5f5fde325b9d20cc074d7489e7279ee9494687bc53552eca41",
+    "outputs/case_dossiers_v0.1/case_dossiers.json": "d861e2500797ae9351f70e474c8a8acafa51d30481357aa450d1d77314bd27b8",
+    "outputs/case_dossiers_v0.1/case_selection_index.csv": "f11892cc59d1fc3b042e79b4859e293677d9befbe975dd9d6635e0033011bc52",
+    "outputs/case_dossiers_v0.1/dossier_manifest.json": "9039d3523bf52841239dce9ab880a98a3e2dcd5dfff3a87cece10c986067678b",
+    "outputs/case_dossiers_v0.1/session_info.txt": "0cae68b33106ff97512e39ade11059701dfa8dfc847eb5db47bd7b04c3e0572f",
+    "outputs/case_dossiers_v0.1/validation_report.md": "8ca6bc43b72fd653924b75eb9c5429e90cc82477908a1d17877bd7f5776fbbc3",
+    "outputs/final_release_documentation_v1.0/final_release_manifest.json": "87e706362b41156c5b3054f96c40b45a6a9744c59f900815dc83df18bd2f63b5",
+    "outputs/final_release_documentation_v1.0/session_info.txt": "647cf623bcf66a5a48f9decf7fc4d2cd75189b6c7b6177951f698f7fd3b047a4",
+    "outputs/final_release_documentation_v1.0/validation_report.md": "10f376bf245761d0af784989840afc9fb09eea44719994018a20406e45171e9f",
+    "outputs/presentation_artifacts_v0.1/architecture_summary.md": "e1f99162ccd69701d8f446ff56210142e56e11d3ada164a8b785aaff9ac535fc",
+    "outputs/presentation_artifacts_v0.1/case_pattern_summary.csv": "e03c9fb080e62e435a0d4fcf328715fa3f2a503829c79272f84a3b8a68da6d7d",
+    "outputs/presentation_artifacts_v0.1/evidence_layer_summary.csv": "0b30b5454c3d963b22b17c2ea35e776d2fa38ef805f5fe8c54bbf7599677abda",
+    "outputs/presentation_artifacts_v0.1/presentation_manifest.json": "2bf7acce12685399476e50cfa26df049d8b54cc371e6dde6794b656b12f1d2e4",
+    "outputs/presentation_artifacts_v0.1/provenance_flow_summary.md": "57885dccc7f07922a9cfec9f6d48c385dfb49e0bc745003d9fc9efabd9365f56",
+    "outputs/presentation_artifacts_v0.1/session_info.txt": "d6b6a2270a466d487db96572ca274be350042849e360d0870916ebd90bef6738",
+    "outputs/presentation_artifacts_v0.1/validation_report.md": "2237c292ab827f4396b3db4220321d1d5c626120104ce1f03cccfdbc2eb21f22",
+    "schemas/case_study_selection_schema_v0.1.json": "d76da88675e63fb13f9cb59ad1b1e2df5895c22d5862987c4dc6d7818acaeffa"
+  },
+  "generator": {
+    "generator_version": "CASE_STUDY_COMMUNICATION_GENERATOR_V0.1",
+    "relative_path": "analysis/38A_generate_case_study_communication.py",
+    "sha256": "1f8c07d113503e7e0c9cadc8c73baa1f2235e8d36cc7fe9eebc981462d64d5cb"
+  },
+  "manifest_type": "CASE_STUDY_COMMUNICATION_MANIFEST",
+  "project_id": "LUAD_EXPRESSION_DRUGGABLE_TARGET_EVIDENCE_DOSSIER",
+  "scope_boundary": "STRUCTURAL_COMMUNICATION_ONLY",
+  "source_releases": {
+    "case_dossier_release_id": "CASEREL_678B829DF020D9D6D041B1437855B322",
+    "documentation_release_id": "DOCRLS_396C3A6A05F091657AA7394F757550C4",
+    "presentation_release_id": "PRESREL_33D749BD474B0A185D098F7A82822138"
+  },
+  "task_id": "TASK_038A",
+  "validation": {
+    "biological_interpretation_added": false,
+    "case_identity_reconciliation": "PASS",
+    "component_state_fidelity": "PASS",
+    "dependency_disclosure": "PASS",
+    "deterministic_generation": "BYTE_IDENTICAL",
+    "feature_availability_mapping": "PASS",
+    "frozen_input_hashes_unchanged": "PASS",
+    "limitation_preservation": "PASS",
+    "markdown_consistency": "PASS",
+    "network_access_used": false,
+    "prohibited_field_scan": "PASS",
+    "provenance_reference_preservation": "PASS",
+    "resolved_local_links": 9,
+    "runtime_ai_decisions_used": false,
+    "svg_validation": "PASS"
+  },
+  "validation_status": "PASS"
+}
