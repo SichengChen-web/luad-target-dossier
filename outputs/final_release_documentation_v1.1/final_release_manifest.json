@@ -1,0 +1,78 @@
+{
+  "documentation_artifacts": {
+    "README.md": {
+      "sha256": "fa529737efb4a6f1943bd7b55d3d9cdfb3b1d71f38ecd19323f9a4735a378fea",
+      "size_bytes": 6535
+    },
+    "docs/release_notes_v1.1.md": {
+      "sha256": "ae01946e2725faf5a41ef0b48d2af700ccc50acbc4f40ae85fc9df9c5201ed17",
+      "size_bytes": 2485
+    },
+    "outputs/final_release_documentation_v1.1/session_info.txt": {
+      "sha256": "f99555f3537f6c97e1a3385e48778518ef9f80cbd70af46d0d878c6f63a6c50d",
+      "size_bytes": 733
+    },
+    "outputs/final_release_documentation_v1.1/validation_report.md": {
+      "sha256": "1b5ec139a71d6b69a02e524e8fc622af23866fd4c78cd81c1d34e3e44a5b5a09",
+      "size_bytes": 1677
+    }
+  },
+  "documentation_release_id": "DOCRLS_DE1A5B3CABC4BD1EBBFE44C8B47185A7",
+  "documentation_status": "VALIDATED_PUBLIC_DOCUMENTATION_CANDIDATE",
+  "documentation_version": "PROJECT_DOCUMENTATION_V1.1",
+  "frozen_inputs": {
+    "docs/case_study_communication_specification_v0.1.md": "d9ccd5714eace86107f1c8659dc1ce144e208aa87eaf3658eace34bdba5047fd",
+    "docs/project_overview_v1.0.md": "a35819c02c6f02a253973eb38bc30a12e5da0915ce234d7ece4ce1b15ba3946c",
+    "docs/release_notes_v1.0.md": "66ec903597964f5f5fde325b9d20cc074d7489e7279ee9494687bc53552eca41",
+    "docs/reproducibility_report_v0.1.md": "ae7d92d02188548cb8de4d1c337de711e1f5a33d7291168d10f20c436a7af223",
+    "figures/complete_evidence_pattern.svg": "c5386e2f3e9f73c05466ba82847edb85f54fa8c20d274ad5d4a97f40f77ad596",
+    "figures/conflict_evidence_pattern.svg": "eb50c62bc4b83a06eef30c0b9b7947599a1f24fe5dcc585ad4ac6cc14d54420f",
+    "figures/limitation_evidence_pattern.svg": "cad980b53b038e28986175fd90bb21262f40d6c1f3664f4e070fa94c39abea29",
+    "figures/partial_evidence_pattern.svg": "3affb1153bc8eaa6f1c9880868bf0fb11e1ce3cf76f43b1b4adac2ae86a7f4ea",
+    "outputs/artifact_registry_v0.1/artifact_registry.csv": "06b0e6ff4ddbc751136edeeb0e60799d81328692968b2f43a25d2dc021750e57",
+    "outputs/artifact_registry_v0.1/artifact_registry_manifest.json": "d7bbca889f78bbef55ecae59881a6b9ec34147762e6cd26b17810304dcedde2c",
+    "outputs/case_study_communication_v0.1/case_study_manifest.json": "587a5bfb379dacc08d0dbb71c78906b6ce5a458ca5356482cfc146f4a1f04b26",
+    "outputs/evidence_profile_integration_v0.1/profile_manifest.json": "63492499977f7adb086e4ace9a491a72fa617a1fe054d544701826fb9657455d",
+    "outputs/final_release_documentation_v1.0/final_release_manifest.json": "87e706362b41156c5b3054f96c40b45a6a9744c59f900815dc83df18bd2f63b5",
+    "outputs/final_sample_qc/final_sample_qc_summary.md": "a5c18361788c8bf73135323fbd364d4700235b4b51b9ee146d54b75d61480de6",
+    "outputs/presentation_artifacts_v0.1/presentation_manifest.json": "2bf7acce12685399476e50cfa26df049d8b54cc371e6dde6794b656b12f1d2e4",
+    "outputs/prioritization_v0.1/prioritization_manifest.json": "773eeec6bfa769c932f354bcc5eb552fe4a540a2fe65dd1811720b2e80c4ff80"
+  },
+  "generator": {
+    "generator_version": "PUBLIC_README_DOCUMENTATION_GENERATOR_V1.1",
+    "relative_path": "analysis/generate_public_readme_v1_1.py",
+    "sha256": "3279330ce9197b90d1104411436182a444e15ec21e1ff0f909288f18758d642b"
+  },
+  "manifest_type": "FORWARD_ONLY_DOCUMENTATION_PATCH_MANIFEST",
+  "patch_type": "FORWARD_ONLY_DOCUMENTATION_MAINTENANCE",
+  "project_id": "LUAD_EXPRESSION_DRUGGABLE_TARGET_EVIDENCE_DOSSIER",
+  "source_releases": {
+    "artifact_registry_id": "ARTREGISTRY_19B7D25723B0715B860E8DA3BAF02396",
+    "case_study_communication_release_id": "CASECOM_FBF6C77042DEA94E250D1D03F796F5D9",
+    "profile_integration_release_id": "PROFILE_INTEGRATION_RELEASE_8007AAA939B733EE6619F1FCFB87CAE8",
+    "structural_routing_release_id": "PRZREL_940BC24427791A7E054B54F533E77B48"
+  },
+  "supersedes": {
+    "documentation_release_id": "DOCRLS_396C3A6A05F091657AA7394F757550C4",
+    "documentation_version": "PROJECT_DOCUMENTATION_V1.0",
+    "historical_readme_git_commit": "daffadf9feb0fc572b83306b433abfc8360e0e8b",
+    "historical_readme_sha256": "5bd5bdaf54ee7f12e6c169db8049bb3b9c77b0b02bb186d5ff418e5d7a60af77",
+    "manifest_path": "outputs/final_release_documentation_v1.0/final_release_manifest.json",
+    "manifest_sha256": "87e706362b41156c5b3054f96c40b45a6a9744c59f900815dc83df18bd2f63b5"
+  },
+  "validation": {
+    "deterministic_generation": "BYTE_IDENTICAL",
+    "external_payload_bytes_copied": false,
+    "forward_only_versioning": "PASS",
+    "frozen_count_reconciliation": "PASS",
+    "frozen_input_hashes_unchanged": "PASS",
+    "historical_release_preserved": "PASS",
+    "markdown_html_links_resolved": 21,
+    "network_api_access_used": false,
+    "public_wording_validation": "PASS",
+    "runtime_ai_decisions_used": false,
+    "scientific_artifacts_modified": false,
+    "svg_reference_validation": "PASS"
+  },
+  "validation_status": "PASS"
+}
