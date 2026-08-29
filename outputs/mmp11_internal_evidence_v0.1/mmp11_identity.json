@@ -1,0 +1,194 @@
+{
+  "EnsemblID": "ENSG00000099953.9",
+  "EnsemblID_base": "ENSG00000099953",
+  "audit_id": "AUDIT_MMP11_INTERNAL_PROJECT_EVIDENCE_V0_1",
+  "audit_version": "MMP11_INTERNAL_PROJECT_EVIDENCE_AUDIT_V0.1",
+  "gene_symbol_display": "MMP11",
+  "gene_type": "protein_coding",
+  "generator_version": "MMP11_INTERNAL_PROJECT_EVIDENCE_AUDIT_GENERATOR_V0.1",
+  "git_state": {
+    "branch": "main",
+    "head": "31b4cacf0ba5a58172e4f1441432365d98d1acf9"
+  },
+  "identifier_mappings": {
+    "ChEMBL_target_ID": {
+      "mapping_basis": "EXACT_HGNC_UNIPROT_TO_CHEMBL_COMPONENT_ACCESSION",
+      "source": "CHEMBL_TARGET_COMPONENT_API_VIA_HGNC_UNIPROT",
+      "status": "UNIQUE",
+      "value": "CHEMBL2867"
+    },
+    "Entrez_ID": {
+      "source": "HGNC_COMPLETE_SET_EXACT_ENSEMBL",
+      "status": "UNIQUE",
+      "value": "4320"
+    },
+    "HGNC_ID": {
+      "source": "HGNC_COMPLETE_SET_EXACT_ENSEMBL",
+      "status": "UNIQUE",
+      "value": "HGNC:7157"
+    },
+    "OpenTargets_target_ID": {
+      "source": "OPEN_TARGETS_PLATFORM_GRAPHQL_EXACT_ENSEMBL",
+      "status": "UNIQUE",
+      "value": "ENSG00000099953"
+    },
+    "UniProt_ID": {
+      "source": "HGNC_COMPLETE_SET_EXACT_ENSEMBL",
+      "status": "UNIQUE",
+      "value": "P24347"
+    }
+  },
+  "identity_resolution": {
+    "all_artifact_join_key": "EnsemblID",
+    "expected_identifier_used_as": "POST_RESOLUTION_ASSERTION_ONLY",
+    "resolution_method": "UNIQUE_SYMBOL_LOOKUP_IN_FROZEN_TASK009_MAPPING_ONLY",
+    "symbol_based_artifact_joins": "PROHIBITED_NONE_USED",
+    "symbol_use_boundary": "COMMUNICATION_DISPLAY_AND_INITIAL_IDENTITY_RESOLUTION_ONLY"
+  },
+  "mapping_qc": {
+    "ambiguous_fields": "NONE",
+    "ambiguous_mapping": "FALSE",
+    "current_HGNC_symbol": "MMP11",
+    "one_to_many_fields": "NONE",
+    "symbol_qc_status": "MATCH"
+  },
+  "presentation_disclaimer": "MMP11 is used as an illustrative biological worked example for scientific communication. Its inclusion is not the result of a project-level therapeutic target ranking, scoring, or recommendation procedure.",
+  "source_artifacts": [
+    {
+      "relative_path": "outputs/candidate_registry/candidate_registry.csv",
+      "sha256": "8055a9d99d058d219399957e62f6a3cccc3dd2217bc028d1d11dd4dc667f90e2"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/model_dependent_genes.csv",
+      "sha256": "08ef1e2b83d86c7a3618f999b50af4b252c35780fc9e22c413b6c677e5f38138"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S1_de_results.csv",
+      "sha256": "61b3aae22f2d7bf0baf315b27bfc3604ffc3c88cb983fe56ea22591e5e3398d4"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S2_de_results.csv",
+      "sha256": "f0dad1ce3044b78894a8f1d973131fdca123e386b9bd08b0f2e1bb9682c6591c"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S3_de_results.csv",
+      "sha256": "07a66ad2509d091cd68fccf92b88fdf18087b5f0a577b01df739e89e7bac782f"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S4_de_results.csv",
+      "sha256": "d0a2d7ec40e2c87bbe0e579352e8589643682b7879a277b06e401e657dc34166"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S5_de_results.csv",
+      "sha256": "5a9291167b534d0a00a42549758afaa0e73ff18708de0717dc8836c2e82e6847"
+    },
+    {
+      "relative_path": "outputs/de_sensitivity/results/S6_de_results.csv",
+      "sha256": "8eb79e7ed6e867e69ca3703335cb2aca6160b349057258293f0408ff0758b6b2"
+    },
+    {
+      "relative_path": "outputs/differential_expression/contrast_matrix.csv",
+      "sha256": "e7b957703f1e871f9da318080095b63f0b2e9d409e083f6fde7196c0204a8649"
+    },
+    {
+      "relative_path": "outputs/differential_expression/primary_de_results.csv",
+      "sha256": "ed6c73c08a92321dd1669fdd17f908760895d31034045a49bebb49f6706a4d40"
+    },
+    {
+      "relative_path": "outputs/disease_association_component_v0.1/component_index.csv",
+      "sha256": "7637c4da5f2286acb082b5382ae9f9bf50b08b2342d861e60ba388d729295c9e"
+    },
+    {
+      "relative_path": "outputs/disease_association_component_v0.1/component_manifest.json",
+      "sha256": "b2264956a13d5096b61cdb2b6981bcc80d7b7b3f1fe422b30f77c7cdc70e39f7"
+    },
+    {
+      "relative_path": "outputs/disease_association_component_v0.1/component_records.jsonl",
+      "sha256": "ecde83c5f3d28441c0e439b2ede6621f484b5b592a96370052911984868ad264"
+    },
+    {
+      "relative_path": "outputs/disease_association_features_v0.1/disease_association_features.csv",
+      "sha256": "3eee6bb0a3f55e051427fdd7f67fd974604abe9bc11477b2e3be73c561201418"
+    },
+    {
+      "relative_path": "outputs/disease_association_snapshot_v0.1/entity_coverage_ledger.csv",
+      "sha256": "b0b7903c33a65f991150804722b832c0168f1156a703411e9d7a3c23c5e8202e"
+    },
+    {
+      "relative_path": "outputs/disease_association_snapshot_v0.1/raw_record_manifest.csv",
+      "sha256": "ef94b3602f1b404df6c0090e45c533e22c4554fab0080a2ae5d7bfaca18ab0f4"
+    },
+    {
+      "relative_path": "outputs/evidence_claim_architecture/evidence_claim_registry.csv",
+      "sha256": "0d963a4c5c8f9586f81369e33df0a2b7e57bb37ac8ceab4ce54498baf2351a66"
+    },
+    {
+      "relative_path": "outputs/evidence_claim_architecture/evidence_dependency_graph.csv",
+      "sha256": "011839f10c48e197f9f1c0e2262565e562d3a2cf53dd0936f21ddcb4ed5c2256"
+    },
+    {
+      "relative_path": "outputs/evidence_claim_architecture/evidence_record_registry.csv",
+      "sha256": "76ec5056fb4e468176073073532204d231765d4f0cd70dbb6cfe4ad8bf752343"
+    },
+    {
+      "relative_path": "outputs/evidence_claim_architecture/missingness_uncertainty_registry.csv",
+      "sha256": "3bbe080b1ed46dd159a86b53fb707572f988361af96e001188b69da0daa9147d"
+    },
+    {
+      "relative_path": "outputs/evidence_claim_architecture/source_entity_registry.csv",
+      "sha256": "1b1379066226b5f69b626fe4a97628f7b6da6e585515aa8609218eef65bf8056"
+    },
+    {
+      "relative_path": "outputs/evidence_landscape_v0.2/landscape_index.csv",
+      "sha256": "fbd7a3b50e70c41aa2ddbf0361390fde23d12bc320a881a4da168ad1d145d6c8"
+    },
+    {
+      "relative_path": "outputs/evidence_profile_integration_v0.1/profile_index.csv",
+      "sha256": "376e6d3440dba3ae392410cd2f836a9a700fe66248bf29257794b55015821a28"
+    },
+    {
+      "relative_path": "outputs/evidence_summary_v0.1/summary_index.csv",
+      "sha256": "27489b08061102c4d325bac7d4761682f8c7e811458b5cff88d4fec3b0bc17e5"
+    },
+    {
+      "relative_path": "outputs/feature_extraction/transcriptomic_features.csv",
+      "sha256": "4014469439ff14d27c451a356cf7711daa7a5331c58326eced2cf96edb298844"
+    },
+    {
+      "relative_path": "outputs/identifier_normalization/identifier_mapping.csv",
+      "sha256": "ff50b9cc50006710e681bd0d0f21fa3790becc3cd20a476dbbb6ac5459c1594e"
+    },
+    {
+      "relative_path": "outputs/integrated_registry/integrated_target_registry.csv",
+      "sha256": "0587fc6901267b18c8144644571f89ac2cc46053b57ea5def4093795fdbc4c26"
+    },
+    {
+      "relative_path": "outputs/presentation_artifacts_v0.1/case_pattern_summary.csv",
+      "sha256": "e03c9fb080e62e435a0d4fcf328715fa3f2a503829c79272f84a3b8a68da6d7d"
+    },
+    {
+      "relative_path": "outputs/presentation_artifacts_v0.1/presentation_manifest.json",
+      "sha256": "2bf7acce12685399476e50cfa26df049d8b54cc371e6dde6794b656b12f1d2e4"
+    },
+    {
+      "relative_path": "outputs/prioritization_v0.1/prioritization_index.csv",
+      "sha256": "8131fa2644dab0efb17c5ae42cb5d297ec3993aa69ba00dda4ec6bdb47c7a69a"
+    },
+    {
+      "relative_path": "outputs/profile_release_candidate_v0.1/profile_index.csv",
+      "sha256": "5f6307c603f8d4d9416877512c28b0329c369d03aea7d24bf6cc64176193ee15"
+    },
+    {
+      "relative_path": "outputs/profile_release_candidate_v0.1/profiles/p16/profiles.jsonl",
+      "sha256": "370b5daef243ead00c82e36958f725cdec0a76891bc14d21db88711980855a6a"
+    },
+    {
+      "relative_path": "outputs/profile_release_candidate_v0.1/provenance/p16/profile_provenance_links.csv",
+      "sha256": "6f258c13263b9f967d8d1e1ee9d4a6b88d7d20c6efbc060e70cf8174f5144f7d"
+    },
+    {
+      "relative_path": "outputs/profile_release_candidate_v0.1/release_manifest.json",
+      "sha256": "d7c3203f4920f5e799dea8e3515cd15a01efba83693a4be7c554a4e5094625fe"
+    }
+  ]
+}

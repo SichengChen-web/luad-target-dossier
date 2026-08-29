@@ -1,0 +1,17 @@
+audit_version=MMP11_INTERNAL_PROJECT_EVIDENCE_AUDIT_V0.1
+generator_version=MMP11_INTERNAL_PROJECT_EVIDENCE_AUDIT_GENERATOR_V0.1
+python_version=3.14.0
+python_implementation=CPython
+platform=macOS-26.6.2-arm64-arm-64bit-Mach-O
+git_branch=main
+git_head=31b4cacf0ba5a58172e4f1441432365d98d1acf9
+git_scope=TASK039A_ONLY
+frozen_input_count=34
+frozen_input_verification=PASS
+network_access=PROHIBITED_NOT_USED
+runtime_ai_decisions=PROHIBITED_NONE_USED
+randomness=NOT_USED
+wall_clock_governed_values=NOT_USED
+artifact_join_key=EnsemblID
+symbol_based_artifact_joins=NONE
+presentation_disclaimer=MMP11 is used as an illustrative biological worked example for scientific communication. Its inclusion is not the result of a project-level therapeutic target ranking, scoring, or recommendation procedure.
