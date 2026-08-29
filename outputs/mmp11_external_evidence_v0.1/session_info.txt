@@ -1,0 +1,15 @@
+registry_version=MMP11_EXTERNAL_EVIDENCE_REGISTRY_V0.1
+generator_version=MMP11_EXTERNAL_EVIDENCE_ACQUISITION_GENERATOR_V0.1.1
+documentation_patch_version=TASK039B_1_SEARCH_COVERAGE_PATCH_V0.1
+python_version=3.14.0
+platform=macOS-26.6.2-arm64-arm-64bit-Mach-O
+retrieval_timestamp_utc=2026-08-29T02:58:29Z
+network_usage_original_acquisition=Official PubMed, PubMed Central, Europe PMC, NCBI GEO, and ClinicalTrials.gov retrieval only
+network_usage_task039b_1_regeneration=NONE_EXISTING_FROZEN_RAW_PAYLOADS_ONLY
+network_retrieval_mutable=TRUE
+offline_transformation_deterministic=TRUE
+future_network_byte_identity_claimed=FALSE
+git_head=dc5dc17e9f189e7f88b7bbb08842e1a58d70f998
+git_worktree_state=reported_at_task_completion_not_embedded_to_preserve_deterministic_transformation
+frozen_task039a_hashes={"mmp11_claim_boundary.md": "8da1472467dd90d10a28a85fdc7c3b2b0f1482c38f75ffc44cd86860719353ea", "mmp11_component_summary.json": "85d3bb3e4e73613bc2362f722b305d09f8577f0eaf28aa84e0aab729a2d60ee5", "mmp11_dependency_map.csv": "76306760de5c6c37321ab5e30b5c8f9e361ef0b3be42826920fd4f045a4d577d", "mmp11_identity.json": "caeb90f8ecef320a02db10ce9a396dcc77f17fc126e6c3f5b788349bfa2e8ae3", "mmp11_internal_evidence_summary.md": "886ac61d2cb2de5d47a761c3a5c9068441a58660afdb1a029b91a684122e5c20", "validation_report.md": "ad8986ddd3431b77f7b8bf00462ebff9cdbc98ad2d98acd0ad4d5ebaa80c2cc1"}
+presentation_disclaimer=MMP11 is being used as an illustrative biological worked example. External evidence is organized to demonstrate provenance-aware evidence synthesis and does not constitute a project-level therapeutic target ranking, validation, or recommendation.

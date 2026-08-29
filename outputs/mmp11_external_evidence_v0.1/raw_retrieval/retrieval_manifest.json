@@ -1,0 +1,251 @@
+{
+  "future_byte_identity_claimed": false,
+  "mutable_network_retrieval": true,
+  "payloads": [
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pubmed_esearch_broad.json",
+      "query": "(MMP11[Title/Abstract] OR \"matrix metalloproteinase 11\"[Title/Abstract] OR stromelysin-3[Title/Abstract]) AND (\"lung adenocarcinoma\"[Title/Abstract] OR LUAD[Title/Abstract] OR NSCLC[Title/Abstract] OR \"lung cancer\"[Title/Abstract])",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "77671803c2caae74daa7cdb40021e4134b510e002c562fac1d1e581f4f86486e",
+      "size_bytes": 738,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28MMP11%5BTitle%2FAbstract%5D+OR+%22matrix+metalloproteinase+11%22%5BTitle%2FAbstract%5D+OR+stromelysin-3%5BTitle%2FAbstract%5D%29+AND+%28%22lung+adenocarcinoma%22%5BTitle%2FAbstract%5D+OR+LUAD%5BTitle%2FAbstract%5D+OR+NSCLC%5BTitle%2FAbstract%5D+OR+%22lung+cancer%22%5BTitle%2FAbstract%5D%29&retmode=json&retmax=1000"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pubmed_esearch_functional.json",
+      "query": "(MMP11[Title/Abstract] OR \"matrix metalloproteinase 11\"[Title/Abstract] OR stromelysin-3[Title/Abstract]) AND (\"lung adenocarcinoma\"[Title/Abstract] OR LUAD[Title/Abstract] OR NSCLC[Title/Abstract] OR \"lung cancer\"[Title/Abstract]) AND (expression[Title/Abstract] OR prognosis[Title/Abstract] OR survival[Title/Abstract] OR perturbation[Title/Abstract] OR knockdown[Title/Abstract] OR knockout[Title/Abstract] OR CRISPR[Title/Abstract] OR siRNA[Title/Abstract] OR shRNA[Title/Abstract] OR proliferation[Title/Abstract] OR migration[Title/Abstract] OR invasion[Title/Abstract] OR xenograft[Title/Abstract] OR metastasis[Title/Abstract] OR antibody[Title/Abstract] OR inhibitor[Title/Abstract] OR therapeutic[Title/Abstract] OR mechanism[Title/Abstract])",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "a103532afa061b9e2e8e031a6812c7c0f8d38969cba4097b4facdd9a48f912b9",
+      "size_bytes": 1320,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28MMP11%5BTitle%2FAbstract%5D+OR+%22matrix+metalloproteinase+11%22%5BTitle%2FAbstract%5D+OR+stromelysin-3%5BTitle%2FAbstract%5D%29+AND+%28%22lung+adenocarcinoma%22%5BTitle%2FAbstract%5D+OR+LUAD%5BTitle%2FAbstract%5D+OR+NSCLC%5BTitle%2FAbstract%5D+OR+%22lung+cancer%22%5BTitle%2FAbstract%5D%29+AND+%28expression%5BTitle%2FAbstract%5D+OR+prognosis%5BTitle%2FAbstract%5D+OR+survival%5BTitle%2FAbstract%5D+OR+perturbation%5BTitle%2FAbstract%5D+OR+knockdown%5BTitle%2FAbstract%5D+OR+knockout%5BTitle%2FAbstract%5D+OR+CRISPR%5BTitle%2FAbstract%5D+OR+siRNA%5BTitle%2FAbstract%5D+OR+shRNA%5BTitle%2FAbstract%5D+OR+proliferation%5BTitle%2FAbstract%5D+OR+migration%5BTitle%2FAbstract%5D+OR+invasion%5BTitle%2FAbstract%5D+OR+xenograft%5BTitle%2FAbstract%5D+OR+metastasis%5BTitle%2FAbstract%5D+OR+antibody%5BTitle%2FAbstract%5D+OR+inhibitor%5BTitle%2FAbstract%5D+OR+therapeutic%5BTitle%2FAbstract%5D+OR+mechanism%5BTitle%2FAbstract%5D%29&retmode=json&retmax=1000"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pubmed_screened_records.xml",
+      "query": "PMID set from broad search plus Task #039A overlap audit",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "4735783f3b5e6b990fd8d1069854642ab14d5c160f923caec47930f582e991a0",
+      "size_bytes": 722962,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41804162%2C41654000%2C40826767%2C40552583%2C40386736%2C39904499%2C39672019%2C37602450%2C37287543%2C36756152%2C35422093%2C34671675%2C31570432%2C31024988%2C30825234%2C29796998%2C29568911%2C19949890%2C18793406%2C17310584%2C15536641%2C15509588%2C15036884%2C14647437%2C10741738%2C10561218%2C9417124%2C9137088%2C8683934%2C7664289%2C33836753%2C37543577%2C39239548%2C40977645%2C23659968%2C15653641%2C25141350&retmode=xml"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/europe_pmc_search.json",
+      "query": "(MMP11 OR \"matrix metalloproteinase 11\" OR \"stromelysin-3\") AND (\"lung adenocarcinoma\" OR LUAD OR NSCLC OR \"lung cancer\")",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "2ae0eb18516fcbe6de3fd94409eaeff2330bdf92fd45403582e2142fcd6d2b50",
+      "size_bytes": 7711431,
+      "source": "Europe PMC",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28MMP11+OR+%22matrix+metalloproteinase+11%22+OR+%22stromelysin-3%22%29+AND+%28%22lung+adenocarcinoma%22+OR+LUAD+OR+NSCLC+OR+%22lung+cancer%22%29&format=json&pageSize=1000&resultType=core"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/clinicaltrials_search.json",
+      "query": "MMP11 OR \"matrix metalloproteinase 11\" OR stromelysin-3",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "b604f259e153f3820988d1d3820eb5ca5ea6e8bcd5ab13b70a7050351933cfc3",
+      "size_bytes": 83412,
+      "source": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=MMP11+OR+%22matrix+metalloproteinase+11%22+OR+stromelysin-3&pageSize=100"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE7670_brief.soft",
+      "query": "GSE7670",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "d8f06e447831b4cdf76389431d5555ca654d30f49f6367dd15eb29d004a59a24",
+      "size_bytes": 4935,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE7670&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE10072_brief.soft",
+      "query": "GSE10072",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "451de316e7b5c7b3d6cf7a9b708c99235000e1991686d116f36a51673cf163c0",
+      "size_bytes": 7799,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10072&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE68465_brief.soft",
+      "query": "GSE68465",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "89438c6db53ac8990175f41eee4609b7934ed21ad48abfccfa78e1311d9e097b",
+      "size_bytes": 17339,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68465&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE43458_brief.soft",
+      "query": "GSE43458",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "b24c15e722018e37d1a3b5ba88720310de66e3152c8604ca6809b21635885374",
+      "size_bytes": 5452,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43458&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE33479_brief.soft",
+      "query": "GSE33479",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "57cb3923fbb75c1dbd3ceaab374d9ffa4684242d273e35d008f2b6de6c175acf",
+      "size_bytes": 6057,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33479&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE18842_brief.soft",
+      "query": "GSE18842",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "a64bd881bd002a47283b69594e2e546717f883ab1e3f840cc9b1e16d1d5cac67",
+      "size_bytes": 5580,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18842&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE32863_brief.soft",
+      "query": "GSE32863",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "d9de94b6a400d304c7e4f5be73aafe49d37704595523b923e80062c36d820864",
+      "size_bytes": 7639,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32863&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE19804_brief.soft",
+      "query": "GSE19804",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "5ab648c86d84cf2998e549a4d32e212ce1c2b680c6f23a1661eb5f1e1881a74a",
+      "size_bytes": 5482,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19804&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE31210_brief.soft",
+      "query": "GSE31210",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "ef74e3bffb0b261337a68773fede09dab42f706ddaa1aa5b87293fcf926678cf",
+      "size_bytes": 10697,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31210&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE76925_brief.soft",
+      "query": "GSE76925",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "21d622394e76e7e2f474ca2202a34f81fbb99ec2742d2c3840b7e8cd5fddac03",
+      "size_bytes": 9326,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76925&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/geo_GSE43767_brief.soft",
+      "query": "GSE43767",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "b968df33c219439feea4e32aa65bfd3c7d5155c9b9e90e4349da480f935d6715",
+      "size_bytes": 6726,
+      "source": "NCBI GEO",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43767&targ=self&form=text&view=brief"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC6477516_bioc.json",
+      "query": "PMC6477516",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "30a86e534e04f6b0e0e64c9ff7f88446ae8d1781c146a044b9150c3aa011e140",
+      "size_bytes": 85325,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC6477516/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC9900007_bioc.json",
+      "query": "PMC9900007",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "01b4aca1ed04545c7b27e91cd5b4753c80752a2cdab787adc84f130025a3d106",
+      "size_bytes": 116653,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC9900007/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC12082244_bioc.json",
+      "query": "PMC12082244",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "7fd179986e62bb18a321c08fb8d5ec695d05c1babf055f8530520101ffa2caa4",
+      "size_bytes": 107826,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12082244/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC8523254_bioc.json",
+      "query": "PMC8523254",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "58df2ea16cd793b21f31c5ed746f10c2b968e45cb1193c7e91290911f8d598b8",
+      "size_bytes": 90469,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC8523254/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC9010460_bioc.json",
+      "query": "PMC9010460",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "0fe5c4113c52220feccc5c2ae69ffbdc334afcb11f5ea3f5a6b985d5591efbec",
+      "size_bytes": 99105,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC9010460/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC5928655_bioc.json",
+      "query": "PMC5928655",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "d5560d4840c6d6ceea09eaab4832c67d710fcd6ffdff0f7cda0a79070afaf3fc",
+      "size_bytes": 71552,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC5928655/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC2556648_bioc.json",
+      "query": "PMC2556648",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "f02fd0de7bb7a7e02c222b12ebec169af20aeff14f8894a3c03552c9861aa851",
+      "size_bytes": 58854,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC2556648/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC11967273_bioc.json",
+      "query": "PMC11967273",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "91572eeb1fa646537aa94e87f82013683efe8eaa709d92c2e180e3f603297c75",
+      "size_bytes": 77188,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC11967273/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC12407355_bioc.json",
+      "query": "PMC12407355",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "5b3abc2ddb7a4e2ed73b36ea4bb5ae08dc181cbba962d2b59796d7a0250a6535",
+      "size_bytes": 116128,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12407355/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC12366952_bioc.json",
+      "query": "PMC12366952",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "38c99167d576a5e89eae67e8923e532ab5e9e090a5fd270a3f38380a1cfbf8da",
+      "size_bytes": 118171,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12366952/unicode"
+    },
+    {
+      "payload_path": "outputs/mmp11_external_evidence_v0.1/raw_retrieval/pmc_PMC12972608_bioc.json",
+      "query": "PMC12972608",
+      "retrieval_timestamp_utc": "2026-08-29T02:58:29Z",
+      "sha256": "e058b4318a1a66bd2495fa8797ba4c9a27fdf40e7d3446327cbc30c0516fc841",
+      "size_bytes": 112299,
+      "source": "PubMed Central",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC12972608/unicode"
+    }
+  ],
+  "retrieval_id": "RETR_5A169C73B9A1D436CE44",
+  "retrieval_timestamp_utc": "2026-08-29T02:58:29Z"
+}

@@ -1,0 +1,24 @@
+model_id,publication_id,model_class,cell_line_animal_patient_cohort,species,histology,intervention,control,assay,provenance
+MODEL_A549_CRISPR,PUB_PMID_31024988,CELL_LINE,A549,human,LUAD,MMP11 CRISPR/Cas9,scrambled/control,proliferation; Ki67; colony; pAKT,PMC6477516 Figures 2D-G
+MODEL_PC9_RESCUE,PUB_PMID_31024988,CELL_LINE_RESCUE,PC9,human,LUAD,MMP11 CRISPR plus transient rescue,control/depletion,proliferation; Ki67; colony,PMC6477516 Figure 3
+MODEL_LUAD_MIGRATION,PUB_PMID_31024988,CELL_LINE,A549; PC9,human,LUAD,MMP11 CRISPR/rescue,control,wound healing; transwell,PMC6477516 Figure 5
+MODEL_ANTIBODY_IN_VITRO,PUB_PMID_31024988,CELL_LINE_INTERVENTION,A549; PC9,human,LUAD,anti-MMP11 antibody,0 microgram/mL,growth,PMC6477516 Figure 4
+MODEL_ANTIBODY_MIGRATION,PUB_PMID_31024988,CELL_LINE_INTERVENTION,A549; PC9,human,LUAD,anti-MMP11 antibody,0 microgram/mL,migration,PMC6477516 Figure 6
+MODEL_A549_XENOGRAFT_KO,PUB_PMID_31024988,ANIMAL_XENOGRAFT,A549 in female BALB/c nude mice,human cells/mouse host,LUAD xenograft,MMP11-depleted cells,control cells,tumour volume,PMC6477516 Figure 7A
+MODEL_A549_XENOGRAFT_AB,PUB_PMID_31024988,ANIMAL_XENOGRAFT_INTERVENTION,A549 in female BALB/c nude mice,human cells/mouse host,LUAD xenograft,anti-MMP11 antibody IV,control treatment,tumour volume,PMC6477516 Figure 7B
+MODEL_MIR25_A549_CALU1,PUB_PMID_29568911,CELL_LINE,A549; Calu-1,human,LUAD plus non-LUAD/unclear,miR-25/KLF4 perturbation,matched controls,MMP11; invasion,PMC5928655
+MODEL_LINC00511_UNRESOLVED,PUB_PMID_37602450,CELL_LINE,Not explicit in abstract,human presumed,lung cancer unresolved,linc00511 knockdown; MMP11 rescue,matched controls,malignant phenotypes,PMID 37602450
+MODEL_ALK_ALECTINIB,PUB_PMID_39904499,CELL_LINE_ANIMAL_SINGLE_CELL,H3122; NIH3T3; mouse host stromal cells,human/mouse,ALK-rearranged NSCLC,alectinib/GAS6/AXL context,matched controls,resistance and stromal Mmp11,PMID 39904499
+MODEL_CIRSIMARIN_A549,PUB_PMID_41804162,CELL_LINE,A549 2D/3D; MRC-5 comparator,human,LUAD,cirsimarin,vehicle,viability; migration; RT-qPCR,PMID 41804162
+MODEL_1998_COCULTURE,PUB_PMID_9417124,COCULTURE,NSCLC cells plus normal pulmonary fibroblasts,human,NSCLC unresolved,co-culture,fibroblasts alone,MMP11 secretion/processing,PMID 9417124
+MODEL_2005_COCULTURE,PUB_PMID_15509588,COCULTURE,NSCLC cells plus normal pulmonary fibroblasts,human,NSCLC unresolved,PKC pathway perturbation,matched controls,MMP11 induction,PMID 15509588
+MODEL_BTRCP_LUNG,PUB_PMID_15536641,CELL_LINE,Lung-cancer cell lines,human,lung cancer unresolved,betaTrCP restoration,control,active MMP11; motility,PMID 15536641
+MODEL_PATIENT_IHC_2019,PUB_PMID_31024988,PATIENT_TISSUE,18 LUAD biopsies,human,LUAD,none,adjacent tissue,IHC,PMC6477516 Figure 2B
+MODEL_PATIENT_SERUM_2019,PUB_PMID_31024988,PATIENT_BIOSPECIMEN,18 LUAD; 11 healthy,human,LUAD,none,healthy serum,ELISA,PMC6477516 Figure 2C
+MODEL_PATIENT_IHC_2023,PUB_PMID_36756152,PATIENT_TISSUE,37 LUAD cases,human,LUAD,none,EGFR wild type,MMP11/CD8/NK IHC,PMC9900007
+MODEL_PATIENT_TISSUE_2025,PUB_PMID_40386736,PATIENT_TISSUE,20 adenocarcinoma/squamous tissue sets,human,NSCLC,none,adjacent normal,protein assay,PMC12082244
+MODEL_PATIENT_SERUM_2025,PUB_PMID_40386736,PATIENT_BIOSPECIMEN,200 NSCLC; 200 controls,human,NSCLC,none,healthy serum,protein assay,PMC12082244
+MODEL_PATIENT_MSC_2018,PUB_PMID_29796998,PATIENT_DERIVED_CELLS,MSCs from one LUAD patient; A549 co-culture,human,LUAD,co-culture,healthy-tissue MSC,CAF markers/IL6,PMID 29796998
+MODEL_TCGA_COMPUTATIONAL,PUB_PMID_31024988|PUB_PMID_36756152,COMPUTATIONAL_REANALYSIS,TCGA-LUAD,human,LUAD,none,normal/subgroups,expression/immune estimates,Primary publications; shared with Task #039A
+MODEL_GEO_COMPUTATIONAL,PUB_PMID_31024988|PUB_PMID_40386736|PUB_PMID_40826767,COMPUTATIONAL_REANALYSIS,GEO cohorts,human,mixed/LUAD,none,source controls,expression/network,Primary publications and GEO
+MODEL_PANCANCER_MCAF_2025,PUB_PMID_40552583,COMPUTATIONAL_REANALYSIS,Pan-cancer single-cell datasets,human,LUAD-resolved subset,none,source-defined stromal states,MMP11-positive myofibroblast state,PMID 40552583; Task #039A literature overlap

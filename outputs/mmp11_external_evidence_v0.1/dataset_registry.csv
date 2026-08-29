@@ -1,0 +1,36 @@
+dataset_id,accession,source_repository,disease_histology,sample_type,cohort_size,publication_linkage,uses_tcga,uses_geo,geo_accession,relation_to_task039a,dependency_assessment
+TCGA-LUAD,TCGA-LUAD,GDC/recount3,LUAD,tumour and normal transcriptomes,Source-dependent; Task #039A cohort 574 observations,31024988|36756152,TRUE,FALSE,NOT_APPLICABLE,SHARED_DATASET with Task #039A primary transcriptomic evidence,SHARED_DATASET
+GSE7670,GSE7670,NCBI GEO,LUAD,tumour and normal lung,66 GEO records,31024988,FALSE,TRUE,GSE7670,External GEO cohort; distinct from Task #039A TCGA data,NO_DEPENDENCY_IDENTIFIED
+GSE10072,GSE10072,NCBI GEO,LUAD,tumour and normal lung,107 GEO records; source design notes larger selected set/duplicates,31024988|40826767,FALSE,TRUE,GSE10072,External GEO cohort reused across publications,SHARED_DATASET
+GSE68465,GSE68465,NCBI GEO,LUAD,tumour transcriptomes,462 records; source describes 442 LUAD,31024988,FALSE,TRUE,GSE68465,External GEO cohort,NO_DEPENDENCY_IDENTIFIED
+GSE43458,GSE43458,NCBI GEO,LUAD,smoking-stratified tumour and normal,"110 records: 40 never-smoker LUAD, 40 smoker LUAD, 30 normal",31024988|23659968,FALSE,TRUE,GSE43458,External GEO cohort also represented in Task #039A Open Targets/Expression Atlas lineage,SHARED_DATASET
+GSE33479,GSE33479,NCBI GEO,squamous/bronchial,bronchial biopsies,122 records,40386736,FALSE,TRUE,GSE33479,Not a LUAD replication,NO_DEPENDENCY_IDENTIFIED
+GSE18842,GSE18842,NCBI GEO,mixed lung cancer,tumour and control,"91 records; 46 tumour, 45 control",40386736|40826767,FALSE,TRUE,GSE18842,External GEO cohort reused across publications,SHARED_DATASET
+GSE32863,GSE32863,NCBI GEO,LUAD,paired tumour and adjacent normal,116 records; 58 pairs,40386736,FALSE,TRUE,GSE32863,Potentially distinct LUAD dataset lineage,NO_DEPENDENCY_IDENTIFIED
+GSE19804,GSE19804,NCBI GEO,lung cancer; histology incompletely resolved,paired tumour and normal,120 records; 60 pairs,34671675,FALSE,TRUE,GSE19804,External GEO dataset; LUAD specificity unresolved,NO_DEPENDENCY_IDENTIFIED
+GSE76925,GSE76925,NCBI GEO,COPD,lung tissue,151 records,40826767,FALSE,TRUE,GSE76925,Non-cancer comparator dataset in derived reanalysis,NO_DEPENDENCY_IDENTIFIED
+GSE43767,GSE43767,NCBI GEO,LUAD/developmental lung,human lung samples,113 records,25141350,FALSE,TRUE,GSE43767,Also represented in Task #039A Open Targets/Expression Atlas lineage,SHARED_DATASET
+E-MEXP-231,E-MEXP-231,ArrayExpress/Expression Atlas,LUAD,tumour and normal,Source-defined,15653641,FALSE,FALSE,NOT_APPLICABLE,Already represented in Task #039A Open Targets/Expression Atlas lineage,SHARED_DATASET
+E-TABM-15,E-TABM-15,ArrayExpress/Expression Atlas,LUAD,tumour and normal,Source-defined,NO_PMID,FALSE,FALSE,NOT_APPLICABLE,Task #039A Open Targets/Expression Atlas lineage; no new evidence unit created,SHARED_DATASET
+COHORT_2019_LUAD_18,NOT_APPLICABLE,Primary publication,LUAD,patient biopsy,18,31024988,FALSE,FALSE,NOT_APPLICABLE,External patient cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2019_SERUM,NOT_APPLICABLE,Primary publication,LUAD,serum,18 LUAD; 11 healthy,31024988,FALSE,FALSE,NOT_APPLICABLE,External patient cohort,SAME_COHORT
+COHORT_2023_LUAD_37,NOT_APPLICABLE,Primary publication,LUAD,resected tissue,37,36756152,FALSE,FALSE,NOT_APPLICABLE,External patient cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2025_TISSUE_20,NOT_APPLICABLE,Primary publication,adenocarcinoma and squamous,tissue lysates,20,40386736,FALSE,FALSE,NOT_APPLICABLE,External patient cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2025_SERUM_400,NOT_APPLICABLE,Primary publication,NSCLC,serum,200 NSCLC; 200 controls,40386736,FALSE,FALSE,NOT_APPLICABLE,External patient cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2022_LUAD_4,NOT_APPLICABLE,Primary publication,LUAD,primary tissue microarray,4,35422093,FALSE,FALSE,NOT_APPLICABLE,External small patient cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2018_ONE_PATIENT,NOT_APPLICABLE,Primary publication,LUAD,patient-derived stromal cells,1 patient,29796998,FALSE,FALSE,NOT_APPLICABLE,External patient-derived model,NO_DEPENDENCY_IDENTIFIED
+COHORT_2019_GENOTYPE_1074,NOT_APPLICABLE,Primary publication,lung cancer,germline case-control,358 cases; 716 controls,31570432,FALSE,FALSE,NOT_APPLICABLE,External genetic cohort; histology not separated,NO_DEPENDENCY_IDENTIFIED
+COHORT_2000_NSCLC_119,NOT_APPLICABLE,Primary publication,NSCLC,resected tissue,119; 30 matched,10741738,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_1997_LUNG_89,NOT_APPLICABLE,Primary publication,mixed lung carcinoma,resected tissue,89; 23 adenocarcinoma,9137088,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_1995_NSCLC,NOT_APPLICABLE,Primary publication,NSCLC,resected tissue,Source-defined panel,7664289,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2007_NSCLC_80,NOT_APPLICABLE,Primary publication,stage-I NSCLC,resected tissue,80,17310584,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2004_STAGEIB_20,NOT_APPLICABLE,Primary publication,stage-IB lung cancer,resected tissue,10 recurrent; 10 non-recurrent,14647437,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2004_ADC_SCC_26,NOT_APPLICABLE,Primary publication,adenocarcinoma and squamous,resected tissue,13 plus 13,15036884,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+COHORT_2008_NSCLC_64,NOT_APPLICABLE,Primary publication,stage-I/II NSCLC,resected tissue,64,18793406,FALSE,FALSE,NOT_APPLICABLE,External historical cohort,NO_DEPENDENCY_IDENTIFIED
+KM_PLOTTER_2021,NOT_REPORTED,KM Plotter via publication,lung cancer,survival reanalysis,168,34671675,FALSE,FALSE,NOT_APPLICABLE,Underlying accession unresolved,UNKNOWN
+LUAD_SC_DATASET_2025,NOT_REPORTED,Primary publication,LUAD,single-cell dataset,Source-defined,39672019,FALSE,FALSE,NOT_APPLICABLE,Accession unresolved in abstract-level audit,UNKNOWN
+LUAD_SURVIVAL_2025,NOT_REPORTED,Primary publication,LUAD,survival cohort,Source-defined,39672019,FALSE,FALSE,NOT_APPLICABLE,Accession unresolved in abstract-level audit,UNKNOWN
+LUAD_PANCANCER_SC_2025,NOT_REPORTED,Primary publication,pan-cancer with LUAD-resolved subset,single-cell dataset,Source-defined,40552583,FALSE,FALSE,NOT_APPLICABLE,Publication overlaps a Task #039A Open Targets literature record,UNKNOWN
+COHORT_SPOCK1_NSCLC,NOT_APPLICABLE,Primary publication,NSCLC,clinical tissue,Source-defined,30825234,FALSE,FALSE,NOT_APPLICABLE,External clinical cohort; LUAD histology unresolved,UNKNOWN
+COHORT_NINTEDANIB_NON_TUMOUR,NOT_APPLICABLE,Primary publication,NSCLC with interstitial pneumonia,non-tumour and fibrotic lung,7 treated non-tumour; additional source-defined groups,41654000,FALSE,FALSE,NOT_APPLICABLE,Non-tumour treatment context; not Task #039A tumour transcriptomics,NO_DEPENDENCY_IDENTIFIED
+DATASET_2010_UNRESOLVED,NOT_REPORTED,Primary publication,LUAD,computational expression network,Source-defined,19949890,FALSE,FALSE,NOT_APPLICABLE,Underlying accession unresolved,UNKNOWN
