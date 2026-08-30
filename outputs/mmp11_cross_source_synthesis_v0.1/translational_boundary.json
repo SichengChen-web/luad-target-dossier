@@ -1,0 +1,74 @@
+{
+  "EnsemblID": "ENSG00000099953.9",
+  "boundary_semantics": "Descriptive interpretation boundaries only; levels are not an ordinal target-quality scale.",
+  "disclaimer": "MMP11 is an illustrative LUAD worked example. This synthesis organizes frozen evidence and dependencies; it is not a target score, ranking, therapeutic validation, clinical-efficacy claim, or recommendation.",
+  "display_symbol": "MMP11",
+  "levels": [
+    {
+      "boundary": "Expression association does not establish causality.",
+      "claim_references": [
+        "MMP11_CLAIM_01"
+      ],
+      "level_id": "LEVEL_1_EXPRESSION_ASSOCIATION",
+      "maximum_supported_interpretation": "MMP11 has a strong tumour-normal expression association in the project TCGA-LUAD analysis.",
+      "status": "SUPPORTED_WITHIN_PROJECT_DATASET"
+    },
+    {
+      "boundary": "Same-dataset robustness is not independent replication.",
+      "claim_references": [
+        "MMP11_CLAIM_02"
+      ],
+      "level_id": "LEVEL_2_MODEL_ROBUSTNESS",
+      "maximum_supported_interpretation": "The expression direction is concordant across six prespecified model variants.",
+      "status": "SUPPORTED_WITHIN_SAME_DATASET"
+    },
+    {
+      "boundary": "Published TCGA shares project lineage; external observations do not establish causality.",
+      "claim_references": [
+        "MMP11_CLAIM_03",
+        "MMP11_CLAIM_04"
+      ],
+      "level_id": "LEVEL_3_EXTERNAL_OBSERVATION",
+      "maximum_supported_interpretation": "Additional transcriptomic and tissue observations exist in external datasets and cohorts.",
+      "status": "SUPPORTED_WITH_DEPENDENCY_BOUNDARIES"
+    },
+    {
+      "boundary": "Preclinical model effects do not establish patient efficacy or safety.",
+      "claim_references": [
+        "MMP11_CLAIM_05",
+        "MMP11_CLAIM_06",
+        "MMP11_CLAIM_09"
+      ],
+      "level_id": "LEVEL_4_PRECLINICAL_FUNCTIONAL_RELEVANCE",
+      "maximum_supported_interpretation": "Cell perturbation and xenograft experiments report phenotypic effects.",
+      "status": "SUPPORTED_IN_BOUNDED_MODELS"
+    },
+    {
+      "boundary": "The observations share publication/reagent lineage and do not validate a clinical intervention.",
+      "claim_references": [
+        "MMP11_CLAIM_10"
+      ],
+      "level_id": "LEVEL_5_PRECLINICAL_INTERVENTION",
+      "maximum_supported_interpretation": "An anti-MMP11 antibody produced effects in bounded preclinical models.",
+      "status": "SUPPORTED_IN_BOUNDED_MODELS"
+    },
+    {
+      "boundary": "A bounded registry search cannot prove global absence.",
+      "claim_references": [
+        "MMP11_CLAIM_07",
+        "MMP11_CLAIM_08"
+      ],
+      "level_id": "LEVEL_6_CLINICAL_VALIDATION",
+      "maximum_supported_interpretation": "No clinical validation is established by the frozen evidence package.",
+      "status": "NOT_ESTABLISHED_BY_CURRENT_EVIDENCE"
+    },
+    {
+      "boundary": "Target selection, benefit, and safety require evidence beyond this synthesis.",
+      "claim_references": [],
+      "level_id": "LEVEL_7_THERAPEUTIC_RECOMMENDATION",
+      "maximum_supported_interpretation": "No therapeutic recommendation is generated.",
+      "status": "OUTSIDE_PROJECT_SCOPE_AND_NOT_SUPPORTED"
+    }
+  ],
+  "synthesis_version": "MMP11_CROSS_SOURCE_SYNTHESIS_V0.1"
+}

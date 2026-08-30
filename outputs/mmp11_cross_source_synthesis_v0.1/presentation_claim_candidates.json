@@ -1,0 +1,92 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "PRESENTATION_CLAIM_01",
+      "claim_ids": [
+        "MMP11_CLAIM_01",
+        "MMP11_CLAIM_02"
+      ],
+      "prohibited_stronger_wording": "Do not describe robustness models as six independent validations or claim that expression proves causality.",
+      "provenance_references": [
+        "REC_1FDB3CAEC78761B6CDAC13A2",
+        "REC_0EECFF585907F97C3C1A314E"
+      ],
+      "required_qualifier": "These sensitivity models use the same TCGA-LUAD dataset and are not independent replication.",
+      "short_statement": "Project analysis: MMP11 was strongly upregulated in LUAD tumour versus normal tissue (logFC +5.18; BH FDR 1.79e-37), with concordant direction across all six prespecified sensitivity models.",
+      "supporting_evidence_families": [
+        "FAM_PROJECT_TCGA_EXPRESSION"
+      ]
+    },
+    {
+      "candidate_id": "PRESENTATION_CLAIM_02",
+      "claim_ids": [
+        "MMP11_CLAIM_03",
+        "MMP11_CLAIM_04"
+      ],
+      "prohibited_stronger_wording": "Do not call all external records independent replication or diagnostic validation.",
+      "provenance_references": [
+        "EXT_31024988_01",
+        "EXT_31024988_02",
+        "EXT_31024988_03",
+        "EXT_31024988_04"
+      ],
+      "required_qualifier": "Some transcriptomic analyses reuse TCGA or GEO accessions, and cohort/histology specificity varies.",
+      "short_statement": "External evidence: published GEO, tissue, and serum observations extend the represented evidence across additional datasets and biospecimen modalities.",
+      "supporting_evidence_families": [
+        "FAM_EXTERNAL_TCGA_REANALYSIS",
+        "FAM_GEO_JOINT_2019",
+        "FAM_GEO_GSE43458_PRIMARY",
+        "FAM_COHORT_2019_LUAD_18",
+        "FAM_COHORT_2019_SERUM"
+      ]
+    },
+    {
+      "candidate_id": "PRESENTATION_CLAIM_03",
+      "claim_ids": [
+        "MMP11_CLAIM_05",
+        "MMP11_CLAIM_06",
+        "MMP11_CLAIM_10"
+      ],
+      "prohibited_stronger_wording": "Do not describe MMP11 as clinically validated, safe, effective, or recommended for therapy.",
+      "provenance_references": [
+        "EXT_31024988_05",
+        "EXT_31024988_07",
+        "EXT_31024988_08",
+        "EXT_31024988_11",
+        "EXT_31024988_12"
+      ],
+      "required_qualifier": "These are preclinical observations, substantially within one publication, and do not establish clinical efficacy or safety.",
+      "short_statement": "Functional context: MMP11 depletion was associated with reduced proliferation, migration-invasion, and xenograft growth in reported LUAD models, while anti-MMP11 antibody experiments showed preclinical effects.",
+      "supporting_evidence_families": [
+        "FAM_CELL_PERTURBATION_310_A549_PC9",
+        "FAM_CELL_PERTURBATION_310_PC9_RESCUE",
+        "FAM_XENOGRAFT_DEPLETION_310",
+        "FAM_ANTIBODY_INTERVENTION_310"
+      ]
+    },
+    {
+      "candidate_id": "PRESENTATION_CLAIM_04",
+      "claim_ids": [
+        "MMP11_CLAIM_07",
+        "MMP11_CLAIM_08",
+        "MMP11_CLAIM_09"
+      ],
+      "prohibited_stronger_wording": "Do not infer clinical failure, global absence, efficacy, safety, or a therapeutic recommendation.",
+      "provenance_references": [
+        "SEARCH_CLINICALTRIALS_MMP11",
+        "EXT_36756152_02",
+        "EXT_36756152_06",
+        "EXT_36756152_07"
+      ],
+      "required_qualifier": "Null results are context-specific, and bounded search absence is not proof that no study exists globally.",
+      "short_statement": "Boundary: clinical associations are context-dependent and include null findings; no relevant MMP11 clinical-development record was identified in the bounded frozen registry check.",
+      "supporting_evidence_families": [
+        "FAM_EXTERNAL_TCGA_REANALYSIS",
+        "FAM_CLINICAL_DEVELOPMENT_CHECK"
+      ]
+    }
+  ],
+  "disclaimer": "MMP11 is an illustrative LUAD worked example. This synthesis organizes frozen evidence and dependencies; it is not a target score, ranking, therapeutic validation, clinical-efficacy claim, or recommendation.",
+  "purpose": "Scientifically bounded candidate statements for a later communication task; not final slide copy.",
+  "synthesis_version": "MMP11_CROSS_SOURCE_SYNTHESIS_V0.1"
+}
