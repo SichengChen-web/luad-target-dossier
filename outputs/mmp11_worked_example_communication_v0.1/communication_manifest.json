@@ -1,0 +1,117 @@
+{
+  "artifact_sha256": {
+    "figure_mmp11_worked_example.png": "b2648dad97b7d7d4a690ea873b393f0b154f7bbf5a00f685bd4ed03a8b810844",
+    "figure_mmp11_worked_example.svg": "2086188e500db8685d2abfdd34e14f21dc5cfd5e429d07d70bdb7b4c61f99e09",
+    "presenter_detail.md": "c789aafd91481ff0ba74c8ce25f13608f0f4bc4efc22ba81a37e3d65f2e4b2d0",
+    "slide_content.json": "7e768f1fa84da95e663d34a962348620af6169c26326ea20a40155fda242ed00",
+    "speaker_notes.md": "1e3238e92c28a6f6259da7bb43835e82b4d6de8ba35d5b0ba55023952e764d3d"
+  },
+  "communication_boundary": "Illustrative candidate — not a validated therapeutic target.",
+  "communication_id": "COMM_MMP11_WORKED_EXAMPLE_V0.1",
+  "communication_version": "MMP11_WORKED_EXAMPLE_COMMUNICATION_V0.1",
+  "evidence_families_referenced": {
+    "external_datasets": [
+      "FAM_GEO_JOINT_2019",
+      "FAM_GEO_GSE43458_PRIMARY",
+      "FAM_COHORT_2019_LUAD_18"
+    ],
+    "functional_models": [
+      "FAM_CELL_PERTURBATION_310_A549_PC9",
+      "FAM_CELL_PERTURBATION_310_PC9_RESCUE"
+    ],
+    "intervention": [
+      "FAM_ANTIBODY_INTERVENTION_310"
+    ],
+    "preclinical_in_vivo": [
+      "FAM_XENOGRAFT_DEPLETION_310"
+    ]
+  },
+  "exact_project_values_used": {
+    "BH_FDR_display": "1.79 × 10^-37",
+    "contrast": "LUAD tumour vs normal",
+    "logFC_display": "+5.18",
+    "sensitivity_display": "6/6 direction-concordant"
+  },
+  "figure_dimensions_pixels": {
+    "height": 900,
+    "width": 1600
+  },
+  "figure_files": [
+    "outputs/mmp11_worked_example_communication_v0.1/figure_mmp11_worked_example.svg",
+    "outputs/mmp11_worked_example_communication_v0.1/figure_mmp11_worked_example.png"
+  ],
+  "generation_timestamp_policy": "OMITTED_FOR_DETERMINISM",
+  "generator_version": "MMP11_WORKED_EXAMPLE_COMMUNICATION_GENERATOR_V0.1",
+  "prohibited_wording": [
+    "proven target",
+    "validated target",
+    "best target",
+    "top target",
+    "promising therapeutic target",
+    "clinically actionable",
+    "clinically validated",
+    "independent lines of evidence"
+  ],
+  "required_qualifiers": [
+    "The six sensitivity models use the same TCGA-LUAD dataset and are not independent replication.",
+    "Some transcriptomic analyses reuse TCGA or GEO datasets.",
+    "Functional, xenograft, and antibody observations are preclinical and substantially share publication and experimental lineage.",
+    "Clinical associations are context-dependent and include null findings."
+  ],
+  "slide_source_claim_ids": [
+    "MMP11_CLAIM_01",
+    "MMP11_CLAIM_02",
+    "MMP11_CLAIM_03",
+    "MMP11_CLAIM_04",
+    "MMP11_CLAIM_05",
+    "MMP11_CLAIM_06",
+    "MMP11_CLAIM_10"
+  ],
+  "source_artifact_sha256": {
+    "claim_dependency_audit.csv": "e41ec912b3893ea0cd3554dd0fac74ca77d19ac3211fe942ff6578e91f96b1c4",
+    "claim_evidence_matrix.csv": "78520330731d261cbfb6513845dd702bf9d9e6e6a2bdbb4448c0717cced208c0",
+    "claim_registry.csv": "dad160774617d7dcb8e76d696cb5723f35b4634e43fa6f3aef9843691f289b7b",
+    "cross_source_dependency_map.csv": "1b3d3832b0b5beb81f853c43a74f8af9a82947702fd562663543275ee8f02f62",
+    "evidence_family_registry.csv": "543f9955935cf3c0a0549f3d262373d7ef3011ebf285a344cf05dc93e735a2a2",
+    "mmp11_cross_source_synthesis.md": "97201a1d1376fd80fdbbc147d77ee31308242d9d0e8bc0193f690150fb1bb07c",
+    "modality_summary.csv": "693306bfb01cc70a4da712d96f90997c78a2006917fbe3875e37ffa7f137d282",
+    "presentation_claim_candidates.json": "998dedf501465914385fe1316868c88c8e2ca6b0668c3e4bc06bd3e699e4cb1f",
+    "session_info.txt": "bacef8ff47486dc4a754f8c724cd4b3fcab0392fa9f95b0cf4a9509afcbecd6a",
+    "translational_boundary.json": "c64257dfa723ff2fea0674efae30966a7318b13dd671669372be67d49de598ab",
+    "validation_report.md": "4a5d1ddee5a2953b132eac0d692159633dbeb4d4683717ab00832beda3499edc"
+  },
+  "source_base_commit": "7c19a91",
+  "source_claim_ids": [
+    "MMP11_CLAIM_01",
+    "MMP11_CLAIM_02",
+    "MMP11_CLAIM_03",
+    "MMP11_CLAIM_04",
+    "MMP11_CLAIM_05",
+    "MMP11_CLAIM_06",
+    "MMP11_CLAIM_10",
+    "MMP11_CLAIM_07",
+    "MMP11_CLAIM_08",
+    "MMP11_CLAIM_09"
+  ],
+  "source_synthesis_version": "MMP11_CROSS_SOURCE_SYNTHESIS_V0.1",
+  "speaker_note_source_references": [
+    "MMP11_CLAIM_01",
+    "MMP11_CLAIM_02",
+    "MMP11_CLAIM_03",
+    "MMP11_CLAIM_04",
+    "MMP11_CLAIM_05",
+    "MMP11_CLAIM_06",
+    "MMP11_CLAIM_10",
+    "MMP11_CLAIM_07",
+    "MMP11_CLAIM_08",
+    "MMP11_CLAIM_09"
+  ],
+  "speaker_note_word_counts": {
+    "30_second_version": 63,
+    "45_second_version": 103
+  },
+  "target_identity": {
+    "EnsemblID": "ENSG00000099953.9",
+    "display_symbol": "MMP11"
+  }
+}

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc" fill="#17253D">
+  <title id="title">Worked example: MMP11</title>
+  <desc id="desc">Project expression evidence connected to external modalities, dependency checks, and a preclinical-to-clinical interpretation boundary.</desc>
+  <rect width="1600" height="900" fill="#F7F9FC"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .eyebrow { font-size: 16px; font-weight: 700; letter-spacing: 2px; fill: #54708F; }
+    .paneltitle { font-size: 18px; font-weight: 700; letter-spacing: 1.4px; fill: #3D5A78; }
+    .label { font-size: 20px; font-weight: 700; }
+    .detail { font-size: 17px; fill: #52657A; }
+    .small { font-size: 15px; fill: #52657A; }
+  </style>
+
+  <text class="eyebrow" x="64" y="54">AUDITABLE LUAD WORKED EXAMPLE</text>
+  <text x="64" y="106" font-size="38" font-weight="700">MMP11 · from signal to bounded hypothesis</text>
+  <text x="64" y="139" font-size="20" fill="#5E7083">A provenance-aware view of evidence—not a target ranking</text>
+
+  <!-- Project panel -->
+  <rect x="64" y="186" width="430" height="476" rx="24" fill="#FFFFFF" stroke="#C9D7E6" stroke-width="2"/>
+  <rect x="64" y="186" width="430" height="8" rx="4" fill="#4169A1"/>
+  <text class="paneltitle" x="94" y="232">01  PROJECT EVIDENCE</text>
+  <text x="94" y="296" font-size="50" font-weight="700">MMP11</text>
+  <text x="94" y="327" font-size="17" fill="#61758A">ENSG00000099953.9</text>
+  <text x="94" y="373" font-size="19" font-weight="700">LUAD tumour vs normal</text>
+
+  <rect x="94" y="401" width="176" height="104" rx="16" fill="#EAF1FA"/>
+  <text x="112" y="448" font-size="36" font-weight="700" fill="#294E82">+5.18</text>
+  <text class="small" x="112" y="480">logFC</text>
+  <rect x="286" y="401" width="178" height="104" rx="16" fill="#EAF1FA"/>
+  <text x="304" y="447" font-size="28" font-weight="700" fill="#294E82">1.79 × 10⁻³⁷</text>
+  <text class="small" x="304" y="480">BH FDR</text>
+
+  <rect x="94" y="521" width="370" height="62" rx="16" fill="#DCE9F8"/>
+  <text x="116" y="561" font-size="25" font-weight="700" fill="#294E82">6 / 6 direction-concordant</text>
+  <text class="small" x="94" y="614">Same TCGA-LUAD dataset</text>
+  <text class="small" x="94" y="638">Robustness, not independent replication</text>
+
+  <!-- Connector -->
+  <line x1="510" y1="424" x2="548" y2="424" stroke="#8EA5BC" stroke-width="4"/>
+  <path d="M548 424 L534 414 L534 434 Z" fill="#8EA5BC"/>
+
+  <!-- External modalities panel -->
+  <rect x="562" y="186" width="472" height="476" rx="24" fill="#FFFFFF" stroke="#C9D7E6" stroke-width="2"/>
+  <rect x="562" y="186" width="472" height="8" rx="4" fill="#5A7F83"/>
+  <text class="paneltitle" x="592" y="232">02  EXTERNAL MODALITIES</text>
+
+  <rect x="592" y="260" width="196" height="132" rx="18" fill="#EDF4F3"/>
+  <circle cx="626" cy="296" r="18" fill="none" stroke="#4D777B" stroke-width="3"/>
+  <path d="M615 296h22M626 285v22" stroke="#4D777B" stroke-width="3"/>
+  <text class="label" x="612" y="340">External datasets</text>
+  <text class="detail" x="612" y="367">GEO / patient tissue</text>
+
+  <rect x="808" y="260" width="196" height="132" rx="18" fill="#EDF4F3"/>
+  <circle cx="842" cy="296" r="17" fill="none" stroke="#4D777B" stroke-width="3"/>
+  <path d="M832 304c7-18 13-18 21 0M833 289h18" fill="none" stroke="#4D777B" stroke-width="3"/>
+  <text class="label" x="828" y="340">Functional models</text>
+  <text class="detail" x="828" y="367">cell perturbation</text>
+
+  <rect x="592" y="410" width="196" height="132" rx="18" fill="#EDF4F3"/>
+  <path d="M614 453c12-18 28-18 40 0M619 453v17h30v-17" fill="none" stroke="#4D777B" stroke-width="3"/>
+  <text class="label" x="612" y="490">Preclinical in vivo</text>
+  <text class="detail" x="612" y="517">xenograft</text>
+
+  <rect x="808" y="410" width="196" height="132" rx="18" fill="#EDF4F3"/>
+  <path d="M828 454h40M848 434v40M833 439l30 30M863 439l-30 30" stroke="#4D777B" stroke-width="3"/>
+  <text class="label" x="828" y="490">Intervention</text>
+  <text class="detail" x="828" y="517">anti-MMP11 antibody</text>
+
+  <rect x="592" y="566" width="412" height="62" rx="15" fill="#F1F4F7"/>
+  <text class="small" x="612" y="593">Some transcriptomic analyses reuse</text>
+  <text class="small" x="612" y="615">TCGA or GEO datasets.</text>
+
+  <!-- Connector -->
+  <line x1="1050" y1="424" x2="1088" y2="424" stroke="#8EA5BC" stroke-width="4"/>
+  <path d="M1088 424 L1074 414 L1074 434 Z" fill="#8EA5BC"/>
+
+  <!-- Dependency panel -->
+  <rect x="1102" y="186" width="434" height="476" rx="24" fill="#FFFFFF" stroke="#C9D7E6" stroke-width="2"/>
+  <rect x="1102" y="186" width="434" height="8" rx="4" fill="#806F9B"/>
+  <text class="paneltitle" x="1132" y="232">03  DEPENDENCY CHECK</text>
+
+  <rect x="1132" y="262" width="374" height="92" rx="16" fill="#F3F0F7"/>
+  <text x="1152" y="296" font-size="18" font-weight="700">Published TCGA evidence</text>
+  <text x="1152" y="326" font-size="17" fill="#665779">→ shared dataset lineage</text>
+
+  <rect x="1132" y="370" width="374" height="126" rx="16" fill="#F3F0F7"/>
+  <text x="1152" y="404" font-size="18" font-weight="700">Functional · xenograft · antibody</text>
+  <text x="1152" y="434" font-size="17" fill="#665779">→ some shared publication / model</text>
+  <text x="1152" y="462" font-size="17" fill="#665779">   experiment / reagent lineage</text>
+
+  <rect x="1132" y="520" width="374" height="108" rx="18" fill="#272F46"/>
+  <text x="1154" y="559" font-size="17" font-weight="700" fill="#D9E3F0">TRANSLATIONAL BOUNDARY</text>
+  <text x="1154" y="594" font-size="24" font-weight="700" fill="#FFFFFF">Preclinical evidence ≠</text>
+  <text x="1154" y="619" font-size="24" font-weight="700" fill="#FFFFFF">clinical validation</text>
+
+  <!-- Bottom line -->
+  <rect x="64" y="704" width="1472" height="132" rx="22" fill="#17253D"/>
+  <text x="92" y="748" font-size="19" font-weight="700" fill="#AFC6DF">BOTTOM LINE</text>
+  <text x="92" y="783" font-size="22" font-weight="700" fill="#FFFFFF">MMP11 links a strong project association to external transcriptomic and preclinical evidence</text>
+  <text x="92" y="812" font-size="22" font-weight="700" fill="#FFFFFF">while keeping shared-source dependencies and translational limits visible.</text>
+  <text x="1166" y="785" font-size="16" font-weight="700" fill="#E3D6AF">ILLUSTRATIVE CANDIDATE</text>
+  <text x="1166" y="812" font-size="16" fill="#FFFFFF">not a validated therapeutic target</text>
+  <text x="64" y="872" font-size="14" fill="#71849A">Original project graphic · source: MMP11_CROSS_SOURCE_SYNTHESIS_V0.1</text>
+</svg>

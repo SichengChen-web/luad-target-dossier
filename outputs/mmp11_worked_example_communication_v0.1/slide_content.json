@@ -1,0 +1,78 @@
+{
+  "bottom_line": "MMP11 illustrates how a strong project-derived association can be linked to external transcriptomic and preclinical evidence while preserving shared-source dependencies and translational limits.",
+  "boundary_line": "Illustrative candidate — not a validated therapeutic target.",
+  "communication_version": "MMP11_WORKED_EXAMPLE_COMMUNICATION_V0.1",
+  "dependency_panel": {
+    "panel_label": "DEPENDENCY CHECK",
+    "relationships": [
+      "Published TCGA evidence → shared dataset lineage",
+      "Functional / xenograft / antibody observations → some share publication, model, experiment, or reagent lineage"
+    ],
+    "translational_boundary": "Preclinical evidence ≠ clinical validation"
+  },
+  "external_panel": {
+    "items": [
+      {
+        "detail": "GEO / patient tissue",
+        "family_ids": [
+          "FAM_GEO_JOINT_2019",
+          "FAM_GEO_GSE43458_PRIMARY",
+          "FAM_COHORT_2019_LUAD_18"
+        ],
+        "label": "External datasets"
+      },
+      {
+        "detail": "cell perturbation",
+        "family_ids": [
+          "FAM_CELL_PERTURBATION_310_A549_PC9",
+          "FAM_CELL_PERTURBATION_310_PC9_RESCUE"
+        ],
+        "label": "Functional models"
+      },
+      {
+        "detail": "xenograft",
+        "family_ids": [
+          "FAM_XENOGRAFT_DEPLETION_310"
+        ],
+        "label": "Preclinical in vivo"
+      },
+      {
+        "detail": "anti-MMP11 antibody",
+        "family_ids": [
+          "FAM_ANTIBODY_INTERVENTION_310"
+        ],
+        "label": "Intervention"
+      }
+    ],
+    "panel_label": "EXTERNAL MODALITIES",
+    "qualifier": "Some transcriptomic analyses reuse TCGA or GEO datasets."
+  },
+  "optional_footer": "Evidence structure and provenance—not target evaluation",
+  "project_panel": {
+    "BH_FDR": "1.79 × 10^-37",
+    "EnsemblID": "ENSG00000099953.9",
+    "contrast": "LUAD tumour vs normal",
+    "logFC": "+5.18",
+    "panel_label": "PROJECT EVIDENCE",
+    "qualifier": "Same TCGA-LUAD dataset; robustness, not independent replication.",
+    "sensitivity": "6/6 direction-concordant",
+    "target": "MMP11"
+  },
+  "required_qualifiers": [
+    "The six sensitivity models use the same TCGA-LUAD dataset and are not independent replication.",
+    "Some transcriptomic analyses reuse TCGA or GEO datasets.",
+    "Functional, xenograft, and antibody observations are preclinical and substantially share publication and experimental lineage.",
+    "Clinical associations are context-dependent and include null findings."
+  ],
+  "slide_subtitle": "From an auditable evidence dossier to a biological hypothesis",
+  "slide_title": "Worked example: MMP11",
+  "source_claim_ids": [
+    "MMP11_CLAIM_01",
+    "MMP11_CLAIM_02",
+    "MMP11_CLAIM_03",
+    "MMP11_CLAIM_04",
+    "MMP11_CLAIM_05",
+    "MMP11_CLAIM_06",
+    "MMP11_CLAIM_10"
+  ]
+}
