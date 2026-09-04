@@ -1,0 +1,2068 @@
+{
+  "capture_limit_per_scholarly_event": 30,
+  "captured_page_is_formal_denominator": false,
+  "events": [
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "\"drug target\" (\"evidence integration\" OR \"target prioritization\" OR \"heterogeneous evidence\" OR \"data integration\" OR multi-omics)",
+      "executed_at": "2026-09-03T03:50:33Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_39241_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_01_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_01"
+      ],
+      "query_family_id": "QF01_TARGET_INTEGRATION",
+      "request_url": "https://api.openalex.org/works?search=%22drug+target%22+%28%22evidence+integration%22+OR+%22target+prioritization%22+OR+%22heterogeneous+evidence%22+OR+%22data+integration%22+OR+multi-omics%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 39241,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_01",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "\"Open Targets Platform\" OR \"Open Targets Genetics\"",
+      "executed_at": "2026-09-03T03:50:39Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_2204_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_02_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "QF02_OPEN_TARGETS",
+      "request_url": "https://api.openalex.org/works?search=%22Open+Targets+Platform%22+OR+%22Open+Targets+Genetics%22&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 2204,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_02",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(\"knowledge graph\" OR \"evidence graph\") (biomedical OR \"drug target\" OR \"target discovery\" OR \"target prioritization\")",
+      "executed_at": "2026-09-03T03:50:45Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_21847_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_03_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_03",
+        "CAT_01"
+      ],
+      "query_family_id": "QF03_KNOWLEDGE_GRAPHS",
+      "request_url": "https://api.openalex.org/works?search=%28%22knowledge+graph%22+OR+%22evidence+graph%22%29+%28biomedical+OR+%22drug+target%22+OR+%22target+discovery%22+OR+%22target+prioritization%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 21847,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_03",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(provenance OR lineage OR attribution OR traceability OR \"source tracking\" OR derivation) (biomedical OR bioinformatics) (integration OR evidence OR database)",
+      "executed_at": "2026-09-03T03:50:49Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_1617172_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_04_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_04"
+      ],
+      "query_family_id": "QF04_PROVENANCE",
+      "request_url": "https://api.openalex.org/works?search=%28provenance+OR+lineage+OR+attribution+OR+traceability+OR+%22source+tracking%22+OR+derivation%29+%28biomedical+OR+bioinformatics%29+%28integration+OR+evidence+OR+database%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 1617172,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_04",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(\"evidence synthesis\" OR \"evidence assessment\" OR \"systematic review\" OR \"living review\") (software OR platform OR tool OR system) (provenance OR \"missing data\" OR uncertainty OR conflict OR dependence OR \"evidence grading\")",
+      "executed_at": "2026-09-03T03:50:55Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_2793110_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_05_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_05"
+      ],
+      "query_family_id": "QF05_EVIDENCE_SYNTHESIS",
+      "request_url": "https://api.openalex.org/works?search=%28%22evidence+synthesis%22+OR+%22evidence+assessment%22+OR+%22systematic+review%22+OR+%22living+review%22%29+%28software+OR+platform+OR+tool+OR+system%29+%28provenance+OR+%22missing+data%22+OR+uncertainty+OR+conflict+OR+dependence+OR+%22evidence+grading%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 2793110,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_05",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(\"missing data\" OR \"data absence\" OR coverage OR \"not observed\" OR \"unavailable evidence\" OR \"incomplete evidence\" OR uncertainty OR conflict OR \"non-independent evidence\" OR \"correlated evidence\" OR \"evidence reuse\" OR \"duplicate evidence\" OR \"shared dataset\" OR \"overlapping cohort\") (\"evidence synthesis\" OR \"evidence integration\" OR meta-analysis OR \"knowledge graph\")",
+      "executed_at": "2026-09-03T03:51:04Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_4418611_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_06_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05"
+      ],
+      "query_family_id": "QF06_MISSING_UNCERTAIN_DEPENDENT",
+      "request_url": "https://api.openalex.org/works?search=%28%22missing+data%22+OR+%22data+absence%22+OR+coverage+OR+%22not+observed%22+OR+%22unavailable+evidence%22+OR+%22incomplete+evidence%22+OR+uncertainty+OR+conflict+OR+%22non-independent+evidence%22+OR+%22correlated+evidence%22+OR+%22evidence+reuse%22+OR+%22duplicate+evidence%22+OR+%22shared+dataset%22+OR+%22overlapping+cohort%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+meta-analysis+OR+%22knowledge+graph%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 4418611,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_06",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(\"drug target discovery\" OR \"therapeutic target discovery\" OR \"target prioritization\" OR \"target identification\") (\"artificial intelligence\" OR \"machine learning\" OR \"large language model\" OR \"natural language processing\" OR \"graph neural network\") (evidence OR provenance OR citation OR \"knowledge graph\" OR interpretation)",
+      "executed_at": "2026-09-03T03:51:14Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_12798_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_07_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_07",
+        "CAT_01"
+      ],
+      "query_family_id": "QF07_AI_TARGET_DISCOVERY",
+      "request_url": "https://api.openalex.org/works?search=%28%22drug+target+discovery%22+OR+%22therapeutic+target+discovery%22+OR+%22target+prioritization%22+OR+%22target+identification%22%29+%28%22artificial+intelligence%22+OR+%22machine+learning%22+OR+%22large+language+model%22+OR+%22natural+language+processing%22+OR+%22graph+neural+network%22%29+%28evidence+OR+provenance+OR+citation+OR+%22knowledge+graph%22+OR+interpretation%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 12798,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_07",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_DEPENDENCY",
+      "exact_query": "(\"non-independent evidence\" OR \"dependent evidence\" OR \"correlated evidence\" OR \"evidence reuse\" OR \"duplicate evidence\" OR \"shared dataset\" OR \"overlapping cohort\") (\"evidence synthesis\" OR \"evidence integration\" OR meta-analysis OR framework)",
+      "executed_at": "2026-09-03T03:51:20Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_11293_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_08_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05",
+        "CAT_01"
+      ],
+      "query_family_id": "QF08_COUNTER_DEPENDENCY",
+      "request_url": "https://api.openalex.org/works?search=%28%22non-independent+evidence%22+OR+%22dependent+evidence%22+OR+%22correlated+evidence%22+OR+%22evidence+reuse%22+OR+%22duplicate+evidence%22+OR+%22shared+dataset%22+OR+%22overlapping+cohort%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+meta-analysis+OR+framework%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 11293,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_08",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_MISSINGNESS",
+      "exact_query": "(\"structured missingness\" OR \"missingness mechanism\" OR \"missing data\" OR \"data absence\" OR \"not observed\" OR \"unavailable evidence\" OR \"incomplete evidence\") (ontology OR \"data model\" OR framework OR \"evidence synthesis\" OR \"knowledge graph\") (biomedical OR clinical OR health)",
+      "executed_at": "2026-09-03T03:51:26Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_3202332_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_09_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05"
+      ],
+      "query_family_id": "QF09_COUNTER_MISSINGNESS",
+      "request_url": "https://api.openalex.org/works?search=%28%22structured+missingness%22+OR+%22missingness+mechanism%22+OR+%22missing+data%22+OR+%22data+absence%22+OR+%22not+observed%22+OR+%22unavailable+evidence%22+OR+%22incomplete+evidence%22%29+%28ontology+OR+%22data+model%22+OR+framework+OR+%22evidence+synthesis%22+OR+%22knowledge+graph%22%29+%28biomedical+OR+clinical+OR+health%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 3202332,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_09",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_PROVENANCE_THROUGH_AGGREGATION",
+      "exact_query": "(provenance OR lineage OR derivation OR traceability OR \"source attribution\") (aggregation OR summarization OR \"evidence integration\" OR \"data integration\") (biomedical OR \"knowledge graph\" OR \"drug target\")",
+      "executed_at": "2026-09-03T03:51:34Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_559389_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_10_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_04",
+        "CAT_03",
+        "CAT_01"
+      ],
+      "query_family_id": "QF10_COUNTER_PROVENANCE_AGGREGATION",
+      "request_url": "https://api.openalex.org/works?search=%28provenance+OR+lineage+OR+derivation+OR+traceability+OR+%22source+attribution%22%29+%28aggregation+OR+summarization+OR+%22evidence+integration%22+OR+%22data+integration%22%29+%28biomedical+OR+%22knowledge+graph%22+OR+%22drug+target%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 559389,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_10",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CLAIM_EVIDENCE_BOUNDARY",
+      "exact_query": "(\"claim evidence\" OR \"claim-evidence\" OR \"evidence graph\" OR nanopublication OR argumentation) (biomedical OR scientific OR clinical) (causality OR interpretation OR provenance OR assertion OR knowledge)",
+      "executed_at": "2026-09-03T03:51:40Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_1195085_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_11_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_04",
+        "CAT_05",
+        "CAT_06",
+        "CAT_07"
+      ],
+      "query_family_id": "QF11_COUNTER_CLAIM_EVIDENCE",
+      "request_url": "https://api.openalex.org/works?search=%28%22claim+evidence%22+OR+%22claim-evidence%22+OR+%22evidence+graph%22+OR+nanopublication+OR+argumentation%29+%28biomedical+OR+scientific+OR+clinical%29+%28causality+OR+interpretation+OR+provenance+OR+assertion+OR+knowledge%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 1195085,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_11",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CLAIM_EVIDENCE_BOUNDARY",
+      "exact_query": "(\"evidence interpretation\" OR \"evidence grading\" OR \"strength of evidence\" OR \"causal inference boundary\" OR \"association versus causality\" OR \"clinical translation\") (\"drug target\" OR \"target evidence\" OR biomedical OR \"evidence synthesis\" OR \"knowledge graph\")",
+      "executed_at": "2026-09-03T04:14:26Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_70520_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_12_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_01",
+        "CAT_05",
+        "CAT_06"
+      ],
+      "query_family_id": "QF12_CLAIM_BOUNDARY_VARIANTS",
+      "request_url": "https://api.openalex.org/works?search=%28%22evidence+interpretation%22+OR+%22evidence+grading%22+OR+%22strength+of+evidence%22+OR+%22causal+inference+boundary%22+OR+%22association+versus+causality%22+OR+%22clinical+translation%22%29+%28%22drug+target%22+OR+%22target+evidence%22+OR+biomedical+OR+%22evidence+synthesis%22+OR+%22knowledge+graph%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 70520,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_12",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CONFLICT_PRESERVATION",
+      "exact_query": "(\"conflicting evidence\" OR \"conflict preservation\" OR \"contradictory evidence\" OR \"evidence conflict\") (\"evidence synthesis\" OR \"evidence integration\" OR \"systematic review\" OR \"knowledge graph\") (representation OR model OR preservation OR reconciliation)",
+      "executed_at": "2026-09-03T04:16:32Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_24889_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_13_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_05",
+        "CAT_06",
+        "CAT_03"
+      ],
+      "query_family_id": "QF13_COUNTER_CONFLICT_PRESERVATION",
+      "request_url": "https://api.openalex.org/works?search=%28%22conflicting+evidence%22+OR+%22conflict+preservation%22+OR+%22contradictory+evidence%22+OR+%22evidence+conflict%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+%22systematic+review%22+OR+%22knowledge+graph%22%29+%28representation+OR+model+OR+preservation+OR+reconciliation%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 24889,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_13",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_AI_OUTPUT_SOURCE_GROUNDING",
+      "exact_query": "((\"artificial intelligence\" OR \"large language model\" OR \"AI-assisted\") (\"target discovery\" OR \"target prioritization\" OR \"drug discovery\")) (grounding OR citation OR \"source attribution\" OR \"evidence link\" OR provenance OR traceability)",
+      "executed_at": "2026-09-03T04:17:02Z",
+      "export_capture_method": "OPENALEX_WORKS_API_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance_score:desc"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_16110_SORT_RELEVANCE;PAGE_1;PER_PAGE_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_14_works.json"
+      ],
+      "protocol_categories": [
+        "CAT_07",
+        "CAT_01"
+      ],
+      "query_family_id": "QF14_COUNTER_AI_GROUNDING",
+      "request_url": "https://api.openalex.org/works?search=%28%28%22artificial+intelligence%22+OR+%22large+language+model%22+OR+%22AI-assisted%22%29+%28%22target+discovery%22+OR+%22target+prioritization%22+OR+%22drug+discovery%22%29%29+%28grounding+OR+citation+OR+%22source+attribution%22+OR+%22evidence+link%22+OR+provenance+OR+traceability%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc",
+      "result_count": 16110,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OPENALEX_14",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "MULTIDISCIPLINARY_SCHOLARLY_API",
+      "source_name": "OpenAlex",
+      "source_provider": "OurResearch",
+      "source_url_or_endpoint": "https://api.openalex.org/works",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "4d3bf5c2f5d821a5f6e32dab7e041f11f2b49fd4",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::README.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:51:44Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "documentation_landing",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "documentation_landing",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/README.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/README.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "README.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/4d3bf5c2f5d821a5f6e32dab7e041f11f2b49fd4",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_01",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/4d3bf5c2f5d821a5f6e32dab7e041f11f2b49fd4",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "37b619e509d7b09f9a7a01441727e9c8c44997d9",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::getting-started.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:53:10Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "data_model_orientation",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "data_model_orientation",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/getting-started.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/getting-started.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "getting-started.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/37b619e509d7b09f9a7a01441727e9c8c44997d9",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_02",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/37b619e509d7b09f9a7a01441727e9c8c44997d9",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "8b3b9e46d8549e554a084664d62e412f124c4b55",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::data-access/README.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:54:59Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "data_access_overview",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "data_access_overview",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__README.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/data-access/README.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "data-access/README.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8b3b9e46d8549e554a084664d62e412f124c4b55",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_03",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8b3b9e46d8549e554a084664d62e412f124c4b55",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "8dde604723326730572d1b3f5491c14c9ef1d42c",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::data-access/graphql-api.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:56:29Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "api_documentation",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "api_documentation",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__graphql-api.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/data-access/graphql-api.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "data-access/graphql-api.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8dde604723326730572d1b3f5491c14c9ef1d42c",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_04",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8dde604723326730572d1b3f5491c14c9ef1d42c",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "20493f1244644b8516d1606c46996996c6f44770",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::data-access/datasets.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:58:11Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "export_and_dataset_documentation",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "export_and_dataset_documentation",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__datasets.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/data-access/datasets.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "data-access/datasets.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/20493f1244644b8516d1606c46996996c6f44770",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_05",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/20493f1244644b8516d1606c46996996c6f44770",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "bb92fce7959731fb34b9b960d57efbc0ab500ccb",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::evidence.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T03:59:42Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "evidence_documentation",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "evidence_documentation",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/evidence.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/evidence.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "evidence.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bb92fce7959731fb34b9b960d57efbc0ab500ccb",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_06",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bb92fce7959731fb34b9b960d57efbc0ab500ccb",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::associations.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T04:01:28Z",
+      "export_capture_method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+      "filters": {
+        "orientation_role": "association_aggregation_scoring_documentation",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS",
+      "orientation_role": "association_aggregation_scoring_documentation",
+      "pagination_completeness_boundary": "ONE_EXACT_FILE_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/associations.md"
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "associations.md",
+      "request_url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/associations.md",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_07",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/associations.md",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "7a423117782a800351203db62923805795bbe73a",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::release-notes.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T04:01:51Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "release_version_information",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "release_version_information",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/release-notes.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/release-notes.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "release-notes.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/7a423117782a800351203db62923805795bbe73a",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_08",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/7a423117782a800351203db62923805795bbe73a",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::citation.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T04:03:42Z",
+      "export_capture_method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+      "filters": {
+        "orientation_role": "primary_platform_publications",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS",
+      "orientation_role": "primary_platform_publications",
+      "pagination_completeness_boundary": "ONE_EXACT_FILE_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/citation.md"
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "citation.md",
+      "request_url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/citation.md",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_09",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/citation.md",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "bd8dfd7bc80d365c537feffd2426d4a2c9425d32",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::web-interface/evidence-pages.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T04:04:05Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "evidence_user_interface_surface",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "evidence_user_interface_surface",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/web-interface__evidence-pages.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/web-interface/evidence-pages.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "web-interface/evidence-pages.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bd8dfd7bc80d365c537feffd2426d4a2c9425d32",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_10",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bd8dfd7bc80d365c537feffd2426d4a2c9425d32",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "blob_sha": "2582e3ee3aa3da7c09fd4a36c193cf49a247b6cd",
+      "captured_result_count": 1,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::web-interface/associations-on-the-fly.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "executed_at": "2026-09-03T04:05:53Z",
+      "export_capture_method": "GITHUB_GIT_BLOB_API_JSON_AT_IMMUTABLE_COMMIT",
+      "filters": {
+        "orientation_role": "target_synthesis_user_interface_surface",
+        "repository_commit": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad"
+      },
+      "network_status": "SUCCESS_AFTER_GITHUB_BLOB_RETRY",
+      "orientation_role": "target_synthesis_user_interface_surface",
+      "pagination_completeness_boundary": "ONE_EXACT_GIT_BLOB_AT_IMMUTABLE_COMMIT",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/web-interface__associations-on-the-fly.md.github_blob.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) Recv failure: Operation timed out",
+          "method": "RAW_GITHUB_IMMUTABLE_COMMIT_FILE",
+          "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/web-interface/associations-on-the-fly.md"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "repository_path": "web-interface/associations-on-the-fly.md",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/2582e3ee3aa3da7c09fd4a36c193cf49a247b6cd",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 1,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OTDOC_11",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_DOCUMENT_CAPTURE",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/2582e3ee3aa3da7c09fd4a36c193cf49a247b6cd",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 2,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "Resolve the current official opentargets/platform-docs main commit and documentation tree",
+      "executed_at": "2026-09-03T03:51:43Z",
+      "export_capture_method": "GITHUB_REPOSITORY_API_JSON_AND_RAW_IMMUTABLE_COMMIT_FILES",
+      "filters": {
+        "ref": "main",
+        "repository": "opentargets/platform-docs"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "OFFICIAL_REPOSITORY_COMMIT_AND_FULL_RECURSIVE_TREE",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_platform_docs_commit_main.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_platform_docs_tree_a919391c50ca.json"
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "OT_FIRST_PARTY_ORIENTATION",
+      "request_url": "https://api.github.com/repos/opentargets/platform-docs/commits/main",
+      "resolved_commit_sha": "a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "result_count": 2,
+      "result_count_status": "ORIENTATION_MATERIAL_COUNT",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_OT_ORIENTATION_REPOSITORY",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "TARGETED_FIRST_PARTY_REPOSITORY_ORIENTATION",
+      "source_name": "Open Targets Platform Documentation",
+      "source_provider": "Open Targets via GitHub",
+      "source_url_or_endpoint": "https://api.github.com/repos/opentargets/platform-docs/commits/main",
+      "stream": "FIRST_PARTY_ORIENTATION",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((\"drug target\"[Title/Abstract] OR \"therapeutic target\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"target prioritisation\"[Title/Abstract]) AND (\"evidence integration\"[Title/Abstract] OR \"heterogeneous evidence\"[Title/Abstract] OR \"data integration\"[Title/Abstract] OR \"multi-omics\"[Title/Abstract] OR \"evidence framework\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:50:30Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS_AFTER_EXACT_QUERY_RETRY",
+      "pagination_completeness_boundary": "FIRST_30_OF_1621_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_01_esearch_retry.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_01_esummary_retry.json"
+      ],
+      "prior_retrieval_errors": [
+        {
+          "error": "curl: (56) The requested URL returned error: 500",
+          "method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22therapeutic+target%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22target+prioritisation%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22heterogeneous+evidence%22%5BTitle%2FAbstract%5D+OR+%22data+integration%22%5BTitle%2FAbstract%5D+OR+%22multi-omics%22%5BTitle%2FAbstract%5D+OR+%22evidence+framework%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+        }
+      ],
+      "protocol_categories": [
+        "CAT_01"
+      ],
+      "query_family_id": "QF01_TARGET_INTEGRATION",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22therapeutic+target%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22target+prioritisation%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22heterogeneous+evidence%22%5BTitle%2FAbstract%5D+OR+%22data+integration%22%5BTitle%2FAbstract%5D+OR+%22multi-omics%22%5BTitle%2FAbstract%5D+OR+%22evidence+framework%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 1621,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_01",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "((\"Open Targets Platform\"[Title/Abstract] OR \"Open Targets Genetics\"[Title/Abstract] OR \"Open Targets\"[Corporate Author])) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:50:37Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_68_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_02_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_02_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_02",
+        "CAT_01"
+      ],
+      "query_family_id": "QF02_OPEN_TARGETS",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%22Open+Targets+Platform%22%5BTitle%2FAbstract%5D+OR+%22Open+Targets+Genetics%22%5BTitle%2FAbstract%5D+OR+%22Open+Targets%22%5BCorporate+Author%5D%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 68,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_02",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((\"knowledge graph\"[Title/Abstract] OR \"evidence graph\"[Title/Abstract] OR \"semantic graph\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR \"drug target\"[Title/Abstract] OR \"target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:50:42Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_516_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_03_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_03_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_03",
+        "CAT_01"
+      ],
+      "query_family_id": "QF03_KNOWLEDGE_GRAPHS",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+%22evidence+graph%22%5BTitle%2FAbstract%5D+OR+%22semantic+graph%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 516,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_03",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((provenance[Title/Abstract] OR lineage[Title/Abstract] OR attribution[Title/Abstract] OR traceability[Title/Abstract] OR \"source tracking\"[Title/Abstract] OR derivation[Title/Abstract]) AND (biomedical[Title/Abstract] OR bioinformatics[Title/Abstract]) AND (integration[Title/Abstract] OR evidence[Title/Abstract] OR database[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:50:47Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_483_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_04_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_04_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_04"
+      ],
+      "query_family_id": "QF04_PROVENANCE",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28provenance%5BTitle%2FAbstract%5D+OR+lineage%5BTitle%2FAbstract%5D+OR+attribution%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D+OR+%22source+tracking%22%5BTitle%2FAbstract%5D+OR+derivation%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+bioinformatics%5BTitle%2FAbstract%5D%29+AND+%28integration%5BTitle%2FAbstract%5D+OR+evidence%5BTitle%2FAbstract%5D+OR+database%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 483,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_04",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((\"evidence synthesis\"[Title/Abstract] OR \"evidence assessment\"[Title/Abstract] OR \"systematic review\"[Title/Abstract] OR \"living review\"[Title/Abstract]) AND (software[Title/Abstract] OR platform[Title/Abstract] OR tool[Title/Abstract] OR system[Title/Abstract]) AND (provenance[Title/Abstract] OR \"missing data\"[Title/Abstract] OR uncertainty[Title/Abstract] OR conflict[Title/Abstract] OR dependence[Title/Abstract] OR \"evidence grading\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:50:53Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_2221_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_05_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_05_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_05"
+      ],
+      "query_family_id": "QF05_EVIDENCE_SYNTHESIS",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+assessment%22%5BTitle%2FAbstract%5D+OR+%22systematic+review%22%5BTitle%2FAbstract%5D+OR+%22living+review%22%5BTitle%2FAbstract%5D%29+AND+%28software%5BTitle%2FAbstract%5D+OR+platform%5BTitle%2FAbstract%5D+OR+tool%5BTitle%2FAbstract%5D+OR+system%5BTitle%2FAbstract%5D%29+AND+%28provenance%5BTitle%2FAbstract%5D+OR+%22missing+data%22%5BTitle%2FAbstract%5D+OR+uncertainty%5BTitle%2FAbstract%5D+OR+conflict%5BTitle%2FAbstract%5D+OR+dependence%5BTitle%2FAbstract%5D+OR+%22evidence+grading%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 2221,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_05",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((\"missing data\"[Title/Abstract] OR \"data absence\"[Title/Abstract] OR coverage[Title/Abstract] OR \"not observed\"[Title/Abstract] OR \"unavailable evidence\"[Title/Abstract] OR \"incomplete evidence\"[Title/Abstract] OR uncertainty[Title/Abstract] OR conflict[Title/Abstract] OR \"non-independent evidence\"[Title/Abstract] OR \"correlated evidence\"[Title/Abstract] OR \"evidence reuse\"[Title/Abstract] OR \"duplicate evidence\"[Title/Abstract] OR \"shared dataset\"[Title/Abstract] OR \"overlapping cohort\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR meta-analysis[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:01Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_8215_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_06_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_06_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05"
+      ],
+      "query_family_id": "QF06_MISSING_UNCERTAIN_DEPENDENT",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22missing+data%22%5BTitle%2FAbstract%5D+OR+%22data+absence%22%5BTitle%2FAbstract%5D+OR+coverage%5BTitle%2FAbstract%5D+OR+%22not+observed%22%5BTitle%2FAbstract%5D+OR+%22unavailable+evidence%22%5BTitle%2FAbstract%5D+OR+%22incomplete+evidence%22%5BTitle%2FAbstract%5D+OR+uncertainty%5BTitle%2FAbstract%5D+OR+conflict%5BTitle%2FAbstract%5D+OR+%22non-independent+evidence%22%5BTitle%2FAbstract%5D+OR+%22correlated+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+reuse%22%5BTitle%2FAbstract%5D+OR+%22duplicate+evidence%22%5BTitle%2FAbstract%5D+OR+%22shared+dataset%22%5BTitle%2FAbstract%5D+OR+%22overlapping+cohort%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+meta-analysis%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 8215,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_06",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "NOT_APPLICABLE",
+      "exact_query": "(((\"drug target discovery\"[Title/Abstract] OR \"therapeutic target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"target identification\"[Title/Abstract]) AND (\"artificial intelligence\"[Title/Abstract] OR \"machine learning\"[Title/Abstract] OR \"large language model\"[Title/Abstract] OR \"natural language processing\"[Title/Abstract] OR \"graph neural network\"[Title/Abstract]) AND (evidence[Title/Abstract] OR provenance[Title/Abstract] OR citation[Title/Abstract] OR \"knowledge graph\"[Title/Abstract] OR interpretation[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:11Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_96_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_07_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_07_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_07",
+        "CAT_01"
+      ],
+      "query_family_id": "QF07_AI_TARGET_DISCOVERY",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22drug+target+discovery%22%5BTitle%2FAbstract%5D+OR+%22therapeutic+target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22target+identification%22%5BTitle%2FAbstract%5D%29+AND+%28%22artificial+intelligence%22%5BTitle%2FAbstract%5D+OR+%22machine+learning%22%5BTitle%2FAbstract%5D+OR+%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22natural+language+processing%22%5BTitle%2FAbstract%5D+OR+%22graph+neural+network%22%5BTitle%2FAbstract%5D%29+AND+%28evidence%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+citation%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+interpretation%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 96,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_07",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 22,
+      "counterexample_focus": "COUNTEREXAMPLE_DEPENDENCY",
+      "exact_query": "(((\"non-independent evidence\"[Title/Abstract] OR \"dependent evidence\"[Title/Abstract] OR \"correlated evidence\"[Title/Abstract] OR \"evidence reuse\"[Title/Abstract] OR \"duplicate evidence\"[Title/Abstract] OR \"shared dataset\"[Title/Abstract] OR \"overlapping cohort\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR meta-analysis[Title/Abstract] OR framework[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:18Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_22_OF_22_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_08_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_08_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05",
+        "CAT_01"
+      ],
+      "query_family_id": "QF08_COUNTER_DEPENDENCY",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22non-independent+evidence%22%5BTitle%2FAbstract%5D+OR+%22dependent+evidence%22%5BTitle%2FAbstract%5D+OR+%22correlated+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+reuse%22%5BTitle%2FAbstract%5D+OR+%22duplicate+evidence%22%5BTitle%2FAbstract%5D+OR+%22shared+dataset%22%5BTitle%2FAbstract%5D+OR+%22overlapping+cohort%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+meta-analysis%5BTitle%2FAbstract%5D+OR+framework%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 22,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_08",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_MISSINGNESS",
+      "exact_query": "(((\"structured missingness\"[Title/Abstract] OR \"missingness mechanism\"[Title/Abstract] OR \"missing data\"[Title/Abstract] OR \"data absence\"[Title/Abstract] OR \"not observed\"[Title/Abstract] OR \"unavailable evidence\"[Title/Abstract] OR \"incomplete evidence\"[Title/Abstract]) AND (ontology[Title/Abstract] OR \"data model\"[Title/Abstract] OR framework[Title/Abstract] OR \"evidence synthesis\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR clinical[Title/Abstract] OR health[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:24Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_862_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_09_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_09_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_06",
+        "CAT_05"
+      ],
+      "query_family_id": "QF09_COUNTER_MISSINGNESS",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22structured+missingness%22%5BTitle%2FAbstract%5D+OR+%22missingness+mechanism%22%5BTitle%2FAbstract%5D+OR+%22missing+data%22%5BTitle%2FAbstract%5D+OR+%22data+absence%22%5BTitle%2FAbstract%5D+OR+%22not+observed%22%5BTitle%2FAbstract%5D+OR+%22unavailable+evidence%22%5BTitle%2FAbstract%5D+OR+%22incomplete+evidence%22%5BTitle%2FAbstract%5D%29+AND+%28ontology%5BTitle%2FAbstract%5D+OR+%22data+model%22%5BTitle%2FAbstract%5D+OR+framework%5BTitle%2FAbstract%5D+OR+%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D+OR+health%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 862,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_09",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 26,
+      "counterexample_focus": "COUNTEREXAMPLE_PROVENANCE_THROUGH_AGGREGATION",
+      "exact_query": "(((provenance[Title/Abstract] OR lineage[Title/Abstract] OR derivation[Title/Abstract] OR traceability[Title/Abstract] OR \"source attribution\"[Title/Abstract]) AND (aggregation[Title/Abstract] OR summarization[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR \"data integration\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR \"knowledge graph\"[Title/Abstract] OR \"drug target\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:31Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_26_OF_26_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_10_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_10_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_04",
+        "CAT_03",
+        "CAT_01"
+      ],
+      "query_family_id": "QF10_COUNTER_PROVENANCE_AGGREGATION",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28provenance%5BTitle%2FAbstract%5D+OR+lineage%5BTitle%2FAbstract%5D+OR+derivation%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D+OR+%22source+attribution%22%5BTitle%2FAbstract%5D%29+AND+%28aggregation%5BTitle%2FAbstract%5D+OR+summarization%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22data+integration%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+%22drug+target%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 26,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_10",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CLAIM_EVIDENCE_BOUNDARY",
+      "exact_query": "(((\"claim evidence\"[Title/Abstract] OR \"claim-evidence\"[Title/Abstract] OR \"evidence graph\"[Title/Abstract] OR nanopublication[Title/Abstract] OR argumentation[Title/Abstract]) AND (biomedical[Title/Abstract] OR scientific[Title/Abstract] OR clinical[Title/Abstract]) AND (causality[Title/Abstract] OR interpretation[Title/Abstract] OR provenance[Title/Abstract] OR assertion[Title/Abstract] OR knowledge[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T03:51:37Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_93_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_11_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_11_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_04",
+        "CAT_05",
+        "CAT_06",
+        "CAT_07"
+      ],
+      "query_family_id": "QF11_COUNTER_CLAIM_EVIDENCE",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22claim+evidence%22%5BTitle%2FAbstract%5D+OR+%22claim-evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+graph%22%5BTitle%2FAbstract%5D+OR+nanopublication%5BTitle%2FAbstract%5D+OR+argumentation%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+scientific%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D%29+AND+%28causality%5BTitle%2FAbstract%5D+OR+interpretation%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+assertion%5BTitle%2FAbstract%5D+OR+knowledge%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 93,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_11",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CLAIM_EVIDENCE_BOUNDARY",
+      "exact_query": "(((\"evidence interpretation\"[Title/Abstract] OR \"evidence grading\"[Title/Abstract] OR \"strength of evidence\"[Title/Abstract] OR \"causal inference boundary\"[Title/Abstract] OR \"association versus causality\"[Title/Abstract] OR \"clinical translation\"[Title/Abstract]) AND (\"drug target\"[Title/Abstract] OR \"target evidence\"[Title/Abstract] OR biomedical[Title/Abstract] OR \"evidence synthesis\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T04:14:24Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_1725_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_12_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_12_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_01",
+        "CAT_05",
+        "CAT_06"
+      ],
+      "query_family_id": "QF12_CLAIM_BOUNDARY_VARIANTS",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22evidence+interpretation%22%5BTitle%2FAbstract%5D+OR+%22evidence+grading%22%5BTitle%2FAbstract%5D+OR+%22strength+of+evidence%22%5BTitle%2FAbstract%5D+OR+%22causal+inference+boundary%22%5BTitle%2FAbstract%5D+OR+%22association+versus+causality%22%5BTitle%2FAbstract%5D+OR+%22clinical+translation%22%5BTitle%2FAbstract%5D%29+AND+%28%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22target+evidence%22%5BTitle%2FAbstract%5D+OR+biomedical%5BTitle%2FAbstract%5D+OR+%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 1725,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_12",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 30,
+      "counterexample_focus": "COUNTEREXAMPLE_CONFLICT_PRESERVATION",
+      "exact_query": "(((\"conflicting evidence\"[Title/Abstract] OR \"conflict preservation\"[Title/Abstract] OR \"contradictory evidence\"[Title/Abstract] OR \"evidence conflict\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR \"systematic review\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]) AND (representation[Title/Abstract] OR model[Title/Abstract] OR preservation[Title/Abstract] OR reconciliation[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T04:16:30Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_30_OF_137_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_13_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_13_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_05",
+        "CAT_06",
+        "CAT_03"
+      ],
+      "query_family_id": "QF13_COUNTER_CONFLICT_PRESERVATION",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22conflicting+evidence%22%5BTitle%2FAbstract%5D+OR+%22conflict+preservation%22%5BTitle%2FAbstract%5D+OR+%22contradictory+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+conflict%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22systematic+review%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29+AND+%28representation%5BTitle%2FAbstract%5D+OR+model%5BTitle%2FAbstract%5D+OR+preservation%5BTitle%2FAbstract%5D+OR+reconciliation%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 137,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_13",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    },
+    {
+      "captured_result_count": 26,
+      "counterexample_focus": "COUNTEREXAMPLE_AI_OUTPUT_SOURCE_GROUNDING",
+      "exact_query": "((((\"artificial intelligence\"[Title/Abstract] OR \"large language model\"[Title/Abstract] OR \"AI-assisted\"[Title/Abstract]) AND (\"target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"drug discovery\"[Title/Abstract])) AND (grounding[Title/Abstract] OR citation[Title/Abstract] OR \"source attribution\"[Title/Abstract] OR \"evidence link\"[Title/Abstract] OR provenance[Title/Abstract] OR traceability[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "executed_at": "2026-09-03T04:17:00Z",
+      "export_capture_method": "NCBI_ESEARCH_JSON_PLUS_ESUMMARY_JSON",
+      "filters": {
+        "publication_date_from": "2010-01-01",
+        "publication_date_to": "2026-09-03",
+        "sort": "relevance"
+      },
+      "network_status": "SUCCESS",
+      "pagination_completeness_boundary": "FIRST_26_OF_26_SORT_RELEVANCE;RETSTART_0;RETMAX_30",
+      "payload_paths": [
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_14_esearch.json",
+        "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_14_esummary.json"
+      ],
+      "protocol_categories": [
+        "CAT_07",
+        "CAT_01"
+      ],
+      "query_family_id": "QF14_COUNTER_AI_GROUNDING",
+      "request_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%28%22artificial+intelligence%22%5BTitle%2FAbstract%5D+OR+%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22AI-assisted%22%5BTitle%2FAbstract%5D%29+AND+%28%22target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22drug+discovery%22%5BTitle%2FAbstract%5D%29%29+AND+%28grounding%5BTitle%2FAbstract%5D+OR+citation%5BTitle%2FAbstract%5D+OR+%22source+attribution%22%5BTitle%2FAbstract%5D+OR+%22evidence+link%22%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance",
+      "result_count": 26,
+      "result_count_status": "SOURCE_EXPOSED_TOTAL",
+      "retrieval_error": "",
+      "search_event_id": "P2E1B_PUBMED_14",
+      "search_role": "PILOT_SEARCH",
+      "search_type": "BIOMEDICAL_BIBLIOGRAPHIC_API",
+      "source_name": "PubMed",
+      "source_provider": "NCBI",
+      "source_url_or_endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+      "stream": "SCHOLARLY_DISCOVERY",
+      "timezone": "UTC"
+    }
+  ],
+  "future_network_byte_identity_claimed": false,
+  "generator_version": "P2_E1B_SEARCH_STRATEGY_PILOT_GENERATOR_V0.1",
+  "metadata_correction_history": [
+    {
+      "affected_query_families": [
+        "QF12_CLAIM_BOUNDARY_VARIANTS",
+        "QF13_COUNTER_CONFLICT_PRESERVATION",
+        "QF14_COUNTER_AI_GROUNDING"
+      ],
+      "correction_id": "METACORR_E152E297C7B391109E53",
+      "event_query_bytes_changed": false,
+      "field": "retrieval_repair_history.reason",
+      "new_value": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_COUNTEREXAMPLE_OR_SYNONYM_VARIANT",
+      "old_value": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_CLAIM_BOUNDARY_VARIANTS",
+      "payload_bytes_changed": false,
+      "reason": "The prior label was too narrow for conflict-preservation and AI-grounding additions."
+    }
+  ],
+  "mutable_network_retrieval": true,
+  "payloads": [
+    {
+      "exact_query": "\"drug target\" (\"evidence integration\" OR \"target prioritization\" OR \"heterogeneous evidence\" OR \"data integration\" OR multi-omics)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_01_works.json",
+      "search_event_id": "P2E1B_OPENALEX_01",
+      "sha256": "038a0a0a013b85f86fc41ee37dec3ebac6fd4236e43625f7991e9b8b04f208eb",
+      "size_bytes": 1178056,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%22drug+target%22+%28%22evidence+integration%22+OR+%22target+prioritization%22+OR+%22heterogeneous+evidence%22+OR+%22data+integration%22+OR+multi-omics%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "\"Open Targets Platform\" OR \"Open Targets Genetics\"",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_02_works.json",
+      "search_event_id": "P2E1B_OPENALEX_02",
+      "sha256": "96f7a6b8098afb20bbb412b255cba9fd02cc485e970cf8f21f1cc07f3151b3f1",
+      "size_bytes": 1307184,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%22Open+Targets+Platform%22+OR+%22Open+Targets+Genetics%22&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"knowledge graph\" OR \"evidence graph\") (biomedical OR \"drug target\" OR \"target discovery\" OR \"target prioritization\")",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_03_works.json",
+      "search_event_id": "P2E1B_OPENALEX_03",
+      "sha256": "612c31bd1f82097c6bcfe04c64b0bc58d5b757a67f1bb6a7324307c34c53d2fd",
+      "size_bytes": 864238,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22knowledge+graph%22+OR+%22evidence+graph%22%29+%28biomedical+OR+%22drug+target%22+OR+%22target+discovery%22+OR+%22target+prioritization%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(provenance OR lineage OR attribution OR traceability OR \"source tracking\" OR derivation) (biomedical OR bioinformatics) (integration OR evidence OR database)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_04_works.json",
+      "search_event_id": "P2E1B_OPENALEX_04",
+      "sha256": "91690d8f0980a6a0780ccb3763d9969c65fe51e090fb1f6f80680ba2ec46c043",
+      "size_bytes": 1448139,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28provenance+OR+lineage+OR+attribution+OR+traceability+OR+%22source+tracking%22+OR+derivation%29+%28biomedical+OR+bioinformatics%29+%28integration+OR+evidence+OR+database%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"evidence synthesis\" OR \"evidence assessment\" OR \"systematic review\" OR \"living review\") (software OR platform OR tool OR system) (provenance OR \"missing data\" OR uncertainty OR conflict OR dependence OR \"evidence grading\")",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_05_works.json",
+      "search_event_id": "P2E1B_OPENALEX_05",
+      "sha256": "71477c41ce58c467e68c46f7cea24fb622b2110dda5c9f2f1234739c457f1282",
+      "size_bytes": 1311741,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22evidence+synthesis%22+OR+%22evidence+assessment%22+OR+%22systematic+review%22+OR+%22living+review%22%29+%28software+OR+platform+OR+tool+OR+system%29+%28provenance+OR+%22missing+data%22+OR+uncertainty+OR+conflict+OR+dependence+OR+%22evidence+grading%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"missing data\" OR \"data absence\" OR coverage OR \"not observed\" OR \"unavailable evidence\" OR \"incomplete evidence\" OR uncertainty OR conflict OR \"non-independent evidence\" OR \"correlated evidence\" OR \"evidence reuse\" OR \"duplicate evidence\" OR \"shared dataset\" OR \"overlapping cohort\") (\"evidence synthesis\" OR \"evidence integration\" OR meta-analysis OR \"knowledge graph\")",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_06_works.json",
+      "search_event_id": "P2E1B_OPENALEX_06",
+      "sha256": "3aaa776b295a6b1633a65510cb7599eae9228d7d49b128bf5530d853f3469886",
+      "size_bytes": 1201306,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22missing+data%22+OR+%22data+absence%22+OR+coverage+OR+%22not+observed%22+OR+%22unavailable+evidence%22+OR+%22incomplete+evidence%22+OR+uncertainty+OR+conflict+OR+%22non-independent+evidence%22+OR+%22correlated+evidence%22+OR+%22evidence+reuse%22+OR+%22duplicate+evidence%22+OR+%22shared+dataset%22+OR+%22overlapping+cohort%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+meta-analysis+OR+%22knowledge+graph%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"drug target discovery\" OR \"therapeutic target discovery\" OR \"target prioritization\" OR \"target identification\") (\"artificial intelligence\" OR \"machine learning\" OR \"large language model\" OR \"natural language processing\" OR \"graph neural network\") (evidence OR provenance OR citation OR \"knowledge graph\" OR interpretation)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_07_works.json",
+      "search_event_id": "P2E1B_OPENALEX_07",
+      "sha256": "5ca63194ed27680e387576414971e09c2910e18c940ca3d93bf1fcb808cb17f9",
+      "size_bytes": 1052795,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22drug+target+discovery%22+OR+%22therapeutic+target+discovery%22+OR+%22target+prioritization%22+OR+%22target+identification%22%29+%28%22artificial+intelligence%22+OR+%22machine+learning%22+OR+%22large+language+model%22+OR+%22natural+language+processing%22+OR+%22graph+neural+network%22%29+%28evidence+OR+provenance+OR+citation+OR+%22knowledge+graph%22+OR+interpretation%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"non-independent evidence\" OR \"dependent evidence\" OR \"correlated evidence\" OR \"evidence reuse\" OR \"duplicate evidence\" OR \"shared dataset\" OR \"overlapping cohort\") (\"evidence synthesis\" OR \"evidence integration\" OR meta-analysis OR framework)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_08_works.json",
+      "search_event_id": "P2E1B_OPENALEX_08",
+      "sha256": "5eb9f24ff0757a42b28cf9c730ac73589c793147b36fb7f96f19deb37a0512ca",
+      "size_bytes": 1221334,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22non-independent+evidence%22+OR+%22dependent+evidence%22+OR+%22correlated+evidence%22+OR+%22evidence+reuse%22+OR+%22duplicate+evidence%22+OR+%22shared+dataset%22+OR+%22overlapping+cohort%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+meta-analysis+OR+framework%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"structured missingness\" OR \"missingness mechanism\" OR \"missing data\" OR \"data absence\" OR \"not observed\" OR \"unavailable evidence\" OR \"incomplete evidence\") (ontology OR \"data model\" OR framework OR \"evidence synthesis\" OR \"knowledge graph\") (biomedical OR clinical OR health)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_09_works.json",
+      "search_event_id": "P2E1B_OPENALEX_09",
+      "sha256": "8321b27e4a6c0d3ec365c9860d745cf5621636ce5a5374fd372eced8759bfe8d",
+      "size_bytes": 1567773,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22structured+missingness%22+OR+%22missingness+mechanism%22+OR+%22missing+data%22+OR+%22data+absence%22+OR+%22not+observed%22+OR+%22unavailable+evidence%22+OR+%22incomplete+evidence%22%29+%28ontology+OR+%22data+model%22+OR+framework+OR+%22evidence+synthesis%22+OR+%22knowledge+graph%22%29+%28biomedical+OR+clinical+OR+health%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(provenance OR lineage OR derivation OR traceability OR \"source attribution\") (aggregation OR summarization OR \"evidence integration\" OR \"data integration\") (biomedical OR \"knowledge graph\" OR \"drug target\")",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_10_works.json",
+      "search_event_id": "P2E1B_OPENALEX_10",
+      "sha256": "38dd8d5f587d1781082d758110a6844fd28bc1291d41a115152a21f5121ef3ff",
+      "size_bytes": 1156002,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28provenance+OR+lineage+OR+derivation+OR+traceability+OR+%22source+attribution%22%29+%28aggregation+OR+summarization+OR+%22evidence+integration%22+OR+%22data+integration%22%29+%28biomedical+OR+%22knowledge+graph%22+OR+%22drug+target%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"claim evidence\" OR \"claim-evidence\" OR \"evidence graph\" OR nanopublication OR argumentation) (biomedical OR scientific OR clinical) (causality OR interpretation OR provenance OR assertion OR knowledge)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_11_works.json",
+      "search_event_id": "P2E1B_OPENALEX_11",
+      "sha256": "1b22fa2d15e48921b20a436a7d266d6428fd5b64e92656e0362531194d2e5bdd",
+      "size_bytes": 1315192,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22claim+evidence%22+OR+%22claim-evidence%22+OR+%22evidence+graph%22+OR+nanopublication+OR+argumentation%29+%28biomedical+OR+scientific+OR+clinical%29+%28causality+OR+interpretation+OR+provenance+OR+assertion+OR+knowledge%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"evidence interpretation\" OR \"evidence grading\" OR \"strength of evidence\" OR \"causal inference boundary\" OR \"association versus causality\" OR \"clinical translation\") (\"drug target\" OR \"target evidence\" OR biomedical OR \"evidence synthesis\" OR \"knowledge graph\")",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_12_works.json",
+      "search_event_id": "P2E1B_OPENALEX_12",
+      "sha256": "9521a7c94f4fa3f5e8ab35bdb03e01d0966ef4e7117b057704a205c68ead0f2e",
+      "size_bytes": 941853,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22evidence+interpretation%22+OR+%22evidence+grading%22+OR+%22strength+of+evidence%22+OR+%22causal+inference+boundary%22+OR+%22association+versus+causality%22+OR+%22clinical+translation%22%29+%28%22drug+target%22+OR+%22target+evidence%22+OR+biomedical+OR+%22evidence+synthesis%22+OR+%22knowledge+graph%22%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "(\"conflicting evidence\" OR \"conflict preservation\" OR \"contradictory evidence\" OR \"evidence conflict\") (\"evidence synthesis\" OR \"evidence integration\" OR \"systematic review\" OR \"knowledge graph\") (representation OR model OR preservation OR reconciliation)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_13_works.json",
+      "search_event_id": "P2E1B_OPENALEX_13",
+      "sha256": "cfc2b6e06645316b597a91dca9f427d287563c658fefa850adf2397f977afc9e",
+      "size_bytes": 1048361,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%22conflicting+evidence%22+OR+%22conflict+preservation%22+OR+%22contradictory+evidence%22+OR+%22evidence+conflict%22%29+%28%22evidence+synthesis%22+OR+%22evidence+integration%22+OR+%22systematic+review%22+OR+%22knowledge+graph%22%29+%28representation+OR+model+OR+preservation+OR+reconciliation%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "((\"artificial intelligence\" OR \"large language model\" OR \"AI-assisted\") (\"target discovery\" OR \"target prioritization\" OR \"drug discovery\")) (grounding OR citation OR \"source attribution\" OR \"evidence link\" OR provenance OR traceability)",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_openalex_14_works.json",
+      "search_event_id": "P2E1B_OPENALEX_14",
+      "sha256": "e3cb50d8f468622e6b933b47d6e03a5503ecccdb6bd07ed7b604b674c56a0b5e",
+      "size_bytes": 927995,
+      "source": "OpenAlex",
+      "url": "https://api.openalex.org/works?search=%28%28%22artificial+intelligence%22+OR+%22large+language+model%22+OR+%22AI-assisted%22%29+%28%22target+discovery%22+OR+%22target+prioritization%22+OR+%22drug+discovery%22%29%29+%28grounding+OR+citation+OR+%22source+attribution%22+OR+%22evidence+link%22+OR+provenance+OR+traceability%29&filter=from_publication_date%3A2010-01-01%2Cto_publication_date%3A2026-09-03&per-page=30&page=1&sort=relevance_score%3Adesc"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::README.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/README.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_01",
+      "sha256": "a2528f306f98805c6406cf78011e9e6c80e950af34f0dcf72995d13c77064186",
+      "size_bytes": 3359,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/4d3bf5c2f5d821a5f6e32dab7e041f11f2b49fd4"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::getting-started.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/getting-started.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_02",
+      "sha256": "030ba68b462860ff56ce0ca3f7a0cdca2f6f07718a30562f0c108dcb061587c9",
+      "size_bytes": 5119,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/37b619e509d7b09f9a7a01441727e9c8c44997d9"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::data-access/README.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__README.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_03",
+      "sha256": "7f9584169c3046c3834e27a065fc31535a6f378536e40fcc74f48b385b09c37f",
+      "size_bytes": 3317,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8b3b9e46d8549e554a084664d62e412f124c4b55"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::data-access/graphql-api.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__graphql-api.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_04",
+      "sha256": "5cc0776d71d6b461c73f2feb843a9f434ee89d3047bc953b0a663f540851b8a8",
+      "size_bytes": 10001,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/8dde604723326730572d1b3f5491c14c9ef1d42c"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::data-access/datasets.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/data-access__datasets.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_05",
+      "sha256": "6d8ef951bcab417db64974ddc5bd3755e33b959db4b619b53554b51110f8f193",
+      "size_bytes": 15446,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/20493f1244644b8516d1606c46996996c6f44770"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::evidence.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/evidence.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_06",
+      "sha256": "d94b7b5095a7727b44a8d2a5ee5c02e165cf547d5ea2aa6d9c6bd640bff7656c",
+      "size_bytes": 50384,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bb92fce7959731fb34b9b960d57efbc0ab500ccb"
+    },
+    {
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::associations.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/associations.md",
+      "search_event_id": "P2E1B_OTDOC_07",
+      "sha256": "ddbc478b18256ef4aab46538af0bfc05f386313945cb7bd21ace5b50f1071798",
+      "size_bytes": 9945,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/associations.md"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::release-notes.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/release-notes.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_08",
+      "sha256": "585df247c9b95e70446004605bb08a6aa86dc36b8154606f774bfc336d6f5b2e",
+      "size_bytes": 57316,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/7a423117782a800351203db62923805795bbe73a"
+    },
+    {
+      "exact_query": "OFFICIAL_REPOSITORY_PATH::citation.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/citation.md",
+      "search_event_id": "P2E1B_OTDOC_09",
+      "sha256": "76fd83cbf64873fa6a113507af4df78cb87b8ab43f9c985fadac03ee8a2fd225",
+      "size_bytes": 1705,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://raw.githubusercontent.com/opentargets/platform-docs/a919391c50ca40dc65b30b4a5a14cb275b54f8ad/citation.md"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::web-interface/evidence-pages.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/web-interface__evidence-pages.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_10",
+      "sha256": "b6601fc0a7a023ff9fc7272bede488ce80f499be3e80c3cd3d4edc38bb8f816b",
+      "size_bytes": 1468,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/bd8dfd7bc80d365c537feffd2426d4a2c9425d32"
+    },
+    {
+      "exact_query": "GITHUB_BLOB::web-interface/associations-on-the-fly.md@a919391c50ca40dc65b30b4a5a14cb275b54f8ad",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_docs/web-interface__associations-on-the-fly.md.github_blob.json",
+      "search_event_id": "P2E1B_OTDOC_11",
+      "sha256": "b84f5532feb461480f4a5787cbd6721da9e419a76d7a226cb095615577234d92",
+      "size_bytes": 13155,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/blobs/2582e3ee3aa3da7c09fd4a36c193cf49a247b6cd"
+    },
+    {
+      "exact_query": "Resolve the current official opentargets/platform-docs main commit and documentation tree",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_platform_docs_commit_main.json",
+      "search_event_id": "P2E1B_OT_ORIENTATION_REPOSITORY",
+      "sha256": "94d6acd76a532faf20f43902addeec31e36de4e39fef311d6a0037c50717efdd",
+      "size_bytes": 8916,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/commits/main"
+    },
+    {
+      "exact_query": "recursive repository tree",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/open_targets_platform_docs_tree_a919391c50ca.json",
+      "search_event_id": "P2E1B_OT_ORIENTATION_REPOSITORY",
+      "sha256": "4f63d4ea51ffc54bda06a27b1756754894851869e1e9a96135cbe767b8139f35",
+      "size_bytes": 29142,
+      "source": "Open Targets Platform Documentation",
+      "url": "https://api.github.com/repos/opentargets/platform-docs/git/trees/a919391c50ca40dc65b30b4a5a14cb275b54f8ad?recursive=1"
+    },
+    {
+      "exact_query": "(((\"drug target\"[Title/Abstract] OR \"therapeutic target\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"target prioritisation\"[Title/Abstract]) AND (\"evidence integration\"[Title/Abstract] OR \"heterogeneous evidence\"[Title/Abstract] OR \"data integration\"[Title/Abstract] OR \"multi-omics\"[Title/Abstract] OR \"evidence framework\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_01_esearch_retry.json",
+      "search_event_id": "P2E1B_PUBMED_01",
+      "sha256": "e22e1433dac044c63d428e8851542fb865c43223f653223325a13486ae35ba41",
+      "size_bytes": 912,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22therapeutic+target%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22target+prioritisation%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22heterogeneous+evidence%22%5BTitle%2FAbstract%5D+OR+%22data+integration%22%5BTitle%2FAbstract%5D+OR+%22multi-omics%22%5BTitle%2FAbstract%5D+OR+%22evidence+framework%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "37533767,39039470,38335558,40473882,39117661,40177548,37582357,32132975,39924997,40315307,41862476,38194971,41043431,39660865,38215750,39333076,40517505,37053504,36450252,38976572,36966136,38943472,42238533,38343327,40593619,40492378,38409225,41376480,37708024,40236779",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_01_esummary_retry.json",
+      "search_event_id": "P2E1B_PUBMED_01",
+      "sha256": "eb2726df790f6bc51020e2559f5d458b48908fc954e1dd4f551d670546b0eb76",
+      "size_bytes": 76584,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=37533767%2C39039470%2C38335558%2C40473882%2C39117661%2C40177548%2C37582357%2C32132975%2C39924997%2C40315307%2C41862476%2C38194971%2C41043431%2C39660865%2C38215750%2C39333076%2C40517505%2C37053504%2C36450252%2C38976572%2C36966136%2C38943472%2C42238533%2C38343327%2C40593619%2C40492378%2C38409225%2C41376480%2C37708024%2C40236779&retmode=json"
+    },
+    {
+      "exact_query": "((\"Open Targets Platform\"[Title/Abstract] OR \"Open Targets Genetics\"[Title/Abstract] OR \"Open Targets\"[Corporate Author])) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_02_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_02",
+      "sha256": "91a77485460448ed96947030e338b3052a4258093477971186965cb9bb5ffed0",
+      "size_bytes": 742,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%22Open+Targets+Platform%22%5BTitle%2FAbstract%5D+OR+%22Open+Targets+Genetics%22%5BTitle%2FAbstract%5D+OR+%22Open+Targets%22%5BCorporate+Author%5D%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "41076992,36399499,38701887,33196847,30462303,37467069,39657122,37749083,28919242,33045747,33417599,40083163,37236906,40097274,30888556,32775437,36368572,41370097,30030477,37091791,38259487,39273340,35300138,40627758,42351157,36614302,35710324,33311987,37871808,39697733",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_02_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_02",
+      "sha256": "5191b1b3268bf2af3575eac443afc80be331bbb340f12305027bf8613a09252e",
+      "size_bytes": 76554,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=41076992%2C36399499%2C38701887%2C33196847%2C30462303%2C37467069%2C39657122%2C37749083%2C28919242%2C33045747%2C33417599%2C40083163%2C37236906%2C40097274%2C30888556%2C32775437%2C36368572%2C41370097%2C30030477%2C37091791%2C38259487%2C39273340%2C35300138%2C40627758%2C42351157%2C36614302%2C35710324%2C33311987%2C37871808%2C39697733&retmode=json"
+    },
+    {
+      "exact_query": "(((\"knowledge graph\"[Title/Abstract] OR \"evidence graph\"[Title/Abstract] OR \"semantic graph\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR \"drug target\"[Title/Abstract] OR \"target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_03_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_03",
+      "sha256": "86f1c2fd9ee9f9f88a295593bcd35763e416ed4a5ff51005bbe4c6849a2a32dd",
+      "size_bytes": 806,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+%22evidence+graph%22%5BTitle%2FAbstract%5D+OR+%22semantic+graph%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "40959983,37592036,40804250,38681752,36388397,35182735,33954284,34649044,34718207,41519968,35454813,38952679,41068475,33843398,40835041,37702941,32637040,39610660,37778673,38308873,36304325,36540992,38057380,38496488,35847767,35653350,39288310,39197732,37464259,40057806",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_03_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_03",
+      "sha256": "89a56df300be7ca8e728388527416b2ed3953a253cbc59b0ab9e0de1b63694b6",
+      "size_bytes": 57730,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=40959983%2C37592036%2C40804250%2C38681752%2C36388397%2C35182735%2C33954284%2C34649044%2C34718207%2C41519968%2C35454813%2C38952679%2C41068475%2C33843398%2C40835041%2C37702941%2C32637040%2C39610660%2C37778673%2C38308873%2C36304325%2C36540992%2C38057380%2C38496488%2C35847767%2C35653350%2C39288310%2C39197732%2C37464259%2C40057806&retmode=json"
+    },
+    {
+      "exact_query": "(((provenance[Title/Abstract] OR lineage[Title/Abstract] OR attribution[Title/Abstract] OR traceability[Title/Abstract] OR \"source tracking\"[Title/Abstract] OR derivation[Title/Abstract]) AND (biomedical[Title/Abstract] OR bioinformatics[Title/Abstract]) AND (integration[Title/Abstract] OR evidence[Title/Abstract] OR database[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_04_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_04",
+      "sha256": "0d1020f609896c7d1eb0b2e71e95031f4752c4b2fe1b506a536bb68d835e563a",
+      "size_bytes": 920,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28provenance%5BTitle%2FAbstract%5D+OR+lineage%5BTitle%2FAbstract%5D+OR+attribution%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D+OR+%22source+tracking%22%5BTitle%2FAbstract%5D+OR+derivation%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+bioinformatics%5BTitle%2FAbstract%5D%29+AND+%28integration%5BTitle%2FAbstract%5D+OR+evidence%5BTitle%2FAbstract%5D+OR+database%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "37280296,36969097,33951459,34480118,29477166,38745318,38940152,26912746,40355256,39178413,37464259,37503119,37066421,38031841,34986598,30805989,39273049,36662416,27780052,40003895,30922926,35718270,32324859,40712808,36541780,37533768,42486543,28092471,31483277,40635371",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_04_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_04",
+      "sha256": "8524761b795fd5f0e8aa36c65117001e4d6471aff011575743cb987f21a7c6f9",
+      "size_bytes": 70369,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=37280296%2C36969097%2C33951459%2C34480118%2C29477166%2C38745318%2C38940152%2C26912746%2C40355256%2C39178413%2C37464259%2C37503119%2C37066421%2C38031841%2C34986598%2C30805989%2C39273049%2C36662416%2C27780052%2C40003895%2C30922926%2C35718270%2C32324859%2C40712808%2C36541780%2C37533768%2C42486543%2C28092471%2C31483277%2C40635371&retmode=json"
+    },
+    {
+      "exact_query": "(((\"evidence synthesis\"[Title/Abstract] OR \"evidence assessment\"[Title/Abstract] OR \"systematic review\"[Title/Abstract] OR \"living review\"[Title/Abstract]) AND (software[Title/Abstract] OR platform[Title/Abstract] OR tool[Title/Abstract] OR system[Title/Abstract]) AND (provenance[Title/Abstract] OR \"missing data\"[Title/Abstract] OR uncertainty[Title/Abstract] OR conflict[Title/Abstract] OR dependence[Title/Abstract] OR \"evidence grading\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_05_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_05",
+      "sha256": "37dab0fba37561c848ce88e07886d492d25f30f7ef3cdc96dca378e11e63915c",
+      "size_bytes": 1037,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+assessment%22%5BTitle%2FAbstract%5D+OR+%22systematic+review%22%5BTitle%2FAbstract%5D+OR+%22living+review%22%5BTitle%2FAbstract%5D%29+AND+%28software%5BTitle%2FAbstract%5D+OR+platform%5BTitle%2FAbstract%5D+OR+tool%5BTitle%2FAbstract%5D+OR+system%5BTitle%2FAbstract%5D%29+AND+%28provenance%5BTitle%2FAbstract%5D+OR+%22missing+data%22%5BTitle%2FAbstract%5D+OR+uncertainty%5BTitle%2FAbstract%5D+OR+conflict%5BTitle%2FAbstract%5D+OR+dependence%5BTitle%2FAbstract%5D+OR+%22evidence+grading%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "35144946,36712303,29755006,30904559,31012259,39939885,37740093,38764386,39445693,38471312,36747880,40883335,38653130,39695449,38214047,38565959,30380111,38435898,34355839,37005602,37360227,37097482,39739895,30458727,38754009,34811891,30207432,34534037,35017802,37557094",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_05_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_05",
+      "sha256": "3ea932a1d02827db80cf656ca7b98a91e33c4535c8a79fe0b4c7255065507414",
+      "size_bytes": 62108,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=35144946%2C36712303%2C29755006%2C30904559%2C31012259%2C39939885%2C37740093%2C38764386%2C39445693%2C38471312%2C36747880%2C40883335%2C38653130%2C39695449%2C38214047%2C38565959%2C30380111%2C38435898%2C34355839%2C37005602%2C37360227%2C37097482%2C39739895%2C30458727%2C38754009%2C34811891%2C30207432%2C34534037%2C35017802%2C37557094&retmode=json"
+    },
+    {
+      "exact_query": "(((\"missing data\"[Title/Abstract] OR \"data absence\"[Title/Abstract] OR coverage[Title/Abstract] OR \"not observed\"[Title/Abstract] OR \"unavailable evidence\"[Title/Abstract] OR \"incomplete evidence\"[Title/Abstract] OR uncertainty[Title/Abstract] OR conflict[Title/Abstract] OR \"non-independent evidence\"[Title/Abstract] OR \"correlated evidence\"[Title/Abstract] OR \"evidence reuse\"[Title/Abstract] OR \"duplicate evidence\"[Title/Abstract] OR \"shared dataset\"[Title/Abstract] OR \"overlapping cohort\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR meta-analysis[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_06_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_06",
+      "sha256": "8ba7bf044760142d539317a70b2d957bce8e929018ccacabb7bc3ae8b1092c69",
+      "size_bytes": 1324,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22missing+data%22%5BTitle%2FAbstract%5D+OR+%22data+absence%22%5BTitle%2FAbstract%5D+OR+coverage%5BTitle%2FAbstract%5D+OR+%22not+observed%22%5BTitle%2FAbstract%5D+OR+%22unavailable+evidence%22%5BTitle%2FAbstract%5D+OR+%22incomplete+evidence%22%5BTitle%2FAbstract%5D+OR+uncertainty%5BTitle%2FAbstract%5D+OR+conflict%5BTitle%2FAbstract%5D+OR+%22non-independent+evidence%22%5BTitle%2FAbstract%5D+OR+%22correlated+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+reuse%22%5BTitle%2FAbstract%5D+OR+%22duplicate+evidence%22%5BTitle%2FAbstract%5D+OR+%22shared+dataset%22%5BTitle%2FAbstract%5D+OR+%22overlapping+cohort%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+meta-analysis%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "40038563,32392401,31200992,36965452,32512420,37271039,31416087,32588874,36165947,26426534,30991455,36977366,37507182,37339430,31399994,23600694,32510638,29059621,24433702,32893970,34587296,36007938,29239632,33204045,42321546,37824573,36683451,28457571,31107375,35176997",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_06_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_06",
+      "sha256": "d7e2cabab3a184a3599644f21f1352953bc1034451051a7074a75bd44fe33d3d",
+      "size_bytes": 54622,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=40038563%2C32392401%2C31200992%2C36965452%2C32512420%2C37271039%2C31416087%2C32588874%2C36165947%2C26426534%2C30991455%2C36977366%2C37507182%2C37339430%2C31399994%2C23600694%2C32510638%2C29059621%2C24433702%2C32893970%2C34587296%2C36007938%2C29239632%2C33204045%2C42321546%2C37824573%2C36683451%2C28457571%2C31107375%2C35176997&retmode=json"
+    },
+    {
+      "exact_query": "(((\"drug target discovery\"[Title/Abstract] OR \"therapeutic target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"target identification\"[Title/Abstract]) AND (\"artificial intelligence\"[Title/Abstract] OR \"machine learning\"[Title/Abstract] OR \"large language model\"[Title/Abstract] OR \"natural language processing\"[Title/Abstract] OR \"graph neural network\"[Title/Abstract]) AND (evidence[Title/Abstract] OR provenance[Title/Abstract] OR citation[Title/Abstract] OR \"knowledge graph\"[Title/Abstract] OR interpretation[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_07_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_07",
+      "sha256": "ba43fb1145ed418cbc431033047c91be3f2646f3e9629d812db09fa26c3d7276",
+      "size_bytes": 1127,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22drug+target+discovery%22%5BTitle%2FAbstract%5D+OR+%22therapeutic+target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22target+identification%22%5BTitle%2FAbstract%5D%29+AND+%28%22artificial+intelligence%22%5BTitle%2FAbstract%5D+OR+%22machine+learning%22%5BTitle%2FAbstract%5D+OR+%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22natural+language+processing%22%5BTitle%2FAbstract%5D+OR+%22graph+neural+network%22%5BTitle%2FAbstract%5D%29+AND+%28evidence%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+citation%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+interpretation%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "40239307,38578805,33843398,35679624,36304325,36835813,41875943,40714005,32750869,30472217,35939454,41198831,42277932,41426328,42253922,37521042,37188275,38608311,41968983,40979718,25641519,39175133,41352693,37722373,36399499,37387166,40697660,39130617,42490854,38718126",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_07_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_07",
+      "sha256": "f7f89355642fd197315222ba448602cc88ba53ad437966f14c3d5d143065062b",
+      "size_bytes": 58989,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=40239307%2C38578805%2C33843398%2C35679624%2C36304325%2C36835813%2C41875943%2C40714005%2C32750869%2C30472217%2C35939454%2C41198831%2C42277932%2C41426328%2C42253922%2C37521042%2C37188275%2C38608311%2C41968983%2C40979718%2C25641519%2C39175133%2C41352693%2C37722373%2C36399499%2C37387166%2C40697660%2C39130617%2C42490854%2C38718126&retmode=json"
+    },
+    {
+      "exact_query": "(((\"non-independent evidence\"[Title/Abstract] OR \"dependent evidence\"[Title/Abstract] OR \"correlated evidence\"[Title/Abstract] OR \"evidence reuse\"[Title/Abstract] OR \"duplicate evidence\"[Title/Abstract] OR \"shared dataset\"[Title/Abstract] OR \"overlapping cohort\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR meta-analysis[Title/Abstract] OR framework[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_08_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_08",
+      "sha256": "ac8b2bc9b02442d181408dd0176eec598f33cb26863700159055cb4054e8bca4",
+      "size_bytes": 976,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22non-independent+evidence%22%5BTitle%2FAbstract%5D+OR+%22dependent+evidence%22%5BTitle%2FAbstract%5D+OR+%22correlated+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+reuse%22%5BTitle%2FAbstract%5D+OR+%22duplicate+evidence%22%5BTitle%2FAbstract%5D+OR+%22shared+dataset%22%5BTitle%2FAbstract%5D+OR+%22overlapping+cohort%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+meta-analysis%5BTitle%2FAbstract%5D+OR+framework%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "35793388,40501534,26731604,34631622,42488701,35283221,42567397,34598739,42510609,42376777,42588146,33789848,41108092,25774204,42452598,42451557,42285612,27368081,42243655,20156511,28430164,42461738",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_08_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_08",
+      "sha256": "293e35285601dd1e1a2523012830390abe4c301efa86ba7dda4dcf8f6908448d",
+      "size_bytes": 45789,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=35793388%2C40501534%2C26731604%2C34631622%2C42488701%2C35283221%2C42567397%2C34598739%2C42510609%2C42376777%2C42588146%2C33789848%2C41108092%2C25774204%2C42452598%2C42451557%2C42285612%2C27368081%2C42243655%2C20156511%2C28430164%2C42461738&retmode=json"
+    },
+    {
+      "exact_query": "(((\"structured missingness\"[Title/Abstract] OR \"missingness mechanism\"[Title/Abstract] OR \"missing data\"[Title/Abstract] OR \"data absence\"[Title/Abstract] OR \"not observed\"[Title/Abstract] OR \"unavailable evidence\"[Title/Abstract] OR \"incomplete evidence\"[Title/Abstract]) AND (ontology[Title/Abstract] OR \"data model\"[Title/Abstract] OR framework[Title/Abstract] OR \"evidence synthesis\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR clinical[Title/Abstract] OR health[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_09_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_09",
+      "sha256": "c6b5442ac7099bf80f99450c955948e2e41d3c32f54c9c9a7037c6b84ea8dee6",
+      "size_bytes": 1102,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22structured+missingness%22%5BTitle%2FAbstract%5D+OR+%22missingness+mechanism%22%5BTitle%2FAbstract%5D+OR+%22missing+data%22%5BTitle%2FAbstract%5D+OR+%22data+absence%22%5BTitle%2FAbstract%5D+OR+%22not+observed%22%5BTitle%2FAbstract%5D+OR+%22unavailable+evidence%22%5BTitle%2FAbstract%5D+OR+%22incomplete+evidence%22%5BTitle%2FAbstract%5D%29+AND+%28ontology%5BTitle%2FAbstract%5D+OR+%22data+model%22%5BTitle%2FAbstract%5D+OR+framework%5BTitle%2FAbstract%5D+OR+%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D+OR+health%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "35774001,32761206,23443445,29411037,33539930,42019500,33624862,40890392,36414357,41055275,38793096,39403830,29409362,37932660,38223896,31198908,29797777,38442281,34459011,41554108,35573904,34954068,39575114,29289944,33936407,34090494,38800501,39972404,37277978,36970810",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_09_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_09",
+      "sha256": "f212488b9bc1fa882f8a2dc0bc606295272dc05fc06a1f014472eecc53391771",
+      "size_bytes": 62965,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=35774001%2C32761206%2C23443445%2C29411037%2C33539930%2C42019500%2C33624862%2C40890392%2C36414357%2C41055275%2C38793096%2C39403830%2C29409362%2C37932660%2C38223896%2C31198908%2C29797777%2C38442281%2C34459011%2C41554108%2C35573904%2C34954068%2C39575114%2C29289944%2C33936407%2C34090494%2C38800501%2C39972404%2C37277978%2C36970810&retmode=json"
+    },
+    {
+      "exact_query": "(((provenance[Title/Abstract] OR lineage[Title/Abstract] OR derivation[Title/Abstract] OR traceability[Title/Abstract] OR \"source attribution\"[Title/Abstract]) AND (aggregation[Title/Abstract] OR summarization[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR \"data integration\"[Title/Abstract]) AND (biomedical[Title/Abstract] OR \"knowledge graph\"[Title/Abstract] OR \"drug target\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_10_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_10",
+      "sha256": "ae417e6416cc3861e591ebaa47ccdd7e876d1e6b938f69c019f81e6d75b5b76a",
+      "size_bytes": 936,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28provenance%5BTitle%2FAbstract%5D+OR+lineage%5BTitle%2FAbstract%5D+OR+derivation%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D+OR+%22source+attribution%22%5BTitle%2FAbstract%5D%29+AND+%28aggregation%5BTitle%2FAbstract%5D+OR+summarization%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22data+integration%22%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D+OR+%22drug+target%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "37464259,37883649,35925813,31483277,33103120,38475170,30087614,39849929,40950469,41021462,29973745,40398669,42050585,38060305,27433158,27045824,24527435,27602295,40466336,22070195,28158945,25431329,26175801,42428111,41975285,27345947",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_10_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_10",
+      "sha256": "d643d58063488e3e7f088f4c29cff0595d444b6f1bb662ad27b71d571b173014",
+      "size_bytes": 52906,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=37464259%2C37883649%2C35925813%2C31483277%2C33103120%2C38475170%2C30087614%2C39849929%2C40950469%2C41021462%2C29973745%2C40398669%2C42050585%2C38060305%2C27433158%2C27045824%2C24527435%2C27602295%2C40466336%2C22070195%2C28158945%2C25431329%2C26175801%2C42428111%2C41975285%2C27345947&retmode=json"
+    },
+    {
+      "exact_query": "(((\"claim evidence\"[Title/Abstract] OR \"claim-evidence\"[Title/Abstract] OR \"evidence graph\"[Title/Abstract] OR nanopublication[Title/Abstract] OR argumentation[Title/Abstract]) AND (biomedical[Title/Abstract] OR scientific[Title/Abstract] OR clinical[Title/Abstract]) AND (causality[Title/Abstract] OR interpretation[Title/Abstract] OR provenance[Title/Abstract] OR assertion[Title/Abstract] OR knowledge[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_11_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_11",
+      "sha256": "c5807a263226e339c32fde95855029fcc54d5d6f9915ec579be7b9ec1d73471c",
+      "size_bytes": 1000,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22claim+evidence%22%5BTitle%2FAbstract%5D+OR+%22claim-evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+graph%22%5BTitle%2FAbstract%5D+OR+nanopublication%5BTitle%2FAbstract%5D+OR+argumentation%5BTitle%2FAbstract%5D%29+AND+%28biomedical%5BTitle%2FAbstract%5D+OR+scientific%5BTitle%2FAbstract%5D+OR+clinical%5BTitle%2FAbstract%5D%29+AND+%28causality%5BTitle%2FAbstract%5D+OR+interpretation%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+assertion%5BTitle%2FAbstract%5D+OR+knowledge%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "37067677,26464783,21204285,36154118,32320375,32097025,33997598,31513575,38816758,20648779,26753552,35261482,36586073,36936242,37628559,34264488,42569156,36032002,35659056,33816986,38489473,34973825,32646414,34305485,32810835,32375893,41683712,21859449,42393952,22450141",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_11_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_11",
+      "sha256": "b5126c1b1a635aa422f926d6aa0bd27c8ce73e33e744aa61c1eee8e4bf231179",
+      "size_bytes": 53809,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=37067677%2C26464783%2C21204285%2C36154118%2C32320375%2C32097025%2C33997598%2C31513575%2C38816758%2C20648779%2C26753552%2C35261482%2C36586073%2C36936242%2C37628559%2C34264488%2C42569156%2C36032002%2C35659056%2C33816986%2C38489473%2C34973825%2C32646414%2C34305485%2C32810835%2C32375893%2C41683712%2C21859449%2C42393952%2C22450141&retmode=json"
+    },
+    {
+      "exact_query": "(((\"evidence interpretation\"[Title/Abstract] OR \"evidence grading\"[Title/Abstract] OR \"strength of evidence\"[Title/Abstract] OR \"causal inference boundary\"[Title/Abstract] OR \"association versus causality\"[Title/Abstract] OR \"clinical translation\"[Title/Abstract]) AND (\"drug target\"[Title/Abstract] OR \"target evidence\"[Title/Abstract] OR biomedical[Title/Abstract] OR \"evidence synthesis\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_12_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_12",
+      "sha256": "2b7660aa6f336ccb603f4e7e46c2005af2dc255d3ad7f7c840b62e995bfff1a6",
+      "size_bytes": 1083,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22evidence+interpretation%22%5BTitle%2FAbstract%5D+OR+%22evidence+grading%22%5BTitle%2FAbstract%5D+OR+%22strength+of+evidence%22%5BTitle%2FAbstract%5D+OR+%22causal+inference+boundary%22%5BTitle%2FAbstract%5D+OR+%22association+versus+causality%22%5BTitle%2FAbstract%5D+OR+%22clinical+translation%22%5BTitle%2FAbstract%5D%29+AND+%28%22drug+target%22%5BTitle%2FAbstract%5D+OR+%22target+evidence%22%5BTitle%2FAbstract%5D+OR+biomedical%5BTitle%2FAbstract%5D+OR+%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "40285576,35581020,38169573,26648870,37996406,34916490,31293884,40804250,29883094,40847695,40896272,40118780,35505924,37374684,34041957,38447933,37967768,39438155,34642607,38436200,38275845,37723984,38924776,37359774,36509399,36144006,32637746,33672706,30843328,39590545",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_12_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_12",
+      "sha256": "b1aae6e77a8dae59b2089f3b6a723fcc344319de31e985f1baf8cbd6937fd848",
+      "size_bytes": 57143,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=40285576%2C35581020%2C38169573%2C26648870%2C37996406%2C34916490%2C31293884%2C40804250%2C29883094%2C40847695%2C40896272%2C40118780%2C35505924%2C37374684%2C34041957%2C38447933%2C37967768%2C39438155%2C34642607%2C38436200%2C38275845%2C37723984%2C38924776%2C37359774%2C36509399%2C36144006%2C32637746%2C33672706%2C30843328%2C39590545&retmode=json"
+    },
+    {
+      "exact_query": "(((\"conflicting evidence\"[Title/Abstract] OR \"conflict preservation\"[Title/Abstract] OR \"contradictory evidence\"[Title/Abstract] OR \"evidence conflict\"[Title/Abstract]) AND (\"evidence synthesis\"[Title/Abstract] OR \"evidence integration\"[Title/Abstract] OR \"systematic review\"[Title/Abstract] OR \"knowledge graph\"[Title/Abstract]) AND (representation[Title/Abstract] OR model[Title/Abstract] OR preservation[Title/Abstract] OR reconciliation[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_13_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_13",
+      "sha256": "e0bd974bbe07bcab2142de7a60ed73ff58d7f20e1a34dc11b0b4068d5e86c163",
+      "size_bytes": 1104,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%22conflicting+evidence%22%5BTitle%2FAbstract%5D+OR+%22conflict+preservation%22%5BTitle%2FAbstract%5D+OR+%22contradictory+evidence%22%5BTitle%2FAbstract%5D+OR+%22evidence+conflict%22%5BTitle%2FAbstract%5D%29+AND+%28%22evidence+synthesis%22%5BTitle%2FAbstract%5D+OR+%22evidence+integration%22%5BTitle%2FAbstract%5D+OR+%22systematic+review%22%5BTitle%2FAbstract%5D+OR+%22knowledge+graph%22%5BTitle%2FAbstract%5D%29+AND+%28representation%5BTitle%2FAbstract%5D+OR+model%5BTitle%2FAbstract%5D+OR+preservation%5BTitle%2FAbstract%5D+OR+reconciliation%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "29620997,30807974,32147498,39101362,29887315,26705937,40812100,29063584,27315789,33268293,41437344,35647954,39698478,40838954,28460591,36694989,36809693,37391493,42596987,37485559,35003061,29034731,34862146,31461756,32799545,31867625,36849317,38589676,32271923,31770777",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_13_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_13",
+      "sha256": "8170f448a921e7cbb1b43304530ef8443b19afe118152eba34b3593375b9d1cb",
+      "size_bytes": 58244,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=29620997%2C30807974%2C32147498%2C39101362%2C29887315%2C26705937%2C40812100%2C29063584%2C27315789%2C33268293%2C41437344%2C35647954%2C39698478%2C40838954%2C28460591%2C36694989%2C36809693%2C37391493%2C42596987%2C37485559%2C35003061%2C29034731%2C34862146%2C31461756%2C32799545%2C31867625%2C36849317%2C38589676%2C32271923%2C31770777&retmode=json"
+    },
+    {
+      "exact_query": "((((\"artificial intelligence\"[Title/Abstract] OR \"large language model\"[Title/Abstract] OR \"AI-assisted\"[Title/Abstract]) AND (\"target discovery\"[Title/Abstract] OR \"target prioritization\"[Title/Abstract] OR \"drug discovery\"[Title/Abstract])) AND (grounding[Title/Abstract] OR citation[Title/Abstract] OR \"source attribution\"[Title/Abstract] OR \"evidence link\"[Title/Abstract] OR provenance[Title/Abstract] OR traceability[Title/Abstract]))) AND (\"2010-01-01\"[Date - Publication] : \"2026-09-03\"[Date - Publication])",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_14_esearch.json",
+      "search_event_id": "P2E1B_PUBMED_14",
+      "sha256": "93c5cf2eeb47fb4c41f7d42cd99bc05c99470cfc6a75c527f25d8538f803d3ab",
+      "size_bytes": 958,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%28%28%28%22artificial+intelligence%22%5BTitle%2FAbstract%5D+OR+%22large+language+model%22%5BTitle%2FAbstract%5D+OR+%22AI-assisted%22%5BTitle%2FAbstract%5D%29+AND+%28%22target+discovery%22%5BTitle%2FAbstract%5D+OR+%22target+prioritization%22%5BTitle%2FAbstract%5D+OR+%22drug+discovery%22%5BTitle%2FAbstract%5D%29%29+AND+%28grounding%5BTitle%2FAbstract%5D+OR+citation%5BTitle%2FAbstract%5D+OR+%22source+attribution%22%5BTitle%2FAbstract%5D+OR+%22evidence+link%22%5BTitle%2FAbstract%5D+OR+provenance%5BTitle%2FAbstract%5D+OR+traceability%5BTitle%2FAbstract%5D%29%29%29+AND+%28%222010-01-01%22%5BDate+-+Publication%5D+%3A+%222026-09-03%22%5BDate+-+Publication%5D%29&retmode=json&retmax=30&sort=relevance"
+    },
+    {
+      "exact_query": "39369244,40949670,42640361,42401253,42552502,35339849,41077086,42470596,40142954,41502944,42260772,40841498,41883029,41853101,40265391,41102753,39935800,38098670,42140027,40686175,42509822,34811711,42296483,42604785,42160738,41888483",
+      "payload_path": "outputs/phase_two/p2_e1_pilot_v0.1/search/raw_retrieval/p2e1b_pubmed_14_esummary.json",
+      "search_event_id": "P2E1B_PUBMED_14",
+      "sha256": "bd95f13b64fde1208b9a1428cc69680f5d547eed0039ff8edde2dfb4e309f931",
+      "size_bytes": 51474,
+      "source": "PubMed",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=39369244%2C40949670%2C42640361%2C42401253%2C42552502%2C35339849%2C41077086%2C42470596%2C40142954%2C41502944%2C42260772%2C40841498%2C41883029%2C41853101%2C40265391%2C41102753%2C39935800%2C38098670%2C42140027%2C40686175%2C42509822%2C34811711%2C42296483%2C42604785%2C42160738%2C41888483&retmode=json"
+    }
+  ],
+  "pilot_id": "P2_E1B_SEARCH_STRATEGY_PILOT_V0.1",
+  "retrieval_completed_at_utc": "2026-09-03T04:17:05Z",
+  "retrieval_repair_history": [
+    {
+      "attempted_event_count": 9,
+      "original_failures_retained": true,
+      "reason": "RAW_GITHUB_DELIVERY_TIMEOUTS_FOR_REQUIRED_OPEN_TARGETS_ORIENTATION_FILES",
+      "recovered_event_count": 9,
+      "repair_completed_at_utc": "2026-09-03T04:09:43Z",
+      "repair_id": "REPAIR_43F980F7B73AD6D25C60",
+      "repair_started_at_utc": "2026-09-03T04:09:37Z",
+      "replacement_method": "GITHUB_GIT_BLOB_API_AT_SAME_FROZEN_COMMIT"
+    },
+    {
+      "event_id": "P2E1B_PUBMED_01",
+      "original_failure_retained": true,
+      "reason": "RETRY_TRANSIENT_PUBMED_EVENT_FAILURE_WITH_EXACT_PRESERVED_QUERY",
+      "recovered": true,
+      "repair_completed_at_utc": "2026-09-03T04:12:10Z",
+      "repair_id": "REPAIR_5B4BDF660571F435D7A3",
+      "repair_started_at_utc": "2026-09-03T04:12:08Z",
+      "replacement_method": "SAME_NCBI_EUTILITIES_ENDPOINT_AND_EXACT_QUERY"
+    },
+    {
+      "event_ids": [
+        "P2E1B_OPENALEX_12",
+        "P2E1B_PUBMED_12"
+      ],
+      "prior_events_rewritten": false,
+      "prior_reason_label": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_CLAIM_BOUNDARY_VARIANTS",
+      "query_family_id": "QF12_CLAIM_BOUNDARY_VARIANTS",
+      "reason": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_COUNTEREXAMPLE_OR_SYNONYM_VARIANT",
+      "repair_completed_at_utc": "2026-09-03T04:14:30Z",
+      "repair_id": "ADDITION_5DF21FAA1128129992F0",
+      "repair_started_at_utc": "2026-09-03T04:14:24Z"
+    },
+    {
+      "event_ids": [
+        "P2E1B_OPENALEX_13",
+        "P2E1B_PUBMED_13"
+      ],
+      "prior_events_rewritten": false,
+      "prior_reason_label": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_CLAIM_BOUNDARY_VARIANTS",
+      "query_family_id": "QF13_COUNTER_CONFLICT_PRESERVATION",
+      "reason": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_COUNTEREXAMPLE_OR_SYNONYM_VARIANT",
+      "repair_completed_at_utc": "2026-09-03T04:16:35Z",
+      "repair_id": "ADDITION_2F6AB2F2EC397806404A",
+      "repair_started_at_utc": "2026-09-03T04:16:30Z"
+    },
+    {
+      "event_ids": [
+        "P2E1B_OPENALEX_14",
+        "P2E1B_PUBMED_14"
+      ],
+      "prior_events_rewritten": false,
+      "prior_reason_label": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_CLAIM_BOUNDARY_VARIANTS",
+      "query_family_id": "QF14_COUNTER_AI_GROUNDING",
+      "reason": "REQUIREMENTS_CROSS_CHECK_IDENTIFIED_UNTESTED_EXPLICIT_COUNTEREXAMPLE_OR_SYNONYM_VARIANT",
+      "repair_completed_at_utc": "2026-09-03T04:17:05Z",
+      "repair_id": "ADDITION_C0680054823C36C8E850",
+      "repair_started_at_utc": "2026-09-03T04:17:00Z"
+    }
+  ],
+  "retrieval_started_at_utc": "2026-09-03T03:50:30Z"
+}
