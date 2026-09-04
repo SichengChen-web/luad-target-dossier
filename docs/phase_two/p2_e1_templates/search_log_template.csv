@@ -1,0 +1,1 @@
+search_event_id,stream,source_name,source_provider,search_type,query_version,exact_query,filters,coverage_start,coverage_end,executed_at,timezone,result_count,export_format,export_path_or_reference,export_sha256,searcher_id,peer_checker_id,notes
